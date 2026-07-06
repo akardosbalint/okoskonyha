@@ -1,0 +1,14 @@
+---
+import Icon from './Icon.astro';
+import { GUARANTEE } from '../lib/program';
+---
+
+<div class="flex gap-5 rounded-3xl border-2 border-clay-300 bg-clay-50 p-6 md:p-8">
+  <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-clay-500 text-cream">
+    <Icon name="shield" class="h-7 w-7" />
+  </div>
+  <div>
+    <h3 class="font-heading text-xl font-semibold text-forest-800 mb-2">{GUARANTEE.title}</h3>
+    <p class="text-forest-700">{GUARANTEE.text}</p>
+  </div>
+</div>

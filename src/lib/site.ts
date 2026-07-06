@@ -1,8 +1,8 @@
 export const SITE = {
   name: 'Kardos Bálint',
-  tagline: 'Növényi séf, életmód-tanácsadó és közösségszervező',
+  tagline: 'Főzz finomabbat és egészségesebbet — olcsóbban és gyorsabban',
   description:
-    'Kardos Bálint növényi séf, Lifestyle Medicine konzultáns és közösségszervező. Vacsorapartik, jótékonysági estek és az Okoskonyhája közösség — ahol az étel csak ürügy arra, hogy idegenekből barátok legyenek.',
+    'Az Okoskonyhája Alapprogrammal 8 hét alatt garantáltan megtanulsz olcsóbban, gyorsabban, finomabbat és egészségesebbet főzni — heti max. 2 főzéssel, káoszmentesen. Kardos Bálint séf és életmód-tanácsadó programja.',
   url: 'https://akardosbalint.hu',
   circleUrl: 'https://okoskonyha.akardosbalint.hu',
   email: 'hello@akardosbalint.hu',
@@ -17,10 +17,10 @@ export const SITE = {
 
 export const NAV = [
   { href: '/', label: 'Főoldal' },
-  { href: '/rolam/', label: 'Rólam' },
-  { href: '/szolgaltatasok/', label: 'Szolgáltatások' },
   { href: '/okoskonyha/', label: 'Okoskonyhája', highlight: true },
   { href: '/blog/', label: 'Blog' },
+  { href: '/szolgaltatasok/', label: 'Szolgáltatások' },
+  { href: '/rolam/', label: 'Rólam' },
   { href: '/jotekonysag/', label: 'Jótékonyság' },
   { href: '/kapcsolat/', label: 'Kapcsolat' },
 ];

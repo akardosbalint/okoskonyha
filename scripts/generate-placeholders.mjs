@@ -82,6 +82,21 @@ const icons = {
       <rect x="10" y="0" width="6" height="14" rx="3" fill="${palette.cream}"/>
       <rect x="40" y="0" width="6" height="14" rx="3" fill="${palette.cream}"/>
     </g>`,
+  saltShaker: (x, y, s, color) => `
+    <g transform="translate(${x} ${y}) scale(${s})">
+      <path d="M14 14 h32 l-4 44 a6 6 0 0 1-6 6 H24 a6 6 0 0 1-6-6 Z" fill="${color}"/>
+      <rect x="10" y="4" width="40" height="12" rx="6" fill="${color}"/>
+      <circle cx="24" cy="26" r="2" fill="${palette.cream}"/>
+      <circle cx="32" cy="24" r="2" fill="${palette.cream}"/>
+      <circle cx="28" cy="34" r="2" fill="${palette.cream}"/>
+      <circle cx="36" cy="32" r="2" fill="${palette.cream}"/>
+    </g>`,
+  stack: (x, y, s, color) => `
+    <g transform="translate(${x} ${y}) scale(${s})">
+      <rect x="4" y="38" width="52" height="16" rx="4" fill="${color}"/>
+      <rect x="8" y="20" width="44" height="16" rx="4" fill="${color}" opacity="0.85"/>
+      <rect x="12" y="2" width="36" height="16" rx="4" fill="${color}" opacity="0.7"/>
+    </g>`,
 };
 
 function cover({ file, bg, blobColor, icon, iconColor, seed }) {
@@ -112,6 +127,8 @@ const covers = [
   { file: 'src/assets/blog-covers/jotekonysag-osszefogas.svg', bg: palette.cream, blobColor: palette.sage200, icon: 'gift', iconColor: palette.forest700, seed: 6 },
   { file: 'src/assets/blog-covers/story-onironia.svg', bg: palette.sage100, blobColor: palette.sage300, icon: 'plate', iconColor: palette.clay500, seed: 7 },
   { file: 'src/assets/blog-covers/tipp-idobeosztas.svg', bg: palette.cream, blobColor: palette.clay300, icon: 'calendar', iconColor: palette.forest500, seed: 8 },
+  { file: 'src/assets/blog-covers/tipp-fozes4eleme.svg', bg: palette.sage200, blobColor: palette.sage300, icon: 'saltShaker', iconColor: palette.forest700, seed: 30 },
+  { file: 'src/assets/blog-covers/tipp-batchcooking.svg', bg: palette.cream, blobColor: palette.clay300, icon: 'stack', iconColor: palette.forest700, seed: 31 },
   { file: 'src/assets/illustrations/hero.svg', bg: palette.sage300, blobColor: palette.sage200, icon: 'people', iconColor: palette.forest700, seed: 9 },
   { file: 'src/assets/illustrations/okoskonyha-hero.svg', bg: palette.sage100, blobColor: palette.sage300, icon: 'pot', iconColor: palette.forest700, seed: 10 },
   { file: 'src/assets/illustrations/impact-hero.svg', bg: palette.cream, blobColor: palette.clay300, icon: 'heartHands', iconColor: palette.clay500, seed: 11 },

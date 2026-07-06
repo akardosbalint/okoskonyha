@@ -4,6 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import CTAButton from '../../components/CTAButton.astro';
 import SectionHeading from '../../components/SectionHeading.astro';
 import Gallery from '../../components/Gallery.astro';
+import InstagramFeed from '../../components/InstagramFeed.astro';
 import aboutHero from '../../assets/illustrations/about-hero.svg';
 import g1 from '../../assets/illustrations/gallery/rolam-1.svg';
 import g2 from '../../assets/illustrations/gallery/rolam-2.svg';
@@ -12,6 +13,7 @@ import g4 from '../../assets/illustrations/gallery/rolam-4.svg';
 import g5 from '../../assets/illustrations/gallery/rolam-5.svg';
 import g6 from '../../assets/illustrations/gallery/rolam-6.svg';
 import { SITE } from '../../lib/site';
+import { BIO_STATS, BIO_FACTS } from '../../lib/program';
 
 const galleryImages = [
   { src: g1, alt: 'Illusztráció egy fazékról' },
@@ -35,12 +37,25 @@ const galleryImages = [
           Növényi séf lettem, mert <span class="font-script text-clay-500">emberekre</span> volt szükségem
         </h1>
         <p class="text-lg text-forest-600">
-          Nem egy vendéglátós családból jövök, és nem is gasztronómiai suliban tanultam a szakmát. Egy sima
-          hétköznapból indult: rájöttem, hogy a legjobb beszélgetéseim mindig az asztal körül történtek – és
-          hogy ebből lehet valami komolyabb is.
+          2020 óta szervezek vacsorapartikat és gasztroeseményeket. Azóta eljutottam a 12 fős, 5 fogásos
+          lakásvacsoráktól a 30 fős, 7 fogásos jótékonysági gálákig — és rájöttem, hogy a legjobb
+          beszélgetéseim mindig az asztal körül történtek.
         </p>
       </div>
       <Image src={aboutHero} alt="Illusztráció Bálintról" width={600} height={400} class="w-full rounded-3xl" />
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-14 md:px-6">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {
+        BIO_STATS.map((stat) => (
+          <div class="rounded-2xl bg-sage-50 p-6 text-center">
+            <p class="font-heading text-3xl font-semibold text-clay-500">{stat.value}</p>
+            <p class="mt-1 text-sm text-forest-600">{stat.label}</p>
+          </div>
+        ))
+      }
     </div>
   </section>
 
@@ -48,17 +63,19 @@ const galleryImages = [
     <div class="prose-okos">
       <h2>Az elejétől</h2>
       <p>
-        Sosem terveztem, hogy séf leszek. Marketingesként dolgoztam, amikor rájöttem, hogy minden hét
-        legjobb két órája az volt, amikor barátaimat hívtam vacsorára, és órákig beszélgettünk semmiről és
-        mindenről. Egy nap az egyik barátom megkérdezte: "miért nem csinálod ezt rendszeresen, idegeneknek
-        is?" Nevettem rajta. Aztán megpróbáltam. Aztán nem tudtam abbahagyni.
+        Sosem terveztem, hogy séf leszek — de 2020 óta ez lett belőle. Azóta 4 országban, 60+ eseményen,
+        1000+ vendégnek főztem. Volt, hogy 80–100 fős esküvőn álltam a tűzhely mögött, volt, hogy 9
+        hónapig egy budai család privát séfjeként dolgoztam, és vezettem már növényi alapú konyhát
+        fesztiválokon is.
       </p>
-      <h2>A növényi váltás</h2>
+      <ul>
+        {BIO_FACTS.map((fact) => <li>{fact}</li>)}
+      </ul>
+      <h2>Miért séf, és miért tanácsadó is egyben?</h2>
       <p>
-        Két évvel ezelőtt kezdtem el tudatosabban foglalkozni a táplálkozással – nem dogmából, hanem
-        kíváncsiságból. Minél többet tanultam a növényi étrend és az életmódorvoslás (Lifestyle Medicine)
-        elveiről, annál inkább rájöttem, hogy ez nem korlátozás, hanem felszabadulás: kevesebb szabály,
-        több íz, jobb közérzet. Azóta ez a főzésem és a tanácsadói munkám alapja is.
+        Mert a főzés önmagában nem elég — az emberek nem attól esznek egészségesebben, hogy egyszer
+        kapnak egy remek vacsorát tőlem. Ezért szereztem táplálkozási tanácsadói végzettséget is: hogy ne
+        csak megfőzzem az ételt, hanem megtanítsam a rendszert, ami mögötte van.
       </p>
       <h2>Miért közösség, és miért nem csak recept?</h2>
       <p>
@@ -80,6 +97,8 @@ const galleryImages = [
       <Gallery images={galleryImages} />
     </div>
   </section>
+
+  <InstagramFeed />
 
   <section class="mx-auto max-w-4xl px-4 py-16 text-center md:px-6">
     <h2 class="text-3xl font-semibold text-forest-700 mb-4">Gyere, ismerkedjünk meg élőben is</h2>
