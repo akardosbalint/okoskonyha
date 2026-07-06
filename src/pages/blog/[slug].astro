@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import BlogCard from '../../components/BlogCard.astro';
+import BlogCTA from '../../components/BlogCTA.astro';
 import ShareButtons from '../../components/ShareButtons.astro';
 import { BLOG_CATEGORIES, SITE } from '../../lib/site';
 
@@ -92,6 +93,10 @@ const jsonLd = {
         }
       </div>
       <ShareButtons url={postUrl} title={post.data.title} />
+    </div>
+
+    <div class="mt-12">
+      <BlogCTA />
     </div>
   </article>
 

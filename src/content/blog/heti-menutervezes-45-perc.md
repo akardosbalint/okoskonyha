@@ -18,7 +18,7 @@ Egy hétre elég, ha van egy gabona (pl. quinoa vagy köles), egy hüvelyes (pl.
 
 ### 2. Süss egyszerre mindent, egy tepsin
 
-Az sütő a legjobb barátod. Vágj fel minden zöldséget vasárnap, oszd el két-három tepsire fűszerezés szerint (egyik pirospaprikás-köményes, másik citromos-oregánós), és süsd egyszerre 200 fokon.
+A sütő a legjobb barátod. Vágj fel minden zöldséget vasárnap, oszd el két-három tepsire fűszerezés szerint (egyik pirospaprikás-köményes, másik citromos-oregánós), és süsd egyszerre 200 fokon.
 
 ### 3. A szószok döntik el az egész hetet
 

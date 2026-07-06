@@ -45,7 +45,7 @@ A növényi (nem-hem) vas felszívódása gyengébb, mint az állati eredetű va
 
 ### Omega-3 zsírsavak
 
-A lenmag, a chiamag és a dió jó forrásai az ALA-omega-3-nak. Ha korábban jellemzően halból fedezted az omega-3-szükségleted, érdemes tudni, hogy az ALA átalakulása a szervezetben korlátozott — ezért sokan algaolaj-alapú, közvetlenül EPA/DHA-t tartalmazó kiegészítőt is választanak. Ez egy olyan pont, amiről érdemes external szakemberrel is beszélgetni, ha korábban rendszeresen fogyasztottál zsíros halat.
+A lenmag, a chiamag és a dió jó forrásai az ALA-omega-3-nak. Ha korábban jellemzően halból fedezted az omega-3-szükségleted, érdemes tudni, hogy az ALA átalakulása a szervezetben korlátozott — ezért sokan algaolaj-alapú, közvetlenül EPA/DHA-t tartalmazó kiegészítőt is választanak. Ez egy olyan pont, amiről érdemes külső szakemberrel is beszélgetni, ha korábban rendszeresen fogyasztottál zsíros halat.
 
 ### Kalcium
 
