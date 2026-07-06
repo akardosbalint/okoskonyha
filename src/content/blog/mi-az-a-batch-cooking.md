@@ -43,4 +43,4 @@ Egy főzés → 5 különböző étel → minimális időráfordítás. Ennyi az
 
 ## Ahol elakadnak az emberek
 
-A batch cooking nem arról szól, hogy egy egész hétre ugyanazt az egy ételt eszed. A trükk az alapkomponensek okos kombinálásában van — ezt tanítom meg lépésről lépésre az [Okoskonyhája Alapprogramban](/okoskonyha/), ahol heti max. 2 főzéssel oldjuk meg az egész heti étkezésedet, garanciával.
+A batch cooking nem arról szól, hogy egy egész hétre ugyanazt az egy ételt eszed. A trükk az alapkomponensek okos kombinálásában van — ezt tanítom meg lépésről lépésre az [Okoskonyhájában](/okoskonyha/), ahol heti max. 2 főzéssel oldjuk meg az egész heti étkezésedet, együtt a közösséggel.

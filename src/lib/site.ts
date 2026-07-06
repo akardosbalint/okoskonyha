@@ -2,7 +2,7 @@ export const SITE = {
   name: 'Kardos Bálint',
   tagline: 'Főzz finomabbat és egészségesebbet — olcsóbban és gyorsabban',
   description:
-    'Az Okoskonyhája Alapprogrammal 8 hét alatt garantáltan megtanulsz olcsóbban, gyorsabban, finomabbat és egészségesebbet főzni — heti max. 2 főzéssel, káoszmentesen. Kardos Bálint séf és életmód-tanácsadó programja.',
+    'Az Okoskonyhája fizetős közösséggel megtanulsz olcsóbban, gyorsabban, finomabbat és egészségesebbet főzni — heti max. 2 főzéssel, káoszmentesen. Kardos Bálint séf és életmód-tanácsadó közössége.',
   url: 'https://akardosbalint.hu',
   circleUrl: 'https://okoskonyha.akardosbalint.hu',
   email: 'hello@akardosbalint.hu',

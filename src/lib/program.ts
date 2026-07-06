@@ -1,5 +1,6 @@
-// Az Okoskonyhája Alapprogram valós ajánlat-adatai (ár, tartalom, garancia).
-// Forrás: Kardos Bálint "Gyorsabban, olcsóbban, finomabbat, egészségesebbet" bemutató anyaga.
+// Az Okoskonyhája tagság és Kardos Bálint hitelességi adatai.
+// A tagság egyetlen termék: havidíjas fizetős közösség a Circle.so-n.
+// Az árazás/tartalom-lista pontos adatait Bálint tölti ki indulás előtt.
 
 export const USP = 'Főzz finomabbat és egészségesebbet — olcsóbban és gyorsabban';
 
@@ -40,63 +41,20 @@ export const METHOD_PILLARS = [
   },
 ];
 
-export const CURRICULUM = [
-  '6 hét intenzív oktatás + örökös tagság a zárt közösségben',
-  'Online tudásanyag a teljes rendszer elsajátításához',
-  'Heti 60 perc élő kérdezz-felelek Bálinttal',
-  '3×60 perc privát konzultáció Bálinttal',
-  'Sablonok, bevásárlólisták, receptek, eszközlista',
-  '100+ batch cooking-kompatibilis receptgyűjtemény (5+ év tapasztalatból)',
-  'Batch Cooking Menütervező AI — örökös hozzáférés',
-  'Örökös hozzáférés a zárt Okoskonyhája közösséghez',
-];
+// Mit kapsz az Okoskonyhája taggal — az eredeti brief alapján.
+export const MEMBERSHIP_BENEFITS = [
+  { icon: 'leaf', title: 'Heti receptek és menütervek', text: 'Gyors, olcsó, tápláló növényi fogások — minden héten frissülő anyagokkal.' },
+  { icon: 'video', title: 'Havi élő főzős alkalom', text: 'Együtt főzünk videóhívásban, kérdezhetsz, próbálhatsz új technikákat.' },
+  { icon: 'chat', title: 'Zárt közösség', text: 'Kérdezz bátran, oszd meg a saját sikereidet és kudarcaidat is — ítélkezés nélkül.' },
+  { icon: 'calendar', title: 'Havi kihívások', text: 'Konkrét, apró lépésekre bontott kihívások, amik tényleg végigvihetők.' },
+  { icon: 'gift', title: 'Korai hozzáférés', text: 'Elsőként értesülsz a jótékonysági vacsorákról és privát eseményekről.' },
+  { icon: 'book', title: 'Receptarchívum', text: 'Minden korábbi recept és élő alkalom felvétele egy helyen, bármikor visszanézhető.' },
+] as const;
 
-export const BONUSES = [
-  '„Fermentálás” minikurzus',
-  '„Mit tartalmazzon az éléskamrád?” lista',
-  '„Milyen alapeszközökre van szükség a konyhában?” lista',
-  '„Egészséges édességek” receptgyűjtemény',
-];
-
-export const VALUE_STACK = [
-  { item: '6 hetes strukturált oktatás', value: '60 000 Ft' },
-  { item: '3×60 perc privát konzultáció', value: '60 000 Ft' },
-  { item: '6×60 perc csoportos kérdezz-felelek', value: '30 000 Ft' },
-  { item: 'Extra bónuszok (fermentálás minikurzus, édességrecept-gyűjtemény, stb.)', value: '20 000 Ft' },
-  { item: 'Sablonok, bevásárlólisták, eszközlista', value: '20 000 Ft' },
-  { item: '100+ batch cooking-kompatibilis receptgyűjtemény', value: '20 000 Ft' },
-  { item: 'Batch Cooking Menütervező AI (örökös hozzáférés)', value: '10 000 Ft' },
-  { item: 'Zárt közösségi tagság (örökös)', value: 'PRICELESS' },
-];
-
+// TODO: cseréld le a tényleges havi- (és ha van, éves-) díjra indulás előtt.
 export const PRICING = {
-  programName: 'Okoskonyhája Alapprogram',
-  durationLabel: '8 hét (6+2 hét)',
-  totalValue: '220 000 Ft',
-  regularPrice: '240 000 Ft',
-  currentPrice: '79 000 Ft',
-  weeklyEquivalent: 'heti 9 875 Ft',
-  cohortCap: 15,
-  priceNote:
-    'Induló csoportos ár — mert szeretném minél több embernek megmutatni, hogy olcsóbban, gyorsabban, finomabbat és egészségesebbet főzni tényleg mindenki pikk-pakk meg tudja tanulni.',
+  programName: 'Okoskonyhája tagság',
+  monthly: { price: '[ÁR] Ft', period: '/ hó' },
+  annual: { price: '[ÁR] Ft', period: '/ hó, éves számlázással' },
+  priceNote: 'A pontos árat és az esetleges éves kedvezményt Bálint tölti ki indulás előtt.',
 };
-
-export const GUARANTEE = {
-  title: 'Próbáld ki kockázat nélkül',
-  text: 'Ha 8 hét múlva is úgy érzed, hogy még mindig kaotikus az étkezésed, nem tudtál heti max. 2, összesen 6–8 órás főzéssel megoldani egy egész hétre való menüt, és nem nőtt az energiaszinted, nem csökkent a stressz — visszafizetem a teljes részvételi díjat.',
-};
-
-export const SCARCITY = {
-  title: 'Ez nem tömegtanfolyam',
-  points: [
-    'Maximum 15 fő egy körben — egyéni figyelmet kapsz, ezért limitált a férőhely.',
-    'Az első kör zárul, amint betelik.',
-    'Ha elindulsz, 6–8 hét múlva nem lesz több kajapánik.',
-  ],
-};
-
-export const DISCOVERY_CALL_QUESTIONS = [
-  'Hol akadsz el az étkezésedben?',
-  'Mire lenne igazán szükséged?',
-  'Az Alapprogram vagy a VIP program adja meg jobban, amit keresel?',
-];

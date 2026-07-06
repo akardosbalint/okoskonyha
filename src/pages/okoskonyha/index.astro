@@ -6,23 +6,12 @@ import CTAButton from '../../components/CTAButton.astro';
 import SectionHeading from '../../components/SectionHeading.astro';
 import TestimonialCarousel from '../../components/TestimonialCarousel.astro';
 import Icon from '../../components/Icon.astro';
-import ValueStackTable from '../../components/ValueStackTable.astro';
-import PriceAnchor from '../../components/PriceAnchor.astro';
-import GuaranteeBox from '../../components/GuaranteeBox.astro';
+import MembershipPricing from '../../components/MembershipPricing.astro';
 import okoskonyhaHero from '../../assets/illustrations/okoskonyha-hero.svg';
 import { SITE } from '../../lib/site';
-import {
-  BIO_STATS,
-  METHOD_PILLARS,
-  CURRICULUM,
-  BONUSES,
-  PRICING,
-  SCARCITY,
-  DISCOVERY_CALL_QUESTIONS,
-} from '../../lib/program';
+import { BIO_STATS, METHOD_PILLARS, MEMBERSHIP_BENEFITS } from '../../lib/program';
 
 const testimonialEntries = await getCollection('testimonials');
-
 const methodIcons = ['salt', 'plate', 'clock', 'basket'] as const;
 
 const painPoints = [
@@ -35,22 +24,22 @@ const painPoints = [
 const outcomes = [
   'Heti max. 2 főzéssel egész hétre megvan a jó kaja — nincs több esti kapkodás.',
   'Megtanulod, hol és hogyan vásárolj úgy, hogy jobb alapanyag kerüljön az asztalodra, kevesebb pénzért.',
-  'A batch cooking rendszerrel 6–8 óra főzés = egy egész hét étkezése, káoszmentesen.',
+  'A batch cooking rendszerrel pár óra főzés = egy egész hét étkezése, káoszmentesen.',
   'A só-zsír-sav-hő és a tányér-elv után receptek nélkül is tudsz finomat és táplálót összerakni.',
 ];
 
 const faqs = [
-  { q: 'Mi a különbség az Alapprogram és a VIP program között?', a: 'Az Alapprogram a teljes rendszert megtanítja neked 8 hét alatt, csoportos kérdezz-felelekkel és privát konzultációkkal. Ha még szorosabb, személyre szabottabb támogatásra vágysz, a discovery hívás alatt megbeszéljük, hogy a VIP program illik-e jobban hozzád.' },
-  { q: 'Mi van, ha nem nekem való?', a: 'Ezért van a 8 hetes pénzvisszafizetési garancia: ha a program végén sem érzed, hogy javult az étkezésed, visszakapod a teljes részvételi díjat.' },
-  { q: 'Mennyi időt kell rá szánnom hetente?', a: 'A cél pontosan az, hogy minél kevesebb legyen: heti 1-2 főzési alkalom (összesen 6-8 óra) elég a teljes heti étkezésedhez, plusz a heti 60 perces élő alkalom, ha részt tudsz venni rajta (felvételről is visszanézhető).' },
-  { q: 'Kezdőként is érdemes csatlakoznom?', a: 'Igen — a legtöbb tagunk kezdőként érkezik. A rendszert úgy építettem fel, hogy nulláról is követhető legyen, még ha eddig alig főztél is.' },
-  { q: 'Miért csak 15 fő egy körben?', a: 'Mert a privát konzultációk és az élő kérdezz-felelek csak így maradnak valóban személyesek. Amint betelik a keret, az első kör zárul, és a következő körre kerülsz a várólistára.' },
+  { q: 'Mennyibe kerül a tagság?', a: 'A pontos havi és éves díjat lásd alább az árazásnál — nincs rejtett költség, és bármikor lemondható.' },
+  { q: 'Bármikor lemondhatom a tagságot?', a: 'Igen, a tagság hónapról hónapra (vagy évről évre) megújul, és bármikor lemondhatod a Circle.so felületén, indoklás nélkül.' },
+  { q: 'Kezdőként is érdemes csatlakoznom?', a: 'Igen — a legtöbb tagunk kezdőként érkezik. A recepteket és az élő alkalmakat is úgy építjük fel, hogy bármilyen szinten el lehessen indulni.' },
+  { q: 'Kell hozzá speciális konyhai felszerelés?', a: 'Nem. A recepteket úgy tervezem, hogy egy alap felszereléssel (fazék, serpenyő, késáru) is elkészíthetők legyenek.' },
+  { q: 'Mi az a Circle.so, és miért oda visztek át?', a: 'A Circle.so egy dedikált közösségi platform, ahol a tagság kezelése, a fizetés és a zárt tartalmak biztonságosan és kényelmesen működnek.' },
 ];
 ---
 
 <Layout
-  title="Okoskonyhája Alapprogram — főzz finomabbat és egészségesebbet, olcsóbban és gyorsabban"
-  description="8 hét alatt garantáltan megtanulsz olcsóbban, gyorsabban, finomabbat és egészségesebbet főzni — heti max. 2 főzéssel, káoszmentesen. Max. 15 fő, pénzvisszafizetési garanciával."
+  title="Okoskonyhája — főzz finomabbat és egészségesebbet, olcsóbban és gyorsabban"
+  description="Csatlakozz az Okoskonyhája fizetős közösséghez: heti receptek, havi élő főzős alkalmak és egy csapat, aki melletted áll az egészségesebb, olcsóbb és gyorsabb főzésben."
 >
   <!-- Hero -->
   <section class="bg-sage-300 py-16 md:py-24">
@@ -61,16 +50,15 @@ const faqs = [
           Főzz <span class="font-script text-clay-600">finomabbat</span> és egészségesebbet — olcsóbban és gyorsabban
         </h1>
         <p class="text-lg text-forest-800/90 mb-8 max-w-xl">
-          Az Okoskonyhája Alapprogrammal 8 hét alatt garantáltan megtanulod, hogyan oldd meg heti max. 2
-          főzéssel az egész heti étkezésedet — káoszmentesen, kajapánik nélkül.
+          Az Okoskonyhája egy fizetős közösség azoknak, akik szeretnének olcsóbban, gyorsabban és
+          egészségesebben főzni, de nem tudják, hol kezdjék. Heti receptek, élő alkalmak és egy csapat,
+          aki melletted áll.
         </p>
         <div class="flex flex-wrap gap-4">
-          <CTAButton href="/kapcsolat/" label="Foglalj ingyenes beszélgetést" size="lg" />
-          <CTAButton href={SITE.circleUrl} label="Már döntöttél? Csatlakozom" variant="ghost" size="lg" outbound />
+          <CTAButton href={SITE.circleUrl} label="Csatlakozom most" size="lg" outbound />
+          <CTAButton href="/kapcsolat/" label="Van egy kérdésem előtte" variant="ghost" size="lg" />
         </div>
-        <p class="mt-4 text-sm text-forest-700/80">
-          Nincs kockázat: pénzvisszafizetési garancia · max. {PRICING.cohortCap} fő / kör
-        </p>
+        <p class="mt-4 text-sm text-forest-700/80">Bármikor lemondható. Nincs hosszú távú elköteleződés.</p>
       </div>
       <Image src={okoskonyhaHero} alt="Illusztráció egy fazékról" width={600} height={400} class="w-full rounded-3xl" />
     </div>
@@ -109,7 +97,7 @@ const faqs = [
           </ul>
         </div>
         <div class="rounded-3xl bg-forest-700 p-6 md:p-8 text-cream">
-          <h3 class="font-heading text-xl font-semibold mb-4">8 hét múlva ez lesz helyette</h3>
+          <h3 class="font-heading text-xl font-semibold mb-4">Ez lesz helyette</h3>
           <ul class="space-y-4">
             {
               outcomes.map((point) => (
@@ -127,7 +115,7 @@ const faqs = [
 
   <!-- Method -->
   <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
-    <SectionHeading eyebrow="A módszer" title="Amit az Alapprogramban" accent="megtanulsz" />
+    <SectionHeading eyebrow="A módszer" title="Amit a közösségben" accent="megtanulsz" />
     <div class="grid gap-6 sm:grid-cols-2">
       {
         METHOD_PILLARS.map((pillar, i) => (
@@ -144,70 +132,30 @@ const faqs = [
     </div>
   </section>
 
-  <!-- Curriculum / mit kapsz -->
+  <!-- Mit kapsz -->
   <section class="bg-sage-100 py-16 md:py-20">
     <div class="mx-auto max-w-6xl px-4 md:px-6">
-      <SectionHeading eyebrow="Mit kapsz" title="A program" accent="tartalma" />
-      <div class="grid gap-6 lg:grid-cols-2">
-        <div class="rounded-3xl bg-white p-6 md:p-8 shadow-sm shadow-forest-900/5">
-          <h3 class="font-heading text-lg font-semibold text-forest-800 mb-4">{PRICING.programName} — {PRICING.durationLabel}</h3>
-          <ul class="space-y-3">
-            {
-              CURRICULUM.map((item) => (
-                <li class="flex gap-3 text-forest-700">
-                  <span class="mt-1 text-clay-500" aria-hidden="true">✓</span>
-                  {item}
-                </li>
-              ))
-            }
-          </ul>
-        </div>
-        <div class="rounded-3xl bg-white p-6 md:p-8 shadow-sm shadow-forest-900/5">
-          <h3 class="font-heading text-lg font-semibold text-forest-800 mb-4">+ Ajándékok</h3>
-          <ul class="space-y-3">
-            {
-              BONUSES.map((item) => (
-                <li class="flex gap-3 text-forest-700">
-                  <span class="mt-1 text-clay-500" aria-hidden="true">🎁</span>
-                  {item}
-                </li>
-              ))
-            }
-          </ul>
-        </div>
+      <SectionHeading eyebrow="Mit kapsz" title="A tagság" accent="tartalma" />
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          MEMBERSHIP_BENEFITS.map((b) => (
+            <div class="rounded-2xl bg-white p-6 shadow-sm shadow-forest-900/5">
+              <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-sage-100 text-forest-700">
+                <Icon name={b.icon} class="h-6 w-6" />
+              </div>
+              <h3 class="font-heading font-semibold text-forest-800 mb-1">{b.title}</h3>
+              <p class="text-sm text-forest-600">{b.text}</p>
+            </div>
+          ))
+        }
       </div>
     </div>
   </section>
 
   <!-- Pricing -->
   <section class="mx-auto max-w-4xl px-4 py-16 md:px-6">
-    <SectionHeading eyebrow="Árazás" title="Mennyibe kerül" accent="mindez?" />
-    <PriceAnchor />
-    <p class="mx-auto mt-4 max-w-xl text-center text-sm text-forest-500">{PRICING.priceNote}</p>
-    <div class="mt-10">
-      <ValueStackTable />
-    </div>
-    <div class="mt-8 flex justify-center">
-      <CTAButton href="/kapcsolat/" label="Foglalj ingyenes beszélgetést" size="lg" />
-    </div>
-  </section>
-
-  <!-- Guarantee + scarcity -->
-  <section class="mx-auto max-w-4xl px-4 pb-16 md:px-6 space-y-6">
-    <GuaranteeBox />
-    <div class="rounded-3xl bg-white p-6 md:p-8 shadow-sm shadow-forest-900/5">
-      <h3 class="font-heading text-xl font-semibold text-forest-800 mb-3">{SCARCITY.title}</h3>
-      <ul class="space-y-2">
-        {
-          SCARCITY.points.map((point) => (
-            <li class="flex gap-3 text-forest-700">
-              <span class="mt-1 text-clay-500" aria-hidden="true">•</span>
-              {point}
-            </li>
-          ))
-        }
-      </ul>
-    </div>
+    <SectionHeading eyebrow="Árazás" title="Válaszd ki, mi illik" accent="hozzád" />
+    <MembershipPricing />
   </section>
 
   <TestimonialCarousel
@@ -237,24 +185,9 @@ const faqs = [
   <!-- Final CTA -->
   <section class="mx-auto max-w-4xl px-4 pb-20 text-center md:px-6">
     <div class="rounded-3xl bg-clay-500 px-6 py-14 md:px-16">
-      <h2 class="text-3xl md:text-4xl font-semibold text-cream mb-4">Beszéljünk 20 percet</h2>
-      <p class="mx-auto mb-6 max-w-xl text-cream/90">Semmi nyomulás, csak tisztán átnézzük:</p>
-      <ul class="mx-auto mb-8 max-w-md space-y-2 text-left text-cream/90">
-        {
-          DISCOVERY_CALL_QUESTIONS.map((q) => (
-            <li class="flex gap-3">
-              <span aria-hidden="true">→</span> {q}
-            </li>
-          ))
-        }
-      </ul>
-      <CTAButton href="/kapcsolat/" label="Foglalj ingyenes beszélgetést" variant="ghost" size="lg" />
-      <p class="mt-6 text-sm text-cream/70">
-        Már készen állsz csatlakozni?
-        <a href={SITE.circleUrl} data-outbound="okoskonyha" data-cta-label="okoskonyha_final_direct" class="underline hover:text-cream">
-          Nézd meg a közösséget a Circle.so-n
-        </a>
-      </p>
+      <h2 class="text-3xl md:text-4xl font-semibold text-cream mb-4">Készen állsz a csatlakozásra?</h2>
+      <p class="text-cream/90 mb-8">Lépj be az Okoskonyhájába, és kezdj el ma egyszerűbben, olcsóbban és egészségesebben főzni.</p>
+      <CTAButton href={SITE.circleUrl} label="Csatlakozom az Okoskonyhájához" variant="ghost" size="lg" outbound />
     </div>
   </section>
 </Layout>

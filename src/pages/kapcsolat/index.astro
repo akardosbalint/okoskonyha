@@ -4,28 +4,21 @@ import Layout from '../../layouts/Layout.astro';
 import ContactForm from '../../components/ContactForm.astro';
 import contactHero from '../../assets/illustrations/contact-hero.svg';
 import { SITE } from '../../lib/site';
-import { DISCOVERY_CALL_QUESTIONS } from '../../lib/program';
 ---
 
 <Layout
-  title="Foglalj ingyenes beszélgetést"
-  description="Foglalj egy ingyenes 20 perces beszélgetést Kardos Bálinttal: nézzük meg együtt, hol akadsz el az étkezésedben, és hogy az Alapprogram vagy a VIP program illik-e jobban hozzád."
+  title="Kapcsolat"
+  description="Vedd fel velem a kapcsolatot privát séfkedés, jótékonysági vacsora vagy egy gyors kérdés miatt az Okoskonyhájával kapcsolatban."
 >
   <section class="bg-sage-100 py-14 md:py-20">
     <div class="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2 md:items-center md:px-6">
       <div>
-        <p class="font-script text-3xl text-clay-500 mb-2">Beszéljünk 20 percet</p>
-        <h1 class="text-4xl md:text-5xl font-semibold text-forest-700 mb-6">Foglalj ingyenes beszélgetést</h1>
-        <p class="text-lg text-forest-600 mb-4">Semmi nyomulás, csak tisztán átnézzük:</p>
-        <ul class="space-y-2 text-forest-700">
-          {
-            DISCOVERY_CALL_QUESTIONS.map((q) => (
-              <li class="flex gap-3">
-                <span aria-hidden="true" class="text-clay-500">→</span> {q}
-              </li>
-            ))
-          }
-        </ul>
+        <p class="font-script text-3xl text-clay-500 mb-2">Beszéljünk</p>
+        <h1 class="text-4xl md:text-5xl font-semibold text-forest-700 mb-6">Kapcsolat</h1>
+        <p class="text-lg text-forest-600">
+          Írj pár sort, mit szeretnél — privát vacsorát, jótékonysági estet, vagy csak egy gyors kérdésed
+          van az Okoskonyhájával kapcsolatban. Vagy foglalj egyből egy időpontot alább.
+        </p>
       </div>
       <Image src={contactHero} alt="Illusztráció egy naptárról" width={600} height={400} class="w-full rounded-3xl" />
     </div>
@@ -33,6 +26,11 @@ import { DISCOVERY_CALL_QUESTIONS } from '../../lib/program';
 
   <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
     <div class="grid gap-10 lg:grid-cols-2">
+      <div class="rounded-3xl bg-white p-6 shadow-md shadow-forest-900/5 md:p-8">
+        <h2 class="text-2xl font-semibold text-forest-700 mb-6">Írj üzenetet</h2>
+        <ContactForm />
+      </div>
+
       <div class="rounded-3xl bg-white p-6 shadow-md shadow-forest-900/5 md:p-8">
         <h2 class="text-2xl font-semibold text-forest-700 mb-2">Foglalj időpontot</h2>
         <p class="text-forest-600 mb-6">
@@ -52,15 +50,6 @@ import { DISCOVERY_CALL_QUESTIONS } from '../../lib/program';
             nyisd meg új lapon
           </a>.
         </p>
-      </div>
-
-      <div class="rounded-3xl bg-white p-6 shadow-md shadow-forest-900/5 md:p-8">
-        <h2 class="text-2xl font-semibold text-forest-700 mb-2">Vagy írj üzenetet</h2>
-        <p class="text-forest-600 mb-6">
-          Ha most nem alkalmas egy hívás, írd meg, miben segíthetek — privát séfkedés, jótékonysági
-          vacsora, vagy egy gyors kérdés az Okoskonyhájával kapcsolatban.
-        </p>
-        <ContactForm />
 
         <div class="mt-8 space-y-2 border-t border-sage-100 pt-6 text-forest-700">
           <p class="font-semibold">Vagy írj közvetlenül:</p>

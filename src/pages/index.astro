@@ -7,11 +7,10 @@ import SectionHeading from '../components/SectionHeading.astro';
 import BlogCard from '../components/BlogCard.astro';
 import TestimonialCarousel from '../components/TestimonialCarousel.astro';
 import Icon from '../components/Icon.astro';
-import PriceAnchor from '../components/PriceAnchor.astro';
-import GuaranteeBox from '../components/GuaranteeBox.astro';
+import MembershipPricing from '../components/MembershipPricing.astro';
 import heroImage from '../assets/illustrations/hero.svg';
 import { SITE } from '../lib/site';
-import { BIO_STATS, METHOD_PILLARS, PRICING } from '../lib/program';
+import { BIO_STATS, METHOD_PILLARS } from '../lib/program';
 
 const allPosts = await getCollection('blog');
 const featuredPosts = allPosts
@@ -33,16 +32,14 @@ const methodIcons = ['salt', 'plate', 'clock', 'basket'] as const;
           Főzz <span class="font-script text-clay-600">finomabbat</span> és egészségesebbet — olcsóbban és gyorsabban
         </h1>
         <p class="text-lg text-forest-800/90 mb-8 max-w-xl">
-          8 hét alatt garantáltan megtanulod, hogyan oldd meg heti max. 2 főzéssel az egész heti
-          étkezésedet — káoszmentesen, kajapánik nélkül.
+          Az Okoskonyhája fizetős közösségével megtanulod, hogyan oldd meg heti max. 2 főzéssel az egész
+          heti étkezésedet — káoszmentesen, kajapánik nélkül.
         </p>
         <div class="flex flex-wrap gap-4">
-          <CTAButton href="/okoskonyha/" label="Ismerd meg az Alapprogramot" size="lg" />
-          <CTAButton href="/kapcsolat/" label="Foglalj ingyenes beszélgetést" variant="ghost" size="lg" />
+          <CTAButton href={SITE.circleUrl} label="Csatlakozom most" size="lg" outbound />
+          <CTAButton href="/okoskonyha/" label="Ismerd meg a közösséget" variant="ghost" size="lg" />
         </div>
-        <p class="mt-4 text-sm text-forest-700/80">
-          Pénzvisszafizetési garanciával · max. {PRICING.cohortCap} fő / kör
-        </p>
+        <p class="mt-4 text-sm text-forest-700/80">Bármikor lemondható. Nincs hosszú távú elköteleződés.</p>
       </div>
       <div class="relative">
         <Image src={heroImage} alt="Illusztráció közös vacsoráról" width={600} height={400} class="w-full rounded-3xl" />
@@ -66,7 +63,7 @@ const methodIcons = ['salt', 'plate', 'clock', 'basket'] as const;
   <!-- Method teaser -->
   <section class="bg-sage-100 py-16 md:py-20">
     <div class="mx-auto max-w-6xl px-4 md:px-6">
-      <SectionHeading eyebrow="A módszer" title="Amit az Alapprogramban" accent="megtanulsz" />
+      <SectionHeading eyebrow="A módszer" title="Amit a közösségben" accent="megtanulsz" />
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {
           METHOD_PILLARS.map((pillar, i) => (
@@ -86,16 +83,10 @@ const methodIcons = ['salt', 'plate', 'clock', 'basket'] as const;
     </div>
   </section>
 
-  <!-- Program / pricing teaser -->
+  <!-- Pricing teaser -->
   <section class="mx-auto max-w-4xl px-4 py-16 md:px-6">
-    <SectionHeading eyebrow={PRICING.programName} title="8 hét, garanciával," accent="és max 15 fővel" />
-    <PriceAnchor />
-    <div class="mt-8">
-      <GuaranteeBox />
-    </div>
-    <div class="mt-8 flex justify-center">
-      <CTAButton href="/okoskonyha/" label="Nézd meg a program részleteit" size="lg" />
-    </div>
+    <SectionHeading eyebrow="Árazás" title="Válaszd ki, mi illik" accent="hozzád" />
+    <MembershipPricing />
   </section>
 
   <!-- Testimonialok -->
