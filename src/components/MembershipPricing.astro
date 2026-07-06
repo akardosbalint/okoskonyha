@@ -20,10 +20,11 @@ import { SITE } from '../lib/site';
     </span>
     <h3 class="font-heading text-xl font-semibold mb-1">Éves tagság</h3>
     <p class="text-sm text-sage-100/80 mb-6">A leggazdaságosabb választás, ha komolyan belevágnál.</p>
-    <p class="mb-6">
+    <p class="mb-1">
       <span class="text-4xl font-heading font-semibold">{PRICING.annual.price}</span>
       <span class="text-sm text-sage-100/80"> {PRICING.annual.period}</span>
     </p>
+    <p class="mb-6 text-sm text-sage-100/80">({PRICING.annual.monthlyEquivalent})</p>
     <CTAButton href={SITE.circleUrl} label="Csatlakozom" variant="primary" outbound />
   </div>
 </div>
