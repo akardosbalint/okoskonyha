@@ -1,0 +1,20 @@
+---
+import { ADVANCED_TOPICS } from '../lib/program';
+---
+
+<div class="mt-8 rounded-3xl bg-forest-700 p-6 md:p-8 text-center">
+  <p class="font-script text-2xl text-sage-200 mb-2">Ez az Alapképzés</p>
+  <h3 class="font-heading text-xl md:text-2xl font-semibold text-cream mb-4">
+    Ha ezt megtanulod, jöhet az igazi konyhamesterség
+  </h3>
+  <p class="mx-auto mb-6 max-w-xl text-cream/85">
+    A fenti alapokra épülve a közösségben olyan haladó témák is megnyílnak előtted, mint:
+  </p>
+  <div class="flex flex-wrap justify-center gap-3">
+    {
+      ADVANCED_TOPICS.map((topic) => (
+        <span class="rounded-full bg-cream/10 px-4 py-2 text-sm font-semibold text-cream">{topic}</span>
+      ))
+    }
+  </div>
+</div>

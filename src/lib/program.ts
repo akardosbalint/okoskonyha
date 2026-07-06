@@ -41,6 +41,15 @@ export const METHOD_PILLARS = [
   },
 ];
 
+// A módszer az Alapképzés — ezt mindenki elsajátítja, aki csatlakozik.
+// Utána nyílik meg a haladó, "igazi konyhamesterség" tananyag a közösségben.
+export const ADVANCED_TOPICS = [
+  'Növényi tejek',
+  'Fermentálás',
+  'Házi kovászos kenyér',
+  'És más igazi haladó konyhamesterség',
+];
+
 // Mit kapsz az Okoskonyhája taggal — az eredeti brief alapján.
 export const MEMBERSHIP_BENEFITS = [
   { icon: 'leaf', title: 'Heti receptek és menütervek', text: 'Gyors, olcsó, tápláló növényi fogások — minden héten frissülő anyagokkal.' },
