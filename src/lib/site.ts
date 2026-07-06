@@ -15,6 +15,18 @@ export const SITE = {
   contactEndpoint: '',
 };
 
+// Az oldal üzemeltetőjének (Adatkezelő) hivatalos adatai — az Adatvédelmi tájékoztatóban
+// és az ÁSZF-ben használjuk, hogy egy helyen legyenek karbantarthatók.
+export const COMPANY = {
+  legalName: 'Kardos Bálint e.v.',
+  city: 'Budapest',
+  addressLine: 'Bem József utca 6. fsz. 3.',
+  postalCode: '1027',
+  country: 'Magyarország',
+  taxNumber: '91637778-1-41',
+  registrationNumber: '61623820',
+};
+
 export const NAV = [
   { href: '/', label: 'Főoldal' },
   { href: '/okoskonyha/', label: 'Okoskonyha', highlight: true },

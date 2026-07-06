@@ -83,6 +83,11 @@ import Newsletter from './Newsletter.astro';
               </li>
             ))
           }
+          <li>
+            <button type="button" data-open-cookie-settings class="hover:text-clay-300">
+              Süti beállítások
+            </button>
+          </li>
         </ul>
       </div>
     </div>
@@ -95,8 +100,14 @@ import Newsletter from './Newsletter.astro';
 
 <script>
   import { trackOutboundClick } from '../lib/analytics';
+  import { OPEN_SETTINGS_EVENT } from '../lib/cookieConsent';
+
   document.querySelectorAll<HTMLAnchorElement>('[data-outbound="okoskonyha"]:not([data-tracked])').forEach((el) => {
     el.dataset.tracked = 'true';
     el.addEventListener('click', () => trackOutboundClick(el.href, el.dataset.ctaLabel ?? 'footer'));
+  });
+
+  document.querySelector<HTMLButtonElement>('[data-open-cookie-settings]')?.addEventListener('click', () => {
+    document.dispatchEvent(new CustomEvent(OPEN_SETTINGS_EVENT));
   });
 </script>

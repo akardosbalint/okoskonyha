@@ -54,6 +54,19 @@ import { SITE } from '../lib/site';
 
   <input type="text" name="company" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
+  <label class="flex items-start gap-3 text-sm text-forest-600">
+    <input
+      type="checkbox"
+      name="privacyConsent"
+      required
+      class="mt-0.5 h-4 w-4 shrink-0 accent-clay-500"
+    />
+    <span>
+      Elfogadom, hogy a fenti adataimat Kardos Bálint a megkeresésem megválaszolása céljából kezelje. Bővebben az
+      <a href="/adatvedelem/" class="text-clay-500 underline hover:text-clay-600">Adatvédelmi tájékoztatóban</a>.
+    </span>
+  </label>
+
   <button
     type="submit"
     class="w-full rounded-full bg-clay-500 px-6 py-3.5 font-heading font-semibold text-cream transition-colors hover:bg-clay-600 sm:w-auto"
