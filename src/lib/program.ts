@@ -26,6 +26,11 @@ export const METHOD_PILLARS = [
     text: 'Nem kell teli konyhafelszerelés-bolt — pár jól megválasztott alapeszköz és egy magabiztos kéztartás elég, hogy nyugodtan állj neki bármelyik receptnek.',
   },
   {
+    title: 'Élelmiszerbiztonság',
+    subtitle: 'A "veszélyzóna", gyors hűtés, penészedés-figyelés',
+    text: 'Megtanulod, hogyan tárold biztonságosan a napokig eltartott batch ételeket — mikor kell gyorsan hűteni, és hogyan ismerd fel, ha valami már nem jó.',
+  },
+  {
     title: 'Okosabban vásárolsz',
     subtitle: 'Szezonalitás, sárga címkék, helyi piacok',
     text: 'Megtanulod, mikor és hol éri meg vásárolni, hogy jobb alapanyag kerüljön az asztalodra — kevesebb pénzért, nem kevesebb minőségért.',
@@ -49,6 +54,11 @@ export const METHOD_PILLARS = [
     title: 'Hő — az átalakulás mestere',
     subtitle: 'A Maillard-reakció és a hőszintek',
     text: 'Megtanulod, mikor kell magas hő a ropogós kéregért, és mikor alacsony hő a selymes textúráért — receptek nélkül is.',
+  },
+  {
+    title: 'Ízpárosítás és -harmónia',
+    subtitle: 'Kémiai, kontrasztos és kulturális összhang',
+    text: 'Megismered, milyen elvek alapján harmonizálnak az alapanyagok egymással, hogy magabiztosan tudj rögtönözni recept nélkül is.',
   },
   {
     title: 'A tányér-elv',

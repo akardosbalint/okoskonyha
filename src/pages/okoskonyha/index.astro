@@ -13,7 +13,7 @@ import { SITE } from '../../lib/site';
 import { BIO_STATS, METHOD_PILLARS, MEMBERSHIP_BENEFITS } from '../../lib/program';
 
 const testimonialEntries = await getCollection('testimonials');
-const methodIcons = ['shield', 'coin', 'salt', 'fat', 'acid', 'heat', 'plate', 'clock', 'basket', 'calendar'] as const;
+const methodIcons = ['shield', 'book', 'coin', 'salt', 'fat', 'acid', 'heat', 'leaf', 'plate', 'clock', 'basket', 'calendar'] as const;
 
 const painPoints = [
   'Minden nap azon gondolkodsz, mi legyen vacsira — és este 7-kor még mindig nincs válasz.',
@@ -122,7 +122,7 @@ const faqs = [
   <!-- Method -->
   <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
     <SectionHeading eyebrow="A módszer" title="Amit a közösségben" accent="megtanulsz" />
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
       {
         METHOD_PILLARS.map((pillar, i) => (
           <div class="rounded-3xl bg-white p-6 md:p-8 shadow-md shadow-forest-900/5">
