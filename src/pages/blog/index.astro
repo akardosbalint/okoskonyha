@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import BlogSearch from '../../components/BlogSearch.astro';
+import { BLOG_CATEGORIES } from '../../lib/site';
+
+const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<Layout
+  title="Blog"
+  description="Sztorik vacsorapartikról, gyakorlati főzési tippek és jótékonysági történetek Kardos Bálint tollából."
+>
+  <section class="bg-sage-100 py-14 md:py-20">
+    <div class="mx-auto max-w-4xl px-4 text-center md:px-6">
+      <p class="font-script text-3xl text-clay-500 mb-1">A blog</p>
+      <h1 class="text-4xl md:text-5xl font-semibold text-forest-700 mb-4">
+        Sztorik, tippek és <span class="font-script text-clay-500">őszinte vallomások</span>
+      </h1>
+      <p class="text-lg text-forest-600">
+        Nem receptgyűjtemény ez – bár néha az is. Inkább napló arról, mi történik, amikor idegeneket ültetünk
+        egy asztalhoz, és mit tanulok közben a főzésről, az emberekről és saját magamról.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-14 md:px-6">
+    <BlogSearch />
+
+    <div class="mb-10 flex flex-wrap gap-3">
+      <a
+        href="/blog/"
+        class="rounded-full bg-forest-700 px-4 py-2 text-sm font-semibold text-cream"
+      >
+        Összes bejegyzés
+      </a>
+      {
+        Object.entries(BLOG_CATEGORIES).map(([slug, cat]) => (
+          <a
+            href={`/blog/kategoria/${slug}/`}
+            class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-forest-700 border border-sage-200 hover:bg-sage-100"
+          >
+            {cat.label}
+          </a>
+        ))
+      }
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {posts.map((post, i) => <BlogCard post={post} featured={i === 0} />)}
+    </div>
+  </section>
+</Layout>

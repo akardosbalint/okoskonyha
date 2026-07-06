@@ -1,0 +1,63 @@
+@import '@fontsource/quicksand/400.css';
+@import '@fontsource/quicksand/500.css';
+@import '@fontsource/quicksand/600.css';
+@import '@fontsource/quicksand/700.css';
+@import '@fontsource/fredoka/400.css';
+@import '@fontsource/fredoka/500.css';
+@import '@fontsource/fredoka/600.css';
+@import '@fontsource/caveat/500.css';
+@import '@fontsource/caveat/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-forest-800 font-body antialiased;
+}
+
+h1, h2, h3, h4 {
+  @apply font-heading text-forest-700;
+}
+
+.wavy-divider {
+  height: 24px;
+  background-image: radial-gradient(circle at 12px 0, transparent 12px, currentColor 13px);
+  background-size: 24px 24px;
+  background-repeat: repeat-x;
+}
+
+.prose-okos {
+  @apply max-w-none text-forest-800 leading-relaxed;
+}
+.prose-okos h2 {
+  @apply text-2xl md:text-3xl mt-10 mb-4 text-forest-700;
+}
+.prose-okos h3 {
+  @apply text-xl md:text-2xl mt-8 mb-3 text-forest-700;
+}
+.prose-okos p {
+  @apply mb-5;
+}
+.prose-okos ul {
+  @apply list-disc pl-6 mb-5 space-y-1;
+}
+.prose-okos ol {
+  @apply list-decimal pl-6 mb-5 space-y-1;
+}
+.prose-okos a {
+  @apply text-clay-500 underline decoration-2 underline-offset-2 hover:text-clay-600;
+}
+.prose-okos blockquote {
+  @apply border-l-4 border-sage-300 pl-4 italic text-forest-600 my-6;
+}
+.prose-okos img {
+  @apply rounded-2xl my-6;
+}
+.prose-okos strong {
+  @apply text-forest-700;
+}

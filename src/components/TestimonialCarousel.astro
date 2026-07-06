@@ -1,0 +1,120 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import SectionHeading from './SectionHeading.astro';
+
+interface TestimonialItem {
+  name: string;
+  role: string;
+  quote: string;
+  avatar?: ImageMetadata;
+}
+
+interface Props {
+  items: TestimonialItem[];
+  title?: string;
+  accent?: string;
+  eyebrow?: string;
+}
+
+const {
+  items,
+  title = 'A korábbi vendégeink',
+  accent = 'élménybeszámolói',
+  eyebrow,
+} = Astro.props;
+
+const groupId = `testimonials-${Math.random().toString(36).slice(2, 8)}`;
+---
+
+<section class="bg-sage-300 py-16 md:py-24 relative overflow-hidden">
+  <div
+    class="absolute -left-24 top-1/3 h-72 w-72 rounded-full bg-sage-400/40 blur-2xl"
+    aria-hidden="true"
+  >
+  </div>
+  <div class="mx-auto max-w-6xl px-4 md:px-6 relative">
+    <SectionHeading eyebrow={eyebrow} title={title} accent={accent} />
+
+    <div class="relative">
+      <div id={groupId} class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 no-scrollbar">
+        {
+          items.map((t) => (
+            <div class="snap-start shrink-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
+              <figure class="flex h-full flex-col justify-between rounded-3xl bg-white p-6 md:p-7 shadow-lg shadow-forest-900/5">
+                <blockquote class="italic text-forest-700 mb-6 leading-relaxed">"{t.quote}"</blockquote>
+                <figcaption class="flex items-center gap-3">
+                  {t.avatar && (
+                    <Image
+                      src={t.avatar}
+                      alt={t.name}
+                      width={56}
+                      height={56}
+                      class="h-14 w-14 rounded-full object-cover"
+                    />
+                  )}
+                  <div>
+                    <p class="font-heading font-semibold text-forest-800">{t.name}</p>
+                    <p class="text-sm text-sage-600 font-medium">{t.role}</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="mt-6 flex justify-center gap-2" data-dots={groupId}></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+</style>
+
+<script>
+  function initCarousel(track: HTMLElement) {
+    const id = track.id;
+    const dotsContainer = document.querySelector<HTMLElement>(`[data-dots="${id}"]`);
+    if (!dotsContainer) return;
+
+    const cards = Array.from(track.children) as HTMLElement[];
+    const perView = () => (window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1);
+    const pageCount = () => Math.max(1, Math.ceil(cards.length / perView()));
+
+    function renderDots() {
+      dotsContainer!.innerHTML = '';
+      for (let i = 0; i < pageCount(); i++) {
+        const dot = document.createElement('button');
+        dot.setAttribute('aria-label', `Vélemények, ${i + 1}. oldal`);
+        dot.className = 'h-2.5 w-2.5 rounded-full bg-white/60 data-[active=true]:bg-forest-700 transition-colors';
+        dot.addEventListener('click', () => {
+          const card = cards[i * perView()];
+          card?.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+        });
+        dotsContainer!.appendChild(dot);
+      }
+      updateActiveDot();
+    }
+
+    function updateActiveDot() {
+      const scrollRatio = track.scrollLeft / (track.scrollWidth - track.clientWidth || 1);
+      const activeIndex = Math.round(scrollRatio * (pageCount() - 1));
+      Array.from(dotsContainer!.children).forEach((dot, i) => {
+        (dot as HTMLElement).dataset.active = String(i === activeIndex);
+      });
+    }
+
+    track.addEventListener('scroll', () => window.requestAnimationFrame(updateActiveDot));
+    window.addEventListener('resize', renderDots);
+    renderDots();
+  }
+
+  document.querySelectorAll<HTMLElement>('[id^="testimonials-"]').forEach(initCarousel);
+</script>

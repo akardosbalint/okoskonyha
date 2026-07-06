@@ -1,0 +1,91 @@
+---
+import { SITE } from '../lib/site';
+
+interface Props {
+  variant?: 'inline' | 'card';
+  title?: string;
+  description?: string;
+}
+const {
+  variant = 'card',
+  title = 'Iratkozz fel a hírlevélre',
+  description = 'Heti egy e-mail: új blogposztok, meghívók a jótékonysági vacsorákra és korai hozzáférés az Okoskonyhája eseményekhez. Se spam, se felesleges köntörfalazás.',
+} = Astro.props;
+---
+
+<div class:list={[
+  'rounded-3xl p-6 md:p-8',
+  variant === 'card' ? 'bg-forest-700 text-cream' : 'bg-transparent',
+]}>
+  <h3 class:list={['text-xl md:text-2xl font-semibold mb-2', variant === 'card' ? 'text-cream' : 'text-forest-700']}>
+    {title}
+  </h3>
+  <p class:list={['mb-5 text-sm md:text-base', variant === 'card' ? 'text-sage-100/90' : 'text-forest-600']}>
+    {description}
+  </p>
+  <form
+    class="flex flex-col gap-3 sm:flex-row"
+    data-newsletter-form
+    data-endpoint={SITE.newsletterEndpoint}
+    method="post"
+  >
+    <label for="newsletter-email" class="sr-only">E-mail cím</label>
+    <input
+      id="newsletter-email"
+      type="email"
+      name="email"
+      required
+      placeholder="te@email.hu"
+      class="flex-1 rounded-full border-0 px-5 py-3 text-forest-800 placeholder:text-forest-400 focus:outline-none focus:ring-2 focus:ring-clay-500"
+    />
+    <input type="text" name="company" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    <button
+      type="submit"
+      class="rounded-full bg-clay-500 px-6 py-3 font-heading font-semibold text-cream transition-colors hover:bg-clay-600 whitespace-nowrap"
+    >
+      Feliratkozom
+    </button>
+  </form>
+  <p data-newsletter-message class="mt-3 text-sm" role="status"></p>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLFormElement>('[data-newsletter-form]').forEach((form) => {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const honeypot = form.querySelector<HTMLInputElement>('input[name="company"]');
+      const message = form.parentElement?.querySelector<HTMLElement>('[data-newsletter-message]');
+      if (honeypot?.value) return; // valószínűleg spam bot, csendben eldobjuk
+
+      const email = form.querySelector<HTMLInputElement>('input[name="email"]')?.value;
+      const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+      const endpoint = form.dataset.endpoint;
+      if (!email || !message || !button) return;
+
+      if (!endpoint) {
+        message.textContent =
+          'A feliratkozás hamarosan aktiválódik – addig is írj bátran a hello@akardosbalint.hu címre!';
+        return;
+      }
+
+      button.disabled = true;
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email }),
+        });
+        if (res.ok) {
+          message.textContent = 'Köszönjük! Nézd meg a postaládád – hamarosan jön az első levél.';
+          form.reset();
+        } else {
+          message.textContent = 'Hoppá, valami elakadt. Próbáld újra, vagy írj a hello@akardosbalint.hu címre.';
+        }
+      } catch {
+        message.textContent = 'Hoppá, valami elakadt. Próbáld újra, vagy írj a hello@akardosbalint.hu címre.';
+      } finally {
+        button.disabled = false;
+      }
+    });
+  });
+</script>

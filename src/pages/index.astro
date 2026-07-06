@@ -1,0 +1,141 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import CTAButton from '../components/CTAButton.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import BlogCard from '../components/BlogCard.astro';
+import TestimonialCarousel from '../components/TestimonialCarousel.astro';
+import StatsRow from '../components/StatsRow.astro';
+import InstagramFeed from '../components/InstagramFeed.astro';
+import Icon from '../components/Icon.astro';
+import heroImage from '../assets/illustrations/hero.svg';
+import { SITE } from '../lib/site';
+
+const allPosts = await getCollection('blog');
+const featuredPosts = allPosts
+  .filter((p) => p.data.featured)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+
+const testimonialEntries = await getCollection('testimonials');
+---
+
+<Layout title={SITE.name}>
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-sage-100">
+    <div class="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-2 md:items-center md:px-6 md:py-24">
+      <div>
+        <p class="font-script text-3xl text-clay-500 mb-2">Séf, tanácsadó, közösségszervező</p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-forest-700 leading-tight mb-6">
+          Idegenekből barátok, <span class="font-script text-clay-500">egy tál étel</span> segítségével
+        </h1>
+        <p class="text-lg text-forest-600 mb-8 max-w-xl">
+          Kardos Bálint vagyok: növényi séf és életmód-tanácsadó. Vacsorapartikat és jótékonysági estéket
+          szervezek, ahol a főzés csak ürügy arra, hogy emberek valóban megismerjék egymást — és közben jó
+          célokat is támogassunk.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <CTAButton href={SITE.circleUrl} label="Csatlakozom az Okoskonyhájához" size="lg" outbound />
+          <CTAButton href="/rolam/" label="Ismerd meg Bálintot" variant="ghost" size="lg" />
+        </div>
+      </div>
+      <div class="relative">
+        <Image src={heroImage} alt="Illusztráció közös vacsoráról" width={600} height={400} class="w-full rounded-3xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Mit csinálok -->
+  <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
+    <SectionHeading eyebrow="Mivel foglalkozom" title="Három módja annak, hogy" accent="összeüljünk" />
+    <div class="grid gap-6 md:grid-cols-3">
+      <a href="/szolgaltatasok/privat-sefkedes/" class="group rounded-3xl bg-white p-8 shadow-md shadow-forest-900/5 hover:shadow-xl transition-shadow">
+        <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-sage-100 text-forest-700">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 3h16M4 3v10a4 4 0 0 0 4 4M20 3v10a4 4 0 0 1-4 4m-4 0v7m-4 0h8"/></svg>
+        </div>
+        <h3 class="font-heading text-xl font-semibold text-forest-800 mb-2 group-hover:text-clay-500">Privát séfkedés</h3>
+        <p class="text-forest-600">Személyre szabott vacsorák otthon vagy céges eseményeken – ízek, sztorik és élmény egyben.</p>
+      </a>
+      <a href="/okoskonyha/" class="group rounded-3xl bg-white p-8 shadow-md shadow-forest-900/5 hover:shadow-xl transition-shadow">
+        <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-sage-100 text-forest-700">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+        </div>
+        <h3 class="font-heading text-xl font-semibold text-forest-800 mb-2 group-hover:text-clay-500">Okoskonyhája</h3>
+        <p class="text-forest-600">Fizetős online közösség recepteknek, élő beszélgetéseknek és havi kihívásoknak – a Circle.so-n.</p>
+      </a>
+      <a href="/szolgaltatasok/jotekonysagi-vacsorak/" class="group rounded-3xl bg-white p-8 shadow-md shadow-forest-900/5 hover:shadow-xl transition-shadow">
+        <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-sage-100 text-forest-700">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg>
+        </div>
+        <h3 class="font-heading text-xl font-semibold text-forest-800 mb-2 group-hover:text-clay-500">Jótékonysági vacsorák</h3>
+        <p class="text-forest-600">Adománygyűjtő estek partnerszervezetekkel, ahol a vacsora bevétele konkrét ügyeket támogat.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Kiemelt blogposztok -->
+  {
+    featuredPosts.length > 0 && (
+      <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
+        <SectionHeading eyebrow="A blogból" title="Nemrég írtam" accent="erről" align="left" />
+        <div class="grid gap-6 md:grid-cols-3">
+          {featuredPosts.map((post) => <BlogCard post={post} />)}
+        </div>
+        <div class="mt-8 text-center">
+          <CTAButton href="/blog/" label="Az összes bejegyzés" variant="ghost" />
+        </div>
+      </section>
+    )
+  }
+
+  <!-- Testimonialok -->
+  <TestimonialCarousel items={testimonialEntries.map((t) => ({ name: t.data.name, role: t.data.role, quote: t.data.quote, avatar: t.data.avatar }))} />
+
+  <!-- Jótékonyság teaser -->
+  <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
+    <div class="rounded-3xl bg-forest-700 px-6 py-14 md:px-16 text-center">
+      <p class="font-script text-3xl text-sage-200 mb-2">Amiért igazán csinálom</p>
+      <h2 class="text-3xl md:text-4xl font-semibold text-cream mb-8">
+        Minden vacsora <span class="font-script text-clay-300">jó ügyet</span> is szolgál
+      </h2>
+      <StatsRow
+        light
+        stats={[
+          { value: '30+', label: 'jótékonysági vacsora' },
+          { value: '4M Ft+', label: 'adomány összegyűjtve' },
+          { value: '6', label: 'partnerszervezet' },
+          { value: '500+', label: 'vendég az asztaloknál' },
+        ]}
+      />
+      <div class="mt-10">
+        <CTAButton href="/jotekonysag/" label="Nézd meg az eddigi eredményeket" variant="primary" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Okoskonyhája nagy CTA -->
+  <section class="mx-auto max-w-6xl px-4 pb-16 md:px-6">
+    <div class="grid items-center gap-8 rounded-3xl bg-sage-300 px-6 py-12 md:grid-cols-2 md:px-14">
+      <div>
+        <p class="font-script text-3xl text-forest-700 mb-2">Kardos Bálint</p>
+        <h2 class="text-3xl md:text-4xl font-semibold text-forest-800 mb-4">Okoskonyhája</h2>
+        <p class="text-forest-700 mb-6">
+          Egy fizetős közösség azoknak, akik szeretnének olcsóbban, gyorsabban és egészségesebben főzni –
+          receptek, élő beszélgetések, havi kihívások és egy csapat, aki melletted áll.
+        </p>
+        <CTAButton href={SITE.circleUrl} label="Csatlakozom most" size="lg" outbound />
+      </div>
+      <div class="rounded-2xl bg-white/70 p-6">
+        <ul class="space-y-3 text-forest-800">
+          <li class="flex items-center gap-3"><Icon name="leaf" class="h-5 w-5 shrink-0 text-forest-700" /> Heti receptek és menütervek</li>
+          <li class="flex items-center gap-3"><Icon name="video" class="h-5 w-5 shrink-0 text-forest-700" /> Havi élő főzős alkalmak</li>
+          <li class="flex items-center gap-3"><Icon name="chat" class="h-5 w-5 shrink-0 text-forest-700" /> Zárt közösség kérdéseknek, tapasztalatoknak</li>
+          <li class="flex items-center gap-3"><Icon name="gift" class="h-5 w-5 shrink-0 text-forest-700" /> Korai hozzáférés a jótékonysági eseményekhez</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <InstagramFeed />
+</Layout>

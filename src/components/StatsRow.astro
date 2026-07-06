@@ -1,0 +1,24 @@
+---
+interface Stat {
+  value: string;
+  label: string;
+}
+interface Props {
+  stats: Stat[];
+  light?: boolean;
+}
+const { stats, light = false } = Astro.props;
+---
+
+<div class="grid grid-cols-2 gap-6 md:grid-cols-4">
+  {
+    stats.map((stat) => (
+      <div class="text-center">
+        <p class:list={['font-heading text-3xl md:text-4xl font-semibold', light ? 'text-cream' : 'text-clay-500']}>
+          {stat.value}
+        </p>
+        <p class:list={['mt-1 text-sm', light ? 'text-sage-100/80' : 'text-forest-600']}>{stat.label}</p>
+      </div>
+    ))
+  }
+</div>

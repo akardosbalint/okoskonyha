@@ -1,0 +1,95 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../../layouts/Layout.astro';
+import CTAButton from '../../components/CTAButton.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import Gallery from '../../components/Gallery.astro';
+import aboutHero from '../../assets/illustrations/about-hero.svg';
+import g1 from '../../assets/illustrations/gallery/rolam-1.svg';
+import g2 from '../../assets/illustrations/gallery/rolam-2.svg';
+import g3 from '../../assets/illustrations/gallery/rolam-3.svg';
+import g4 from '../../assets/illustrations/gallery/rolam-4.svg';
+import g5 from '../../assets/illustrations/gallery/rolam-5.svg';
+import g6 from '../../assets/illustrations/gallery/rolam-6.svg';
+import { SITE } from '../../lib/site';
+
+const galleryImages = [
+  { src: g1, alt: 'Illusztráció egy fazékról' },
+  { src: g2, alt: 'Illusztráció egy levélről' },
+  { src: g3, alt: 'Illusztráció beszélgető emberekről' },
+  { src: g4, alt: 'Illusztráció koccintó poharakról' },
+  { src: g5, alt: 'Illusztráció egy tányérról' },
+  { src: g6, alt: 'Illusztráció összekulcsolt kezekről' },
+];
+---
+
+<Layout
+  title="Rólam"
+  description="Kardos Bálint growth-korszakából a séfkedésig: hogyan lett egy vacsorapartikból közösségépítő misszió."
+>
+  <section class="bg-sage-100 py-14 md:py-20">
+    <div class="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2 md:items-center md:px-6">
+      <div>
+        <p class="font-script text-3xl text-clay-500 mb-2">Szia, Bálint vagyok</p>
+        <h1 class="text-4xl md:text-5xl font-semibold text-forest-700 mb-6">
+          Növényi séf lettem, mert <span class="font-script text-clay-500">emberekre</span> volt szükségem
+        </h1>
+        <p class="text-lg text-forest-600">
+          Nem egy vendéglátós családból jövök, és nem is gasztronómiai suliban tanultam a szakmát. Egy sima
+          hétköznapból indult: rájöttem, hogy a legjobb beszélgetéseim mindig az asztal körül történtek – és
+          hogy ebből lehet valami komolyabb is.
+        </p>
+      </div>
+      <Image src={aboutHero} alt="Illusztráció Bálintról" width={600} height={400} class="w-full rounded-3xl" />
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-3xl px-4 py-16 md:px-6">
+    <div class="prose-okos">
+      <h2>Az elejétől</h2>
+      <p>
+        Sosem terveztem, hogy séf leszek. Marketingesként dolgoztam, amikor rájöttem, hogy minden hét
+        legjobb két órája az volt, amikor barátaimat hívtam vacsorára, és órákig beszélgettünk semmiről és
+        mindenről. Egy nap az egyik barátom megkérdezte: "miért nem csinálod ezt rendszeresen, idegeneknek
+        is?" Nevettem rajta. Aztán megpróbáltam. Aztán nem tudtam abbahagyni.
+      </p>
+      <h2>A növényi váltás</h2>
+      <p>
+        Két évvel ezelőtt kezdtem el tudatosabban foglalkozni a táplálkozással – nem dogmából, hanem
+        kíváncsiságból. Minél többet tanultam a növényi étrend és az életmódorvoslás (Lifestyle Medicine)
+        elveiről, annál inkább rájöttem, hogy ez nem korlátozás, hanem felszabadulás: kevesebb szabály,
+        több íz, jobb közérzet. Azóta ez a főzésem és a tanácsadói munkám alapja is.
+      </p>
+      <h2>Miért közösség, és miért nem csak recept?</h2>
+      <p>
+        Mert a recept önmagában nem old meg semmit. Azoknak, akikkel dolgozom, ritkán a tudás hiányzik –
+        inkább a tér, az idő és a bátorítás, hogy elkezdjék. Ezért nem csak recepteket adok, hanem
+        közösséget: az <a href="/okoskonyha/">Okoskonyháját</a>, ahol együtt haladunk, és a vacsorapartikat,
+        ahol testközelből lehet megtapasztalni, milyen az, amikor az étel tényleg összeköt embereket.
+      </p>
+      <blockquote>
+        "Nem az a célom, hogy mindenki vegán legyen. Az a célom, hogy mindenki egy kicsit kevésbé legyen
+        egyedül a saját konyhájában – és az életében."
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="bg-sage-100 py-16 md:py-20">
+    <div class="mx-auto max-w-6xl px-4 md:px-6">
+      <SectionHeading eyebrow="Pillanatok" title="Az asztal körül" accent="történt" />
+      <Gallery images={galleryImages} />
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-4 py-16 text-center md:px-6">
+    <h2 class="text-3xl font-semibold text-forest-700 mb-4">Gyere, ismerkedjünk meg élőben is</h2>
+    <p class="text-forest-600 mb-8">
+      Akár egy privát vacsorát szeretnél, akár csak beszélgetnél velem az életmódváltásról, szívesen
+      találkozom veled.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <CTAButton href="/kapcsolat/" label="Foglalj időpontot" size="lg" />
+      <CTAButton href={SITE.circleUrl} label="Nézd meg az Okoskonyháját" variant="ghost" size="lg" outbound />
+    </div>
+  </section>
+</Layout>

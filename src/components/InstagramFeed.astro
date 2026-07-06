@@ -1,0 +1,55 @@
+---
+import { SITE } from '../lib/site';
+
+interface Props {
+  handle?: string;
+}
+const { handle = '@akardosbalint' } = Astro.props;
+
+// Megjegyzés: ez egy statikus, márkaszínekhez illő helykitöltő rács.
+// Éles verzióban köthető rá az Instagram Basic Display API vagy egy beágyazó
+// eszköz (pl. SnapWidget, Elfsight), amint Bálint API-kulcsa elérhető.
+const tiles = Array.from({ length: 6 });
+---
+
+<section class="mx-auto max-w-6xl px-4 py-14 md:px-6">
+  <div class="mb-8 flex flex-wrap items-center justify-between gap-4">
+    <h2 class="text-2xl md:text-3xl font-semibold text-forest-700">
+      Kövess <span class="font-script text-clay-500">Instagramon</span>
+    </h2>
+    <a
+      href={SITE.instagram}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="font-semibold text-clay-500 hover:text-clay-600"
+    >
+      {handle} →
+    </a>
+  </div>
+  <div class="grid grid-cols-3 gap-3 md:grid-cols-6">
+    {
+      tiles.map((_) => (
+        <a
+          href={SITE.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group relative aspect-square overflow-hidden rounded-2xl bg-gradient-to-br from-sage-200 via-sage-300 to-clay-300 flex items-center justify-center"
+        >
+          <svg
+            class="text-cream/80 transition-transform group-hover:scale-110"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+          </svg>
+        </a>
+      ))
+    }
+  </div>
+</section>

@@ -1,0 +1,102 @@
+---
+import { SITE, NAV, FOOTER_LINKS } from '../lib/site';
+import Newsletter from './Newsletter.astro';
+---
+
+<footer class="bg-forest-800 text-cream/90">
+  <div class="mx-auto max-w-6xl px-4 py-14 md:px-6">
+    <div class="mb-12">
+      <Newsletter variant="card" />
+    </div>
+
+    <div class="grid gap-10 md:grid-cols-4">
+      <div>
+        <p class="font-heading text-xl font-semibold text-cream mb-2">
+          Kardos <span class="font-script text-2xl text-clay-300">Bálint</span>
+        </p>
+        <p class="text-sm text-cream/70">{SITE.tagline}</p>
+        <div class="mt-4 flex gap-3">
+          <a
+            href={SITE.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            class="rounded-full bg-cream/10 p-2 hover:bg-cream/20"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+          <a
+            href={SITE.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            class="rounded-full bg-cream/10 p-2 hover:bg-cream/20"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <p class="font-heading font-semibold mb-3 text-cream">Navigáció</p>
+        <ul class="space-y-2 text-sm text-cream/70">
+          {
+            NAV.map((item) => (
+              <li>
+                <a href={item.href} class="hover:text-clay-300">
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-heading font-semibold mb-3 text-cream">Kapcsolat</p>
+        <ul class="space-y-2 text-sm text-cream/70">
+          <li><a href={`mailto:${SITE.email}`} class="hover:text-clay-300">{SITE.email}</a></li>
+          <li><a href="/kapcsolat/" class="hover:text-clay-300">Időpontfoglalás</a></li>
+          <li>
+            <a href={SITE.circleUrl} target="_blank" rel="noopener noreferrer" data-outbound="okoskonyha" data-cta-label="footer_link" class="hover:text-clay-300">
+              Okoskonyhája közösség →
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-heading font-semibold mb-3 text-cream">Jogi</p>
+        <ul class="space-y-2 text-sm text-cream/70">
+          {
+            FOOTER_LINKS.map((item) => (
+              <li>
+                <a href={item.href} class="hover:text-clay-300">
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-10 border-t border-cream/10 pt-6 text-center text-xs text-cream/50">
+      © {new Date().getFullYear()} Kardos Bálint. Minden jog fenntartva.
+    </div>
+  </div>
+</footer>
+
+<script>
+  import { trackOutboundClick } from '../lib/analytics';
+  document.querySelectorAll<HTMLAnchorElement>('[data-outbound="okoskonyha"]:not([data-tracked])').forEach((el) => {
+    el.dataset.tracked = 'true';
+    el.addEventListener('click', () => trackOutboundClick(el.href, el.dataset.ctaLabel ?? 'footer'));
+  });
+</script>

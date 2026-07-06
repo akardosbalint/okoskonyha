@@ -1,0 +1,167 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import CTAButton from '../../components/CTAButton.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import TestimonialCarousel from '../../components/TestimonialCarousel.astro';
+import Icon from '../../components/Icon.astro';
+import okoskonyhaHero from '../../assets/illustrations/okoskonyha-hero.svg';
+import { SITE } from '../../lib/site';
+
+const testimonialEntries = await getCollection('testimonials');
+
+const benefits = [
+  { icon: 'leaf', title: 'Heti receptek és menütervek', text: 'Gyors, olcsó, tápláló növényi fogások — minden héten frissülő anyagokkal.' },
+  { icon: 'video', title: 'Havi élő főzős alkalom', text: 'Együtt főzünk videóhívásban, kérdezhetsz, próbálhatsz új technikákat.' },
+  { icon: 'chat', title: 'Zárt közösség', text: 'Kérdezz bátran, oszd meg a saját sikereidet és kudarcaidat is — ítélkezés nélkül.' },
+  { icon: 'calendar', title: 'Havi kihívások', text: 'Konkrét, apró lépésekre bontott kihívások, amik tényleg végigvihetők.' },
+  { icon: 'gift', title: 'Korai hozzáférés', text: 'Elsőként értesülsz a jótékonysági vacsorákról és privát eseményekről.' },
+  { icon: 'book', title: 'Receptarchívum', text: 'Minden korábbi recept és élő alkalom felvétele egy helyen, bármikor visszanézhető.' },
+] as const;
+
+const pricing = [
+  {
+    name: 'Havi tagság',
+    price: '4 990 Ft',
+    period: '/ hó',
+    description: 'Ismerd meg a közösséget, nincs hosszú távú elköteleződés.',
+    features: ['Heti receptek és menütervek', 'Zárt közösségi hozzáférés', 'Havi élő főzős alkalom', 'Bármikor lemondható'],
+    highlight: false,
+  },
+  {
+    name: 'Éves tagság',
+    price: '3 990 Ft',
+    period: '/ hó, éves számlázással',
+    description: 'A leggazdaságosabb választás, ha komolyan belevágnál.',
+    features: ['Minden a havi csomagból', '2 hónap ingyen', 'Korai hozzáférés az eseményekhez', 'Exkluzív éves receptkönyv'],
+    highlight: true,
+  },
+];
+
+const faqs = [
+  { q: 'Mi az a Circle.so, és miért oda visztek át?', a: 'A Circle.so egy dedikált közösségi platform, ahol a tagság kezelése, a fizetés és a zárt tartalmak biztonságosan és kényelmesen működnek — sokkal jobb élményt nyújt, mint egy hagyományos weboldal beépített fóruma.' },
+  { q: 'Bármikor lemondhatom a tagságot?', a: 'Igen, a tagság hónapról hónapra (vagy évről évre) megújul, és bármikor lemondhatod a Circle.so felületén, indoklás nélkül.' },
+  { q: 'Kezdőként is érdemes csatlakoznom?', a: 'Igen — a legtöbb tagunk kezdőként érkezik. A recepteket és az élő alkalmakat is úgy építjük fel, hogy bármilyen szinten el lehessen indulni.' },
+  { q: 'Kell hozzá speciális konyhai felszerelés?', a: 'Nem. A recepteket úgy tervezem, hogy egy alap felszereléssel (fazék, serpenyő, késáru) is elkészíthetők legyenek.' },
+];
+---
+
+<Layout
+  title="Okoskonyhája – fizetős főzőközösség"
+  description="Csatlakozz a Kardos Bálint Okoskonyhája közösséghez: heti receptek, élő főzős alkalmak és egy csapat, aki melletted áll az egészségesebb főzésben."
+>
+  <section class="bg-sage-300 py-16 md:py-24">
+    <div class="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2 md:items-center md:px-6">
+      <div>
+        <p class="font-script text-3xl text-forest-700 mb-2">Kardos Bálint</p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-forest-800 leading-tight mb-6">
+          Okoskonyhája
+        </h1>
+        <p class="text-lg text-forest-800/90 mb-8 max-w-xl">
+          Egy közösség azoknak, akik szeretnének olcsóbban, gyorsabban és egészségesebben főzni, de nem
+          tudják, hol kezdjék. Heti receptek, élő alkalmak és egy csapat, aki melletted áll — a Circle.so-n.
+        </p>
+        <CTAButton href={SITE.circleUrl} label="Csatlakozom most" size="lg" outbound />
+        <p class="mt-3 text-sm text-forest-700/80">Bármikor lemondható. Nincs hosszú távú elköteleződés.</p>
+      </div>
+      <Image src={okoskonyhaHero} alt="Illusztráció egy fazékról" width={600} height={400} class="w-full rounded-3xl" />
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
+    <SectionHeading eyebrow="Mit kapsz" title="Amit a tagságoddal" accent="megkapsz" />
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        benefits.map((b) => (
+          <div class="rounded-2xl bg-white p-6 shadow-sm shadow-forest-900/5">
+            <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-sage-100 text-forest-700">
+              <Icon name={b.icon} class="h-6 w-6" />
+            </div>
+            <h3 class="font-heading font-semibold text-forest-800 mb-1">{b.title}</h3>
+            <p class="text-sm text-forest-600">{b.text}</p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="bg-sage-100 py-16 md:py-20">
+    <div class="mx-auto max-w-6xl px-4 md:px-6">
+      <SectionHeading eyebrow="Árazás" title="Válaszd ki, mi illik" accent="hozzád" />
+      <div class="grid gap-6 md:grid-cols-2 md:max-w-3xl md:mx-auto">
+        {
+          pricing.map((tier) => (
+            <div
+              class:list={[
+                'rounded-3xl p-8 flex flex-col',
+                tier.highlight ? 'bg-forest-700 text-cream shadow-xl scale-[1.02]' : 'bg-white text-forest-800 shadow-md',
+              ]}
+            >
+              {tier.highlight && (
+                <span class="mb-3 inline-block w-fit rounded-full bg-clay-500 px-3 py-1 text-xs font-semibold text-cream">
+                  Legnépszerűbb
+                </span>
+              )}
+              <h3 class:list={['font-heading text-xl font-semibold mb-1', tier.highlight ? 'text-cream' : 'text-forest-800']}>{tier.name}</h3>
+              <p class:list={['text-sm mb-6', tier.highlight ? 'text-sage-100/80' : 'text-forest-500']}>{tier.description}</p>
+              <p class="mb-6">
+                <span class="text-4xl font-heading font-semibold">{tier.price}</span>
+                <span class:list={['text-sm', tier.highlight ? 'text-sage-100/80' : 'text-forest-500']}> {tier.period}</span>
+              </p>
+              <ul class="mb-8 space-y-2 flex-1">
+                {tier.features.map((f) => (
+                  <li class="flex items-start gap-2 text-sm">
+                    <span aria-hidden="true">✓</span> {f}
+                  </li>
+                ))}
+              </ul>
+              <CTAButton
+                href={SITE.circleUrl}
+                label="Csatlakozom"
+                variant={tier.highlight ? 'primary' : 'secondary'}
+                outbound
+              />
+            </div>
+          ))
+        }
+      </div>
+      <p class="mt-6 text-center text-sm text-forest-500">
+        A fizetést, az előfizetés-kezelést és a bejelentkezést teljes egészében a Circle.so biztonságos
+        felülete kezeli.
+      </p>
+    </div>
+  </section>
+
+  <TestimonialCarousel
+    items={testimonialEntries.map((t) => ({ name: t.data.name, role: t.data.role, quote: t.data.quote, avatar: t.data.avatar }))}
+    eyebrow="Tagok mondták"
+    title="Amit a közösségről"
+    accent="mondanak"
+  />
+
+  <section class="mx-auto max-w-3xl px-4 py-16 md:px-6">
+    <SectionHeading eyebrow="GYIK" title="Gyakori" accent="kérdések" />
+    <div class="space-y-3">
+      {
+        faqs.map((faq) => (
+          <details class="group rounded-2xl bg-sage-50 p-5 open:bg-white open:shadow-md">
+            <summary class="cursor-pointer list-none font-heading font-semibold text-forest-800 flex items-center justify-between">
+              {faq.q}
+              <span class="ml-4 text-clay-500 transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+            </summary>
+            <p class="mt-3 text-forest-600">{faq.a}</p>
+          </details>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-4 pb-20 text-center md:px-6">
+    <div class="rounded-3xl bg-clay-500 px-6 py-14 md:px-16">
+      <h2 class="text-3xl md:text-4xl font-semibold text-cream mb-4">Készen állsz a csatlakozásra?</h2>
+      <p class="text-cream/90 mb-8">Lépj be az Okoskonyhájába, és kezdj el ma egyszerűbben, olcsóbban és egészségesebben főzni.</p>
+      <CTAButton href={SITE.circleUrl} label="Csatlakozom az Okoskonyhájához" variant="ghost" size="lg" outbound />
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akardosbalint.hu/sitemap-index.xml

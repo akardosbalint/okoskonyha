@@ -1,0 +1,112 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import CTAButton from '../../components/CTAButton.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import StatsRow from '../../components/StatsRow.astro';
+import TestimonialCarousel from '../../components/TestimonialCarousel.astro';
+import Gallery from '../../components/Gallery.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import impactHero from '../../assets/illustrations/impact-hero.svg';
+import g1 from '../../assets/illustrations/gallery/impact-1.svg';
+import g2 from '../../assets/illustrations/gallery/impact-2.svg';
+import g3 from '../../assets/illustrations/gallery/impact-3.svg';
+
+const testimonialEntries = await getCollection('testimonials');
+const jotekonysagPosts = (await getCollection('blog', (p) => p.data.category === 'jotekonysag')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+
+const galleryImages = [
+  { src: g1, alt: 'Illusztráció egy ajándékdobozról' },
+  { src: g2, alt: 'Illusztráció összekulcsolt kezekről' },
+  { src: g3, alt: 'Illusztráció beszélgető emberekről' },
+];
+
+const partners = [
+  { name: 'Amigos a Gyerekekért', description: 'Oktatási és infrastrukturális projektek támogatása Latin-Amerika hátrányos helyzetű közösségeiben.' },
+  { name: 'Fóliás Juci Alapítvány', description: 'Helyi közösségi kezdeményezések és családtámogatás.' },
+  { name: 'Backstage Közösség', description: 'Vállalkozói mentális egészség és közösségépítés.' },
+];
+---
+
+<Layout
+  title="Jótékonyság / Impact"
+  description="Kardos Bálint jótékonysági vacsoráinak eddigi eredményei, partnerszervezetei és a mögöttük álló történetek."
+>
+  <section class="bg-sage-100 py-14 md:py-20">
+    <div class="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2 md:items-center md:px-6">
+      <div>
+        <p class="font-script text-3xl text-clay-500 mb-2">Amiért igazán csinálom</p>
+        <h1 class="text-4xl md:text-5xl font-semibold text-forest-700 mb-6">
+          Minden vacsora <span class="font-script text-clay-500">valódi hatást</span> is teremt
+        </h1>
+        <p class="text-lg text-forest-600">
+          A jótékonysági vacsoráim nem gálaestek — nincs frakk, nincs árverési kalapács. Van viszont egy jó
+          tál étel, egy őszinte beszélgetés, és minden alkalommal egy konkrét ügy, amit együtt támogatunk.
+        </p>
+      </div>
+      <Image src={impactHero} alt="Illusztráció összekulcsolt kezekről" width={600} height={400} class="w-full rounded-3xl" />
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
+    <StatsRow
+      stats={[
+        { value: '30+', label: 'jótékonysági vacsora' },
+        { value: '4M Ft+', label: 'adomány összegyűjtve' },
+        { value: '6', label: 'partnerszervezet' },
+        { value: '500+', label: 'vendég az asztaloknál' },
+      ]}
+    />
+  </section>
+
+  <section class="bg-sage-100 py-16 md:py-20">
+    <div class="mx-auto max-w-6xl px-4 md:px-6">
+      <SectionHeading eyebrow="Kikkel dolgozom" title="Partnerszervezeteink" />
+      <div class="grid gap-6 md:grid-cols-3">
+        {
+          partners.map((partner) => (
+            <div class="rounded-2xl bg-white p-6 shadow-sm shadow-forest-900/5">
+              <h3 class="font-heading font-semibold text-forest-800 mb-2">{partner.name}</h3>
+              <p class="text-sm text-forest-600">{partner.description}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
+    <SectionHeading eyebrow="Pillanatok" title="A jótékonysági" accent="estékről" />
+    <Gallery images={galleryImages} />
+  </section>
+
+  <TestimonialCarousel
+    items={testimonialEntries.map((t) => ({ name: t.data.name, role: t.data.role, quote: t.data.quote, avatar: t.data.avatar }))}
+  />
+
+  {
+    jotekonysagPosts.length > 0 && (
+      <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
+        <SectionHeading eyebrow="Történetek" title="Sztorik a" accent="vacsorákról" align="left" />
+        <div class="grid gap-6 md:grid-cols-3">
+          {jotekonysagPosts.map((post) => <BlogCard post={post} />)}
+        </div>
+      </section>
+    )
+  }
+
+  <section class="mx-auto max-w-4xl px-4 pb-20 text-center md:px-6">
+    <h2 class="text-3xl font-semibold text-forest-700 mb-4">Legyél te is a következő este része</h2>
+    <p class="text-forest-600 mb-8">
+      Akár vendégként ülnél le az asztalhoz, akár partnerszervezetként dolgoznátok velünk együtt — szívesen
+      beszélgetek róla.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <CTAButton href="/szolgaltatasok/jotekonysagi-vacsorak/" label="Jótékonysági vacsorák" size="lg" />
+      <CTAButton href="/kapcsolat/" label="Vegyük fel a kapcsolatot" variant="ghost" size="lg" />
+    </div>
+  </section>
+</Layout>
