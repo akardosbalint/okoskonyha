@@ -8,7 +8,7 @@ export default defineConfig({
   integrations: [
     tailwind(),
     sitemap({
-      filter: (page) => !page.includes('/adatvedelem/') && !page.includes('/aszf/'),
+      filter: (page) => !page.includes('/adatvedelem/') && !page.includes('/aszf/') && !page.includes('/blog/cimke/'),
     }),
     mdx(),
   ],
