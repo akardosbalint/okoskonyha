@@ -65,3 +65,29 @@ export const PRICING = {
   annual: { price: '88 900 Ft', period: '/ év', monthlyEquivalent: '7 408 Ft / hó' },
   priceNote: 'Az éves tagsággal havi bontásban olcsóbban jutsz hozzá ugyanahhoz a közösséghez.',
 };
+
+// Jótékonysági partnerszervezetek és eredmények.
+export const CHARITY_PARTNERS = [
+  {
+    name: 'Amigos a Gyerekekért Alapítvány',
+    period: '2021–2022',
+    description: 'Közös jótékonysági vacsorák a hátrányos helyzetű gyerekeket támogató alapítvánnyal.',
+  },
+  {
+    name: 'Tegyél Jót és Egyél Jót Alapítvány',
+    period: '2022',
+    description: 'Adománygyűjtő vacsoraest az alapítvány támogatóival.',
+  },
+  {
+    name: 'Világszép Alapítvány',
+    period: 'aktív együttműködés, 2025-től',
+    description: 'Jelenleg is aktív, rendszeres jótékonysági vacsorák az alapítvány javára.',
+  },
+];
+
+export const CHARITY_STATS = [
+  { value: '30+', label: 'jótékonysági vacsora' },
+  { value: '2M Ft+', label: 'adomány összegyűjtve' },
+  { value: `${CHARITY_PARTNERS.length}`, label: 'partnerszervezet' },
+  { value: '500+', label: 'vendég az asztaloknál' },
+];

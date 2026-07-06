@@ -4,6 +4,7 @@ import CTAButton from '../../components/CTAButton.astro';
 import SectionHeading from '../../components/SectionHeading.astro';
 import Gallery from '../../components/Gallery.astro';
 import StatsRow from '../../components/StatsRow.astro';
+import { CHARITY_STATS } from '../../lib/program';
 import g1 from '../../assets/photos/charity-dinner-menu.jpeg';
 import g2 from '../../assets/photos/dinner-long-table.jpeg';
 import g3 from '../../assets/photos/picnic-overhead.jpeg';
@@ -54,13 +55,7 @@ const galleryImages = [
   </section>
 
   <section class="mx-auto max-w-6xl px-4 pb-16 md:px-6">
-    <StatsRow
-      stats={[
-        { value: '30+', label: 'megszervezett est' },
-        { value: '4M Ft+', label: 'összegyűjtött adomány' },
-        { value: '6', label: 'partnerszervezet' },
-      ]}
-    />
+    <StatsRow stats={CHARITY_STATS} />
   </section>
 
   <section class="bg-sage-100 py-16 md:py-20">
