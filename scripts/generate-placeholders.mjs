@@ -110,14 +110,6 @@ function cover({ file, bg, blobColor, icon, iconColor, seed }) {
   writeFileSync(file, svg);
 }
 
-function avatar({ file, bg, initials, fg }) {
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
-  <circle cx="100" cy="100" r="100" fill="${bg}"/>
-  <text x="100" y="116" font-family="Fredoka, sans-serif" font-size="72" font-weight="600" fill="${fg}" text-anchor="middle">${initials}</text>
-</svg>`;
-  writeFileSync(file, svg);
-}
-
 const covers = [
   { file: 'src/assets/blog-covers/story-elso-vacsora.svg', bg: palette.cream, blobColor: palette.clay300, icon: 'glasses', iconColor: palette.clay500, seed: 2 },
   { file: 'src/assets/blog-covers/tipp-idobeosztas.svg', bg: palette.cream, blobColor: palette.clay300, icon: 'calendar', iconColor: palette.forest500, seed: 8 },
@@ -126,17 +118,4 @@ const covers = [
 ];
 covers.forEach(cover);
 
-const avatars = [
-  { file: 'src/assets/testimonials-avatars/schmidt-gergo.svg', bg: palette.sage300, initials: 'SG', fg: palette.forest700 },
-  { file: 'src/assets/testimonials-avatars/kondor-bence.svg', bg: palette.clay300, initials: 'KB', fg: palette.forest700 },
-  { file: 'src/assets/testimonials-avatars/nadas-barbara.svg', bg: palette.sage200, initials: 'NB', fg: palette.forest700 },
-  { file: 'src/assets/testimonials-avatars/nagy-andrea.svg', bg: palette.clay300, initials: 'NA', fg: palette.forest700 },
-  { file: 'src/assets/testimonials-avatars/gurtler-gabor.svg', bg: palette.sage300, initials: 'GG', fg: palette.forest700 },
-  { file: 'src/assets/testimonials-avatars/rimoczi-zsofi.svg', bg: palette.sage200, initials: 'RZ', fg: palette.forest700 },
-  { file: 'src/assets/testimonials-avatars/ludman-fruzsi.svg', bg: palette.clay300, initials: 'LF', fg: palette.forest700 },
-  { file: 'src/assets/testimonials-avatars/arvai-dori.svg', bg: palette.clay300, initials: 'ÁD', fg: palette.forest700 },
-  { file: 'src/assets/testimonials-avatars/otvos-ferenc.svg', bg: palette.sage300, initials: 'ÖF', fg: palette.forest700 },
-];
-avatars.forEach(avatar);
-
-console.log('Generated', covers.length, 'covers and', avatars.length, 'avatars');
+console.log('Generated', covers.length, 'covers');
