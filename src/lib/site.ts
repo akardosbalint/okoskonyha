@@ -9,8 +9,10 @@ export const SITE = {
   instagram: 'https://instagram.com/akardosbalint',
   facebook: 'https://facebook.com/akardosbalint',
   // A kapcsolatfelvételi űrlap mailto: linket nyit meg (lásd ContactForm.astro), nincs szüksége endpointra.
-  // TODO: a hírlevél-feliratkozás MailerLite-hoz kötendő — lásd a Newsletter.astro tetején lévő jegyzetet.
-  newsletterEndpoint: '',
+  // A hírlevél-feliratkozás egy Vercel szerverless API route-on (src/pages/api/newsletter.ts) keresztül
+  // köti be a MailerLite-ot — a API-kulcs csak szerveroldali környezeti változóként (MAILERLITE_API_KEY)
+  // él, sosem kerül a böngészőbe.
+  newsletterEndpoint: '/api/newsletter',
 };
 
 // Az oldal üzemeltetőjének (Adatkezelő) hivatalos adatai — az Adatvédelmi tájékoztatóban
