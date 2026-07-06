@@ -8,10 +8,9 @@ export const SITE = {
   email: 'hello@akardosbalint.hu',
   instagram: 'https://instagram.com/akardosbalint',
   facebook: 'https://facebook.com/akardosbalint',
-  // TODO: kösd be a választott form-backendet (pl. Formspree, ConvertKit, Resend, Netlify Forms).
-  // Amíg üres, a form JS-e egy barátságos hibaüzenetet mutat submit helyett.
+  // A kapcsolatfelvételi űrlap mailto: linket nyit meg (lásd ContactForm.astro), nincs szüksége endpointra.
+  // TODO: a hírlevél-feliratkozás MailerLite-hoz kötendő — lásd a Newsletter.astro tetején lévő jegyzetet.
   newsletterEndpoint: '',
-  contactEndpoint: '',
 };
 
 // Az oldal üzemeltetőjének (Adatkezelő) hivatalos adatai — az Adatvédelmi tájékoztatóban

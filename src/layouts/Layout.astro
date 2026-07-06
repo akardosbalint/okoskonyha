@@ -24,6 +24,8 @@ const {
 const pageTitle = title === SITE.name ? title : `${title} | ${SITE.name}`;
 const canonicalURL = new URL(Astro.url.pathname, SITE.url);
 const ogImageURL = new URL(image, SITE.url);
+
+const GTM_ID = 'GTM-W738PN86';
 ---
 
 <!doctype html>
@@ -52,16 +54,46 @@ const ogImageURL = new URL(image, SITE.url);
     <meta name="twitter:image" content={ogImageURL} />
 
     <!--
-      Analitika: illessz be ide tetszőleges nyomkövető kódot (pl. Google Analytics / Plausible).
-      FONTOS (GDPR): a kódot csak akkor futtasd, ha a látogató elfogadta az analitikai sütiket —
-      lásd src/lib/cookieConsent.ts (hasConsent('analytics'), CONSENT_CHANGE_EVENT).
+      Analitika: Google Tag Manager — csak akkor töltjük be, ha a látogató elfogadta az analitikai
+      sütiket (lásd src/lib/cookieConsent.ts, hasConsent('analytics'), CONSENT_CHANGE_EVENT).
       A kiemelt CTA-gombok automatikusan `data-outbound="okoskonyha"` attribútummal
       és `trackOutboundClick` hívással jelzik az okoskonyha.akardosbalint.hu felé történő kattintást,
-      lásd src/components/CTAButton.astro és src/lib/analytics.ts.
+      lásd src/components/CTAButton.astro és src/lib/analytics.ts — ez a dataLayer-be is bekerül,
+      ha a GTM már be van töltve.
     -->
+    <script>
+      import { hasConsent, CONSENT_CHANGE_EVENT } from '../lib/cookieConsent';
+
+      function loadGTM() {
+        if (document.querySelector('script[data-gtm-loaded]')) return;
+        const script = document.createElement('script');
+        script.dataset.gtmLoaded = 'true';
+        script.innerHTML =
+          "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});" +
+          "var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;" +
+          "j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);" +
+          "})(window,document,'script','dataLayer','GTM-W738PN86');";
+        document.head.appendChild(script);
+      }
+
+      function updateAnalyticsConsent() {
+        if (hasConsent('analytics')) loadGTM();
+      }
+
+      updateAnalyticsConsent();
+      document.addEventListener(CONSENT_CHANGE_EVENT, updateAnalyticsConsent);
+    </script>
     <slot name="head" />
   </head>
   <body class="flex min-h-screen flex-col">
+    <noscript>
+      <iframe
+        src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe>
+    </noscript>
     <Header />
     <main class="flex-1">
       <slot />
