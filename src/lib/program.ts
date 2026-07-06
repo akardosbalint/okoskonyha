@@ -110,11 +110,27 @@ export const MEMBERSHIP_BENEFITS = [
   { icon: 'basket', title: 'Egészségtudatos közösség', text: 'Hasonlóan gondolkodó emberek társasága, akikkel megoszthatod a saját fejlődésed — motiváció és elfogadás, ítélkezés nélkül.' },
 ] as const;
 
+// Indulási (launch) árazás — 2026. július 31-ig érvényes.
+// FONTOS: a tagság 4 hetente (28 naponta) újul meg, NEM naptári hónaponta/évente —
+// ezért a "period" mezők hetekben vannak megadva, nem "hó"/"év" formában.
+// Ez tudatos, átlátható döntés: a 4 hetes ciklus évi 13 (nem 12) elszámolást jelent.
 export const PRICING = {
   programName: 'Okoskonyha tagság',
-  monthly: { price: '8 890 Ft', period: '/ hó' },
-  annual: { price: '88 900 Ft', period: '/ év', monthlyEquivalent: '7 408 Ft / hó' },
-  priceNote: 'Az éves tagsággal havi bontásban olcsóbban jutsz hozzá ugyanahhoz a közösséghez.',
+  introOffer: 'Indulási ár — 2026. július 31-ig érvényes',
+  monthly: {
+    label: '4 hetes tagság',
+    price: '5 960 Ft',
+    period: '/ 4 hét',
+    weeklyEquivalent: 'kb. 1 490 Ft / hét',
+  },
+  annual: {
+    label: 'Éves tagság',
+    price: '59 600 Ft',
+    period: '/ 52 hét',
+    weeklyEquivalent: 'kb. 1 150 Ft / hét',
+  },
+  priceNote: 'Az Éves tagsággal heti bontásban olcsóbban jutsz hozzá ugyanahhoz a közösséghez.',
+  billingNote: 'A tagság 4 hetente (28 naponta) újul meg, nem naptári hónaponta — ez évente 13 elszámolási időszakot jelent. Részletek az ÁSZF-ben.',
 };
 
 // Jótékonysági partnerszervezetek és eredmények.
