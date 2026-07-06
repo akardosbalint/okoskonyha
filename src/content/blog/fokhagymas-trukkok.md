@@ -4,8 +4,8 @@ excerpt: "Nem kell hús az ízbombához. Öt egyszerű trükk, amivel bármelyik
 date: 2026-01-20
 category: fozesi-tippek
 tags: ["főzési tippek", "növényi étrend", "gyors receptek"]
-cover: ../../assets/blog-covers/tipp-fokhagyma.svg
-coverAlt: "Illusztráció egy zöld levélről"
+cover: ../../assets/photos/food-pasta-aglio-olio.jpeg
+coverAlt: "Tányér spagetti fokhagymás olívaolajjal"
 featured: true
 ---
 
@@ -33,4 +33,4 @@ Adj a fogáshoz fokhagymát az elején (főzés közben, mélyebb, édesebb arom
 
 ---
 
-Ha ennél mélyebbre szeretnél ásni – heti menütervezés, alapanyag-válogatás, élő főzős alkalmak –, ott a helyed az [Okoskonyha](/okoskonyha/) közösségben, ahol minden hónapban gyakorlati receptekkel és élő beszélgetésekkel segítünk egymásnak jobban főzni.
+Ha még csak most ismerkedsz a növényi főzéssel, [ebben a cikkben](/blog/novenyi-etrend-kezdoknek/) összeszedtem mindent, amit érdemes tudnod, mielőtt belevágsz. Ha pedig ennél mélyebbre szeretnél ásni – heti menütervezés, alapanyag-válogatás, élő főzős alkalmak –, ott a helyed az [Okoskonyha](/okoskonyha/) közösségben, ahol minden hónapban gyakorlati receptekkel és élő beszélgetésekkel segítünk egymásnak jobban főzni.

@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import ContactForm from '../../components/ContactForm.astro';
-import contactHero from '../../assets/illustrations/contact-hero.svg';
+import contactHero from '../../assets/photos/balint-candid-portrait.jpeg';
 import { SITE } from '../../lib/site';
 ---
 
@@ -17,47 +17,22 @@ import { SITE } from '../../lib/site';
         <h1 class="text-4xl md:text-5xl font-semibold text-forest-700 mb-6">Kapcsolat</h1>
         <p class="text-lg text-forest-600">
           Írj pár sort, mit szeretnél — privát vacsorát, jótékonysági estet, vagy csak egy gyors kérdésed
-          van az Okoskonyhával kapcsolatban. Vagy foglalj egyből egy időpontot alább.
+          van az Okoskonyhával kapcsolatban.
         </p>
       </div>
-      <Image src={contactHero} alt="Illusztráció egy naptárról" width={600} height={400} class="w-full rounded-3xl" />
+      <Image src={contactHero} alt="Kardos Bálint" width={600} height={600} class="w-full rounded-3xl object-cover aspect-square" />
     </div>
   </section>
 
-  <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
-    <div class="grid gap-10 lg:grid-cols-2">
-      <div class="rounded-3xl bg-white p-6 shadow-md shadow-forest-900/5 md:p-8">
-        <h2 class="text-2xl font-semibold text-forest-700 mb-6">Írj üzenetet</h2>
-        <ContactForm />
-      </div>
+  <section class="mx-auto max-w-2xl px-4 py-16 md:px-6">
+    <div class="rounded-3xl bg-white p-6 shadow-md shadow-forest-900/5 md:p-8">
+      <h2 class="text-2xl font-semibold text-forest-700 mb-6">Írj üzenetet</h2>
+      <ContactForm />
 
-      <div class="rounded-3xl bg-white p-6 shadow-md shadow-forest-900/5 md:p-8">
-        <h2 class="text-2xl font-semibold text-forest-700 mb-2">Foglalj időpontot</h2>
-        <p class="text-forest-600 mb-6">
-          Egy 20 perces, ingyenes ismerkedő hívás mindig segít eldönteni, hogyan tudunk együtt dolgozni.
-        </p>
-        <div class="overflow-hidden rounded-2xl border border-sage-200">
-          <div
-            class="calendly-inline-widget"
-            data-url={SITE.calendlyUrl}
-            style="min-width:280px;height:630px;"
-          >
-          </div>
-        </div>
-        <p class="mt-3 text-sm text-forest-500">
-          Ha a naptár nem töltődik be egyből,
-          <a href={SITE.calendlyUrl} target="_blank" rel="noopener noreferrer" class="text-clay-500 underline">
-            nyisd meg új lapon
-          </a>.
-        </p>
-
-        <div class="mt-8 space-y-2 border-t border-sage-100 pt-6 text-forest-700">
-          <p class="font-semibold">Vagy írj közvetlenül:</p>
-          <p><a href={`mailto:${SITE.email}`} class="text-clay-500 hover:underline">{SITE.email}</a></p>
-        </div>
+      <div class="mt-8 space-y-2 border-t border-sage-100 pt-6 text-forest-700">
+        <p class="font-semibold">Vagy írj közvetlenül:</p>
+        <p><a href={`mailto:${SITE.email}`} class="text-clay-500 hover:underline">{SITE.email}</a></p>
       </div>
     </div>
   </section>
-
-  <script slot="head" is:inline async src="https://assets.calendly.com/assets/external/widget.js"></script>
 </Layout>

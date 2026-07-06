@@ -8,11 +8,23 @@ export const SITE = {
   email: 'hello@akardosbalint.hu',
   instagram: 'https://instagram.com/akardosbalint',
   facebook: 'https://facebook.com/akardosbalint',
-  calendlyUrl: 'https://calendly.com/akardosbalint/konzultacio',
-  // TODO: kösd be a választott form-backendet (pl. Formspree, ConvertKit, Resend, Netlify Forms).
-  // Amíg üres, a form JS-e egy barátságos hibaüzenetet mutat submit helyett.
-  newsletterEndpoint: '',
-  contactEndpoint: '',
+  // A kapcsolatfelvételi űrlap mailto: linket nyit meg (lásd ContactForm.astro), nincs szüksége endpointra.
+  // A hírlevél-feliratkozás egy Vercel szerverless API route-on (src/pages/api/newsletter.ts) keresztül
+  // köti be a MailerLite-ot — a API-kulcs csak szerveroldali környezeti változóként (MAILERLITE_API_KEY)
+  // él, sosem kerül a böngészőbe.
+  newsletterEndpoint: '/api/newsletter',
+};
+
+// Az oldal üzemeltetőjének (Adatkezelő) hivatalos adatai — az Adatvédelmi tájékoztatóban
+// és az ÁSZF-ben használjuk, hogy egy helyen legyenek karbantarthatók.
+export const COMPANY = {
+  legalName: 'Kardos Bálint e.v.',
+  city: 'Budapest',
+  addressLine: 'Bem József utca 6. fsz. 3.',
+  postalCode: '1027',
+  country: 'Magyarország',
+  taxNumber: '91637778-1-41',
+  registrationNumber: '61623820',
 };
 
 export const NAV = [

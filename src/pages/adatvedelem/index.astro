@@ -1,31 +1,30 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { SITE } from '../../lib/site';
+import { SITE, COMPANY } from '../../lib/site';
 ---
 
 <Layout title="Adatvédelmi tájékoztató" description="Kardos Bálint weboldalának adatvédelmi tájékoztatója." noindex>
   <section class="mx-auto max-w-3xl px-4 py-16 md:px-6">
     <h1 class="text-4xl font-semibold text-forest-700 mb-2">Adatvédelmi tájékoztató</h1>
-    <p class="text-forest-500 mb-10">Hatályos: [TÖLTSD KI: hatálybalépés dátuma]</p>
+    <p class="text-forest-500 mb-10">Hatályos: 2026. július 6.</p>
 
     <div class="prose-okos">
       <p>
-        <strong>[TÖLTSD KI: adatkezelő cégneve / egyéni vállalkozó neve, székhely, adószám,
-        nyilvántartási szám, e-mail elérhetőség]</strong> (a továbbiakban: „Adatkezelő") elkötelezett a
-        weboldalán ({SITE.url}) megadott személyes adatok védelme mellett. Ez a tájékoztató az Európai
-        Parlament és a Tanács (EU) 2016/679 rendelete (GDPR) és az információs önrendelkezési jogról szóló
-        2011. évi CXII. törvény alapján készült.
+        <strong>{COMPANY.legalName}</strong> (székhely: {COMPANY.postalCode} {COMPANY.city}, {COMPANY.addressLine},
+        {COMPANY.country}; adószám: {COMPANY.taxNumber}; nyilvántartási szám: {COMPANY.registrationNumber};
+        e-mail: {SITE.email}) (a továbbiakban: „Adatkezelő") elkötelezett a weboldalán ({SITE.url}) megadott
+        személyes adatok védelme mellett. Ez a tájékoztató az Európai Parlament és a Tanács (EU) 2016/679
+        rendelete (GDPR) és az információs önrendelkezési jogról szóló 2011. évi CXII. törvény alapján
+        készült.
       </p>
 
       <h2>1. Milyen adatokat kezelünk?</h2>
       <ul>
-        <li><strong>Hírlevél feliratkozás:</strong> e-mail cím, feliratkozás időpontja.</li>
-        <li><strong>Kapcsolatfelvételi űrlap:</strong> név, e-mail cím, az üzenet tartalma, a kiválasztott téma.</li>
-        <li><strong>Időpontfoglalás (Calendly beágyazás):</strong> a foglaláshoz megadott adatokat a Calendly, Inc.
-          (mint önálló adatkezelő) kezeli, saját adatvédelmi szabályzata szerint.</li>
-        <li><strong>Analitikai adatok:</strong> a weboldal látogatottságát mérő eszköz (pl. Google Analytics vagy
-          hasonló) anonimizált vagy álnevesített használati adatokat gyűjt, ideértve a kimenő
-          (Okoskonyha aldomainre mutató) linkekre történő kattintásokat is.</li>
+        <li><strong>Hírlevél feliratkozás:</strong> e-mail cím, feliratkozás időpontja, hozzájárulás ténye.</li>
+        <li><strong>Kapcsolatfelvételi űrlap:</strong> név, e-mail cím, az üzenet tartalma, a kiválasztott téma, hozzájárulás ténye.</li>
+        <li><strong>Analitikai adatok:</strong> hozzájárulásod esetén a weboldal látogatottságát mérő eszköz
+          (pl. Google Analytics vagy hasonló) anonimizált vagy álnevesített használati adatokat gyűjthet,
+          ideértve a kimenő (Okoskonyha aldomainre mutató) linkekre történő kattintásokat is.</li>
       </ul>
 
       <h2>2. Az adatkezelés célja és jogalapja</h2>
@@ -37,7 +36,7 @@ import { SITE } from '../../lib/site';
 
       <h2>3. Az Okoskonyha közösség és a Circle.so</h2>
       <p>
-        A „Kardos Bálint Okoskonyha" nevű fizetős közösség egy külső platformon, a Circle.so-n
+        A „Kardos Bálint Okoskonyhája" nevű fizetős közösség egy külső platformon, a Circle.so-n
         ({SITE.circleUrl}) működik. A tagregisztráció, a fizetés, a bejelentkezés és a zárt tartalmakhoz
         való hozzáférés kezelése teljes egészében a Circle.so felületén, a Circle.so saját adatkezelési
         feltételei szerint történik. Ez a weboldal ({SITE.url}) kizárólag a közösség bemutatását és az
@@ -48,14 +47,15 @@ import { SITE } from '../../lib/site';
       <h2>4. Adattárolás időtartama</h2>
       <p>
         A hírlevél-feliratkozási adatokat a leiratkozásig, a kapcsolatfelvételi űrlapon megadott adatokat
-        az ügy lezárását követő [TÖLTSD KI: pl. 1 év]-ig tároljuk, hacsak jogszabály eltérően nem
-        rendelkezik.
+        az ügy lezárását követő 1 évig tároljuk, hacsak jogszabály (pl. számviteli kötelezettség) ettől
+        eltérően nem rendelkezik. Az elfogadott vagy elutasított sütikategóriákat a böngésződ helyi
+        tárolójában (localStorage) tároljuk, amíg ezt a böngésződ beállításaiban nem törlöd.
       </p>
 
       <h2>5. Adatfeldolgozók</h2>
       <p>
         Az Adatkezelő a szolgáltatás nyújtásához külső adatfeldolgozókat vehet igénybe (pl. tárhelyszolgáltató,
-        hírlevélküldő rendszer, Calendly, Circle.so). Ezek listáját és elérhetőségét kérésre az Adatkezelő
+        hírlevélküldő rendszer, Circle.so). Ezek listáját és elérhetőségét kérésre az Adatkezelő
         rendelkezésre bocsátja.
       </p>
 
@@ -67,7 +67,7 @@ import { SITE } from '../../lib/site';
         <li>Az adatkezelés korlátozásának kérése</li>
         <li>Adathordozhatósághoz való jog</li>
         <li>Tiltakozás az adatkezelés ellen</li>
-        <li>Panasz benyújtása a Nemzeti Adatvédelmi és Információszabadság Hatóságnál (NAIH)</li>
+        <li>Panasz benyújtása a Nemzeti Adatvédelmi és Információszabadság Hatóságnál (NAIH), 1055 Budapest, Falk Miksa utca 9–11., ugyfelszolgalat@naih.hu</li>
       </ul>
       <p>
         Kérdés vagy kérelem esetén írj a {SITE.email} címre.
@@ -75,9 +75,32 @@ import { SITE } from '../../lib/site';
 
       <h2>7. Sütik (cookie-k)</h2>
       <p>
-        A weboldal a működéshez szükséges minimális sütiket, valamint — hozzájárulásod esetén —
-        látogatottságmérő (analitikai) sütiket használhat. A böngésződ beállításaiban bármikor letilthatod
-        vagy törölheted ezeket.
+        A weboldal az alábbi sütikategóriákat használja. Az első látogatáskor megjelenő süti-sávban, vagy a
+        lábléc „Süti beállítások" linkjén bármikor módosíthatod a választásodat.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kategória</th>
+            <th>Cél</th>
+            <th>Hozzájárulás</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Szükséges</td>
+            <td>A weboldal alapműködése (pl. a süti-választásod megjegyzése).</td>
+            <td>Nem kikapcsolható</td>
+          </tr>
+          <tr>
+            <td>Analitikai</td>
+            <td>Látogatottságmérés, a weboldal használatának megértése.</td>
+            <td>Hozzájárulás alapú</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Amíg nem adsz hozzájárulást az analitikai sütikhez, ezek nem töltődnek be.
       </p>
     </div>
   </section>

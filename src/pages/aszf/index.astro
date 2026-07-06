@@ -1,17 +1,18 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { SITE } from '../../lib/site';
+import { SITE, COMPANY } from '../../lib/site';
 ---
 
 <Layout title="Általános Szerződési Feltételek" description="Kardos Bálint szolgáltatásainak általános szerződési feltételei." noindex>
   <section class="mx-auto max-w-3xl px-4 py-16 md:px-6">
     <h1 class="text-4xl font-semibold text-forest-700 mb-2">Általános Szerződési Feltételek</h1>
-    <p class="text-forest-500 mb-10">Hatályos: [TÖLTSD KI: hatálybalépés dátuma]</p>
+    <p class="text-forest-500 mb-10">Hatályos: 2026. július 6.</p>
 
     <div class="prose-okos">
       <p>
-        Jelen Általános Szerződési Feltételek (a továbbiakban: „ÁSZF") a <strong>[TÖLTSD KI: cégnév / egyéni
-        vállalkozó neve, székhely, adószám, nyilvántartási szám]</strong> (a továbbiakban: „Szolgáltató")
+        Jelen Általános Szerződési Feltételek (a továbbiakban: „ÁSZF") a <strong>{COMPANY.legalName}</strong>
+        (székhely: {COMPANY.postalCode} {COMPANY.city}, {COMPANY.addressLine}, {COMPANY.country}; adószám:
+        {COMPANY.taxNumber}; nyilvántartási szám: {COMPANY.registrationNumber}) (a továbbiakban: „Szolgáltató")
         által a {SITE.url} weboldalon (a továbbiakban: „Weboldal") kínált szolgáltatásokra vonatkoznak.
       </p>
 
@@ -44,6 +45,14 @@ import { SITE } from '../../lib/site';
         arra a Circle.so mindenkori Általános Szerződési Feltételei és Adatvédelmi Szabályzata az irányadó. A
         Szolgáltató nem fér hozzá és nem kezeli a Circle.so-n megadott fizetési adatokat.
       </p>
+      <p>
+        <strong>Elszámolási időszak:</strong> a „4 hetes tagság" nem naptári hónaponta, hanem 4 hetente, azaz
+        28 naponta újul meg és kerül terhelésre. Ez a gyakorlatban azt
+        jelenti, hogy egy naptári évben 13 elszámolási időszak (és 13 díjterhelés) történik, nem 12. Az Éves
+        tagság 52 hetes ciklusban, évente egyszer kerül terhelésre. A pontos, mindenkor érvényes árakat és
+        elszámolási időszakokat a Weboldal <a href="/okoskonyha/">Okoskonyha</a> alján található árazás
+        tünteti fel.
+      </p>
 
       <h2>4. Szellemi tulajdon</h2>
       <p>
@@ -55,7 +64,7 @@ import { SITE } from '../../lib/site';
       <h2>5. Felelősség korlátozása</h2>
       <p>
         A Szolgáltató mindent megtesz a Weboldalon megjelenő információk pontosságáért, de nem vállal
-        felelősséget az esetleges elírásokért vagy a harmadik fél (pl. Circle.so, Calendly) által üzemeltetett
+        felelősséget az esetleges elírásokért vagy a harmadik fél (pl. Circle.so) által üzemeltetett
         szolgáltatások elérhetőségéért, tartalmáért vagy működéséért.
       </p>
 

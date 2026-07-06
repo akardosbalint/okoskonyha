@@ -23,8 +23,6 @@ const {
   accent = 'élménybeszámolói',
   eyebrow,
 } = Astro.props;
-
-const groupId = `testimonials-${Math.random().toString(36).slice(2, 8)}`;
 ---
 
 <section class="bg-sage-300 py-16 md:py-24 relative overflow-hidden">
@@ -36,8 +34,19 @@ const groupId = `testimonials-${Math.random().toString(36).slice(2, 8)}`;
   <div class="mx-auto max-w-6xl px-4 md:px-6 relative">
     <SectionHeading eyebrow={eyebrow} title={title} accent={accent} />
 
-    <div class="relative">
-      <div id={groupId} class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 no-scrollbar">
+    <div class="flex items-center gap-2 md:gap-4" data-testimonial-carousel>
+      <button
+        type="button"
+        data-carousel-prev
+        aria-label="Előző vélemény"
+        class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-forest-700 shadow-lg shadow-forest-900/10 transition-colors hover:bg-sage-100 md:h-12 md:w-12"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <div data-carousel-track class="flex min-w-0 flex-1 gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 no-scrollbar">
         {
           items.map((t) => (
             <div class="snap-start shrink-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
@@ -64,7 +73,16 @@ const groupId = `testimonials-${Math.random().toString(36).slice(2, 8)}`;
         }
       </div>
 
-      <div class="mt-6 flex justify-center gap-2" data-dots={groupId}></div>
+      <button
+        type="button"
+        data-carousel-next
+        aria-label="Következő vélemény"
+        class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-forest-700 shadow-lg shadow-forest-900/10 transition-colors hover:bg-sage-100 md:h-12 md:w-12"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
     </div>
   </div>
 </section>
@@ -79,42 +97,49 @@ const groupId = `testimonials-${Math.random().toString(36).slice(2, 8)}`;
 </style>
 
 <script>
-  function initCarousel(track: HTMLElement) {
-    const id = track.id;
-    const dotsContainer = document.querySelector<HTMLElement>(`[data-dots="${id}"]`);
-    if (!dotsContainer) return;
+  const AUTO_ADVANCE_MS = 5000;
+
+  function initCarousel(root: HTMLElement) {
+    const track = root.querySelector<HTMLElement>('[data-carousel-track]');
+    const prevBtn = root.querySelector<HTMLButtonElement>('[data-carousel-prev]');
+    const nextBtn = root.querySelector<HTMLButtonElement>('[data-carousel-next]');
+    if (!track || !prevBtn || !nextBtn) return;
 
     const cards = Array.from(track.children) as HTMLElement[];
-    const perView = () => (window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1);
-    const pageCount = () => Math.max(1, Math.ceil(cards.length / perView()));
-
-    function renderDots() {
-      dotsContainer!.innerHTML = '';
-      for (let i = 0; i < pageCount(); i++) {
-        const dot = document.createElement('button');
-        dot.setAttribute('aria-label', `Vélemények, ${i + 1}. oldal`);
-        dot.className = 'h-2.5 w-2.5 rounded-full bg-white/60 data-[active=true]:bg-forest-700 transition-colors';
-        dot.addEventListener('click', () => {
-          const card = cards[i * perView()];
-          card?.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
-        });
-        dotsContainer!.appendChild(dot);
-      }
-      updateActiveDot();
+    if (cards.length < 2) {
+      prevBtn.hidden = true;
+      nextBtn.hidden = true;
+      return;
     }
 
-    function updateActiveDot() {
-      const scrollRatio = track.scrollLeft / (track.scrollWidth - track.clientWidth || 1);
-      const activeIndex = Math.round(scrollRatio * (pageCount() - 1));
-      Array.from(dotsContainer!.children).forEach((dot, i) => {
-        (dot as HTMLElement).dataset.active = String(i === activeIndex);
-      });
+    let current = 0;
+
+    function goTo(index: number) {
+      current = ((index % cards.length) + cards.length) % cards.length;
+      cards[current].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
     }
 
-    track.addEventListener('scroll', () => window.requestAnimationFrame(updateActiveDot));
-    window.addEventListener('resize', renderDots);
-    renderDots();
+    let timer = window.setInterval(() => goTo(current + 1), AUTO_ADVANCE_MS);
+
+    function restartTimer() {
+      window.clearInterval(timer);
+      timer = window.setInterval(() => goTo(current + 1), AUTO_ADVANCE_MS);
+    }
+
+    nextBtn.addEventListener('click', () => {
+      goTo(current + 1);
+      restartTimer();
+    });
+    prevBtn.addEventListener('click', () => {
+      goTo(current - 1);
+      restartTimer();
+    });
+
+    root.addEventListener('mouseenter', () => window.clearInterval(timer));
+    root.addEventListener('mouseleave', restartTimer);
+    root.addEventListener('focusin', () => window.clearInterval(timer));
+    root.addEventListener('focusout', restartTimer);
   }
 
-  document.querySelectorAll<HTMLElement>('[id^="testimonials-"]').forEach(initCarousel);
+  document.querySelectorAll<HTMLElement>('[data-testimonial-carousel]').forEach(initCarousel);
 </script>

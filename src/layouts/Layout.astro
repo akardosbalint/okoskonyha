@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import CookieConsent from '../components/CookieConsent.astro';
 import { SITE } from '../lib/site';
 
 interface Props {
@@ -15,7 +16,7 @@ interface Props {
 const {
   title,
   description = SITE.description,
-  image = '/og-default.svg',
+  image = '/og-default.jpg',
   noindex = false,
   type = 'website',
 } = Astro.props;
@@ -23,6 +24,8 @@ const {
 const pageTitle = title === SITE.name ? title : `${title} | ${SITE.name}`;
 const canonicalURL = new URL(Astro.url.pathname, SITE.url);
 const ogImageURL = new URL(image, SITE.url);
+
+const GTM_ID = 'GTM-W738PN86';
 ---
 
 <!doctype html>
@@ -51,18 +54,74 @@ const ogImageURL = new URL(image, SITE.url);
     <meta name="twitter:image" content={ogImageURL} />
 
     <!--
-      Analitika: illessz be ide tetszőleges nyomkövető kódot (pl. Google Analytics / Plausible).
+      Analitika: Google Tag Manager + Google Analytics 4 (gtag.js) — csak akkor töltjük be, ha a
+      látogató elfogadta az analitikai sütiket (lásd src/lib/cookieConsent.ts, hasConsent('analytics'),
+      CONSENT_CHANGE_EVENT).
+      FONTOS: ha a GTM konténerben (GTM-W738PN86) is be lesz állítva egy GA4-konfigurációs tag
+      ugyanerre a G-GGLX09K1VG mérési azonosítóra, a két úton duplán érkeznek majd az események —
+      vagy csak a GTM-en belüli GA4-tagot használd, vagy csak ezt a közvetlen gtag.js-t, ne mindkettőt.
       A kiemelt CTA-gombok automatikusan `data-outbound="okoskonyha"` attribútummal
       és `trackOutboundClick` hívással jelzik az okoskonyha.akardosbalint.hu felé történő kattintást,
-      lásd src/components/CTAButton.astro és src/lib/analytics.ts.
+      lásd src/components/CTAButton.astro és src/lib/analytics.ts — ez mindkét eszközbe eljut,
+      ha már be vannak töltve.
     -->
+    <script>
+      import { hasConsent, CONSENT_CHANGE_EVENT } from '../lib/cookieConsent';
+
+      function loadGTM() {
+        if (document.querySelector('script[data-gtm-loaded]')) return;
+        const script = document.createElement('script');
+        script.dataset.gtmLoaded = 'true';
+        script.innerHTML =
+          "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});" +
+          "var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;" +
+          "j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);" +
+          "})(window,document,'script','dataLayer','GTM-W738PN86');";
+        document.head.appendChild(script);
+      }
+
+      function loadGA4() {
+        if (document.querySelector('script[data-ga4-loaded]')) return;
+        const loader = document.createElement('script');
+        loader.async = true;
+        loader.dataset.ga4Loaded = 'true';
+        loader.src = 'https://www.googletagmanager.com/gtag/js?id=G-GGLX09K1VG';
+        document.head.appendChild(loader);
+
+        const dataLayer = (window.dataLayer = window.dataLayer || []);
+        window.gtag = function gtag() {
+          dataLayer.push(arguments);
+        };
+        window.gtag('js', new Date());
+        window.gtag('config', 'G-GGLX09K1VG');
+      }
+
+      function updateAnalyticsConsent() {
+        if (hasConsent('analytics')) {
+          loadGTM();
+          loadGA4();
+        }
+      }
+
+      updateAnalyticsConsent();
+      document.addEventListener(CONSENT_CHANGE_EVENT, updateAnalyticsConsent);
+    </script>
     <slot name="head" />
   </head>
   <body class="flex min-h-screen flex-col">
+    <noscript>
+      <iframe
+        src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe>
+    </noscript>
     <Header />
     <main class="flex-1">
       <slot />
     </main>
     <Footer />
+    <CookieConsent />
   </body>
 </html>

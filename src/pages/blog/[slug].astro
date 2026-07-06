@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import BlogCard from '../../components/BlogCard.astro';
+import BlogCTA from '../../components/BlogCTA.astro';
 import ShareButtons from '../../components/ShareButtons.astro';
 import { BLOG_CATEGORIES, SITE } from '../../lib/site';
 
@@ -31,9 +32,36 @@ const fallbackRelated =
 const category = BLOG_CATEGORIES[post.data.category];
 const formattedDate = post.data.date.toLocaleDateString('hu-HU', { year: 'numeric', month: 'long', day: 'numeric' });
 const postUrl = new URL(`/blog/${post.slug}/`, SITE.url).toString();
+const imageUrl = new URL(post.data.cover.src, SITE.url).toString();
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.data.title,
+  description: post.data.excerpt,
+  image: imageUrl,
+  datePublished: post.data.date.toISOString(),
+  author: {
+    '@type': 'Person',
+    name: post.data.author,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: SITE.name,
+    logo: {
+      '@type': 'ImageObject',
+      url: new URL('/favicon.svg', SITE.url).toString(),
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': postUrl,
+  },
+};
 ---
 
 <Layout title={post.data.title} description={post.data.excerpt} image={post.data.cover.src} type="article">
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} slot="head" is:inline />
   <article class="mx-auto max-w-3xl px-4 py-14 md:px-6 md:py-20">
     <div class="mb-6 text-center">
       <a
@@ -65,6 +93,10 @@ const postUrl = new URL(`/blog/${post.slug}/`, SITE.url).toString();
         }
       </div>
       <ShareButtons url={postUrl} title={post.data.title} />
+    </div>
+
+    <div class="mt-12">
+      <BlogCTA />
     </div>
   </article>
 

@@ -1,8 +1,7 @@
 ---
-import { SITE } from '../lib/site';
 ---
 
-<form class="space-y-5" data-contact-form data-endpoint={SITE.contactEndpoint} method="post">
+<form class="space-y-5" data-contact-form method="post">
   <div class="grid gap-5 sm:grid-cols-2">
     <div>
       <label for="contact-name" class="mb-1.5 block text-sm font-semibold text-forest-700">Név</label>
@@ -54,6 +53,19 @@ import { SITE } from '../lib/site';
 
   <input type="text" name="company" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
+  <label class="flex items-start gap-3 text-sm text-forest-600">
+    <input
+      type="checkbox"
+      name="privacyConsent"
+      required
+      class="mt-0.5 h-4 w-4 shrink-0 accent-clay-500"
+    />
+    <span>
+      Elfogadom, hogy a fenti adataimat Kardos Bálint a megkeresésem megválaszolása céljából kezelje. Bővebben az
+      <a href="/adatvedelem/" class="text-clay-500 underline hover:text-clay-600">Adatvédelmi tájékoztatóban</a>.
+    </span>
+  </label>
+
   <button
     type="submit"
     class="w-full rounded-full bg-clay-500 px-6 py-3.5 font-heading font-semibold text-cream transition-colors hover:bg-clay-600 sm:w-auto"
@@ -64,41 +76,29 @@ import { SITE } from '../lib/site';
 </form>
 
 <script>
+  import { SITE } from '../lib/site';
+
   document.querySelectorAll<HTMLFormElement>('[data-contact-form]').forEach((form) => {
-    form.addEventListener('submit', async (e) => {
+    form.addEventListener('submit', (e) => {
       e.preventDefault();
       const honeypot = form.querySelector<HTMLInputElement>('input[name="company"]');
       const message = form.querySelector<HTMLElement>('[data-contact-message]');
       if (honeypot?.value) return;
+      if (!message) return;
 
-      const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
-      const endpoint = form.dataset.endpoint;
-      if (!message || !button) return;
+      const name = form.querySelector<HTMLInputElement>('#contact-name')?.value ?? '';
+      const email = form.querySelector<HTMLInputElement>('#contact-email')?.value ?? '';
+      const topic = form.querySelector<HTMLSelectElement>('#contact-topic')?.value ?? '';
+      const userMessage = form.querySelector<HTMLTextAreaElement>('#contact-message')?.value ?? '';
 
-      if (!endpoint) {
-        message.textContent = 'Az űrlap hamarosan aktiválódik — addig is írj közvetlenül a hello@akardosbalint.hu címre!';
-        return;
-      }
+      const subject = `Kapcsolatfelvétel a weboldalról – ${topic}`;
+      const body = `Név: ${name}\nE-mail cím: ${email}\nTéma: ${topic}\n\nÜzenet:\n${userMessage}`;
+      const mailtoUrl = `mailto:${SITE.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-      const formData = new FormData(form);
-      button.disabled = true;
-      try {
-        const res = await fetch(endpoint, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(Object.fromEntries(formData)),
-        });
-        if (res.ok) {
-          message.textContent = 'Köszönöm az üzeneted! Hamarosan válaszolok.';
-          form.reset();
-        } else {
-          message.textContent = 'Hoppá, valami elakadt. Próbáld újra, vagy írj a hello@akardosbalint.hu címre.';
-        }
-      } catch {
-        message.textContent = 'Hoppá, valami elakadt. Próbáld újra, vagy írj a hello@akardosbalint.hu címre.';
-      } finally {
-        button.disabled = false;
-      }
+      window.location.href = mailtoUrl;
+      message.textContent =
+        `Megnyitottuk az e-mail-kliensedet az üzeneteddel — kérlek, küldd el onnan! Ha nem történt semmi, írj közvetlenül a ${SITE.email} címre.`;
+      form.reset();
     });
   });
 </script>

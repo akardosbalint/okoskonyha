@@ -1,0 +1,140 @@
+---
+---
+
+<div
+  id="cookie-consent"
+  class="fixed inset-x-0 bottom-0 z-[100] hidden px-4 pb-4 sm:pb-6"
+  role="dialog"
+  aria-label="Süti beállítások"
+  aria-live="polite"
+>
+  <div class="mx-auto max-w-2xl rounded-3xl bg-forest-800 p-6 text-cream shadow-2xl shadow-forest-900/40 md:p-7">
+    <div data-cc-view="banner">
+      <h2 class="font-heading text-lg font-semibold mb-2 text-cream">Sütiket használunk</h2>
+      <p class="text-sm text-cream/80 mb-4">
+        A weboldal működéséhez szükséges (teljesen növényi alapú és gluténmentes) sütiket mindig
+        használjuk. Az analitikai sütikhez a hozzájárulásod kérjük — bármikor módosíthatod a lábléc
+        „Süti beállítások” linkjén.
+        <a href="/adatvedelem/" class="underline hover:text-cream">Adatvédelmi tájékoztató</a>
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <button
+          type="button"
+          data-cc-accept-all
+          class="rounded-full bg-clay-500 px-5 py-2.5 text-sm font-heading font-semibold text-cream hover:bg-clay-600"
+        >
+          Mind elfogadom
+        </button>
+        <button
+          type="button"
+          data-cc-reject
+          class="rounded-full bg-cream/10 px-5 py-2.5 text-sm font-heading font-semibold text-cream hover:bg-cream/20"
+        >
+          Csak a szükséges
+        </button>
+        <button
+          type="button"
+          data-cc-open-settings
+          class="rounded-full px-5 py-2.5 text-sm font-heading font-semibold text-cream/80 underline hover:text-cream"
+        >
+          Beállítások
+        </button>
+      </div>
+    </div>
+
+    <div data-cc-view="settings" class="hidden">
+      <h2 class="font-heading text-lg font-semibold mb-4 text-cream">Süti beállítások</h2>
+      <div class="space-y-4">
+        <div class="flex items-start justify-between gap-4 border-b border-cream/10 pb-4">
+          <div>
+            <p class="font-semibold text-cream">Szükséges</p>
+            <p class="text-sm text-cream/70">A weboldal alapműködéséhez kellenek (pl. a süti-választásod megjegyzése). Nem kikapcsolható.</p>
+          </div>
+          <input type="checkbox" checked disabled class="mt-1 h-5 w-5 shrink-0 accent-clay-500 opacity-60" />
+        </div>
+        <div class="flex items-start justify-between gap-4 border-b border-cream/10 pb-4">
+          <div>
+            <p class="font-semibold text-cream">Analitikai</p>
+            <p class="text-sm text-cream/70">Segít megérteni, hogyan használják a látogatók az oldalt (pl. látogatottságmérés).</p>
+          </div>
+          <input type="checkbox" data-cc-toggle="analytics" class="mt-1 h-5 w-5 shrink-0 accent-clay-500" />
+        </div>
+      </div>
+      <div class="mt-5 flex flex-wrap gap-3">
+        <button
+          type="button"
+          data-cc-save
+          class="rounded-full bg-clay-500 px-5 py-2.5 text-sm font-heading font-semibold text-cream hover:bg-clay-600"
+        >
+          Beállítások mentése
+        </button>
+        <button
+          type="button"
+          data-cc-accept-all
+          class="rounded-full bg-cream/10 px-5 py-2.5 text-sm font-heading font-semibold text-cream hover:bg-cream/20"
+        >
+          Mind elfogadom
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  import { getConsent, setConsent, OPEN_SETTINGS_EVENT } from '../lib/cookieConsent';
+
+  const root = document.getElementById('cookie-consent');
+  if (root) {
+    const bannerView = root.querySelector<HTMLElement>('[data-cc-view="banner"]');
+    const settingsView = root.querySelector<HTMLElement>('[data-cc-view="settings"]');
+    const analyticsToggle = root.querySelector<HTMLInputElement>('[data-cc-toggle="analytics"]');
+
+    function show(view: 'banner' | 'settings') {
+      root!.classList.remove('hidden');
+      bannerView?.classList.toggle('hidden', view !== 'banner');
+      settingsView?.classList.toggle('hidden', view !== 'settings');
+    }
+
+    function hide() {
+      root!.classList.add('hidden');
+    }
+
+    function prefillToggles() {
+      const consent = getConsent();
+      if (analyticsToggle) analyticsToggle.checked = consent?.analytics ?? false;
+    }
+
+    if (!getConsent()) {
+      show('banner');
+    }
+
+    root.querySelectorAll<HTMLButtonElement>('[data-cc-accept-all]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        setConsent({ analytics: true });
+        hide();
+      });
+    });
+
+    root.querySelector<HTMLButtonElement>('[data-cc-reject]')?.addEventListener('click', () => {
+      setConsent({ analytics: false });
+      hide();
+    });
+
+    root.querySelector<HTMLButtonElement>('[data-cc-open-settings]')?.addEventListener('click', () => {
+      prefillToggles();
+      show('settings');
+    });
+
+    root.querySelector<HTMLButtonElement>('[data-cc-save]')?.addEventListener('click', () => {
+      setConsent({
+        analytics: analyticsToggle?.checked ?? false,
+      });
+      hide();
+    });
+
+    document.addEventListener(OPEN_SETTINGS_EVENT, () => {
+      prefillToggles();
+      show('settings');
+    });
+  }
+</script>

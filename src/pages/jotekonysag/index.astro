@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import CTAButton from '../../components/CTAButton.astro';
@@ -8,10 +7,11 @@ import StatsRow from '../../components/StatsRow.astro';
 import TestimonialCarousel from '../../components/TestimonialCarousel.astro';
 import Gallery from '../../components/Gallery.astro';
 import BlogCard from '../../components/BlogCard.astro';
-import impactHero from '../../assets/illustrations/impact-hero.svg';
-import g1 from '../../assets/illustrations/gallery/impact-1.svg';
-import g2 from '../../assets/illustrations/gallery/impact-2.svg';
-import g3 from '../../assets/illustrations/gallery/impact-3.svg';
+import g1 from '../../assets/photos/charity-dinner-menu.jpeg';
+import g2 from '../../assets/photos/balint-hosting-guests.jpeg';
+import g3 from '../../assets/photos/dinner-long-table.jpeg';
+import galaVideoPoster from '../../assets/photos/gala-video-poster.jpeg';
+import { CHARITY_PARTNERS, CHARITY_STATS } from '../../lib/program';
 
 const testimonialEntries = await getCollection('testimonials');
 const jotekonysagPosts = (await getCollection('blog', (p) => p.data.category === 'jotekonysag')).sort(
@@ -19,15 +19,9 @@ const jotekonysagPosts = (await getCollection('blog', (p) => p.data.category ===
 );
 
 const galleryImages = [
-  { src: g1, alt: 'Illusztráció egy ajándékdobozról' },
-  { src: g2, alt: 'Illusztráció összekulcsolt kezekről' },
-  { src: g3, alt: 'Illusztráció beszélgető emberekről' },
-];
-
-const partners = [
-  { name: 'Amigos a Gyerekekért', description: 'Oktatási és infrastrukturális projektek támogatása Latin-Amerika hátrányos helyzetű közösségeiben.' },
-  { name: 'Fóliás Juci Alapítvány', description: 'Helyi közösségi kezdeményezések és családtámogatás.' },
-  { name: 'Backstage Közösség', description: 'Vállalkozói mentális egészség és közösségépítés.' },
+  { src: g1, alt: 'Kézzel írt menükártya egy jótékonysági pop-up vacsorán' },
+  { src: g2, alt: 'Kardos Bálint köszönti a vendégeket egy jótékonysági vacsorán' },
+  { src: g3, alt: 'Nyolc vendég egy hosszú asztalnál egy lakásvacsorán' },
 ];
 ---
 
@@ -47,19 +41,24 @@ const partners = [
           tál étel, egy őszinte beszélgetés, és minden alkalommal egy konkrét ügy, amit együtt támogatunk.
         </p>
       </div>
-      <Image src={impactHero} alt="Illusztráció összekulcsolt kezekről" width={600} height={400} class="w-full rounded-3xl" />
+      <div class="overflow-hidden rounded-3xl shadow-lg shadow-forest-900/10">
+        <video
+          class="aspect-square w-full object-cover"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="none"
+          poster={galaVideoPoster.src}
+        >
+          <source src="/videos/jotekonysagi-est-highlight.mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
   </section>
 
   <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
-    <StatsRow
-      stats={[
-        { value: '30+', label: 'jótékonysági vacsora' },
-        { value: '4M Ft+', label: 'adomány összegyűjtve' },
-        { value: '6', label: 'partnerszervezet' },
-        { value: '500+', label: 'vendég az asztaloknál' },
-      ]}
-    />
+    <StatsRow stats={CHARITY_STATS} />
   </section>
 
   <section class="bg-sage-100 py-16 md:py-20">
@@ -67,10 +66,12 @@ const partners = [
       <SectionHeading eyebrow="Kikkel dolgozom" title="Partnerszervezeteink" />
       <div class="grid gap-6 md:grid-cols-3">
         {
-          partners.map((partner) => (
+          CHARITY_PARTNERS.map((partner) => (
             <div class="rounded-2xl bg-white p-6 shadow-sm shadow-forest-900/5">
-              <h3 class="font-heading font-semibold text-forest-800 mb-2">{partner.name}</h3>
-              <p class="text-sm text-forest-600">{partner.description}</p>
+              <h3 class="font-heading font-semibold text-forest-800 mb-1">{partner.name}</h3>
+              <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-clay-500">{partner.period}</p>
+              <p class="text-sm text-forest-600 mb-3">{partner.description}</p>
+              <p class="text-sm text-forest-500 border-t border-sage-100 pt-3">{partner.mission}</p>
             </div>
           ))
         }

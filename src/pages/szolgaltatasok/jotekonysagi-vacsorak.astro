@@ -4,14 +4,15 @@ import CTAButton from '../../components/CTAButton.astro';
 import SectionHeading from '../../components/SectionHeading.astro';
 import Gallery from '../../components/Gallery.astro';
 import StatsRow from '../../components/StatsRow.astro';
-import g1 from '../../assets/illustrations/gallery/jotekonysagi-1.svg';
-import g2 from '../../assets/illustrations/gallery/jotekonysagi-2.svg';
-import g3 from '../../assets/illustrations/gallery/jotekonysagi-3.svg';
+import { CHARITY_STATS } from '../../lib/program';
+import g1 from '../../assets/photos/charity-dinner-menu.jpeg';
+import g2 from '../../assets/photos/dinner-long-table.jpeg';
+import g3 from '../../assets/photos/picnic-overhead.jpeg';
 
 const galleryImages = [
-  { src: g1, alt: 'Illusztráció összekulcsolt kezekről' },
-  { src: g2, alt: 'Illusztráció beszélgető emberekről' },
-  { src: g3, alt: 'Illusztráció egy ajándékdobozról' },
+  { src: g1, alt: 'Leves és kézzel írt menükártya egy jótékonysági pop-up vacsorán' },
+  { src: g2, alt: 'Nyolc vendég egy hosszú vacsoraasztal körül' },
+  { src: g3, alt: 'Közös étkezés felülnézetből' },
 ];
 ---
 
@@ -54,13 +55,7 @@ const galleryImages = [
   </section>
 
   <section class="mx-auto max-w-6xl px-4 pb-16 md:px-6">
-    <StatsRow
-      stats={[
-        { value: '30+', label: 'megszervezett est' },
-        { value: '4M Ft+', label: 'összegyűjtött adomány' },
-        { value: '6', label: 'partnerszervezet' },
-      ]}
-    />
+    <StatsRow stats={CHARITY_STATS} />
   </section>
 
   <section class="bg-sage-100 py-16 md:py-20">

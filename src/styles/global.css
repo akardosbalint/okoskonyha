@@ -61,3 +61,18 @@ h1, h2, h3, h4 {
 .prose-okos strong {
   @apply text-forest-700;
 }
+.prose-okos table {
+  @apply w-full mb-6 border-collapse overflow-hidden rounded-2xl border border-sage-200 text-sm md:text-base;
+}
+.prose-okos thead {
+  @apply bg-forest-700 text-cream;
+}
+.prose-okos th {
+  @apply px-4 py-3 text-left font-heading font-semibold;
+}
+.prose-okos td {
+  @apply border-t border-sage-200 px-4 py-3 align-top;
+}
+.prose-okos tbody tr:nth-child(even) {
+  @apply bg-sage-50;
+}

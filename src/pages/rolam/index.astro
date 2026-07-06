@@ -7,22 +7,22 @@ import Gallery from '../../components/Gallery.astro';
 import InstagramFeed from '../../components/InstagramFeed.astro';
 import balintProfile from '../../assets/photos/balint-profile.webp';
 import lifestyleMedicineCertificate from '../../assets/photos/lifestyle-medicine-certificate.jpeg';
-import g1 from '../../assets/illustrations/gallery/rolam-1.svg';
-import g2 from '../../assets/illustrations/gallery/rolam-2.svg';
-import g3 from '../../assets/illustrations/gallery/rolam-3.svg';
-import g4 from '../../assets/illustrations/gallery/rolam-4.svg';
-import g5 from '../../assets/illustrations/gallery/rolam-5.svg';
-import g6 from '../../assets/illustrations/gallery/rolam-6.svg';
+import g1 from '../../assets/photos/dinner-group-table.jpeg';
+import g2 from '../../assets/photos/balint-candid-portrait.jpeg';
+import g3 from '../../assets/photos/outdoor-dinner-candid.jpeg';
+import g4 from '../../assets/photos/picnic-overhead.jpeg';
+import g5 from '../../assets/photos/balint-hosting-guests.jpeg';
+import g6 from '../../assets/photos/community-polaroids.jpeg';
 import { SITE } from '../../lib/site';
 import { BIO_STATS, BIO_FACTS } from '../../lib/program';
 
 const galleryImages = [
-  { src: g1, alt: 'Illusztráció egy fazékról' },
-  { src: g2, alt: 'Illusztráció egy levélről' },
-  { src: g3, alt: 'Illusztráció beszélgető emberekről' },
-  { src: g4, alt: 'Illusztráció koccintó poharakról' },
-  { src: g5, alt: 'Illusztráció egy tányérról' },
-  { src: g6, alt: 'Illusztráció összekulcsolt kezekről' },
+  { src: g1, alt: 'Vendégek egy hosszú vacsoraasztal körül' },
+  { src: g2, alt: 'Kardos Bálint a konyhapultnál' },
+  { src: g3, alt: 'Kültéri vacsora hangulatos fényekkel' },
+  { src: g4, alt: 'Piknik jellegű közös étkezés felülnézetből' },
+  { src: g5, alt: 'Kardos Bálint a vendégekkel beszélget vacsora közben' },
+  { src: g6, alt: 'Polaroidok a közös vacsorák és események pillanataiból' },
 ];
 ---
 
@@ -75,7 +75,7 @@ const galleryImages = [
       <h2>Miért séf, és miért tanácsadó is egyben?</h2>
       <p>
         Mert a főzés önmagában nem elég — az emberek nem attól esznek egészségesebben, hogy egyszer
-        kapnak egy remek vacsorát tőlem. Ezért szereztem táplálkozási tanácsadói (Lifestyle Medicine
+        kapnak egy remek vacsorát tőlem. Ezért szereztem életmód-tanácsadói (Lifestyle Medicine
         Consultant) végzettséget is: hogy ne csak megfőzzem az ételt, hanem megtanítsam a rendszert, ami
         mögötte van.
       </p>
@@ -125,7 +125,7 @@ const galleryImages = [
       találkozom veled.
     </p>
     <div class="flex flex-wrap justify-center gap-4">
-      <CTAButton href="/kapcsolat/" label="Foglalj időpontot" size="lg" />
+      <CTAButton href="/kapcsolat/" label="Írj üzenetet" size="lg" />
       <CTAButton href={SITE.circleUrl} label="Nézd meg az Okoskonyhát" variant="ghost" size="lg" outbound />
     </div>
   </section>
