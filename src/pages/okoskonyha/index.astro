@@ -8,7 +8,7 @@ import TestimonialCarousel from '../../components/TestimonialCarousel.astro';
 import Icon from '../../components/Icon.astro';
 import MembershipPricing from '../../components/MembershipPricing.astro';
 import AdvancedTopicsTeaser from '../../components/AdvancedTopicsTeaser.astro';
-import okoskonyhaHero from '../../assets/illustrations/okoskonyha-hero.svg';
+import balintProfile from '../../assets/photos/balint-profile.webp';
 import { SITE } from '../../lib/site';
 import { BIO_STATS, METHOD_PILLARS, MEMBERSHIP_BENEFITS } from '../../lib/program';
 
@@ -39,19 +39,19 @@ const faqs = [
 ---
 
 <Layout
-  title="Okoskonyhája — főzz finomabbat és egészségesebbet, olcsóbban és gyorsabban"
-  description="Csatlakozz az Okoskonyhája fizetős közösséghez: heti receptek, havi élő főzős alkalmak és egy csapat, aki melletted áll az egészségesebb, olcsóbb és gyorsabb főzésben."
+  title="Okoskonyha — főzz finomabbat és egészségesebbet, olcsóbban és gyorsabban"
+  description="Csatlakozz az Okoskonyha fizetős közösséghez: heti receptek, havi élő főzős alkalmak és egy csapat, aki melletted áll az egészségesebb, olcsóbb és gyorsabb főzésben."
 >
   <!-- Hero -->
   <section class="bg-sage-300 py-16 md:py-24">
     <div class="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2 md:items-center md:px-6">
       <div>
-        <p class="font-script text-3xl text-forest-700 mb-2">Kardos Bálint Okoskonyhája</p>
+        <p class="font-script text-3xl text-forest-700 mb-2">Kardos Bálint Okoskonyha</p>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-forest-800 leading-tight mb-6">
           Főzz <span class="font-script text-clay-600">finomabbat</span> és egészségesebbet — olcsóbban és gyorsabban
         </h1>
         <p class="text-lg text-forest-800/90 mb-8 max-w-xl">
-          Az Okoskonyhája egy fizetős közösség azoknak, akik szeretnének olcsóbban, gyorsabban és
+          Az Okoskonyha egy fizetős közösség azoknak, akik szeretnének olcsóbban, gyorsabban és
           egészségesebben főzni, de nem tudják, hol kezdjék. Heti receptek, élő alkalmak és egy csapat,
           aki melletted áll.
         </p>
@@ -61,7 +61,7 @@ const faqs = [
         </div>
         <p class="mt-4 text-sm text-forest-700/80">Bármikor lemondható. Nincs hosszú távú elköteleződés.</p>
       </div>
-      <Image src={okoskonyhaHero} alt="Illusztráció egy fazékról" width={600} height={400} class="w-full rounded-3xl" />
+      <Image src={balintProfile} alt="Kardos Bálint" width={600} height={600} class="w-full rounded-3xl object-cover aspect-square" />
     </div>
   </section>
 
@@ -188,8 +188,8 @@ const faqs = [
   <section class="mx-auto max-w-4xl px-4 pb-20 text-center md:px-6">
     <div class="rounded-3xl bg-clay-500 px-6 py-14 md:px-16">
       <h2 class="text-3xl md:text-4xl font-semibold text-cream mb-4">Készen állsz a csatlakozásra?</h2>
-      <p class="text-cream/90 mb-8">Lépj be az Okoskonyhájába, és kezdj el ma egyszerűbben, olcsóbban és egészségesebben főzni.</p>
-      <CTAButton href={SITE.circleUrl} label="Csatlakozom az Okoskonyhájához" variant="ghost" size="lg" outbound />
+      <p class="text-cream/90 mb-8">Lépj be az Okoskonyhába, és kezdj el ma egyszerűbben, olcsóbban és egészségesebben főzni.</p>
+      <CTAButton href={SITE.circleUrl} label="Csatlakozom az Okoskonyhához" variant="ghost" size="lg" outbound />
     </div>
   </section>
 </Layout>

@@ -5,7 +5,8 @@ import CTAButton from '../../components/CTAButton.astro';
 import SectionHeading from '../../components/SectionHeading.astro';
 import Gallery from '../../components/Gallery.astro';
 import InstagramFeed from '../../components/InstagramFeed.astro';
-import aboutHero from '../../assets/illustrations/about-hero.svg';
+import balintProfile from '../../assets/photos/balint-profile.webp';
+import lifestyleMedicineCertificate from '../../assets/photos/lifestyle-medicine-certificate.jpeg';
 import g1 from '../../assets/illustrations/gallery/rolam-1.svg';
 import g2 from '../../assets/illustrations/gallery/rolam-2.svg';
 import g3 from '../../assets/illustrations/gallery/rolam-3.svg';
@@ -42,7 +43,7 @@ const galleryImages = [
           beszélgetéseim mindig az asztal körül történtek.
         </p>
       </div>
-      <Image src={aboutHero} alt="Illusztráció Bálintról" width={600} height={400} class="w-full rounded-3xl" />
+      <Image src={balintProfile} alt="Kardos Bálint a konyhájában" width={600} height={600} class="w-full rounded-3xl object-cover aspect-square" />
     </div>
   </section>
 
@@ -74,14 +75,31 @@ const galleryImages = [
       <h2>Miért séf, és miért tanácsadó is egyben?</h2>
       <p>
         Mert a főzés önmagában nem elég — az emberek nem attól esznek egészségesebben, hogy egyszer
-        kapnak egy remek vacsorát tőlem. Ezért szereztem táplálkozási tanácsadói végzettséget is: hogy ne
-        csak megfőzzem az ételt, hanem megtanítsam a rendszert, ami mögötte van.
+        kapnak egy remek vacsorát tőlem. Ezért szereztem táplálkozási tanácsadói (Lifestyle Medicine
+        Consultant) végzettséget is: hogy ne csak megfőzzem az ételt, hanem megtanítsam a rendszert, ami
+        mögötte van.
       </p>
+    </div>
+
+    <figure class="mt-8 rounded-2xl bg-sage-50 p-4">
+      <Image
+        src={lifestyleMedicineCertificate}
+        alt="Lifestyle Medicine Consultant (Életmód-tanácsadó) tanúsítvány, Kardos Bálint nevére kiállítva"
+        width={1000}
+        height={563}
+        class="w-full rounded-xl"
+      />
+      <figcaption class="mt-3 text-center text-sm text-forest-500">
+        Lifestyle Medicine Consultant (Életmód-tanácsadó) tanúsítvány
+      </figcaption>
+    </figure>
+
+    <div class="prose-okos mt-8">
       <h2>Miért közösség, és miért nem csak recept?</h2>
       <p>
         Mert a recept önmagában nem old meg semmit. Azoknak, akikkel dolgozom, ritkán a tudás hiányzik –
         inkább a tér, az idő és a bátorítás, hogy elkezdjék. Ezért nem csak recepteket adok, hanem
-        közösséget: az <a href="/okoskonyha/">Okoskonyháját</a>, ahol együtt haladunk, és a vacsorapartikat,
+        közösséget: az <a href="/okoskonyha/">Okoskonyhát</a>, ahol együtt haladunk, és a vacsorapartikat,
         ahol testközelből lehet megtapasztalni, milyen az, amikor az étel tényleg összeköt embereket.
       </p>
       <blockquote>
@@ -108,7 +126,7 @@ const galleryImages = [
     </p>
     <div class="flex flex-wrap justify-center gap-4">
       <CTAButton href="/kapcsolat/" label="Foglalj időpontot" size="lg" />
-      <CTAButton href={SITE.circleUrl} label="Nézd meg az Okoskonyháját" variant="ghost" size="lg" outbound />
+      <CTAButton href={SITE.circleUrl} label="Nézd meg az Okoskonyhát" variant="ghost" size="lg" outbound />
     </div>
   </section>
 </Layout>

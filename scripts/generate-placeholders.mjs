@@ -130,9 +130,7 @@ const covers = [
   { file: 'src/assets/blog-covers/tipp-fozes4eleme.svg', bg: palette.sage200, blobColor: palette.sage300, icon: 'saltShaker', iconColor: palette.forest700, seed: 30 },
   { file: 'src/assets/blog-covers/tipp-batchcooking.svg', bg: palette.cream, blobColor: palette.clay300, icon: 'stack', iconColor: palette.forest700, seed: 31 },
   { file: 'src/assets/illustrations/hero.svg', bg: palette.sage300, blobColor: palette.sage200, icon: 'people', iconColor: palette.forest700, seed: 9 },
-  { file: 'src/assets/illustrations/okoskonyha-hero.svg', bg: palette.sage100, blobColor: palette.sage300, icon: 'pot', iconColor: palette.forest700, seed: 10 },
   { file: 'src/assets/illustrations/impact-hero.svg', bg: palette.cream, blobColor: palette.clay300, icon: 'heartHands', iconColor: palette.clay500, seed: 11 },
-  { file: 'src/assets/illustrations/about-hero.svg', bg: palette.sage100, blobColor: palette.sage200, icon: 'glasses', iconColor: palette.forest700, seed: 12 },
   { file: 'src/assets/illustrations/services-hero.svg', bg: palette.cream, blobColor: palette.sage300, icon: 'plate', iconColor: palette.clay500, seed: 13 },
   { file: 'src/assets/illustrations/contact-hero.svg', bg: palette.sage100, blobColor: palette.clay300, icon: 'calendar', iconColor: palette.forest700, seed: 14 },
   // Rólam galéria

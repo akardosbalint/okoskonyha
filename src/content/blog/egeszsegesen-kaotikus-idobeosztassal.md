@@ -28,4 +28,4 @@ A legtöbb egészség-tartalom azzal kezdi, hogy "reggel korán kelj, csinálj s
 
 Az életmódváltás nem arról szól, hogy több időd legyen. Arról szól, hogy a meglévő idődet okosabban oszd be. Ez az, amiben segítek – nemcsak a konyhában, hanem tanácsadóként is.
 
-Ha szeretnél személyre szabott segítséget, foglalj egy [ingyenes konzultációt](/kapcsolat/), vagy csatlakozz az [Okoskonyhájához](/okoskonyha/), ahol mások is ugyanezekkel a kihívásokkal küzdenek – és együtt oldjuk meg.
+Ha szeretnél személyre szabott segítséget, foglalj egy [ingyenes konzultációt](/kapcsolat/), vagy csatlakozz az [Okoskonyhához](/okoskonyha/), ahol mások is ugyanezekkel a kihívásokkal küzdenek – és együtt oldjuk meg.

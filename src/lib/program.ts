@@ -1,4 +1,4 @@
-// Az Okoskonyhája tagság és Kardos Bálint hitelességi adatai.
+// Az Okoskonyha tagság és Kardos Bálint hitelességi adatai.
 // A tagság egyetlen termék: havidíjas fizetős közösség a Circle.so-n.
 
 export const USP = 'Főzz finomabbat és egészségesebbet — olcsóbban és gyorsabban';
@@ -49,7 +49,7 @@ export const ADVANCED_TOPICS = [
   'És más igazi haladó konyhamesterség',
 ];
 
-// Mit kapsz az Okoskonyhája taggal — az eredeti brief alapján.
+// Mit kapsz az Okoskonyha taggal — az eredeti brief alapján.
 export const MEMBERSHIP_BENEFITS = [
   { icon: 'leaf', title: 'Heti receptek és menütervek', text: 'Gyors, olcsó, tápláló növényi fogások — minden héten frissülő anyagokkal.' },
   { icon: 'video', title: 'Havi élő főzős alkalom', text: 'Együtt főzünk videóhívásban, kérdezhetsz, próbálhatsz új technikákat.' },
@@ -60,7 +60,7 @@ export const MEMBERSHIP_BENEFITS = [
 ] as const;
 
 export const PRICING = {
-  programName: 'Okoskonyhája tagság',
+  programName: 'Okoskonyha tagság',
   monthly: { price: '8 890 Ft', period: '/ hó' },
   annual: { price: '88 900 Ft', period: '/ év', monthlyEquivalent: '7 408 Ft / hó' },
   priceNote: 'Az éves tagsággal havi bontásban olcsóbban jutsz hozzá ugyanahhoz a közösséghez.',

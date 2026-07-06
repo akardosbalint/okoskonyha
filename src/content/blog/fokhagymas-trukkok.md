@@ -33,4 +33,4 @@ Adj a fogáshoz fokhagymát az elején (főzés közben, mélyebb, édesebb arom
 
 ---
 
-Ha ennél mélyebbre szeretnél ásni – heti menütervezés, alapanyag-válogatás, élő főzős alkalmak –, ott a helyed az [Okoskonyhája](/okoskonyha/) közösségben, ahol minden hónapban gyakorlati receptekkel és élő beszélgetésekkel segítünk egymásnak jobban főzni.
+Ha ennél mélyebbre szeretnél ásni – heti menütervezés, alapanyag-válogatás, élő főzős alkalmak –, ott a helyed az [Okoskonyha](/okoskonyha/) közösségben, ahol minden hónapban gyakorlati receptekkel és élő beszélgetésekkel segítünk egymásnak jobban főzni.

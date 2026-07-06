@@ -27,6 +27,6 @@ De működik. És nem azért, mert varázsló vagyok, hanem mert:
 
 ## Mi lesz ebből?
 
-Egyre több vacsora, egyre több furcsa és gyönyörű beszélgetés, és most már egy online közösség is, az [Okoskonyhája](/okoskonyha/), ahol azoknak segítek, akik nem tudnak minden hónapban eljönni egy élő vacsorára, de szeretnék ugyanezt a fajta figyelmet és inspirációt megkapni a saját konyhájukban.
+Egyre több vacsora, egyre több furcsa és gyönyörű beszélgetés, és most már egy online közösség is, az [Okoskonyha](/okoskonyha/), ahol azoknak segítek, akik nem tudnak minden hónapban eljönni egy élő vacsorára, de szeretnék ugyanezt a fajta figyelmet és inspirációt megkapni a saját konyhájukban.
 
 Szóval nem, anyu, nem térek vissza "normális" pályára. De köszönöm, hogy megkérdezted.

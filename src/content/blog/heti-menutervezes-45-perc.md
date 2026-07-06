@@ -32,4 +32,4 @@ Egy jó tahini-citrom szósz, egy fűszeres paradicsomalap és egy erős chili-o
 
 Nem mindig sikerül minden vasárnap. Van, hogy csak péntek este jövök rá, hogy semmi nincs a hűtőben, és rendelek. De ha a heteknek csak a felében sikerül ezt a rendszert végigvinnem, azzal is rengeteg időt és pénzt spórolok – és sokkal kevesebb stresszel jár a hét.
 
-Ha szeretnéd, hogy heti rendszerességgel kapj ilyen gyakorlati sablonokat és bevásárlólistákat, nézd meg az [Okoskonyhája](/okoskonyha/) tagságot – ott pontosan ez a fajta gyakorlati segítség vár rád.
+Ha szeretnéd, hogy heti rendszerességgel kapj ilyen gyakorlati sablonokat és bevásárlólistákat, nézd meg az [Okoskonyha](/okoskonyha/) tagságot – ott pontosan ez a fajta gyakorlati segítség vár rád.

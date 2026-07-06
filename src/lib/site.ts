@@ -2,7 +2,7 @@ export const SITE = {
   name: 'Kardos Bálint',
   tagline: 'Főzz finomabbat és egészségesebbet — olcsóbban és gyorsabban',
   description:
-    'Az Okoskonyhája fizetős közösséggel megtanulsz olcsóbban, gyorsabban, finomabbat és egészségesebbet főzni — heti max. 2 főzéssel, káoszmentesen. Kardos Bálint séf és életmód-tanácsadó közössége.',
+    'Az Okoskonyha fizetős közösséggel megtanulsz olcsóbban, gyorsabban, finomabbat és egészségesebbet főzni — heti max. 2 főzéssel, káoszmentesen. Kardos Bálint séf és életmód-tanácsadó közössége.',
   url: 'https://akardosbalint.hu',
   circleUrl: 'https://okoskonyha.akardosbalint.hu',
   email: 'hello@akardosbalint.hu',
@@ -17,7 +17,7 @@ export const SITE = {
 
 export const NAV = [
   { href: '/', label: 'Főoldal' },
-  { href: '/okoskonyha/', label: 'Okoskonyhája', highlight: true },
+  { href: '/okoskonyha/', label: 'Okoskonyha', highlight: true },
   { href: '/blog/', label: 'Blog' },
   { href: '/szolgaltatasok/', label: 'Szolgáltatások' },
   { href: '/rolam/', label: 'Rólam' },
