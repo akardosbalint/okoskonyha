@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import CTAButton from '../../components/CTAButton.astro';
@@ -8,10 +7,8 @@ import StatsRow from '../../components/StatsRow.astro';
 import TestimonialCarousel from '../../components/TestimonialCarousel.astro';
 import Gallery from '../../components/Gallery.astro';
 import BlogCard from '../../components/BlogCard.astro';
-import HighlightVideo from '../../components/HighlightVideo.astro';
-import impactHero from '../../assets/photos/balint-hosting-guests.jpeg';
-import g1 from '../../assets/photos/dinner-group-table.jpeg';
-import g2 from '../../assets/photos/outdoor-dinner-candid.jpeg';
+import g1 from '../../assets/photos/charity-dinner-menu.jpeg';
+import g2 from '../../assets/photos/balint-hosting-guests.jpeg';
 import g3 from '../../assets/photos/dinner-long-table.jpeg';
 import galaVideoPoster from '../../assets/photos/gala-video-poster.jpeg';
 import { CHARITY_PARTNERS, CHARITY_STATS } from '../../lib/program';
@@ -22,8 +19,8 @@ const jotekonysagPosts = (await getCollection('blog', (p) => p.data.category ===
 );
 
 const galleryImages = [
-  { src: g1, alt: 'Vendégek egy hosszú vacsoraasztal körül koccintanak' },
-  { src: g2, alt: 'Kültéri jótékonysági vacsora hangulatos fényekkel' },
+  { src: g1, alt: 'Kézzel írt menükártya egy jótékonysági pop-up vacsorán' },
+  { src: g2, alt: 'Kardos Bálint köszönti a vendégeket egy jótékonysági vacsorán' },
   { src: g3, alt: 'Nyolc vendég egy hosszú asztalnál egy lakásvacsorán' },
 ];
 ---
@@ -44,7 +41,19 @@ const galleryImages = [
           tál étel, egy őszinte beszélgetés, és minden alkalommal egy konkrét ügy, amit együtt támogatunk.
         </p>
       </div>
-      <Image src={impactHero} alt="Kardos Bálint a jótékonysági vacsora vendégeivel beszélget" width={600} height={600} class="w-full rounded-3xl object-cover aspect-square" />
+      <div class="overflow-hidden rounded-3xl shadow-lg shadow-forest-900/10">
+        <video
+          class="aspect-square w-full object-cover"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="none"
+          poster={galaVideoPoster.src}
+        >
+          <source src="/videos/jotekonysagi-est-highlight.mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
   </section>
 
@@ -61,7 +70,8 @@ const galleryImages = [
             <div class="rounded-2xl bg-white p-6 shadow-sm shadow-forest-900/5">
               <h3 class="font-heading font-semibold text-forest-800 mb-1">{partner.name}</h3>
               <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-clay-500">{partner.period}</p>
-              <p class="text-sm text-forest-600">{partner.description}</p>
+              <p class="text-sm text-forest-600 mb-3">{partner.description}</p>
+              <p class="text-sm text-forest-500 border-t border-sage-100 pt-3">{partner.mission}</p>
             </div>
           ))
         }
@@ -72,13 +82,6 @@ const galleryImages = [
   <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
     <SectionHeading eyebrow="Pillanatok" title="A jótékonysági" accent="estékről" />
     <Gallery images={galleryImages} />
-    <div class="mt-10">
-      <HighlightVideo
-        src="/videos/jotekonysagi-est-highlight.mp4"
-        poster={galaVideoPoster}
-        caption="Egy korábbi jótékonysági estünk hangulata"
-      />
-    </div>
   </section>
 
   <TestimonialCarousel

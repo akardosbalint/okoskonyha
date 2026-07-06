@@ -1,5 +1,4 @@
 ---
-import { SITE } from '../lib/site';
 ---
 
 <div
@@ -13,9 +12,8 @@ import { SITE } from '../lib/site';
     <div data-cc-view="banner">
       <h2 class="font-heading text-lg font-semibold mb-2">Sütiket használunk</h2>
       <p class="text-sm text-cream/80 mb-4">
-        A weboldal működéséhez szükséges sütiket mindig használjuk. Az analitikai és a harmadik féltől
-        származó (pl. időpontfoglaló) sütikhez a hozzájárulásod kérjük — bármikor módosíthatod a lábléc
-        „Süti beállítások” linkjén.
+        A weboldal működéséhez szükséges sütiket mindig használjuk. Az analitikai sütikhez a
+        hozzájárulásod kérjük — bármikor módosíthatod a lábléc „Süti beállítások” linkjén.
         <a href="/adatvedelem/" class="underline hover:text-cream">Adatvédelmi tájékoztató</a>
       </p>
       <div class="flex flex-wrap gap-3">
@@ -60,16 +58,6 @@ import { SITE } from '../lib/site';
           </div>
           <input type="checkbox" data-cc-toggle="analytics" class="mt-1 h-5 w-5 shrink-0 accent-clay-500" />
         </div>
-        <div class="flex items-start justify-between gap-4">
-          <div>
-            <p class="font-semibold text-cream">Harmadik féltől származó</p>
-            <p class="text-sm text-cream/70">
-              Pl. a {SITE.name.split(' ')[0]}-féle időpontfoglaló (Calendly) beágyazása. Enélkül a naptár helyett
-              csak egy külső linket látsz.
-            </p>
-          </div>
-          <input type="checkbox" data-cc-toggle="marketing" class="mt-1 h-5 w-5 shrink-0 accent-clay-500" />
-        </div>
       </div>
       <div class="mt-5 flex flex-wrap gap-3">
         <button
@@ -99,7 +87,6 @@ import { SITE } from '../lib/site';
     const bannerView = root.querySelector<HTMLElement>('[data-cc-view="banner"]');
     const settingsView = root.querySelector<HTMLElement>('[data-cc-view="settings"]');
     const analyticsToggle = root.querySelector<HTMLInputElement>('[data-cc-toggle="analytics"]');
-    const marketingToggle = root.querySelector<HTMLInputElement>('[data-cc-toggle="marketing"]');
 
     function show(view: 'banner' | 'settings') {
       root!.classList.remove('hidden');
@@ -114,7 +101,6 @@ import { SITE } from '../lib/site';
     function prefillToggles() {
       const consent = getConsent();
       if (analyticsToggle) analyticsToggle.checked = consent?.analytics ?? false;
-      if (marketingToggle) marketingToggle.checked = consent?.marketing ?? false;
     }
 
     if (!getConsent()) {
@@ -123,13 +109,13 @@ import { SITE } from '../lib/site';
 
     root.querySelectorAll<HTMLButtonElement>('[data-cc-accept-all]').forEach((btn) => {
       btn.addEventListener('click', () => {
-        setConsent({ analytics: true, marketing: true });
+        setConsent({ analytics: true });
         hide();
       });
     });
 
     root.querySelector<HTMLButtonElement>('[data-cc-reject]')?.addEventListener('click', () => {
-      setConsent({ analytics: false, marketing: false });
+      setConsent({ analytics: false });
       hide();
     });
 
@@ -141,7 +127,6 @@ import { SITE } from '../lib/site';
     root.querySelector<HTMLButtonElement>('[data-cc-save]')?.addEventListener('click', () => {
       setConsent({
         analytics: analyticsToggle?.checked ?? false,
-        marketing: marketingToggle?.checked ?? false,
       });
       hide();
     });

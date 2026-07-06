@@ -8,7 +8,6 @@ export const SITE = {
   email: 'hello@akardosbalint.hu',
   instagram: 'https://instagram.com/akardosbalint',
   facebook: 'https://facebook.com/akardosbalint',
-  calendlyUrl: 'https://calendly.com/akardosbalint/konzultacio',
   // TODO: kösd be a választott form-backendet (pl. Formspree, ConvertKit, Resend, Netlify Forms).
   // Amíg üres, a form JS-e egy barátságos hibaüzenetet mutat submit helyett.
   newsletterEndpoint: '',
