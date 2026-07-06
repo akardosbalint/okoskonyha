@@ -134,8 +134,6 @@ const avatars = [
   { file: 'src/assets/testimonials-avatars/gurtler-gabor.svg', bg: palette.sage300, initials: 'GG', fg: palette.forest700 },
   { file: 'src/assets/testimonials-avatars/rimoczi-zsofi.svg', bg: palette.sage200, initials: 'RZ', fg: palette.forest700 },
   { file: 'src/assets/testimonials-avatars/ludman-fruzsi.svg', bg: palette.clay300, initials: 'LF', fg: palette.forest700 },
-  { file: 'src/assets/testimonials-avatars/zsamboki-judit.svg', bg: palette.sage300, initials: 'ZSJ', fg: palette.forest700 },
-  { file: 'src/assets/testimonials-avatars/szekely-david.svg', bg: palette.sage200, initials: 'SD', fg: palette.forest700 },
   { file: 'src/assets/testimonials-avatars/arvai-dori.svg', bg: palette.clay300, initials: 'ÁD', fg: palette.forest700 },
   { file: 'src/assets/testimonials-avatars/otvos-ferenc.svg', bg: palette.sage300, initials: 'ÖF', fg: palette.forest700 },
 ];
