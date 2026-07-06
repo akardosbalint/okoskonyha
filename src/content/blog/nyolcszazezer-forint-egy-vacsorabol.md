@@ -4,8 +4,8 @@ excerpt: "A jótékonysági vacsoráim nem gálaestek – nincs frakk, nincs ár
 date: 2026-06-01
 category: jotekonysag
 tags: ["jótékonyság", "adománygyűjtés", "közösségépítés"]
-cover: ../../assets/blog-covers/jotekonysag-osszefogas.svg
-coverAlt: "Illusztráció egy ajándékdobozról"
+cover: ../../assets/photos/balint-hosting-guests.jpeg
+coverAlt: "Kardos Bálint a vendégekhez szól egy jótékonysági vacsorán"
 ---
 
 Amikor először meséltem egy hagyományos gálaesteket szervező ismerősömnek, hogy jótékonysági vacsorát tartok tizenöt embernek egy lakásban, konyharuhával a vállamon, azt mondta: "ebből sosem lesz komoly összeg." Nos, az elmúlt két évben ezek a "nem komoly" esték együttesen több mint 4 millió forintot hoztak össze különböző ügyeknek.

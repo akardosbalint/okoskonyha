@@ -9,7 +9,7 @@ import TestimonialCarousel from '../components/TestimonialCarousel.astro';
 import Icon from '../components/Icon.astro';
 import MembershipPricing from '../components/MembershipPricing.astro';
 import AdvancedTopicsTeaser from '../components/AdvancedTopicsTeaser.astro';
-import heroImage from '../assets/illustrations/hero.svg';
+import heroImage from '../assets/photos/balint-cooking-action.jpeg';
 import { SITE } from '../lib/site';
 import { BIO_STATS, METHOD_PILLARS } from '../lib/program';
 
@@ -43,7 +43,7 @@ const methodIcons = ['salt', 'plate', 'clock', 'basket'] as const;
         <p class="mt-4 text-sm text-forest-700/80">Bármikor lemondható. Nincs hosszú távú elköteleződés.</p>
       </div>
       <div class="relative">
-        <Image src={heroImage} alt="Illusztráció közös vacsoráról" width={600} height={400} class="w-full rounded-3xl" />
+        <Image src={heroImage} alt="Kardos Bálint főzés közben" width={600} height={600} class="w-full rounded-3xl object-cover aspect-square" />
       </div>
     </div>
   </section>

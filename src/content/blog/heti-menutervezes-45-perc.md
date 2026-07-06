@@ -4,8 +4,8 @@ excerpt: "Nincs időm minden nap három órát a konyhában állni. Így terveze
 date: 2025-12-08
 category: fozesi-tippek
 tags: ["meal prep", "időbeosztás", "gyakorlati tippek"]
-cover: ../../assets/blog-covers/tipp-mealprep.svg
-coverAlt: "Illusztráció egy fazékról"
+cover: ../../assets/photos/food-balanced-plate.jpeg
+coverAlt: "Kiegyensúlyozott, előre elkészített tál sült zöldségekkel, fehérjével és öntettel"
 ---
 
 Sokan azt hiszik, mivel séf vagyok, minden nap friss, háromfogásos ebédet készítek magamnak. Valójában hétköznap sokszor egy tál rizs és sült zöldség a menü – de az a tál mindig ízletes, tápláló, és 5 perc alatt összeáll. A trükk nem a napi főzésben van, hanem egy jól végiggondolt vasárnap délutánban.

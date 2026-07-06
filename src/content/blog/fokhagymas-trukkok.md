@@ -4,8 +4,8 @@ excerpt: "Nem kell hús az ízbombához. Öt egyszerű trükk, amivel bármelyik
 date: 2026-01-20
 category: fozesi-tippek
 tags: ["főzési tippek", "növényi étrend", "gyors receptek"]
-cover: ../../assets/blog-covers/tipp-fokhagyma.svg
-coverAlt: "Illusztráció egy zöld levélről"
+cover: ../../assets/photos/food-pasta-aglio-olio.jpeg
+coverAlt: "Tányér spagetti fokhagymás olívaolajjal"
 featured: true
 ---
 

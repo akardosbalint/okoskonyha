@@ -119,39 +119,10 @@ function avatar({ file, bg, initials, fg }) {
 }
 
 const covers = [
-  { file: 'src/assets/blog-covers/story-vendegvaro.svg', bg: palette.sage100, blobColor: palette.sage300, icon: 'people', iconColor: palette.forest700, seed: 1 },
   { file: 'src/assets/blog-covers/story-elso-vacsora.svg', bg: palette.cream, blobColor: palette.clay300, icon: 'glasses', iconColor: palette.clay500, seed: 2 },
-  { file: 'src/assets/blog-covers/tipp-fokhagyma.svg', bg: palette.sage100, blobColor: palette.sage200, icon: 'leaf', iconColor: palette.forest500, seed: 3 },
-  { file: 'src/assets/blog-covers/tipp-mealprep.svg', bg: palette.cream, blobColor: palette.sage300, icon: 'pot', iconColor: palette.forest700, seed: 4 },
-  { file: 'src/assets/blog-covers/jotekonysag-amigos.svg', bg: palette.sage100, blobColor: palette.clay300, icon: 'heartHands', iconColor: palette.clay500, seed: 5 },
-  { file: 'src/assets/blog-covers/jotekonysag-osszefogas.svg', bg: palette.cream, blobColor: palette.sage200, icon: 'gift', iconColor: palette.forest700, seed: 6 },
-  { file: 'src/assets/blog-covers/story-onironia.svg', bg: palette.sage100, blobColor: palette.sage300, icon: 'plate', iconColor: palette.clay500, seed: 7 },
   { file: 'src/assets/blog-covers/tipp-idobeosztas.svg', bg: palette.cream, blobColor: palette.clay300, icon: 'calendar', iconColor: palette.forest500, seed: 8 },
   { file: 'src/assets/blog-covers/tipp-fozes4eleme.svg', bg: palette.sage200, blobColor: palette.sage300, icon: 'saltShaker', iconColor: palette.forest700, seed: 30 },
-  { file: 'src/assets/blog-covers/tipp-batchcooking.svg', bg: palette.cream, blobColor: palette.clay300, icon: 'stack', iconColor: palette.forest700, seed: 31 },
-  { file: 'src/assets/illustrations/hero.svg', bg: palette.sage300, blobColor: palette.sage200, icon: 'people', iconColor: palette.forest700, seed: 9 },
-  { file: 'src/assets/illustrations/impact-hero.svg', bg: palette.cream, blobColor: palette.clay300, icon: 'heartHands', iconColor: palette.clay500, seed: 11 },
-  { file: 'src/assets/illustrations/services-hero.svg', bg: palette.cream, blobColor: palette.sage300, icon: 'plate', iconColor: palette.clay500, seed: 13 },
   { file: 'src/assets/illustrations/contact-hero.svg', bg: palette.sage100, blobColor: palette.clay300, icon: 'calendar', iconColor: palette.forest700, seed: 14 },
-  // Rólam galéria
-  { file: 'src/assets/illustrations/gallery/rolam-1.svg', bg: palette.sage100, blobColor: palette.sage300, icon: 'pot', iconColor: palette.forest700, seed: 15 },
-  { file: 'src/assets/illustrations/gallery/rolam-2.svg', bg: palette.cream, blobColor: palette.clay300, icon: 'leaf', iconColor: palette.forest500, seed: 16 },
-  { file: 'src/assets/illustrations/gallery/rolam-3.svg', bg: palette.sage100, blobColor: palette.sage200, icon: 'people', iconColor: palette.clay500, seed: 17 },
-  { file: 'src/assets/illustrations/gallery/rolam-4.svg', bg: palette.cream, blobColor: palette.sage300, icon: 'glasses', iconColor: palette.forest700, seed: 18 },
-  { file: 'src/assets/illustrations/gallery/rolam-5.svg', bg: palette.sage100, blobColor: palette.clay300, icon: 'plate', iconColor: palette.forest700, seed: 19 },
-  { file: 'src/assets/illustrations/gallery/rolam-6.svg', bg: palette.cream, blobColor: palette.sage200, icon: 'heartHands', iconColor: palette.clay500, seed: 20 },
-  // Privát séfkedés galéria
-  { file: 'src/assets/illustrations/gallery/privat-1.svg', bg: palette.sage100, blobColor: palette.sage300, icon: 'plate', iconColor: palette.forest700, seed: 21 },
-  { file: 'src/assets/illustrations/gallery/privat-2.svg', bg: palette.cream, blobColor: palette.clay300, icon: 'pot', iconColor: palette.clay500, seed: 22 },
-  { file: 'src/assets/illustrations/gallery/privat-3.svg', bg: palette.sage100, blobColor: palette.sage200, icon: 'glasses', iconColor: palette.forest700, seed: 23 },
-  // Jótékonysági vacsorák galéria
-  { file: 'src/assets/illustrations/gallery/jotekonysagi-1.svg', bg: palette.sage100, blobColor: palette.clay300, icon: 'heartHands', iconColor: palette.forest700, seed: 24 },
-  { file: 'src/assets/illustrations/gallery/jotekonysagi-2.svg', bg: palette.cream, blobColor: palette.sage300, icon: 'people', iconColor: palette.clay500, seed: 25 },
-  { file: 'src/assets/illustrations/gallery/jotekonysagi-3.svg', bg: palette.sage100, blobColor: palette.sage200, icon: 'gift', iconColor: palette.forest700, seed: 26 },
-  // Impact / jótékonyság oldal galéria
-  { file: 'src/assets/illustrations/gallery/impact-1.svg', bg: palette.sage100, blobColor: palette.clay300, icon: 'gift', iconColor: palette.forest700, seed: 27 },
-  { file: 'src/assets/illustrations/gallery/impact-2.svg', bg: palette.cream, blobColor: palette.sage300, icon: 'heartHands', iconColor: palette.clay500, seed: 28 },
-  { file: 'src/assets/illustrations/gallery/impact-3.svg', bg: palette.sage100, blobColor: palette.sage200, icon: 'people', iconColor: palette.forest700, seed: 29 },
 ];
 covers.forEach(cover);
 

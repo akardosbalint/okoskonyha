@@ -4,8 +4,8 @@ excerpt: "Hogyan lett egy tizennégy fős vacsorapartiból elég adomány ahhoz,
 date: 2026-03-10
 category: jotekonysag
 tags: ["jótékonyság", "Amigos a Gyerekekért", "partnerszervezet"]
-cover: ../../assets/blog-covers/jotekonysag-amigos.svg
-coverAlt: "Illusztráció két összekulcsolt kézről, szív formában"
+cover: ../../assets/photos/charity-dinner-menu.jpeg
+coverAlt: "Leves és kézzel írt menükártya egy jótékonysági pop-up vacsorán"
 featured: true
 ---
 

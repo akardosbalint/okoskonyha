@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import CTAButton from '../../components/CTAButton.astro';
-import servicesHero from '../../assets/illustrations/services-hero.svg';
+import servicesHero from '../../assets/photos/food-tacos-catering.jpeg';
 import { SITE } from '../../lib/site';
 
 const services = [
@@ -43,7 +43,7 @@ const services = [
           arról szól, hogy az étel ürügy legyen valódi emberi kapcsolódásra.
         </p>
       </div>
-      <Image src={servicesHero} alt="Illusztráció egy tányérról" width={600} height={400} class="w-full rounded-3xl" />
+      <Image src={servicesHero} alt="Tálalt tacók egy rendezvényen" width={600} height={600} class="w-full rounded-3xl object-cover aspect-square" />
     </div>
   </section>
 
