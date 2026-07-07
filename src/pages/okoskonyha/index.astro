@@ -10,7 +10,7 @@ import MembershipPricing from '../../components/MembershipPricing.astro';
 import AdvancedTopicsTeaser from '../../components/AdvancedTopicsTeaser.astro';
 import balintProfile from '../../assets/photos/balint-cooking-portrait.jpeg';
 import { SITE } from '../../lib/site';
-import { BIO_STATS, METHOD_PILLARS, MEMBERSHIP_BENEFITS } from '../../lib/program';
+import { BIO_STATS, METHOD_PILLARS, MEMBERSHIP_BENEFITS, PRICING } from '../../lib/program';
 
 const testimonialEntries = await getCollection('testimonials');
 const methodIcons = ['shield', 'book', 'coin', 'salt', 'fat', 'acid', 'heat', 'leaf', 'plate', 'clock', 'basket', 'calendar'] as const;
@@ -43,12 +43,59 @@ const faqs = [
   { q: 'Mi történik, ha elakadok egy recepttel vagy technikával?', a: 'A zárt közösségben bármikor kérdezhetsz — tőlem és a tagtársaidtól is —, és a havi élő főzős alkalmon is hozhatod a konkrét problémáidat.' },
   { q: 'Mikor nyílnak meg a haladó mesterkurzusok?', a: 'Az Alapképzés (a Batch Cooking Alapkurzus) elvégzése után — ez adja meg azt a biztos alaptudást, amire a haladó témák (fermentálás, kovászolás, mesterkurzusok) épülnek.' },
 ];
+
+const toAmount = (price: string) => price.replace(/[^0-9]/g, '');
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.a,
+    },
+  })),
+};
+
+const serviceJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: PRICING.programName,
+  description: 'Zárt online közösség heti receptekkel, havi élő főzős alkalmakkal és a batch cooking módszerrel — heti max. 2×2 óra főzéssel az egész heti étkezés megoldva.',
+  provider: {
+    '@type': 'Person',
+    name: SITE.name,
+  },
+  areaServed: 'HU',
+  offers: [
+    {
+      '@type': 'Offer',
+      name: PRICING.monthly.label,
+      price: toAmount(PRICING.monthly.price),
+      priceCurrency: 'HUF',
+      url: SITE.checkoutUrl,
+      availability: 'https://schema.org/InStock',
+    },
+    {
+      '@type': 'Offer',
+      name: PRICING.annual.label,
+      price: toAmount(PRICING.annual.price),
+      priceCurrency: 'HUF',
+      url: SITE.checkoutUrl,
+      availability: 'https://schema.org/InStock',
+    },
+  ],
+};
 ---
 
 <Layout
   title="Okoskonyha — főzz finomabbat és egészségesebbet, olcsóbban és gyorsabban"
   description="Csatlakozz az Okoskonyha fizetős közösséghez: heti receptek, havi élő főzős alkalmak és egy csapat, aki melletted áll az egészségesebb, olcsóbb és gyorsabb főzésben."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} slot="head" is:inline />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceJsonLd)} slot="head" is:inline />
   <!-- Hero -->
   <section class="bg-sage-300 py-16 md:py-24">
     <div class="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2 md:items-center md:px-6">
@@ -161,18 +208,18 @@ const faqs = [
     </div>
   </section>
 
-  <!-- Pricing -->
-  <section class="mx-auto max-w-4xl px-4 py-16 md:px-6">
-    <SectionHeading eyebrow="Árazás" title="Válaszd ki, mi illik" accent="hozzád" />
-    <MembershipPricing />
-  </section>
-
   <TestimonialCarousel
     items={testimonialEntries.map((t) => ({ name: t.data.name, role: t.data.role, quote: t.data.quote, avatar: t.data.avatar }))}
     eyebrow="Tagok mondták"
     title="Amit a közösségről"
     accent="mondanak"
   />
+
+  <!-- Pricing -->
+  <section class="mx-auto max-w-4xl px-4 py-16 md:px-6">
+    <SectionHeading eyebrow="Árazás" title="Válaszd ki, mi illik" accent="hozzád" />
+    <MembershipPricing />
+  </section>
 
   <section class="mx-auto max-w-3xl px-4 py-16 md:px-6">
     <SectionHeading eyebrow="GYIK" title="Gyakori" accent="kérdések" />

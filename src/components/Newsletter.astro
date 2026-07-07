@@ -2,7 +2,7 @@
 import { SITE } from '../lib/site';
 
 interface Props {
-  variant?: 'inline' | 'card';
+  variant?: 'inline' | 'card' | 'dark-inline';
   title?: string;
   description?: string;
 }
@@ -11,16 +11,20 @@ const {
   title = 'Iratkozz fel a hírlevélre',
   description = 'Heti egy e-mail: új blogposztok, meghívók a jótékonysági vacsorákra és korai hozzáférés az Okoskonyha eseményekhez. Se spam, se felesleges köntörfalazás.',
 } = Astro.props;
+
+// A 'card' és a 'dark-inline' egyaránt sötét háttérre szánt, világos szöveggel — a különbség csak
+// annyi, hogy a 'card' saját forest-700 dobozt kap, a 'dark-inline' egy már sötét szekcióba simul bele.
+const isLightText = variant === 'card' || variant === 'dark-inline';
 ---
 
 <div class:list={[
-  'rounded-3xl p-6 md:p-8',
-  variant === 'card' ? 'bg-forest-700 text-cream' : 'bg-transparent',
+  'rounded-3xl',
+  variant === 'card' ? 'bg-forest-700 text-cream p-6 md:p-8' : 'bg-transparent',
 ]}>
-  <h3 class:list={['text-xl md:text-2xl font-semibold mb-2', variant === 'card' ? 'text-cream' : 'text-forest-700']}>
+  <h3 class:list={['text-xl md:text-2xl font-semibold mb-2', isLightText ? 'text-cream' : 'text-forest-700']}>
     {title}
   </h3>
-  <p class:list={['mb-5 text-sm md:text-base', variant === 'card' ? 'text-sage-100/90' : 'text-forest-600']}>
+  <p class:list={['mb-5 text-sm md:text-base', isLightText ? 'text-sage-100/90' : 'text-forest-600']}>
     {description}
   </p>
   <form
@@ -46,17 +50,17 @@ const {
         Feliratkozom
       </button>
     </div>
-    <label class:list={['mt-3 flex items-start gap-2 text-sm', variant === 'card' ? 'text-cream/80' : 'text-forest-600']}>
+    <label class:list={['mt-3 flex items-start gap-2 text-sm', isLightText ? 'text-cream/80' : 'text-forest-600']}>
       <input type="checkbox" name="privacyConsent" required class="mt-0.5 h-4 w-4 shrink-0 accent-clay-500" />
       <span>
         Elfogadom, hogy az e-mail címemet hírlevél küldése céljából kezeljék. Bővebben az
-        <a href="/adatvedelem/" class:list={['underline', variant === 'card' ? 'text-cream hover:text-clay-300' : 'text-clay-500 hover:text-clay-600']}>
+        <a href="/adatvedelem/" class:list={['underline', isLightText ? 'text-cream hover:text-clay-300' : 'text-clay-500 hover:text-clay-600']}>
           Adatvédelmi tájékoztatóban
         </a>.
       </span>
     </label>
   </form>
-  <p data-newsletter-message class="mt-3 text-sm" role="status"></p>
+  <p data-newsletter-message class:list={['mt-3 text-sm', isLightText ? 'text-cream' : 'text-forest-700']} role="status"></p>
 </div>
 
 <script>

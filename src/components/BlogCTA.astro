@@ -1,5 +1,6 @@
 ---
 import CTAButton from './CTAButton.astro';
+import Newsletter from './Newsletter.astro';
 import { SITE } from '../lib/site';
 ---
 
@@ -16,5 +17,13 @@ import { SITE } from '../lib/site';
   <div class="flex flex-wrap items-center justify-center gap-4">
     <CTAButton href={SITE.checkoutUrl} label="Csatlakozom az Okoskonyhához" size="lg" outbound />
     <CTAButton href="/okoskonyha/" label="Ismerd meg a közösséget" variant="ghost" size="lg" />
+  </div>
+
+  <div class="mx-auto mt-10 max-w-md border-t border-cream/15 pt-8">
+    <Newsletter
+      variant="dark-inline"
+      title="Még nem állsz készen csatlakozni?"
+      description="Iratkozz fel a hírlevélre — heti egy e-mail új receptekkel, míg eldöntöd."
+    />
   </div>
 </div>
