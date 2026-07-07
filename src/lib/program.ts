@@ -140,7 +140,7 @@ export const PRICING = {
     futurePrice: '88 900 Ft',
     increasePercent: '48%',
   },
-  priceNote: 'Az Éves tagsággal napi bontásban olcsóbban jutsz hozzá ugyanahhoz a közösséghez.',
+  priceNote: 'Az Éves tagsággal közel 20%-kal olcsóbban jutsz hozzá ugyanahhoz a közösséghez — 2 teljes hónapot ingyen kapsz.',
   billingNote: 'Mindkét csomaghoz 3 napos ingyenes próbaidőszak jár (bankkártya megadásával) — a próbaidő alatt bármikor, indoklás nélkül lemondhatod. Utána a tagság havonta / évente automatikusan megújul, és ugyancsak bármikor lemondható.',
 };
 
