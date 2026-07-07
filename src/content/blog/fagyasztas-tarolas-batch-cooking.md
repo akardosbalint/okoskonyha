@@ -45,7 +45,7 @@ Fagyassz mindig egy étkezésnyi adagokban, ne egy nagy tömbben. Ha egyben fagy
 
 Minden dobozon tüntesd fel a dátumot és a tartalmat. Ez triviálisnak hangzik, mégis ez az a lépés, amit a legtöbben kihagynak — aztán két hónap múlva egy azonosítatlan, fagyott tömböt találnak, amit végül kidobnak, mert nem emlékeznek, mi az és mikor készült.
 
-## Kiolvasztás biztonságosan
+## Biztonságos kiolvasztás
 
 Mindig hűtőben olvaszd ki a fagyasztott ételt, ne szobahőmérsékleten a pulton. A hűtőben történő, lassú kiolvasztás alacsonyan tartja a hőmérsékletet a folyamat alatt, míg a pulton hagyott étel újra hosszú időt tölt a "veszélyzónában".
 

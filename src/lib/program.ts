@@ -105,9 +105,9 @@ export const MEMBERSHIP_BENEFITS = [
   { icon: 'calendar', title: 'Havi kihívások', text: 'Konkrét, apró lépésekre bontott kihívások, amik tényleg végigvihetők.' },
   { icon: 'gift', title: 'Korai hozzáférés', text: 'Elsőként értesülsz a jótékonysági vacsorákról és privát eseményekről.' },
   { icon: 'book', title: 'Receptarchívum', text: 'Minden korábbi recept és élő alkalom felvétele egy helyen, bármikor visszanézhető.' },
-  { icon: 'coin', title: 'Exkluzív partner-kedvezmények', text: 'Kedvezmények a közösség partnereinek konyhai eszközeiből és alapanyagaiból — tagként olcsóbban jutsz jó minőségű cuccokhoz.' },
+  { icon: 'coin', title: 'Exkluzív partner-kedvezmények', text: 'Kedvezmények a közösség partnereinek konyhai eszközeiből és alapanyagaiból — tagként olcsóbban jutsz jó minőségű eszközökhöz és alapanyagokhoz.' },
   { icon: 'shield', title: 'Örökérvényű főzőtudás', text: 'Nem egy receptgyűjteményt kapsz, hanem egy rendszert — ami azután is veled marad, ha egyszer szüneteltetnéd a tagságot.' },
-  { icon: 'basket', title: 'Egészségtudatos közösség', text: 'Hasonlóan gondolkodó emberek társasága, akikkel megoszthatod a saját fejlődésed — motiváció és elfogadás, ítélkezés nélkül.' },
+  { icon: 'basket', title: 'Egészségtudatos közösség', text: 'Hasonlóan gondolkodó emberek társasága, akikkel megoszthatod a saját fejlődésedet — motiváció és elfogadás, ítélkezés nélkül.' },
 ] as const;
 
 // Indulási (launch) árazás — 2026. július 31-ig érvényes.

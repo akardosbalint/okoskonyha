@@ -11,7 +11,7 @@ featured: true
 
 Amikor azt mondom valakinek, hogy vegán séf vagyok, az első reakció szinte mindig ugyanaz: "de akkor biztos íztelen minden, amit főzöl". Nem. Az íz nem a hústól jön – az ízprofilok kezelésétől. És a fokhagyma az egyik legjobb eszközöm erre.
 
-## 1. Süsd el pörköltre, ne csak dinszteld
+## 1. Pirítsd aranybarnára, ne csak dinszteld
 
 A legtöbben csak beledobják a fokhagymát az olajba, és két perc múlva már bele is teszik a többi hozzávalót. Próbáld ki: hagyd, hogy enyhén aranybarnára piruljon, mielőtt bármi mást hozzáadsz. Az égett szélű, karamellizált fokhagyma mélyebb, édesebb ízt ad, mint a nyers vagy csak enyhén megdinsztelt.
 
@@ -23,9 +23,9 @@ Tegyél 8-10 gerezd fokhagymát egy kis edénybe, önts rá annyi olívaolajat, 
 
 Ha még nem próbáltad, keress fekete fokhagymát (fermentált, édeskés, balzsamecet-szerű ízvilággal). Egy gerezd finomra vágva egy leves vagy szósz alapjába teszi a különbséget "jó" és "hűha, ez mi volt" között.
 
-## 4. Fokhagymaolaj infúzió, alacsony hőn
+## 4. Fokhagymaolaj készítése alacsony hőn
 
-Ne pirítsd meg túl gyorsan magas hőn – így könnyen megég és keserű lesz. Alacsony hőn, türelemmel infundálva az olaj egyenletesen veszi fel az aromát, anélkül hogy a fokhagyma odaégne.
+Ne pirítsd meg túl gyorsan magas hőn – így könnyen megég és keserű lesz. Alacsony hőn, lassan ízesítve az olaj egyenletesen veszi fel az aromát, anélkül hogy a fokhagyma odaégne.
 
 ## 5. A "kettős adagolás" trükk
 
