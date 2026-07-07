@@ -44,4 +44,6 @@ A legtöbb kés nem a rossz minőség miatt kopik el gyorsan, hanem a rossz bán
 
 Ezekkel az apró szokásokkal egy megfizethető kés is simán kitart évekig – gyakran tovább, mint egy drága kés, amit mosogatógépbe dobálnak.
 
+Vagyis a lényeg: nem kell rá vagyonokat költened. Egy jól megválasztott, megfizethető kés és néhány karbantartási szokás többet ér, mint egy drága márka, amire nem vigyázol.
+
 Ha szeretnéd megtanulni a konyhai alapokat a biztonságos késhasználattól a tárolási rutinig, ez pontosan az, amivel az [Okoskonyha](/okoskonyha/) módszerének első modulja indul. Addig is, ha a főzés másik alapkövére vagy kíváncsi, nézd meg a [só-zsír-sav-hő elvet](/blog/a-fozes-4-eleme/) – ezzel a két alappal receptek nélkül is magabiztosan tudsz főzni.
