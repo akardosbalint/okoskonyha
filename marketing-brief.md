@@ -30,8 +30,8 @@ olcsóbban, gyorsabban és egészségesebben (kizárólag növényi alapon) főz
 
 ## 3. A termék: Okoskonyha tagság
 
-Egyetlen termék: havidíjas (pontosabban 4 hetes ciklusú), zárt tagsági közösség a Circle.so
-platformon.
+Egyetlen termék: havi vagy éves díjas, zárt tagsági közösség a Circle.so platformon, 3 napos
+ingyenes próbaidőszakkal.
 
 ### Mit kapsz tagként
 
@@ -74,12 +74,12 @@ konyha, cukormentes desszertek, grillezés/füstölés növényi alapanyagokkal,
 
 | Csomag | Ár | Heti egyenérték |
 |---|---|---|
-| 4 hetes tagság | 5 960 Ft / 4 hét | kb. 1 490 Ft / hét |
-| Éves tagság | 59 600 Ft / 52 hét | kb. 1 150 Ft / hét |
+| Havi tagság | 5 990 Ft / hó | kb. 1 380 Ft / hét |
+| Éves tagság | 59 990 Ft / év | kb. 1 154 Ft / hét |
 
-**Fontos mechanikai részlet:** a "4 hetes tagság" 28 naponta újul meg, NEM naptári
-hónaponta — ez évi 13 elszámolási ciklust jelent, nem 12-t. Ezt a kommunikációban mindig
-átláthatóan, heti bontásban is fel kell tüntetni (ne csak "havi díj"-ként hivatkozzunk rá).
+**Próbaidőszak:** mindkét csomaghoz 3 napos ingyenes próbaidőszak jár (bankkártya
+megadásával) — a próbaidő alatt bármikor, indoklás nélkül lemondható, ekkor díj nem kerül
+levonásra. A próbaidő után a Havi tagság havonta, az Éves tagság évente egyszer újul meg.
 Bármikor lemondható, nincs hosszú távú elköteleződés.
 
 ### Hol él a termék
@@ -134,7 +134,7 @@ influenszer-tartalmaktól:
 - **Nyelvezet:** magyar, közvetlen tegeződő ("megtanulod", "csatlakozz") — barátságos,
   gyakorlatias, sallangmentes.
 - **Ígéretek konkrétak, nem homályosak:** "heti max. 2×2 óra", "18+ kombináció egy
-  főzésből", "5 960 Ft / 4 hét" — mindig számmal, sosem csak "gyorsan és olcsón".
+  főzésből", "5 990 Ft / hó" — mindig számmal, sosem csak "gyorsan és olcsón".
 - **Nincs vegán-prozelitizmus.** A közösség kizárólag növényi alapú, de a kommunikáció nem
   ideológiai — praktikus, egészség- és pénztárca-központú érvelés ("Nem az a célom, hogy
   mindenki vegán legyen").
@@ -190,8 +190,10 @@ tagsági landing oldalon is megjelennek.)*
 ## 9. Gyakori ellenvetések (a landing oldal GYIK-jéből)
 
 - **"Mennyibe kerül?"** → Nincs rejtett költség, bármikor lemondható, lásd árazás fent.
-- **"Havonta vonjátok le?"** → Nem, 4 hetente (28 naponta), ezért évi 13 ciklus — mindig
-  heti bontásban is kommunikálva.
+- **"Van próbaidőszak?"** → Igen, mindkét csomaghoz 3 napos ingyenes próbaidőszak (kártya
+  megadásával), próbaidő alatt bármikor lemondható, díjmentesen.
+- **"Havonta vonjátok le?"** → A próbaidő után igen, a Havi tagság havonta, az Éves tagság
+  évente egyszer újul meg.
 - **"Kezdőként is érdemes?"** → Igen, a legtöbb tag kezdő.
 - **"Kell speciális felszerelés?"** → Nem, alap eszközökkel (fazék, serpenyő, kés) is megy.
 - **"Csak vegán receptek vannak?"** → Igen, kizárólag növényi alapú, következetesen minden
@@ -222,6 +224,6 @@ tagsági landing oldalon is megjelennek.)*
 - Alapítva: 2020
 - 60+ esemény, 4 ország, 1000+ vendég
 - 20+ jótékonysági vacsora, 2M Ft+ adomány, 3 partnerszervezet
-- Tagság: 5 960 Ft / 4 hét (kb. 1 490 Ft/hét) vagy 59 600 Ft / 52 hét (kb. 1 150 Ft/hét)
+- Tagság: 5 990 Ft / hó (kb. 1 380 Ft/hét) vagy 59 990 Ft / év (kb. 1 154 Ft/hét), mindkettőhöz 3 napos ingyenes próbaidőszak
 - Módszer: 12 modulos Batch Cooking Alapkurzus + haladó mesterkurzusok
 - Ígéret: heti max. 2×2 óra főzéssel az egész heti étkezés megoldva

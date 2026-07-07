@@ -111,26 +111,25 @@ export const MEMBERSHIP_BENEFITS = [
 ] as const;
 
 // Indulási (launch) árazás — 2026. július 31-ig érvényes.
-// FONTOS: a tagság 4 hetente (28 naponta) újul meg, NEM naptári hónaponta/évente —
-// ezért a "period" mezők hetekben vannak megadva, nem "hó"/"év" formában.
-// Ez tudatos, átlátható döntés: a 4 hetes ciklus évi 13 (nem 12) elszámolást jelent.
+// A tagság a Circle.so-n valódi naptári hónaponta / évente újul meg (nem 4 hetes ciklusban),
+// és mindkét csomaghoz 3 napos ingyenes próbaidőszak jár (bankkártya megadásával).
 export const PRICING = {
   programName: 'Okoskonyha tagság',
   introOffer: 'Indulási ár — 2026. július 31-ig érvényes',
   monthly: {
-    label: '4 hetes tagság',
-    price: '5 960 Ft',
-    period: '/ 4 hét',
-    weeklyEquivalent: 'kb. 1 490 Ft / hét',
+    label: 'Havi tagság',
+    price: '5 990 Ft',
+    period: '/ hó',
+    weeklyEquivalent: 'kb. 1 380 Ft / hét',
   },
   annual: {
     label: 'Éves tagság',
-    price: '59 600 Ft',
-    period: '/ 52 hét',
-    weeklyEquivalent: 'kb. 1 150 Ft / hét',
+    price: '59 990 Ft',
+    period: '/ év',
+    weeklyEquivalent: 'kb. 1 154 Ft / hét',
   },
   priceNote: 'Az Éves tagsággal heti bontásban olcsóbban jutsz hozzá ugyanahhoz a közösséghez.',
-  billingNote: 'A tagság 4 hetente (28 naponta) újul meg, nem naptári hónaponta — ez évente 13 elszámolási időszakot jelent. Részletek az ÁSZF-ben.',
+  billingNote: 'Mindkét csomaghoz 3 napos ingyenes próbaidőszak jár (bankkártya megadásával) — a próbaidő alatt bármikor, indoklás nélkül lemondhatod. Utána a tagság havonta / évente automatikusan megújul, és ugyancsak bármikor lemondható.',
 };
 
 // Jótékonysági partnerszervezetek és eredmények.
