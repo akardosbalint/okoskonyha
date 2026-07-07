@@ -18,9 +18,10 @@ olcsóbban, gyorsabban és egészségesebben (kizárólag növényi alapon) főz
   - 65+ esemény, 6 országban
   - 1000+ vendég az asztaloknál
   - 5+ év szakácstapasztalat + életmód-tanácsadói végzettség
-  - 80–100 fős esküvőkön főzött
+  - 80–100 fős esküvőkön és elvonulásokon is főzött
   - 9 hónapig egy budai család privát séfje volt
-  - Vezetett már növényi alapú konyhát fesztiválokon is
+  - Vezetett már konyhát az ország egyik legnagyobb fesztiválján
+  - Tartott főzőtanfolyamokat, és írt már étlapot is
 - **Miért séf ÉS tanácsadó egyben:** "Mert a főzés önmagában nem elég — az emberek nem attól
   esznek egészségesebben, hogy egyszer kapnak egy remek vacsorát tőlem." A recept önmagában
   nem old meg semmit — ezért nem receptet, hanem *rendszert és közösséget* ad.
