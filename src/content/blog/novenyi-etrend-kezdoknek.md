@@ -71,7 +71,7 @@ A növényi tejek nagy része kalciummal dúsított — érdemes ezt ellenőrizn
 
 ## Egy egyszerű, egyhetes belépő terv
 
-Nem kell egyszerre mindent bevezetned. Egy reális első hét így nézhet ki: válassz ki 3 napot, amikor teljesen növényi alapon eszel, és azokon a napokon alkalmazd a tányér-elvet és egy batch cooking alapkomponenst (pl. egy adag sült tofu és egy adag főtt gabona, amit a hét különböző pontjain más-más szósszal kombinálsz). A maradék napokon egyszerűen figyeld meg, hova tudnál még egy növényi elemet becsempészni — anélkül, hogy bármit is "el kellene vennie".
+Nem kell egyszerre mindent bevezetned. Egy reális első hét így nézhet ki: válassz ki 3 napot, amikor teljesen növényi alapon eszel, és azokon a napokon alkalmazd a tányér-elvet és egy batch cooking alapkomponenst (pl. egy adag sült tofu és egy adag főtt gabona, amit a hét különböző pontjain más-más szósszal kombinálsz). A maradék napokon egyszerűen figyeld meg, hova tudnál még egy növényi elemet becsempészni — anélkül, hogy bármit is "el kellene venned".
 
 ## A lényeg
 
