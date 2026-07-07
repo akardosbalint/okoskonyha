@@ -5,7 +5,7 @@ date: 2026-02-14
 category: sztorik
 tags: ["vacsorapartik", "közösség", "sztori"]
 cover: ../../assets/photos/dinner-long-table.jpeg
-coverAlt: "Nyolc vendég egy hosszú vacsoraasztal körül egy lakásvacsorán"
+coverAlt: "Tizenkét vendég egy hosszú vacsoraasztal körül egy lakásvacsorán"
 featured: true
 ---
 

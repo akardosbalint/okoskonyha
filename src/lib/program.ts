@@ -11,7 +11,7 @@ export const BIO_STATS = [
 ];
 
 export const BIO_FACTS = [
-  '12 fős, 5 fogásos lakásvacsoráktól a 30 fős, 7 fogásos jótékonysági gálákig',
+  '12 fős, 5 fogásos lakásvacsoráktól egy 30 fős, 7 fogásos jótékonysági gáláig',
   'Főztem 80–100 fős esküvőkön',
   '9 hónapig dolgoztam egy budai család privát séfjeként',
   'Vezettem egy növényi alapú konyhát fesztiválokon',
