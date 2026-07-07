@@ -105,7 +105,8 @@ const {
     const nextBtn = root.querySelector<HTMLButtonElement>('[data-carousel-next]');
     if (!track || !prevBtn || !nextBtn) return;
 
-    const cards = Array.from(track.children) as HTMLElement[];
+    const trackEl = track;
+    const cards = Array.from(trackEl.children) as HTMLElement[];
     if (cards.length < 2) {
       prevBtn.hidden = true;
       nextBtn.hidden = true;
@@ -116,7 +117,11 @@ const {
 
     function goTo(index: number) {
       current = ((index % cards.length) + cards.length) % cards.length;
-      cards[current].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+      const card = cards[current];
+      // Scroll only the track's own horizontal axis — scrollIntoView() can also drag
+      // the page's vertical scroll position when the carousel is partially off-screen,
+      // which yanks mobile readers away from where they were reading.
+      trackEl.scrollTo({ left: card.offsetLeft - trackEl.offsetLeft, behavior: 'smooth' });
     }
 
     let timer = window.setInterval(() => goTo(current + 1), AUTO_ADVANCE_MS);
