@@ -8,7 +8,7 @@ cover: ../../assets/photos/balint-hosting-guests.jpeg
 coverAlt: "Kardos Bálint a vendégekhez szól egy jótékonysági vacsorán"
 ---
 
-Amikor először meséltem egy hagyományos gálaesteket szervező ismerősömnek, hogy jótékonysági vacsorát tartok tizenöt embernek egy lakásban, konyharuhával a vállamon, azt mondta: "ebből sosem lesz komoly összeg." Nos, az évek során ezek a "nem komoly" esték együttesen több mint 2 millió forintot hoztak össze különböző ügyeknek.
+Amikor először meséltem egy hagyományos gálaesteket szervező ismerősömnek, hogy jótékonysági vacsorát tartok tizenöt embernek egy lakásban, konyharuhával a vállamon, azt mondta: „ebből sosem lesz komoly összeg.” Nos, az évek során ezek a „nem komoly” esték együttesen több mint 2 millió forintot hoztak össze különböző ügyeknek.
 
 ## Miért működik a kis léptékű megközelítés?
 
@@ -16,7 +16,7 @@ Amikor először meséltem egy hagyományos gálaesteket szervező ismerősömne
 
 **2. A történet nem diavetítésen keresztül jön, hanem élőben.** Amikor egy partnerszervezet munkatársa a második fogás közben mesél, és bárki közbeszólhat kérdéssel, az egészen más érzés, mint egy 10 perces promóciós videó egy nagyteremben.
 
-**3. Az adományozás nem "kötelező pillanat", hanem szerves rész.** Nincs elkülönített "most pedig adományozzunk" szegmens. A beszélgetés természetes részeként jön elő, sokszor a vendégek kezdeményezik.
+**3. Az adományozás nem „kötelező pillanat”, hanem szerves rész.** Nincs elkülönített „most pedig adományozzunk” szegmens. A beszélgetés természetes részeként jön elő, sokszor a vendégek kezdeményezik.
 
 ## Egy konkrét este számokban
 

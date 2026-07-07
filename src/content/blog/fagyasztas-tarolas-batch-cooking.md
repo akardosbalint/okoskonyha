@@ -14,13 +14,13 @@ A [batch cooking](/blog/mi-az-a-batch-cooking/) lényege, hogy egyszer főzöl, 
 
 Egy hagyományos, aznap elkészített és elfogyasztott vacsoránál a tárolási hibák kockázata alacsony — hiszen az étel gyorsan elfogy. A batch cookingnál viszont napokig, sokszor hetekig áll az étel a hűtőben vagy a fagyasztóban, mielőtt megeszed. Itt egyetlen rossz szokás — forrón lezárt doboz, túl sokáig kint hagyott alapanyag — sokkal nagyobb hatással van az eredményre.
 
-## A "veszélyzóna"
+## A „veszélyzóna”
 
 Az élelmiszerbiztonsági alapszabály, amit érdemes fejben tartanod: 5°C és 60°C között a baktériumok gyorsan szaporodnak. Ez növényi alapanyagoknál is releváns — például főtt gabonánál, hüvelyesnél vagy tejmentes szószoknál egyaránt. A gyakorlati tanulság: ne hagyd a frissen főzött ételt hosszan szobahőmérsékleten állni, mielőtt hűtőbe vagy fagyasztóba kerülne.
 
 ## Gyors hűtés — az első szabály
 
-Ne tedd a frissen főzött batch elemeket (pl. lencse, quinoa, sült zöldség) forrón, zárt dobozban a hűtőbe. A zárt, meleg doboz belsejében a gőz kicsapódik, a hőmérséklet lassan csökken, és pont a "veszélyzónában" tölt hosszú időt az étel. Ehelyett hűtsd előbb lapos edényben, szétterítve — így sokkal gyorsabban átesik a kritikus hőmérsékleti tartományon —, és csak utána zárd dobozba, illetve tedd hűtőbe vagy fagyasztóba.
+Ne tedd a frissen főzött batch elemeket (pl. lencse, quinoa, sült zöldség) forrón, zárt dobozban a hűtőbe. A zárt, meleg doboz belsejében a gőz kicsapódik, a hőmérséklet lassan csökken, és pont a „veszélyzónában” tölt hosszú időt az étel. Ehelyett hűtsd előbb lapos edényben, szétterítve — így sokkal gyorsabban átesik a kritikus hőmérsékleti tartományon —, és csak utána zárd dobozba, illetve tedd hűtőbe vagy fagyasztóba.
 
 ## Meddig áll el mi? — a gyakorlati táblázat
 
@@ -39,15 +39,15 @@ A legtöbb főtt gabona, hüvelyes és sült/párolt zöldség kiválóan fagyas
 
 ## Az adagolás elve
 
-Fagyassz mindig egy étkezésnyi adagokban, ne egy nagy tömbben. Ha egyben fagyasztod le az egész heti mennyiséget, minden alkalommal az egészet kell felengedned, még akkor is, ha csak egy adagra van szükséged — ez pazarláshoz és a "kényelmesebb" gyorsételhez vezet, pont azon a napon, amikor a batch cookingnak segítenie kellene.
+Fagyassz mindig egy étkezésnyi adagokban, ne egy nagy tömbben. Ha egyben fagyasztod le az egész heti mennyiséget, minden alkalommal az egészet kell felengedned, még akkor is, ha csak egy adagra van szükséged — ez pazarláshoz és a „kényelmesebb” gyorsételhez vezet, pont azon a napon, amikor a batch cookingnak segítenie kellene.
 
-## Címkézés — a rendszer csak akkor működik, ha nem "rejtélyes dobozok" halmaza a fagyasztó
+## Címkézés — a rendszer csak akkor működik, ha nem „rejtélyes dobozok” halmaza a fagyasztó
 
 Minden dobozon tüntesd fel a dátumot és a tartalmat. Ez triviálisnak hangzik, mégis ez az a lépés, amit a legtöbben kihagynak — aztán két hónap múlva egy azonosítatlan, fagyott tömböt találnak, amit végül kidobnak, mert nem emlékeznek, mi az és mikor készült.
 
 ## Biztonságos kiolvasztás
 
-Mindig hűtőben olvaszd ki a fagyasztott ételt, ne szobahőmérsékleten a pulton. A hűtőben történő, lassú kiolvasztás alacsonyan tartja a hőmérsékletet a folyamat alatt, míg a pulton hagyott étel újra hosszú időt tölt a "veszélyzónában".
+Mindig hűtőben olvaszd ki a fagyasztott ételt, ne szobahőmérsékleten a pulton. A hűtőben történő, lassú kiolvasztás alacsonyan tartja a hőmérsékletet a folyamat alatt, míg a pulton hagyott étel újra hosszú időt tölt a „veszélyzónában”.
 
 ## Hogyan ismerd fel, ha egy alapanyag már nem jó?
 

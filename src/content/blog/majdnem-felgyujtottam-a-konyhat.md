@@ -12,11 +12,11 @@ Volt egy pillanat – körülbelül fél másodperc –, amikor azt hittem, ez l
 
 ## A terv (papíron zseniális)
 
-Nyolc vendég, négy fogás, és a fináléra egy flambírozott gyümölcsdesszert, mert valahol azt olvastam, hogy ettől "profinak" tűnik az ember. Nem vettem figyelembe három dolgot:
+Nyolc vendég, négy fogás, és a fináléra egy flambírozott gyümölcsdesszert, mert valahol azt olvastam, hogy ettől „profinak” tűnik az ember. Nem vettem figyelembe három dolgot:
 
 1. Soha életemben nem flambíroztam még semmit.
 2. A konyhám elszívója pont a tűzhely fölött van, nagyon közel.
-3. A füstérzékelő különösen érzékeny modell, amit a bérbeadóm "biztonsági okokból" szerelt fel.
+3. A füstérzékelő különösen érzékeny modell, amit a bérbeadóm „biztonsági okokból” szerelt fel.
 
 ## Amikor minden egyszerre történik
 

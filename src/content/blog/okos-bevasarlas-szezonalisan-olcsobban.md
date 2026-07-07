@@ -16,7 +16,7 @@ Ez a cikk arról szól, hogyan vásárolj úgy, hogy jobb alapanyag kerüljön a
 
 Amikor január közepén epret veszel a boltban, két dolog történik egyszerre: sokat fizetsz érte, és mégis csalódott leszel az ízében. A szezonon kívüli termék drágább és gyengébb minőségű is — ez nem véletlen egybeesés. A szezonális termék helyben terem, érett állapotban szedik, rövid úton jut el hozzád — ezért olcsóbb és finomabb is.
 
-A gyakorlati tanulság: mielőtt bevásárolnál, nézd meg, épp mi van szezonban, és a heti menüdet inkább e köré tervezd, mintsem egy fix receptlista köré, ami "megszokásból" mindig ugyanazt az öt zöldséget kéri.
+A gyakorlati tanulság: mielőtt bevásárolnál, nézd meg, épp mi van szezonban, és a heti menüdet inkább e köré tervezd, mintsem egy fix receptlista köré, ami „megszokásból” mindig ugyanazt az öt zöldséget kéri.
 
 ## 4 forrás, amit érdemes kipróbálnod
 
@@ -41,8 +41,8 @@ Tápértékben gyakran egyenértékűek a frissel, mert a szedés csúcsán fagy
 Az addig tanultak akkor válnak igazán hasznossá, ha személyre szabott, ismételhető rendszerré alakítod őket. Egy jó beszerzési terv négy elemből áll:
 
 1. **Heti fix bevásárlási nap kijelölése** — így nem ad hoc, hanem rutinszerű döntés lesz belőle.
-2. **2 elsődleges forrás megjelölése** — pl. "kedd: piac" és "csütörtök: sárgacímke-vadászat a közeli boltban".
-3. **Szezonális "top 5" lista** — mielőtt elindulsz, nézd meg, mi van most szezonban, és jelölj ki 5 alapanyagot, amit aznap biztosan beszerzel.
+2. **2 elsődleges forrás megjelölése** — pl. „kedd: piac” és „csütörtök: sárgacímke-vadászat a közeli boltban”.
+3. **Szezonális „top 5” lista** — mielőtt elindulsz, nézd meg, mi van most szezonban, és jelölj ki 5 alapanyagot, amit aznap biztosan beszerzel.
 4. **Becsült heti költségkeret** — egy hozzávetőleges összeg, amit magadnak beáraztál, hogy legyen mihez viszonyítanod.
 
 ## Hogyan tisztítsd meg valóban a zöldséget-gyümölcsöt?

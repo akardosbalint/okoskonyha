@@ -9,7 +9,7 @@ coverAlt: "Kültéri közös vacsora hangulatos fényekkel"
 featured: true
 ---
 
-Anyukám még mindig azt kérdezi: "de miért nem inkább étteremben dolgozol, mint egy normális séf?" Jogos kérdés. A válaszom általában valami olyasmi, hogy "mert az étteremben nem lehet megkérdezni a vendégtől, hogy boldog-e", mire ő csak sóhajt egyet, és tölt magának még egy pohár bort.
+Anyukám még mindig azt kérdezi: „de miért nem inkább étteremben dolgozol, mint egy normális séf?” Jogos kérdés. A válaszom általában valami olyasmi, hogy „mert az étteremben nem lehet megkérdezni a vendégtől, hogy boldog-e”, mire ő csak sóhajt egyet, és tölt magának még egy pohár bort.
 
 ## A pillanat, amikor rájöttem, hogy ez nem hobbi
 
@@ -29,4 +29,4 @@ De működik. És nem azért, mert varázsló vagyok, hanem mert:
 
 Egyre több vacsora, egyre több furcsa és gyönyörű beszélgetés, és most már egy online közösség is, az [Okoskonyha](/okoskonyha/), ahol azoknak segítek, akik nem tudnak minden hónapban eljönni egy élő vacsorára, de szeretnék ugyanezt a fajta figyelmet és inspirációt megkapni a saját konyhájukban.
 
-Szóval nem, anyu, nem térek vissza "normális" pályára. De köszönöm, hogy megkérdezted.
+Szóval nem, anyu, nem térek vissza „normális” pályára. De köszönöm, hogy megkérdezted.

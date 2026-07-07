@@ -18,13 +18,13 @@ Ez a Kardos Bálint-vacsorák alaptörténete. Nem az, hogy milyen szép volt a 
 Amikor kérdezik, mi a titkom, mindig csalódást okozok: nincs titkos fűszer. Van viszont három szabály, amit minden vacsoránál betartok:
 
 - **Nincs ültetési rend témák szerint.** Aki hasonlóan gondolkodik, úgyis megtalálja egymást a desszertnél.
-- **A második fogás után jön az első "őszinte" kérdés.** Valaki mindig felteszi, és onnantól nincs kegyelem – jó értelemben.
+- **A második fogás után jön az első „őszinte” kérdés.** Valaki mindig felteszi, és onnantól nincs kegyelem – jó értelemben.
 - **Senki nem megy el 22:30 előtt.** Ha mégis, azt jelenti, rontottam valamit a levesben.
 
 Azon az estén, amiről a cím szól, egy könyvelő és egy performansz-táncos vitatkozott másfél órán át azon, hogy mi a különbség a rutin és a fegyelem között. Mindketten megváltoztatták a véleményüket legalább egyszer. Ez az, amiért csinálom.
 
 ## Miért pont az étel?
 
-Mert az étel ürügy. Ha azt mondanám valakinek: "gyere el, ülj le tizenegy idegennel, és beszélgessünk az életről" – lelépne. De ha azt mondom: "gyere vacsorára, vegán, három fogás, jó bor" – bejön az ajtón. Onnantól kezdve az én dolgom, hogy a tányér mögött megtörténjen a többi.
+Mert az étel ürügy. Ha azt mondanám valakinek: „gyere el, ülj le tizenegy idegennel, és beszélgessünk az életről” – lelépne. De ha azt mondom: „gyere vacsorára, vegán, három fogás, jó bor” – bejön az ajtón. Onnantól kezdve az én dolgom, hogy a tányér mögött megtörténjen a többi.
 
 Ha te is szeretnél ott ülni egy ilyen asztalnál – akár mert kíváncsi vagy, akár mert elegen vagy már abból, hogy csak a kollégáiddal beszélgetsz –, [nézd meg, mikor van a következő jótékonysági vacsora](/szolgaltatasok/jotekonysagi-vacsorak/), vagy csatlakozz az [Okoskonyhához](/okoskonyha/), ahol online is összejövünk hasonló beszélgetésekre.

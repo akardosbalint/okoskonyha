@@ -113,13 +113,13 @@ export const MEMBERSHIP_BENEFITS = [
 // Indulási (launch) árazás — 2026. július 31-ig érvényes.
 // A tagság a Circle.so-n valódi naptári hónaponta / évente újul meg (nem 4 hetes ciklusban),
 // és mindkét csomaghoz 3 napos ingyenes próbaidőszak jár (bankkártya megadásával).
-// FONTOS: 2026. augusztus 1-től az árak 8 890 Ft/hó, illetve 88 900 Ft/évre emelkednek — ez kb. 48%-os
+// FONTOS: 2026. augusztus 1-től az árak 8 890 Ft/hóra, illetve 88 900 Ft/évre emelkednek — ez kb. 48%-os
 // emelés mindkét csomagnál. A futurePrice/increasePercent mezők ezt jelenítik meg az árazásnál, hogy az
 // "Indulási ár" jelvény ne csak dátumot mutasson, hanem konkrét, sürgető tétet is.
 export const PRICING = {
   programName: 'Okoskonyha tagság',
   introOffer: 'Indulási ár — csak 2026. július 31-ig, utána +48%',
-  deadlineNote: 'Az árak 2026. augusztus 1-től emelkednek — a mostani indulási ár garantáltan csak addig érvényes, amíg csatlakozol.',
+  deadlineNote: 'Az árak 2026. augusztus 1-től emelkednek — ha előtte csatlakozol, a mostani indulási árad megmarad, amíg tag maradsz.',
   monthly: {
     label: 'Havi tagság',
     price: '5 990 Ft',

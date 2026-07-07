@@ -8,7 +8,7 @@ cover: ../../assets/photos/food-balanced-plate.jpeg
 coverAlt: "Kiegyensúlyozott, előre elkészített tál sült zöldségekkel, fehérjével és öntettel"
 ---
 
-Az egyik leggyakoribb kérdés, amit tanítványaimtól kapok: "honnan tudjam, hogy amit összeraktam, az tényleg kiegyensúlyozott-e?" A válaszom soha nem egy alkalmazás, egy kalóriaszámoló táblázat vagy egy makró-app. Egy vizuális, könnyen megjegyezhető arányrendszer — a tányér-elv.
+Az egyik leggyakoribb kérdés, amit tanítványaimtól kapok: „honnan tudjam, hogy amit összeraktam, az tényleg kiegyensúlyozott-e?” A válaszom soha nem egy alkalmazás, egy kalóriaszámoló táblázat vagy egy makró-app. Egy vizuális, könnyen megjegyezhető arányrendszer — a tányér-elv.
 
 ## Mi az a tányér-elv?
 
@@ -19,11 +19,11 @@ A tányér-elv egy egyszerű, vizuális arányrendszer, ami meghatározza, milye
 - **25% hüvelyes** (a fő fehérjeforrás)
 - **5% olajos mag** (mandula, dió, tökmag, chiamag)
 
-Ez nem egy szigorú tudományos előírás, amit milligrammra be kell tartanod — sokkal inkább egy fejben tartható vezérelv, amivel egy pillantással ellenőrizheted, hogy a tányérod nagyjából "stimmel-e".
+Ez nem egy szigorú tudományos előírás, amit milligrammra be kell tartanod — sokkal inkább egy fejben tartható vezérelv, amivel egy pillantással ellenőrizheted, hogy a tányérod nagyjából „stimmel-e”.
 
 ## Miért működik ez jobban, mint a kalóriaszámolás?
 
-Mert fenntartható. A kalóriaszámolás pontos lehet, de hosszú távon kevesen bírják — folyamatos figyelmet, mérlegelést, appot igényel. A tányér-elv ezzel szemben egy pillantás alatt eldönthető: "van rajta elég zöldség? Van rajta gabona? Van rajta hüvelyes?" Ha igen, nagyjából jó úton jársz — receptek és számolgatás nélkül is.
+Mert fenntartható. A kalóriaszámolás pontos lehet, de hosszú távon kevesen bírják — folyamatos figyelmet, mérlegelést, appot igényel. A tányér-elv ezzel szemben egy pillantás alatt eldönthető: „van rajta elég zöldség? Van rajta gabona? Van rajta hüvelyes?” Ha igen, nagyjából jó úton jársz — receptek és számolgatás nélkül is.
 
 ## Színes tányér = változatos tápanyag
 

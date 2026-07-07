@@ -8,7 +8,7 @@ cover: ../../assets/photos/lifestyle-medicine-certificate.jpeg
 coverAlt: "Lifestyle Medicine Consultant (Életmód-tanácsadó) tanúsítvány, Kardos Bálint nevére kiállítva"
 ---
 
-Amikor elmondom valakinek, hogy a séfi munkám mellett Lifestyle Medicine Consultant (életmód-tanácsadó) végzettségem is van, a leggyakoribb reakció egy értetlen fejbiccentés: "az olyan, mint egy személyi edző?" Nem egészen. Ez a cikk arról szól, mi az a Lifestyle Medicine valójában, és miért ez az a keret, ami miatt az Okoskonyhában nem receptekkel kezdünk, hanem egy rendszerrel.
+Amikor elmondom valakinek, hogy a séfi munkám mellett Lifestyle Medicine Consultant (életmód-tanácsadó) végzettségem is van, a leggyakoribb reakció egy értetlen fejbiccentés: „az olyan, mint egy személyi edző?” Nem egészen. Ez a cikk arról szól, mi az a Lifestyle Medicine valójában, és miért ez az a keret, ami miatt az Okoskonyhában nem receptekkel kezdünk, hanem egy rendszerrel.
 
 *Fontos előre leszögezni: nem vagyok orvos, és ez a cikk nem helyettesíti a személyre szabott orvosi tanácsadást. A Lifestyle Medicine egy elismert, tudományos konszenzuson alapuló megközelítés — az alábbiakban ennek általános, közérthető bemutatását adom.*
 
@@ -29,7 +29,7 @@ A lényeg, ami miatt ez a keret annyira rezonál velem: egyik pillér sem műkö
 
 A legtöbb diéta egy szűk, rövid távra szánt szabályrendszer: mit ehetsz, mit nem, meddig kell kitartanod. A Lifestyle Medicine ezzel szemben nem egy időszakos program, hanem egy hosszú távú szemléletmód — a cél nem egy célsúly elérése egy adott dátumig, hanem egy fenntartható, egész életen át követhető rendszer kialakítása.
 
-Ez az oka annak, hogy amikor valaki azt kérdezi tőlem, "mennyi ideig kell ezt csinálnom", a válaszom mindig ugyanaz: ha jól csináljuk, nem lesz "ez", amit "csinálsz" — hanem az lesz, ahogyan élsz.
+Ez az oka annak, hogy amikor valaki azt kérdezi tőlem, „mennyi ideig kell ezt csinálnom”, a válaszom mindig ugyanaz: ha jól csináljuk, nem lesz „ez”, amit „csinálsz” — hanem az lesz, ahogyan élsz.
 
 ## Hogyan épül erre az Okoskonyha módszere
 
@@ -43,7 +43,7 @@ Az Okoskonyha három pillére közvetlenül a Lifestyle Medicine keretéből kö
 
 ## Miért fontos ez akkor is, ha csak jobban szeretnél főzni
 
-Lehet, hogy nem érdekel a "hat pillér", csak azt szeretnéd, hogy ne kelljen minden este azon gondolkodnod, mi legyen vacsira. Teljesen jogos. De pont ezért működik jobban ez a keret, mint egy egyszerű receptgyűjtemény: mert a főzési rendszer, amit tanítok, nem egy elszigetelt készség, hanem egy nagyobb, fenntartható életmód-változás egyik, kézzelfogható belépési pontja. Ha a konyhádban rendszert építesz, az gyakran átgyűrűzik a többi területre is — az alvásodra, a stresszedre, a kapcsolataidra.
+Lehet, hogy nem érdekel a „hat pillér”, csak azt szeretnéd, hogy ne kelljen minden este azon gondolkodnod, mi legyen vacsira. Teljesen jogos. De pont ezért működik jobban ez a keret, mint egy egyszerű receptgyűjtemény: mert a főzési rendszer, amit tanítok, nem egy elszigetelt készség, hanem egy nagyobb, fenntartható életmód-változás egyik, kézzelfogható belépési pontja. Ha a konyhádban rendszert építesz, az gyakran átgyűrűzik a többi területre is — az alvásodra, a stresszedre, a kapcsolataidra.
 
 ## A lényeg
 

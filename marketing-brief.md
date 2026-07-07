@@ -126,7 +126,7 @@ influenszer-tartalmaktól:
 2. **Heti 2×2 óra — konkrét, mérhető időkeret.** Nem homályos "időt spórolsz" ígéret, hanem
    egy nagyobb hétvégi batch cooking + egy rövidebb hét közbeni kombinálós alkalom.
 3. **Közösség, nem magánytanfolyam.** Zárt tér, ahol kérdezhetsz, láthatod mások fejlődését,
-   és nem egyedül próbálod tartani a rendszert. A séf háttere (600+ vendég, jótékonysági
+   és nem egyedül próbálod tartani a rendszert. A séf háttere (1000+ vendég, jótékonysági
    vacsorák, privát séfkedés) hitelesíti, hogy ez nem elméleti tudás.
 
 ## 7. Márkahang és tónus
@@ -147,7 +147,7 @@ influenszer-tartalmaktól:
 oldalon és a Jótékonyság oldalon jelenik meg)
 
 > "Ad-hoc módon érkezett a lehetőség, hogy részt vegyek egy jótékonysági vacsorán, de nem
-> bántam meg, hogy éltem vele. Isteni menü, vidám, vállalkozó-hangulatú társaság és egy
+> bántam meg, hogy éltem vele. Isteni menü, vidám, összetartó társaság és egy
 > csodás ügy... Kell ennél több?!" — **Gürtler Gábor**, Folyamat Podcast
 
 > "Átlagosan napi kétszer eszem húst, de ezután a pompás vegán vacsi után tuti változnak az

@@ -9,21 +9,21 @@ coverAlt: "Batch cooking stílusú tál édesburgonyás-csicseriborsós raguval"
 featured: true
 ---
 
-Minden hónapban kapok legalább egy üzenetet: "Bálint, esküszöm, ha még egyszer meg kell kérdeznem magamtól, hogy mi legyen vacsira, sírva fakadok." Ismerős? Erre találták ki a batch cookingot — és ez a cikk a teljes útmutató hozzá: mi ez pontosan, miért működik, és hogyan néz ki egy valódi, végigkövethető hét.
+Minden hónapban kapok legalább egy üzenetet: „Bálint, esküszöm, ha még egyszer meg kell kérdeznem magamtól, hogy mi legyen vacsira, sírva fakadok.” Ismerős? Erre találták ki a batch cookingot — és ez a cikk a teljes útmutató hozzá: mi ez pontosan, miért működik, és hogyan néz ki egy valódi, végigkövethető hét.
 
 ## Mi az a batch cooking?
 
 A batch cooking olyan ételkészítési módszer, amelynek során előre, nagyobb adagokban készítünk el többféle alapkomponenst — nem egyetlen kész ételt, hanem építőelemeket —, majd ezeket adagolva, kombinálva fogyasztjuk a következő napok során. Egyszerűbben: egyszer, esetleg kétszer főzöl rendesen egy héten, utána napokig csak összerakod a kaját.
 
-Ez alapvetően különbözik a hagyományos "heti egy nagy adag ugyanabból" meal prep megközelítéstől. Ott az ötödik napra már senki nem akarja megenni a harmadszor felmelegített csirkés rizst. A batch cookingnál nem egy ételt gyártasz nagyban, hanem néhány jól megválasztott *alapkomponenst* — amiket aztán minden nap másképp kombinálsz. Ez a különbség dönti el, hogy unalomba fullad-e a rendszer, vagy tényleg fenntartható marad.
+Ez alapvetően különbözik a hagyományos „heti egy nagy adag ugyanabból” meal prep megközelítéstől. Ott az ötödik napra már senki nem akarja megenni a harmadszor felmelegített csirkés rizst. A batch cookingnál nem egy ételt gyártasz nagyban, hanem néhány jól megválasztott *alapkomponenst* — amiket aztán minden nap másképp kombinálsz. Ez a különbség dönti el, hogy unalomba fullad-e a rendszer, vagy tényleg fenntartható marad.
 
 ## Miért működik ez ennyire jól?
 
-**Időhatékony.** Egyszer állsz neki rendesen a konyhának — jellemzően vasárnap, 2 órát —, utána a hét további részében csak összerakod, amit már elkészítettél. Nincs több esti kapkodás azzal, hogy "mi legyen, ha hazaérek".
+**Időhatékony.** Egyszer állsz neki rendesen a konyhának — jellemzően vasárnap, 2 órát —, utána a hét további részében csak összerakod, amit már elkészítettél. Nincs több esti kapkodás azzal, hogy „mi legyen, ha hazaérek”.
 
-**Gazdaságos.** Mivel előre megtervezed, mit fogsz főzni, pontosan annyi alapanyagot veszel, amennyire szükséged van. Kevesebb a pazarlás, kevesebb az "úristen, megromlott a hűtőben" pillanat.
+**Gazdaságos.** Mivel előre megtervezed, mit fogsz főzni, pontosan annyi alapanyagot veszel, amennyire szükséged van. Kevesebb a pazarlás, kevesebb az „úristen, megromlott a hűtőben” pillanat.
 
-**Egészséges.** Mindig van kéznél friss, házi készítésű étel — nem kell gyorsételre vagy drága ételrendelésre váltanod egy fáradt estén, mert a "gyors" opció otthon is adott.
+**Egészséges.** Mindig van kéznél friss, házi készítésű étel — nem kell gyorsételre vagy drága ételrendelésre váltanod egy fáradt estén, mert a „gyors” opció otthon is adott.
 
 **Fenntartható.** Kevesebb az egyszer használatos csomagolás, kevesebb az energia- és vízhasználat, mint ha minden nap külön főznél és mosogatnál.
 
@@ -45,7 +45,7 @@ Az előfőzött elemekből percek alatt összeáll egy változatos, friss étel.
 
 ## Az Okoskonyha alap-képlete
 
-Ahhoz, hogy a "kombinálás" ne homályos elméletnek tűnjön, íme a konkrét váz, amit a közösségben is tanítok, és amit hétről hétre újra és újra használok:
+Ahhoz, hogy a „kombinálás” ne homályos elméletnek tűnjön, íme a konkrét váz, amit a közösségben is tanítok, és amit hétről hétre újra és újra használok:
 
 - **2 féle gabona** — pl. rizs és quinoa, vagy bulgur és hajdina
 - **3 féle fehérjeforrás** — pl. sült tofu, sült csicseriborsó vagy lencse, és edamame
@@ -65,14 +65,14 @@ Nézzük meg, hogyan fest ez a gyakorlatban egy valós héten.
 - **Hétfő:** Buddha-tál — quinoa, sült tofu, friss saláta, tahinis szósz.
 - **Kedd:** Wrap — rizs, sült csicseriborsó, zöld szósz, egy kevés friss zöldség.
 - **Szerda:** Meleg gabonasaláta — quinoa, edamame, friss saláta, vinaigrette-esített paradicsomos szósz.
-- **Csütörtök:** Zöldséges "rizottó" jelleg a maradék rizsből, sült tofuval és a paradicsomos-fűszeres szósszal átforgatva.
+- **Csütörtök:** Zöldséges „rizottó” jelleg a maradék rizsből, sült tofuval és a paradicsomos-fűszeres szósszal átforgatva.
 - **Péntek:** Amit még muszáj elhasználnod — ez a nap mindig a hűtő kiürítéséről szól, nulla plusz gondolkodással.
 
 Egy főzés → legalább öt különböző étel → minimális heti időráfordítás azután. Ennyi az egész.
 
 ## Élelmiszerbiztonság — amit sokan kihagynak
 
-Mivel a batch cooking lényege, hogy napokig tárolt ételt eszel, itt nagyobb a tétje a helyes gyakorlatnak, mint egy hagyományos, aznap elfogyasztott vacsoránál. Két szabályt mindenképp tarts be: a frissen főzött elemeket ne tedd forrón, zárt dobozban a hűtőbe — hűtsd előbb lapos edényben, hogy gyorsan átessen a "veszélyzónán" (5–60°C között szaporodnak leggyorsabban a baktériumok) —, és mindig adagold, ne egy nagy tömbben fagyaszd le, amit aztán újra és újra fel kell engedned. A teljes témát, beleértve egy hasznos táblázatot arról, mi meddig áll el hűtőben és fagyasztóban, [ebben a cikkben](/blog/fagyasztas-tarolas-batch-cooking/) dolgoztam fel.
+Mivel a batch cooking lényege, hogy napokig tárolt ételt eszel, itt nagyobb a tétje a helyes gyakorlatnak, mint egy hagyományos, aznap elfogyasztott vacsoránál. Két szabályt mindenképp tarts be: a frissen főzött elemeket ne tedd forrón, zárt dobozban a hűtőbe — hűtsd előbb lapos edényben, hogy gyorsan átessen a „veszélyzónán” (5–60°C között szaporodnak leggyorsabban a baktériumok) —, és mindig adagold, ne egy nagy tömbben fagyaszd le, amit aztán újra és újra fel kell engedned. A teljes témát, beleértve egy hasznos táblázatot arról, mi meddig áll el hűtőben és fagyasztóban, [ebben a cikkben](/blog/fagyasztas-tarolas-batch-cooking/) dolgoztam fel.
 
 ## A leggyakoribb hibák
 
@@ -80,7 +80,7 @@ Mivel a batch cooking lényege, hogy napokig tárolt ételt eszel, itt nagyobb a
 
 **Elfelejted megtervezni a friss elemet.** A batch cooking nem azt jelenti, hogy mindent egy hétre előre főzöl. A friss saláta vagy roppanós zöldség minden nap hozzáad egy textúrát és frissességet, amit az előfőzött komponensek önmagukban nem adnak meg.
 
-**Egy nagy tömbben fagyasztasz.** Lásd fent — ha nem adagolod le főzés után azonnal, a "batch" a fagyasztóban egyetlen, felhasználhatatlan jégtömbbé fagy össze.
+**Egy nagy tömbben fagyasztasz.** Lásd fent — ha nem adagolod le főzés után azonnal, a „batch” a fagyasztóban egyetlen, felhasználhatatlan jégtömbbé fagy össze.
 
 **Nincs beszerzési terved.** A batch cooking és az okos bevásárlás kéz a kézben jár — ha ötletszerűen vásárolsz, nehezebb lesz kihozni a rendszerből a spórolást is. Erről [egy külön cikkben](/blog/okos-bevasarlas-szezonalisan-olcsobban/) írtam részletesen.
 

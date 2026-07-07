@@ -9,7 +9,7 @@ coverAlt: "Tányér spagetti fokhagymás olívaolajjal"
 featured: true
 ---
 
-Amikor azt mondom valakinek, hogy vegán séf vagyok, az első reakció szinte mindig ugyanaz: "de akkor biztos íztelen minden, amit főzöl". Nem. Az íz nem a hústól jön – az ízprofilok kezelésétől. És a fokhagyma az egyik legjobb eszközöm erre.
+Amikor azt mondom valakinek, hogy vegán séf vagyok, az első reakció szinte mindig ugyanaz: „de akkor biztos íztelen minden, amit főzöl”. Nem. Az íz nem a hústól jön – az ízprofilok kezelésétől. És a fokhagyma az egyik legjobb eszközöm erre.
 
 ## 1. Pirítsd aranybarnára, ne csak dinszteld
 
@@ -21,15 +21,15 @@ Tegyél 8–10 gerezd fokhagymát egy kis edénybe, önts rá annyi olívaolajat
 
 ## 3. Fekete fokhagyma = titkos fegyver
 
-Ha még nem próbáltad, keress fekete fokhagymát (fermentált, édeskés, balzsamecet-szerű ízvilággal). Egy gerezd finomra vágva egy leves vagy szósz alapjába teszi a különbséget "jó" és "hűha, ez mi volt" között.
+Ha még nem próbáltad, keress fekete fokhagymát (fermentált, édeskés, balzsamecet-szerű ízvilággal). Egy gerezd finomra vágva egy leves vagy szósz alapjába teszi a különbséget „jó” és „hűha, ez mi volt” között.
 
 ## 4. Fokhagymaolaj készítése alacsony hőn
 
 Ne pirítsd meg túl gyorsan magas hőn – így könnyen megég és keserű lesz. Alacsony hőn, lassan ízesítve az olaj egyenletesen veszi fel az aromát, anélkül hogy a fokhagyma odaégne.
 
-## 5. A "kettős adagolás" trükk
+## 5. A „kettős adagolás” trükk
 
-Adj a fogáshoz fokhagymát az elején (főzés közben, mélyebb, édesebb aromáért) ÉS a végén, nyersen, apróra reszelve (élénk, csípős karakterért). Ez a két réteg az, amitől a fogás "komplexnek" hat.
+Adj a fogáshoz fokhagymát az elején (főzés közben, mélyebb, édesebb aromáért) ÉS a végén, nyersen, apróra reszelve (élénk, csípős karakterért). Ez a két réteg az, amitől a fogás „komplexnek” hat.
 
 ---
 
