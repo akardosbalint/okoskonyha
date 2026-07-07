@@ -128,7 +128,7 @@ export const PRICING = {
     label: 'Havi tagság',
     price: '5 990 Ft',
     period: '/ hó',
-    weeklyEquivalent: 'kb. 1 380 Ft / hét',
+    dailyEquivalent: 'kb. 200 Ft / nap',
     futurePrice: '8 890 Ft',
     increasePercent: '48%',
   },
@@ -136,11 +136,11 @@ export const PRICING = {
     label: 'Éves tagság',
     price: '59 990 Ft',
     period: '/ év',
-    weeklyEquivalent: 'kb. 1 154 Ft / hét',
+    dailyEquivalent: 'kb. 164 Ft / nap',
     futurePrice: '88 900 Ft',
     increasePercent: '48%',
   },
-  priceNote: 'Az Éves tagsággal heti bontásban olcsóbban jutsz hozzá ugyanahhoz a közösséghez.',
+  priceNote: 'Az Éves tagsággal napi bontásban olcsóbban jutsz hozzá ugyanahhoz a közösséghez.',
   billingNote: 'Mindkét csomaghoz 3 napos ingyenes próbaidőszak jár (bankkártya megadásával) — a próbaidő alatt bármikor, indoklás nélkül lemondhatod. Utána a tagság havonta / évente automatikusan megújul, és ugyancsak bármikor lemondható.',
 };
 

@@ -73,10 +73,10 @@ konyha, cukormentes desszertek, grillezés/füstölés növényi alapanyagokkal,
 
 ### Árazás (indulási ár, 2026. július 31-ig érvényes)
 
-| Csomag | Ár | Heti egyenérték | Ár új tagoknak 2026. aug. 1-től |
+| Csomag | Ár | Napi egyenérték | Ár új tagoknak 2026. aug. 1-től |
 |---|---|---|---|
-| Havi tagság | 5 990 Ft / hó | kb. 1 380 Ft / hét | 8 890 Ft / hó (+48%) |
-| Éves tagság | 59 990 Ft / év | kb. 1 154 Ft / hét | 88 900 Ft / év (+48%) |
+| Havi tagság | 5 990 Ft / hó | kb. 200 Ft / nap | 8 890 Ft / hó (+48%) |
+| Éves tagság | 59 990 Ft / év | kb. 164 Ft / nap | 88 900 Ft / év (+48%) |
 
 Aki 2026. július 31-ig csatlakozik, annak az indulási ár megmarad, amíg tag marad — a fenti
 emelés csak az ezután csatlakozó új tagokra vonatkozik.
@@ -228,6 +228,6 @@ tagsági landing oldalon is megjelennek.)*
 - Alapítva: 2020
 - 65+ esemény, 6 ország, 1000+ vendég
 - 20+ jótékonysági vacsora, 2M Ft+ adomány, 3 partnerszervezet
-- Tagság: 5 990 Ft / hó (kb. 1 380 Ft/hét) vagy 59 990 Ft / év (kb. 1 154 Ft/hét), mindkettőhöz 3 napos ingyenes próbaidőszak
+- Tagság: 5 990 Ft / hó (kb. 200 Ft/nap) vagy 59 990 Ft / év (kb. 164 Ft/nap), mindkettőhöz 3 napos ingyenes próbaidőszak
 - Módszer: 12 modulos Batch Cooking Alapkurzus + haladó mesterkurzusok
 - Ígéret: heti max. 2×2 óra főzéssel az egész heti étkezés megoldva
