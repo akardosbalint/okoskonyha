@@ -8,7 +8,7 @@ export const SITE = {
   // Az Okoskonyha alaptagság közvetlen előfizetési (checkout) linkje a Circle.so-n —
   // minden "Csatlakozom" jellegű CTA ide vezet, a circleUrl a közösség általános
   // (nem konkrét vásárlási szándékú) megemlítéseihez való.
-  checkoutUrl: 'https://kardos-balint-okoskonyhaja.circle.so/checkout/okoskonyha-alaptagsag',
+  checkoutUrl: 'https://okoskonyha.akardosbalint.hu/checkout/okoskonyha-alaptagsag',
   email: 'hello@akardosbalint.hu',
   instagram: 'https://instagram.com/akardosbalint',
   facebook: 'https://facebook.com/akardosbalint',
