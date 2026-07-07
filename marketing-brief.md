@@ -15,7 +15,7 @@ olcsóbban, gyorsabban és egészségesebben (kizárólag növényi alapon) főz
   fős, 5 fogásos lakásvacsoráktól a 30 fős, 7 fogásos jótékonysági gálákig.
 - **Hitelességi számok:**
   - 2020 óta a pályán
-  - 60+ esemény, 4 országban
+  - 65+ esemény, 6 országban
   - 1000+ vendég az asztaloknál
   - 5+ év szakácstapasztalat + életmód-tanácsadói végzettség
   - 80–100 fős esküvőkön főzött
@@ -225,7 +225,7 @@ tagsági landing oldalon is megjelennek.)*
 ## 11. Kulcsszámok gyors áttekintésben (vágólapra másolható)
 
 - Alapítva: 2020
-- 60+ esemény, 4 ország, 1000+ vendég
+- 65+ esemény, 6 ország, 1000+ vendég
 - 20+ jótékonysági vacsora, 2M Ft+ adomány, 3 partnerszervezet
 - Tagság: 5 990 Ft / hó (kb. 1 380 Ft/hét) vagy 59 990 Ft / év (kb. 1 154 Ft/hét), mindkettőhöz 3 napos ingyenes próbaidőszak
 - Módszer: 12 modulos Batch Cooking Alapkurzus + haladó mesterkurzusok
