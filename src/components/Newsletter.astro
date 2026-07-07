@@ -78,7 +78,7 @@ const isLightText = variant === 'card' || variant === 'dark-inline';
 
       if (!endpoint) {
         message.textContent =
-          'A feliratkozás hamarosan aktiválódik – addig is írj bátran a hello@akardosbalint.hu címre!';
+          'A feliratkozás hamarosan aktiválódik — addig is írj bátran a hello@akardosbalint.hu címre!';
         return;
       }
 
@@ -90,7 +90,7 @@ const isLightText = variant === 'card' || variant === 'dark-inline';
           body: JSON.stringify({ email }),
         });
         if (res.ok) {
-          message.textContent = 'Köszönjük! Nézd meg a postaládád – hamarosan jön az első levél.';
+          message.textContent = 'Köszönjük! Nézd meg a postaládád — hamarosan jön az első levél.';
           form.reset();
         } else {
           message.textContent = 'Hoppá, valami elakadt. Próbáld újra, vagy írj a hello@akardosbalint.hu címre.';

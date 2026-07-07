@@ -91,7 +91,7 @@
       const topic = form.querySelector<HTMLSelectElement>('#contact-topic')?.value ?? '';
       const userMessage = form.querySelector<HTMLTextAreaElement>('#contact-message')?.value ?? '';
 
-      const subject = `Kapcsolatfelvétel a weboldalról – ${topic}`;
+      const subject = `Kapcsolatfelvétel a weboldalról — ${topic}`;
       const body = `Név: ${name}\nE-mail cím: ${email}\nTéma: ${topic}\n\nÜzenet:\n${userMessage}`;
       const mailtoUrl = `mailto:${SITE.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 

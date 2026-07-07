@@ -1,5 +1,5 @@
 ---
-title: "Hogyan lesz egy vacsorapartiból 800.000 forint jótékony célra"
+title: "Hogyan lesz egy vacsorapartiból 800 000 forint jótékony célra"
 excerpt: "A jótékonysági vacsoráim nem gálaestek – nincs frakk, nincs árverési kalapács. Mégis működik. Íme, hogyan."
 date: 2026-06-01
 category: jotekonysag
@@ -23,7 +23,7 @@ Amikor először meséltem egy hagyományos gálaesteket szervező ismerősömne
 - 15 vendég
 - 4 fogás, teljesen növényi alapú menü
 - 1 partnerszervezet, élő bekapcsolódással
-- 800.000 forint összegyűjtött adomány – ebből 300.000 az est folyamán, spontán felajánlásokból
+- 800 000 forint összegyűjtött adomány – ebből 300 000 az est folyamán, spontán felajánlásokból
 
 ## Mit tanultam ebből?
 

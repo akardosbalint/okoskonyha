@@ -17,7 +17,7 @@ A legtöbben csak beledobják a fokhagymát az olajba, és két perc múlva már
 
 ## 2. Konfitáld be egy adagra valót
 
-Tegyél 8-10 gerezd fokhagymát egy kis edénybe, önts rá annyi olívaolajat, hogy ellepje, és süsd 120 fokon 40 percig. A kapott konfitált fokhagyma krémesen szétkenhető, az olaj pedig önmagában is fűszer – salátaöntethez, tésztához, pirítósra.
+Tegyél 8–10 gerezd fokhagymát egy kis edénybe, önts rá annyi olívaolajat, hogy ellepje, és süsd 120 fokon 40 percig. A kapott konfitált fokhagyma krémesen szétkenhető, az olaj pedig önmagában is fűszer – salátaöntethez, tésztához, pirítósra.
 
 ## 3. Fekete fokhagyma = titkos fegyver
 

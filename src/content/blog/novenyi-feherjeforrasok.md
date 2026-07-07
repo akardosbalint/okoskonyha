@@ -16,7 +16,7 @@ Egy megjegyzés az alábbi számokhoz: ezek átlagos, kerekített referenciaért
 
 **Tofu** — nagyjából 8 g fehérje / 100 g. A legsokoldalúbb alapanyag: önmagában szinte íztelen, ezért tökéletesen felveszi a pác és a fűszerezés ízét. A trükk a szárazra nyomkodás és a magas hőn, kevés olajon való sütés — így kívül ropogós, belül krémes lesz, nem "gumis".
 
-**Tempeh** — nagyjából 19-20 g fehérje / 100 g, a leggazdagabb szója alapú forrás. Fermentált, ezért mélyebb, "húsosabb" íze van, mint a tofunak. Érdemes pár percig gőzölni vagy blansírozni sütés előtt, hogy a keserű felhang eltűnjön, utána pedig magas hőn, jól fűszerezve pirítani.
+**Tempeh** — nagyjából 19–20 g fehérje / 100 g, a leggazdagabb szója alapú forrás. Fermentált, ezért mélyebb, "húsosabb" íze van, mint a tofunak. Érdemes pár percig gőzölni vagy blansírozni sütés előtt, hogy a keserű felhang eltűnjön, utána pedig magas hőn, jól fűszerezve pirítani.
 
 **Edamame** — nagyjából 11 g fehérje / 100 g. A legegyszerűbb módja, hogy fagyasztott állapotból pár perc alatt kész, forró vízben főzve vagy párolva. Kiváló "gyors fehérje" batch cooking tálakba, ha nincs időd tofut vagy tempeht elkészíteni.
 
@@ -24,21 +24,21 @@ Egy megjegyzés az alábbi számokhoz: ezek átlagos, kerekített referenciaért
 
 **Lencse (főzve)** — nagyjából 9 g fehérje / 100 g, emellett kiemelkedően rostban gazdag. Nem igényel áztatást, gyorsan puhul — ideális alapkomponens egy vasárnapi nagy főzéshez.
 
-**Csicseriborsó (főzve)** — nagyjából 8-9 g fehérje / 100 g. Sütőben, olívaolajjal és fűszerekkel megpirítva ropogós, snackszerű állagot kap — ez az egyik legnépszerűbb "3. fehérjeforrás" az Okoskonyha alap-képletében.
+**Csicseriborsó (főzve)** — nagyjából 8–9 g fehérje / 100 g. Sütőben, olívaolajjal és fűszerekkel megpirítva ropogós, snackszerű állagot kap — ez az egyik legnépszerűbb "3. fehérjeforrás" az Okoskonyha alap-képletében.
 
-**Fekete bab és vesebab (főzve)** — nagyjából 8-9 g fehérje / 100 g. Kiválóak raguhoz, tacóhoz, vagy hidegen, salátákba keverve.
+**Fekete bab és vesebab (főzve)** — nagyjából 8–9 g fehérje / 100 g. Kiválóak raguhoz, tacóhoz, vagy hidegen, salátákba keverve.
 
 ## Gabonák és álgabonák
 
 **Quinoa (főzve)** — nagyjából 4,4 g fehérje / 100 g. A "teljes értékű fehérje" kifejezést gyakran halljuk vele kapcsolatban — ez azt jelenti, hogy mind a kilenc esszenciális aminosavat tartalmazza, bár összmennyiségben kevesebbet, mint a hüvelyesek. Remek alap gabonaként a batch cooking rendszerben, mert hidegen, salátába keverve is jól működik.
 
-**Hajdina és köles (főzve)** — nagyjából 3-4 g fehérje / 100 g, gluténmentesek, jó változatosságot adnak a rizs és a quinoa mellé.
+**Hajdina és köles (főzve)** — nagyjából 3–4 g fehérje / 100 g, gluténmentesek, jó változatosságot adnak a rizs és a quinoa mellé.
 
 ## Egyéb, koncentrált fehérjeforrások
 
-**Szeitán** — nagyjából 20-25 g fehérje / 100 g, a búzafehérjéből (glutén) készül, ezért nem alkalmas gluténérzékenyeknek. Kifejezetten húsos állaga miatt kedvelt alapanyag pörköltekhez, ragukhoz.
+**Szeitán** — nagyjából 20–25 g fehérje / 100 g, a búzafehérjéből (glutén) készül, ezért nem alkalmas gluténérzékenyeknek. Kifejezetten húsos állaga miatt kedvelt alapanyag pörköltekhez, ragukhoz.
 
-**Olajos magvak és vajaik (mandula, kesudió, mogyoróvaj, tahini)** — nagyjából 15-25 g fehérje / 100 g, emellett jó zsírforrás is. Kis mennyiségben, szószokba vagy öntetekbe keverve érdemes használni — koncentrált kalóriaforrás, nem "adaghúzó" alapanyag.
+**Olajos magvak és vajaik (mandula, kesudió, mogyoróvaj, tahini)** — nagyjából 15–25 g fehérje / 100 g, emellett jó zsírforrás is. Kis mennyiségben, szószokba vagy öntetekbe keverve érdemes használni — koncentrált kalóriaforrás, nem "adaghúzó" alapanyag.
 
 ## Hogyan kombináld őket egy batch cooking héten
 

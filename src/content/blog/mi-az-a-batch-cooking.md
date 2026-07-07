@@ -19,7 +19,7 @@ Ez alapvetően különbözik a hagyományos "heti egy nagy adag ugyanabból" mea
 
 ## Miért működik ez ennyire jól?
 
-**Időhatékony.** Egyszer állsz neki rendesen a konyhának — jellemzően vasárnap, 2-3 órát —, utána a hét további részében csak összerakod, amit már elkészítettél. Nincs több esti kapkodás azzal, hogy "mi legyen, ha hazaérek".
+**Időhatékony.** Egyszer állsz neki rendesen a konyhának — jellemzően vasárnap, 2 órát —, utána a hét további részében csak összerakod, amit már elkészítettél. Nincs több esti kapkodás azzal, hogy "mi legyen, ha hazaérek".
 
 **Gazdaságos.** Mivel előre megtervezed, mit fogsz főzni, pontosan annyi alapanyagot veszel, amennyire szükséged van. Kevesebb a pazarlás, kevesebb az "úristen, megromlott a hűtőben" pillanat.
 

@@ -37,4 +37,4 @@ A hő formálja a textúrát, illatot, színt, ízt. Ez teszi az alapanyagot ét
 
 ## Miért elég ez a négy?
 
-Mert ha egy fogás "nem jó", szinte mindig ez a négy dolog valamelyike hiányzik vagy van túlsúlyban. Nehéz és olajos? Hiányzik a sav. Íztelen és lapos? Hiányzik a só és a sav együtt. Ha ezt a négy csavart ismered, receptek nélkül is tudsz finomat főzni — és pont ez a kiindulópontja annak, amit az [Okoskonyhában](/okoskonyha/) tanítok, a [tányér-elvvel](/blog/tanyer-elv-kiegyensulyozott-etkezes/) és a [batch cooking rendszerrel](/blog/mi-az-a-batch-cooking/) együtt.
+Mert ha egy fogás "nem jó", szinte mindig ez a négy dolog valamelyike hiányzik vagy van túlsúlyban. Nehéz és olajos? Hiányzik a sav. Íztelen és lapos? Hiányzik a só és a sav együtt. Ha ezt a négy elemet ismered, receptek nélkül is tudsz finomat főzni — és pont ez a kiindulópontja annak, amit az [Okoskonyhában](/okoskonyha/) tanítok, a [tányér-elvvel](/blog/tanyer-elv-kiegyensulyozott-etkezes/) és a [batch cooking rendszerrel](/blog/mi-az-a-batch-cooking/) együtt.

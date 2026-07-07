@@ -27,7 +27,7 @@ export const METHOD_PILLARS = [
   },
   {
     title: 'Élelmiszerbiztonság',
-    subtitle: 'A "veszélyzóna", gyors hűtés, penészedés-figyelés',
+    subtitle: 'A „veszélyzóna”, gyors hűtés, penészedés-figyelés',
     text: 'Megtanulod, hogyan tárold biztonságosan a napokig eltartott batch ételeket — mikor kell gyorsan hűteni, és hogyan ismerd fel, ha valami már nem jó.',
   },
   {
@@ -48,7 +48,7 @@ export const METHOD_PILLARS = [
   {
     title: 'Sav — az egyensúly megteremtője',
     subtitle: 'Egy csepp citrom gyakran többet javít, mint egy csipet só',
-    text: 'Felismered, mikor "lapos" egy étel íze, és pontosan tudod, milyen kevés savval lehet újra élénkké, kiegyensúlyozottá tenni.',
+    text: 'Felismered, mikor „lapos” egy étel íze, és pontosan tudod, milyen kevés savval lehet újra élénkké, kiegyensúlyozottá tenni.',
   },
   {
     title: 'Hő — az átalakulás mestere',
@@ -73,7 +73,7 @@ export const METHOD_PILLARS = [
   {
     title: 'Tárolás és fagyasztás',
     subtitle: 'Adagolás, címkézés, biztonságos kiolvasztás',
-    text: 'A batch cooking titkos fegyvere: jól címkézett, adagolt dobozok, hogy semmi ne "vesszen el" a fagyasztóban, és semmi ne menjen kárba.',
+    text: 'A batch cooking titkos fegyvere: jól címkézett, adagolt dobozok, hogy semmi ne „vesszen el” a fagyasztóban, és semmi ne menjen kárba.',
   },
   {
     title: 'Heti 2×2 órás rendszer',

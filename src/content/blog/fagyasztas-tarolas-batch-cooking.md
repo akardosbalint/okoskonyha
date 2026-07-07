@@ -55,4 +55,4 @@ Néhány egyszerű, érzékszervi jel, amire érdemes figyelni: nyálkás textú
 
 ## A lényeg
 
-A tárolás nem a batch cooking unalmas, technikai melléktermékei — ez az a lépés, ami eldönti, hogy a vasárnapi 2 órás munkádból tényleg egy egész hétre elég, biztonságos és ízletes étel lesz, vagy csütörtökre már csalódottan dobod ki a maradékot. Ha szeretnél egy teljes, lépésről lépésre felépített rendszert címkézési sablonnal, konkrét recepteknyi mennyiségekkel és heti menütervekkel, nézd meg az [Okoskonyha](/okoskonyha/) tagságot.
+A tárolás nem a batch cooking unalmas, technikai mellékterméke — ez az a lépés, ami eldönti, hogy a vasárnapi 2 órás munkádból tényleg egy egész hétre elég, biztonságos és ízletes étel lesz, vagy csütörtökre már csalódottan dobod ki a maradékot. Ha szeretnél egy teljes, lépésről lépésre felépített rendszert címkézési sablonnal, konkrét recepteknyi mennyiségekkel és heti menütervekkel, nézd meg az [Okoskonyha](/okoskonyha/) tagságot.

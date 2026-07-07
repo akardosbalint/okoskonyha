@@ -1,5 +1,5 @@
 ---
-title: "Heti menütervezés 45 perc alatt: az én meal prep rendszerem"
+title: "Heti menütervezés egy vasárnap délután alatt: az én meal prep rendszerem"
 excerpt: "Nincs időm minden nap három órát a konyhában állni. Így tervezek egy egész heti étkezést egyetlen vasárnap délután alatt."
 date: 2025-12-08
 category: fozesi-tippek
@@ -14,7 +14,7 @@ Sokan azt hiszik, mivel séf vagyok, minden nap friss, háromfogásos ebédet k�
 
 ### 1. Válassz 3 alapot, ne 7 különböző ételt
 
-Egy hétre elég, ha van egy gabona (pl. quinoa vagy köles), egy hüvelyes (pl. csicseriborsó vagy lencse) és 2-3 különböző zöldségköret. Ezekből variálva minden nap más ízvilágot kapsz, mégsem kell hét külön receptet követned.
+Egy hétre elég, ha van egy gabona (pl. quinoa vagy köles), egy hüvelyes (pl. csicseriborsó vagy lencse) és 2–3 különböző zöldségköret. Ezekből variálva minden nap más ízvilágot kapsz, mégsem kell hét külön receptet követned.
 
 ### 2. Süss egyszerre mindent, egy tepsin
 
