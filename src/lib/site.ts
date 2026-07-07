@@ -5,6 +5,10 @@ export const SITE = {
     'Az Okoskonyha fizetős közösséggel megtanulsz olcsóbban, gyorsabban, finomabbat és egészségesebbet főzni — heti max. 2 főzéssel, káoszmentesen. Kardos Bálint séf és életmód-tanácsadó közössége.',
   url: 'https://akardosbalint.hu',
   circleUrl: 'https://okoskonyha.akardosbalint.hu',
+  // Az Okoskonyha alaptagság közvetlen előfizetési (checkout) linkje a Circle.so-n —
+  // minden "Csatlakozom" jellegű CTA ide vezet, a circleUrl a közösség általános
+  // (nem konkrét vásárlási szándékú) megemlítéseihez való.
+  checkoutUrl: 'https://kardos-balint-okoskonyhaja.circle.so/checkout/okoskonyha-alaptagsag',
   email: 'hello@akardosbalint.hu',
   instagram: 'https://instagram.com/akardosbalint',
   facebook: 'https://facebook.com/akardosbalint',
