@@ -119,7 +119,7 @@ export const MEMBERSHIP_BENEFITS = [
 export const PRICING = {
   programName: 'Okoskonyha tagság',
   introOffer: 'Indulási ár — csak 2026. július 31-ig, utána +48%',
-  deadlineNote: 'Az árak 2026. augusztus 1-től emelkednek — ha előtte csatlakozol, a mostani indulási árad megmarad, amíg tag maradsz.',
+  deadlineNote: 'Ha most, 2026. július 31-ig csatlakozol, ezt az árat megtartod, amíg tag maradsz — nálad nem lesz áremelés.',
   monthly: {
     label: 'Havi tagság',
     price: '5 990 Ft',

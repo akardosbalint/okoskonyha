@@ -72,10 +72,13 @@ konyha, cukormentes desszertek, grillezés/füstölés növényi alapanyagokkal,
 
 ### Árazás (indulási ár, 2026. július 31-ig érvényes)
 
-| Csomag | Ár | Heti egyenérték | Ár 2026. aug. 1-től |
+| Csomag | Ár | Heti egyenérték | Ár új tagoknak 2026. aug. 1-től |
 |---|---|---|---|
 | Havi tagság | 5 990 Ft / hó | kb. 1 380 Ft / hét | 8 890 Ft / hó (+48%) |
 | Éves tagság | 59 990 Ft / év | kb. 1 154 Ft / hét | 88 900 Ft / év (+48%) |
+
+Aki 2026. július 31-ig csatlakozik, annak az indulási ár megmarad, amíg tag marad — a fenti
+emelés csak az ezután csatlakozó új tagokra vonatkozik.
 
 **Próbaidőszak:** mindkét csomaghoz 3 napos ingyenes próbaidőszak jár (bankkártya
 megadásával) — a próbaidő alatt bármikor, indoklás nélkül lemondható, ekkor díj nem kerül
