@@ -119,6 +119,10 @@ export const MEMBERSHIP_BENEFITS = [
 // csatlakozik, az a jelenlegi áron marad, amíg tag marad — ezt a lockedInNote emeli ki hangsúlyosan az
 // árazásnál, a futureNoteIntro + futurePrice/increasePercent mezők pedig csak halkabban, kiegészítésként
 // jelzik az új tagok jövőbeli árát, hogy ne tűnjön úgy, mintha a meglévő tagokra is vonatkozna.
+//
+// Az oldal statikusan (build-időben) generálódik: az introOffer/futureNoteIntro dátuma nem frissül
+// magától a naptárral. A 2026.07.31-i határidő üzemeltetői felelősség — amikor lejár, ez a blokk
+// (és a tényleges ár a Circle.so-n) kézi frissítést és új deployt igényel, különben a sürgetés hiteltelenné válik.
 export const PRICING = {
   programName: 'Okoskonyha tagság',
   introOffer: 'Indulási ár — csak 2026. július 31-ig, utána +48%',

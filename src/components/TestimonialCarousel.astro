@@ -15,6 +15,10 @@ interface Props {
   title?: string;
   accent?: string;
   eyebrow?: string;
+  /** Rövid, kontextust adó megjegyzés a cím alatt — akkor hasznos, ha a tesztimoniálok
+   * egy másik szolgáltatásból (pl. jótékonysági vacsora) származnak, mint amit az adott
+   * oldal elad, hogy a látogató ne értse félre, kinek a visszajelzését olvassa. */
+  note?: string;
 }
 
 const {
@@ -22,6 +26,7 @@ const {
   title = 'A korábbi vendégeim',
   accent = 'élménybeszámolói',
   eyebrow,
+  note,
 } = Astro.props;
 ---
 
@@ -33,6 +38,7 @@ const {
   </div>
   <div class="mx-auto max-w-6xl px-4 md:px-6 relative">
     <SectionHeading eyebrow={eyebrow} title={title} accent={accent} />
+    {note && <p class="mx-auto mb-10 -mt-6 max-w-2xl text-center text-sm text-forest-700/80">{note}</p>}
 
     <div class="flex items-center gap-2 md:gap-4" data-testimonial-carousel>
       <button

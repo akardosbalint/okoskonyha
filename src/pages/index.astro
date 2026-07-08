@@ -85,7 +85,12 @@ const methodIcons = ['book', 'shield', 'coin', 'salt', 'fat', 'acid', 'heat', 'l
   </section>
 
   <!-- Testimonialok -->
-  <TestimonialCarousel items={testimonialEntries.map((t) => ({ name: t.data.name, role: t.data.role, quote: t.data.quote, avatar: t.data.avatar }))} />
+  <TestimonialCarousel
+    items={testimonialEntries.map((t) => ({ name: t.data.name, role: t.data.role, quote: t.data.quote, avatar: t.data.avatar }))}
+    title="Amit a vendégeim"
+    accent="mondanak"
+    note="Jótékonysági vacsoráim és privát főzéseim visszajelzései — ízelítő a stílusomból, amire az Okoskonyha módszertana is épül."
+  />
 
   <!-- Pricing teaser -->
   <section class="mx-auto max-w-4xl px-4 py-16 md:px-6">
