@@ -9,9 +9,9 @@ function isActive(href: string) {
 
 // Cold traffic (bármelyik más oldalról érkező kattintás) először az Okoskonyha oldalra
 // landoljon, ne egyenesen egy bankkártyát kérő checkout oldalra — ugyanaz a logika, mint
-// a mobil sticky CTA-nál. A főoldalon és magán az Okoskonyha oldalon a kontextus már adott,
-// ott mehet egyenesen a checkoutra.
-const isDirectCheckoutContext = currentPath === '/' || currentPath.startsWith('/okoskonyha');
+// a mobil sticky CTA-nál. Csak magán az Okoskonyha oldalon adott már eleve a kontextus,
+// ott mehet egyenesen a checkoutra (a főoldal hero CTA-ja is ugyanezt a logikát követi).
+const isDirectCheckoutContext = currentPath.startsWith('/okoskonyha');
 const headerCtaHref = isDirectCheckoutContext ? SITE.checkoutUrl : '/okoskonyha/';
 const headerCtaIsExternal = isDirectCheckoutContext;
 ---

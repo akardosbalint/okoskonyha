@@ -1,7 +1,6 @@
 ---
 import CTAButton from './CTAButton.astro';
 import Newsletter from './Newsletter.astro';
-import { SITE } from '../lib/site';
 ---
 
 <div class="rounded-3xl bg-forest-700 px-6 py-12 text-center md:px-12 md:py-14">
@@ -12,11 +11,10 @@ import { SITE } from '../lib/site';
   <p class="mx-auto mb-8 max-w-xl text-cream/85">
     Az Okoskonyha közösségben heti receptek, havi élő főzős alkalmak és egy teljes, batch cooking
     rendszer vár — heti mindössze 2 főzéssel, hogy soha többé ne kelljen azon gondolkodnod, mi legyen
-    a következő főétkezésed. Csatlakozz még ma, és gondoskodj a heti főétkezéseidről 2×2 óra időbefektetéssel.
+    a következő főétkezésed. Nézd meg, mit kapsz — és csatlakozz, amikor készen állsz.
   </p>
   <div class="flex flex-wrap items-center justify-center gap-4">
-    <CTAButton href={SITE.checkoutUrl} label="Csatlakozom az Okoskonyhához" size="lg" outbound trackingId="join_cta" />
-    <CTAButton href="/okoskonyha/" label="Ismerd meg a közösséget" variant="ghost" size="lg" />
+    <CTAButton href="/okoskonyha/" label="Ismerd meg az Okoskonyhát" size="lg" />
   </div>
 
   <div class="mx-auto mt-10 max-w-md border-t border-cream/15 pt-8">
