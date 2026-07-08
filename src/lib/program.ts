@@ -38,7 +38,15 @@ export const KITCHENS_WORKED_WITH = [
 
 // Séfek, akiktől a legtöbbet tanultam — ugyanaz a hitelességi logika, mint a
 // KITCHENS_WORKED_WITH listánál: a szakmai vonalat erősíti, kit ismert el mesterének.
-export const CHEFS_LEARNED_FROM = ['Zsolnay Gergely', 'Keve Márton', 'Valentin Ádám', 'Singlár Dániel', 'Kelemen Áron'];
+export const CHEFS_LEARNED_FROM = [
+  'Zsolnay Gergely',
+  'Keve Márton',
+  'Valentin Ádám',
+  'Singlár Dániel',
+  'Kelemen Áron',
+  'Sziszik István',
+  'Steiner Kristóf',
+];
 
 // A Batch Cooking Alapkurzus (az Alapképzés) moduljaira épülő bontás — ezt mindenki
 // végigviszi, aki csatlakozik, mielőtt a haladó tananyag megnyílna előtte.
