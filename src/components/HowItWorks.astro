@@ -1,0 +1,74 @@
+---
+import SectionHeading from './SectionHeading.astro';
+import Icon from './Icon.astro';
+
+const CARDS = [
+  {
+    icon: 'chat' as const,
+    title: 'Zárt, rendezett közösség',
+    text: 'Csak az Okoskonyha tagjai látják — nincs kint a nyílt Facebookon, nincs elveszve a hírlevelek között.',
+  },
+  {
+    icon: 'book' as const,
+    title: 'Írásban is, videón is',
+    text: 'A receptek írásban is elérhetők, hogy főzés közben könnyen visszakeresd őket — a technikákat pedig sokszor videón mutatom meg.',
+  },
+  {
+    icon: 'video' as const,
+    title: 'Közös főzések, élőben',
+    text: 'Havonta együtt főzünk videóhívásban — kérdezhetsz, próbálhatsz, és látod, hogyan gondolkodik valaki, aki már csinálta.',
+  },
+  {
+    icon: 'clock' as const,
+    title: 'Bálint személyesen válaszol',
+    text: 'Bármikor kérdezhetsz a közösségben — a válaszokat személyesen én írom, legkésőbb 3 munkanapon belül.',
+  },
+];
+
+const MINI_FAQ = [
+  {
+    q: 'Facebook-csoport lesz?',
+    a: 'Nem. Egy zárt, saját Circle-közösség, ahol minden recept, videó és beszélgetés rendszerezve, egy helyen van — nem szétszórva posztok között.',
+  },
+  {
+    q: 'Ha elakadok, tudok kérdezni?',
+    a: 'Igen, bármikor — és személyesen válaszolok, legkésőbb 3 munkanapon belül.',
+  },
+];
+---
+
+<section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
+  <SectionHeading eyebrow="Hol történik mindez?" title="Nem Facebook-csoport —" accent="saját, zárt Okoskonyha-tér" />
+  <p class="mx-auto -mt-6 mb-10 max-w-2xl text-center text-forest-600">
+    A közösség egy zárt Circle-térben él — minden recept, videó, beszélgetés és kérdés egy helyen
+    van, rendszerezve, bármikor visszakereshetően.
+  </p>
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    {
+      CARDS.map((card) => (
+        <div class="rounded-2xl bg-white p-6 shadow-sm shadow-forest-900/5">
+          <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-sage-100 text-forest-700">
+            <Icon name={card.icon} class="h-6 w-6" />
+          </div>
+          <h3 class="font-heading font-semibold text-forest-800 mb-1">{card.title}</h3>
+          <p class="text-sm text-forest-600">{card.text}</p>
+        </div>
+      ))
+    }
+  </div>
+  <div class="mx-auto mt-10 max-w-2xl space-y-3">
+    {
+      MINI_FAQ.map((item) => (
+        <details class="group rounded-2xl bg-sage-50 p-5 open:bg-white open:shadow-md">
+          <summary class="cursor-pointer list-none font-heading font-semibold text-forest-800 flex items-center justify-between">
+            {item.q}
+            <span class="ml-4 text-clay-600 transition-transform group-open:rotate-45" aria-hidden="true">
+              +
+            </span>
+          </summary>
+          <p class="mt-3 text-forest-600">{item.a}</p>
+        </details>
+      ))
+    }
+  </div>
+</section>

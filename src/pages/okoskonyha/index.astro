@@ -9,6 +9,7 @@ import Icon from '../../components/Icon.astro';
 import MembershipPricing from '../../components/MembershipPricing.astro';
 import AdvancedTopicsTeaser from '../../components/AdvancedTopicsTeaser.astro';
 import FlexibleDietCallout from '../../components/FlexibleDietCallout.astro';
+import HowItWorks from '../../components/HowItWorks.astro';
 import balintProfile from '../../assets/photos/balint-cooking-portrait.jpeg';
 import { SITE } from '../../lib/site';
 import { BIO_STATS, METHOD_PILLARS, MEMBERSHIP_BENEFITS, PRICING, KITCHENS_WORKED_WITH, CHEFS_LEARNED_FROM } from '../../lib/program';
@@ -251,6 +252,8 @@ const heroImagePreload = await getImage({ src: balintProfile, width: 600, height
       </div>
     </div>
   </section>
+
+  <HowItWorks />
 
   <TestimonialCarousel
     items={testimonialEntries.map((t) => ({ name: t.data.name, role: t.data.role, quote: t.data.quote, avatar: t.data.avatar }))}
