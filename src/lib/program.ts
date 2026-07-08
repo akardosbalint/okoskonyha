@@ -21,15 +21,17 @@ export const BIO_FACTS = [
 // Éttermek, ahol séfként/konyhai csapattagként dolgoztam — hitelességi trust-strip
 // az Okoskonyha oldalon. Csak névsor (nincs logó-képfájl a repóban); ha valódi
 // logó-képek elérhetők, ez a blokk könnyen lecserélhető képekre a lista alapján.
+// A name/location külön mező, hogy az elválasztás (— ) egységesen, egy helyen
+// legyen vezérelve a megjelenítésnél, ne kézzel beírt kötőjelekkel soronként.
 export const KITCHENS_WORKED_WITH = [
-  'Flow Coffee and Bistro Budapest',
-  'Mazel Tov Budapest',
-  "Vivina's Cafe and Brunch Budapest",
-  '101 Bistro Budapest',
-  'Todo Mexican Kitchen Budapest',
-  'Balagan Budapest',
-  'Hanami Asian Bistro Budapest',
-  'Pastadelic Vegan Pasta — OZORA Festival',
+  { name: 'Flow Coffee and Bistro', location: 'Budapest' },
+  { name: 'Mazel Tov', location: 'Budapest' },
+  { name: "Vivina's Cafe and Brunch", location: 'Budapest' },
+  { name: '101 Bistro', location: 'Budapest' },
+  { name: 'Todo Mexican Kitchen', location: 'Budapest' },
+  { name: 'Balagan', location: 'Budapest' },
+  { name: 'Hanami Asian Bistro', location: 'Budapest' },
+  { name: 'Pastadelic Vegan Pasta', location: 'OZORA Festival' },
 ];
 
 // A Batch Cooking Alapkurzus (az Alapképzés) moduljaira épülő bontás — ezt mindenki
