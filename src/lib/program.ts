@@ -98,8 +98,8 @@ export const METHOD_PILLARS = [
   },
   {
     title: 'Batch cooking rendszer',
-    subtitle: '2 gabona, 3 fehérjeforrás, 1 friss saláta, 3 szósz',
-    text: 'Egyetlen vasárnapi főzésből 18+ kombináció áll össze — egy egész hétre elég, változatos étel, új főzés nélkül.',
+    subtitle: '3 gabona/köret, 3 fehérjeforrás, 3 szósz, 1 friss saláta',
+    text: 'Egyetlen vasárnapi főzésből 27+ kombináció áll össze — egy egész hétre elég, változatos étel, új főzés nélkül.',
   },
   {
     title: 'Tárolás és fagyasztás',

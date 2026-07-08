@@ -48,12 +48,12 @@ Az előfőzött elemekből percek alatt összeáll egy változatos, friss étel.
 
 Ahhoz, hogy a „kombinálás” ne homályos elméletnek tűnjön, íme a konkrét váz, amit a közösségben is tanítok, és amit hétről hétre újra és újra használok:
 
-- **2 féle gabona** — pl. rizs és quinoa, vagy bulgur és hajdina
+- **3 féle gabona/köret** — pl. rizs, quinoa és bulgur (vagy hajdina)
 - **3 féle fehérjeforrás** — pl. sült tofu, sült csicseriborsó vagy lencse, és edamame
-- **1 nagy adag friss zöldség vagy saláta** — szezonális, amit épp akkor a legjobb áron kapsz
 - **3 féle szósz** — pl. egy tahinis, egy zöld (koriander vagy petrezselyem alapú), és egy paradicsomos-fűszeres
+- **1 nagy adag friss zöldség vagy saláta** — szezonális, amit épp akkor a legjobb áron kapsz
 
-Ez első ránézésre soknak tűnhet, de pont ez a lényege: 2 gabona × 3 fehérje × 3 szósz + a friss saláta már önmagában is 18+ különböző kombinációt ad — anélkül, hogy egyetlen plusz főzési lépésre lenne szükség a héten. A vasárnapi 2 óra ebből a négy elemből áll össze, a hét további részében pedig csak kombinálsz, nem főzöl újra.
+Ez első ránézésre soknak tűnhet, de pont ez a lényege: 3 gabona/köret × 3 fehérje × 3 szósz + a friss saláta már önmagában is 27+ különböző kombinációt ad — anélkül, hogy egyetlen plusz főzési lépésre lenne szükség a héten. A vasárnapi 2 óra ebből a négy elemből áll össze, a hét további részében pedig csak kombinálsz, nem főzöl újra.
 
 Ha bővebben érdekel, melyik növényi fehérjeforrás mit tud, és hogyan főzd meg őket úgy, hogy tényleg jóllakj tőlük, ezt [egy külön cikkben](/blog/novenyi-feherjeforrasok/) részletesen kifejtettem.
 
@@ -61,11 +61,11 @@ Ha bővebben érdekel, melyik növényi fehérjeforrás mit tud, és hogyan főz
 
 Nézzük meg, hogyan fest ez a gyakorlatban egy valós héten.
 
-**Vasárnap (előkészület, kb. 2 óra):** megfőzöl 1 adag rizst és 1 adag quinoát; a sütőben egyszerre elkészíted a sült tofut, a sült csicseriborsót és az edamamét (három tepsi, egy sütés); összeállítasz egy nagy adag friss, szezonális salátát; és megfőzöd a három szószt — egy tahinis, egy zöld, egy paradicsomos-fűszeres.
+**Vasárnap (előkészület, kb. 2 óra):** megfőzöl 1 adag rizst, 1 adag quinoát és 1 adag bulgurt; a sütőben egyszerre elkészíted a sült tofut, a sült csicseriborsót és az edamamét (három tepsi, egy sütés); összeállítasz egy nagy adag friss, szezonális salátát; és megfőzöd a három szószt — egy tahinis, egy zöld, egy paradicsomos-fűszeres.
 
 - **Hétfő:** Buddha-tál — quinoa, sült tofu, friss saláta, tahinis szósz.
 - **Kedd:** Wrap — rizs, sült csicseriborsó, zöld szósz, egy kevés friss zöldség.
-- **Szerda:** Meleg gabonasaláta — quinoa, edamame, friss saláta, vinaigrette-esített paradicsomos szósz.
+- **Szerda:** Meleg gabonasaláta — bulgur, edamame, friss saláta, vinaigrette-esített paradicsomos szósz.
 - **Csütörtök:** Zöldséges „rizottó” jelleg a maradék rizsből, sült tofuval és a paradicsomos-fűszeres szósszal átforgatva.
 - **Péntek:** Amit még muszáj elhasználnod — ez a nap mindig a hűtő kiürítéséről szól, nulla plusz gondolkodással.
 
