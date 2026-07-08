@@ -62,7 +62,7 @@ const services = [
             ]}
           >
             {service.badge && (
-              <span class="absolute -top-3 left-8 rounded-full bg-clay-500 px-4 py-1 text-xs font-semibold text-cream">
+              <span class="absolute -top-3 left-8 rounded-full bg-clay-600 px-4 py-1 text-xs font-semibold text-cream">
                 {service.badge}
               </span>
             )}
@@ -79,13 +79,13 @@ const services = [
             <h2
               class:list={[
                 'font-heading text-xl font-semibold mb-2',
-                service.badge ? 'text-cream' : 'text-forest-800 group-hover:text-clay-500',
+                service.badge ? 'text-cream' : 'text-forest-800 group-hover:text-clay-600',
               ]}
             >
               {service.title}
             </h2>
             <p class:list={['mb-4', service.badge ? 'text-cream/85' : 'text-forest-600']}>{service.description}</p>
-            <span class:list={['mt-auto font-semibold', service.badge ? 'text-clay-300' : 'text-clay-500']}>Részletek →</span>
+            <span class:list={['mt-auto font-semibold', service.badge ? 'text-clay-300' : 'text-clay-600']}>Részletek →</span>
           </a>
         ))
       }

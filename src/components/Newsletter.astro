@@ -45,7 +45,7 @@ const isLightText = variant === 'card' || variant === 'dark-inline';
       <input type="text" name="company" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
       <button
         type="submit"
-        class="rounded-full bg-clay-500 px-6 py-3 font-heading font-semibold text-cream transition-colors hover:bg-clay-600 whitespace-nowrap"
+        class="rounded-full bg-clay-600 px-6 py-3 font-heading font-semibold text-cream transition-colors hover:bg-clay-700 whitespace-nowrap"
       >
         Feliratkozom
       </button>
@@ -54,7 +54,7 @@ const isLightText = variant === 'card' || variant === 'dark-inline';
       <input type="checkbox" name="privacyConsent" required class="mt-0.5 h-4 w-4 shrink-0 accent-clay-500" />
       <span>
         Elfogadom, hogy az e-mail címemet hírlevél küldése céljából kezeljék. Bővebben az
-        <a href="/adatvedelem/" class:list={['underline', isLightText ? 'text-cream hover:text-clay-300' : 'text-clay-500 hover:text-clay-600']}>
+        <a href="/adatvedelem/" class:list={['underline', isLightText ? 'text-cream hover:text-clay-300' : 'text-clay-600 hover:text-clay-700']}>
           Adatvédelmi tájékoztatóban
         </a>.
       </span>

@@ -147,7 +147,7 @@ const serviceJsonLd = {
             {
               painPoints.map((point) => (
                 <li class="flex gap-3 text-forest-700">
-                  <span class="mt-1 text-clay-500" aria-hidden="true">✕</span>
+                  <span class="mt-1 text-clay-600" aria-hidden="true">✕</span>
                   {point}
                 </li>
               ))
@@ -182,7 +182,7 @@ const serviceJsonLd = {
               <Icon name={methodIcons[i]} class="h-7 w-7" />
             </div>
             <h3 class="font-heading text-xl font-semibold text-forest-800">{pillar.title}</h3>
-            <p class="mt-1 text-sm font-semibold text-clay-500">{pillar.subtitle}</p>
+            <p class="mt-1 text-sm font-semibold text-clay-600">{pillar.subtitle}</p>
             <p class="mt-3 text-forest-600">{pillar.text}</p>
           </div>
         ))
@@ -213,9 +213,9 @@ const serviceJsonLd = {
 
   <TestimonialCarousel
     items={testimonialEntries.map((t) => ({ name: t.data.name, role: t.data.role, quote: t.data.quote, avatar: t.data.avatar }))}
-    eyebrow="Tagok mondták"
-    title="Amit a közösségről"
-    accent="mondanak"
+    eyebrow="Mielőtt döntenél"
+    title="Amit korábbi vendégeim"
+    accent="mondanak rólam"
   />
 
   <!-- Pricing -->
@@ -232,7 +232,7 @@ const serviceJsonLd = {
           <details class="group rounded-2xl bg-sage-50 p-5 open:bg-white open:shadow-md">
             <summary class="cursor-pointer list-none font-heading font-semibold text-forest-800 flex items-center justify-between">
               {faq.q}
-              <span class="ml-4 text-clay-500 transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+              <span class="ml-4 text-clay-600 transition-transform group-open:rotate-45" aria-hidden="true">+</span>
             </summary>
             <p class="mt-3 text-forest-600">{faq.a}</p>
           </details>
@@ -243,7 +243,7 @@ const serviceJsonLd = {
 
   <!-- Final CTA -->
   <section class="mx-auto max-w-4xl px-4 py-16 md:py-20 text-center md:px-6">
-    <div class="rounded-3xl bg-clay-500 px-6 py-14 md:px-16">
+    <div class="rounded-3xl bg-clay-600 px-6 py-14 md:px-16">
       <h2 class="text-3xl md:text-4xl font-semibold text-cream mb-4">Készen állsz a csatlakozásra?</h2>
       <p class="text-cream/90 mb-8">Lépj be az Okoskonyhába, és kezdj el ma egyszerűbben, olcsóbban és egészségesebben főzni.</p>
       <CTAButton href={SITE.checkoutUrl} label="Csatlakozom az Okoskonyhához" variant="ghost" size="lg" outbound />

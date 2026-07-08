@@ -120,8 +120,14 @@ const GTM_ID = 'GTM-W738PN86';
         style="display:none;visibility:hidden"
       ></iframe>
     </noscript>
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] focus:rounded-full focus:bg-forest-800 focus:px-5 focus:py-3 focus:text-sm focus:font-semibold focus:text-cream"
+    >
+      Ugrás a tartalomhoz
+    </a>
     <Header />
-    <main class="flex-1">
+    <main id="main-content" class="flex-1">
       <slot />
     </main>
     <Footer />
