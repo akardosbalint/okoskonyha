@@ -18,12 +18,30 @@ const latestPosts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.
 
 const testimonialEntries = await getCollection('testimonials');
 const methodIcons = ['book', 'shield', 'coin', 'salt', 'fat', 'acid', 'heat', 'leaf', 'plate', 'calendar', 'basket', 'clock'] as const;
+
+// Organization séma a főoldalon — segíti a Google Knowledge Panel és a márka-keresési
+// jelzések felismerését. A Rólam oldalon ennek Person-párja szerepel (lásd ott).
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: SITE.name,
+  url: SITE.url,
+  logo: new URL('/og-default.jpg', SITE.url).toString(),
+  image: new URL('/og-default.jpg', SITE.url).toString(),
+  description: SITE.description,
+  sameAs: [SITE.instagram, SITE.facebook],
+  founder: {
+    '@type': 'Person',
+    name: SITE.name,
+  },
+};
 ---
 
 <Layout
   title="Finomabb, egészségesebb főzés otthonodban"
   description="Heti max. 2 főzéssel, káoszmentesen — Kardos Bálint séf közösségével megtanulsz olcsóbban, gyorsabban és egészségesebben főzni, batch cooking módszerrel."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(organizationJsonLd)} slot="head" is:inline />
   <!-- Hero -->
   <section class="relative overflow-hidden bg-sage-300">
     <div class="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-2 md:items-center md:px-6 md:py-24">

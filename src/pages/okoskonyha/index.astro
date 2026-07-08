@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import CTAButton from '../../components/CTAButton.astro';
@@ -90,6 +90,13 @@ const serviceJsonLd = {
     },
   ],
 };
+
+// A hero-kép a Largest Contentful Paint eleme ezen az oldalon. loading="eager" + fetchpriority="high"
+// csak azután segít, hogy a böngésző HTML-elemzése elért eddig a pontig — egy <link rel="preload">
+// a <head>-ben korábban, a dokumentum elemzésének elején felfedezteti a képet, mielőtt a
+// letöltéséhez egyáltalán elérne ide a parser. A getImage()-nek pontosan ugyanazokat a
+// paramétereket kell kapnia, mint a lenti <Image>-nek, hogy ugyanarra a build-generált URL-re mutasson.
+const heroImagePreload = await getImage({ src: balintProfile, width: 600, height: 600 });
 ---
 
 <Layout
@@ -97,6 +104,7 @@ const serviceJsonLd = {
   description="Csatlakozz az Okoskonyha közösséghez: heti receptek, havi élő főzős alkalmak és egy csapat, aki melletted áll a gyorsabb, olcsóbb főzésben."
   hideMobileCta
 >
+  <link rel="preload" as="image" href={heroImagePreload.src} fetchpriority="high" slot="head" />
   <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} slot="head" is:inline />
   <script type="application/ld+json" set:html={JSON.stringify(serviceJsonLd)} slot="head" is:inline />
   <!-- Hero -->

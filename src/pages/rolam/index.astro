@@ -25,12 +25,30 @@ const galleryImages = [
   { src: g5, alt: 'Kardos Bálint a vendégekkel beszélget vacsora közben' },
   { src: g6, alt: 'Polaroidok a közös vacsorák és események pillanataiból' },
 ];
+
+// Person séma — a márka arca Kardos Bálint személye, ezért ő maga a strukturált adat
+// alanya (nem az Organization, aminek a párja a főoldalon szerepel).
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: SITE.name,
+  url: new URL('/rolam/', SITE.url).toString(),
+  image: new URL(balintProfile.src, SITE.url).toString(),
+  jobTitle: 'Séf és életmód-tanácsadó',
+  description: SITE.description,
+  sameAs: [SITE.instagram, SITE.facebook],
+  worksFor: {
+    '@type': 'Organization',
+    name: SITE.name,
+  },
+};
 ---
 
 <Layout
   title="Rólam — a növényi séf, akinek emberek kellettek"
   description="Kardos Bálint karrierváltásától a séfkedésig: hogyan lett vacsorapartikból közösségépítő misszió."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(personJsonLd)} slot="head" is:inline />
   <section class="bg-sage-100 py-14 md:py-20">
     <div class="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2 md:items-center md:px-6">
       <div>
