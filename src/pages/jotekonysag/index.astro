@@ -80,6 +80,18 @@ const galleryImages = [
       if (!(video instanceof HTMLVideoElement)) return;
       const pauseIcon = btn.querySelector<SVGElement>('[data-icon="pause"]');
       const playIcon = btn.querySelector<SVGElement>('[data-icon="play"]');
+
+      // Aki az operációs rendszerében csökkentett mozgást kért, annak ne induljon el
+      // magától a videó — a lejátszás gombbal bármikor elindítható marad.
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        video.pause();
+        video.currentTime = 0;
+        btn.setAttribute('aria-label', 'Videó lejátszása');
+        btn.setAttribute('aria-pressed', 'true');
+        pauseIcon?.classList.add('hidden');
+        playIcon?.classList.remove('hidden');
+      }
+
       btn.addEventListener('click', () => {
         if (video.paused) {
           video.play();

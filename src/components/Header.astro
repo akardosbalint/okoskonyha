@@ -6,6 +6,14 @@ function isActive(href: string) {
   if (href === '/') return currentPath === '/';
   return currentPath.startsWith(href);
 }
+
+// Cold traffic (bármelyik más oldalról érkező kattintás) először az Okoskonyha oldalra
+// landoljon, ne egyenesen egy bankkártyát kérő checkout oldalra — ugyanaz a logika, mint
+// a mobil sticky CTA-nál. A főoldalon és magán az Okoskonyha oldalon a kontextus már adott,
+// ott mehet egyenesen a checkoutra.
+const isDirectCheckoutContext = currentPath === '/' || currentPath.startsWith('/okoskonyha');
+const headerCtaHref = isDirectCheckoutContext ? SITE.checkoutUrl : '/okoskonyha/';
+const headerCtaIsExternal = isDirectCheckoutContext;
 ---
 
 <header class="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-forest-700/10">
@@ -36,10 +44,10 @@ function isActive(href: string) {
     </nav>
 
     <a
-      href={SITE.checkoutUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      data-outbound="okoskonyha"
+      href={headerCtaHref}
+      target={headerCtaIsExternal ? '_blank' : undefined}
+      rel={headerCtaIsExternal ? 'noopener noreferrer' : undefined}
+      data-outbound={headerCtaIsExternal ? 'okoskonyha' : undefined}
       data-cta-label="header_csatlakozom"
       class="hidden lg:inline-flex rounded-full bg-clay-600 px-5 py-2.5 text-sm font-heading font-semibold text-cream shadow-md shadow-clay-500/30 transition-transform hover:-translate-y-0.5 hover:bg-clay-700"
     >
@@ -77,10 +85,10 @@ function isActive(href: string) {
       ))
     }
     <a
-      href={SITE.checkoutUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      data-outbound="okoskonyha"
+      href={headerCtaHref}
+      target={headerCtaIsExternal ? '_blank' : undefined}
+      rel={headerCtaIsExternal ? 'noopener noreferrer' : undefined}
+      data-outbound={headerCtaIsExternal ? 'okoskonyha' : undefined}
       data-cta-label="mobile_menu_csatlakozom"
       class="mt-2 block rounded-full bg-clay-600 px-5 py-3 text-center font-heading font-semibold text-cream"
     >

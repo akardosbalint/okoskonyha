@@ -17,7 +17,7 @@ const allPosts = await getCollection('blog');
 const latestPosts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 3);
 
 const testimonialEntries = await getCollection('testimonials');
-const methodIcons = ['shield', 'book', 'coin', 'salt', 'fat', 'acid', 'heat', 'leaf', 'plate', 'clock', 'basket', 'calendar'] as const;
+const methodIcons = ['shield', 'book', 'coin', 'salt', 'fat', 'acid', 'heat', 'leaf', 'plate', 'calendar', 'basket', 'clock'] as const;
 ---
 
 <Layout

@@ -42,18 +42,26 @@ const encodedTitle = encodeURIComponent(title);
       <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
     </svg>
   </button>
+  <p data-copy-link-status class="sr-only" role="status" aria-live="polite"></p>
 </div>
 
 <script>
   document.querySelectorAll<HTMLButtonElement>('[data-copy-link]').forEach((btn) => {
+    const status = btn.parentElement?.querySelector<HTMLElement>('[data-copy-link-status]');
     btn.addEventListener('click', async () => {
       const link = btn.dataset.copyLink;
       if (!link) return;
       try {
         await navigator.clipboard.writeText(link);
         const original = btn.innerHTML;
+        const originalLabel = btn.getAttribute('aria-label') ?? 'Link másolása';
         btn.textContent = '✓';
-        setTimeout(() => (btn.innerHTML = original), 1500);
+        btn.setAttribute('aria-label', 'Link vágólapra másolva');
+        if (status) status.textContent = 'Link vágólapra másolva.';
+        setTimeout(() => {
+          btn.innerHTML = original;
+          btn.setAttribute('aria-label', originalLabel);
+        }, 1500);
       } catch {
         // clipboard API elérhetetlen, csendben nem csinálunk semmit
       }
