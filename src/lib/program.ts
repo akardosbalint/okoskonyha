@@ -1,5 +1,5 @@
 // Az Okoskonyha tagság és Kardos Bálint hitelességi adatai.
-// A tagság egyetlen termék: havidíjas fizetős közösség a Circle.so-n.
+// A tagság egyetlen termék: havidíjas, zárt közösség a Circle.so-n.
 
 export const USP = 'Főzz finomabbat és egészségesebbet — olcsóbban és gyorsabban';
 

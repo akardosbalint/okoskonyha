@@ -2,7 +2,7 @@ export const SITE = {
   name: 'Kardos Bálint',
   tagline: 'Főzz finomabbat és egészségesebbet — olcsóbban és gyorsabban',
   description:
-    'Az Okoskonyha fizetős közösséggel megtanulsz olcsóbban, gyorsabban, finomabbat és egészségesebbet főzni — heti max. 2 főzéssel, káoszmentesen. Kardos Bálint séf és életmód-tanácsadó közössége.',
+    'Az Okoskonyha zárt közösséggel megtanulsz olcsóbban, gyorsabban, finomabbat és egészségesebbet főzni — heti max. 2 főzéssel, káoszmentesen. Kardos Bálint séf és életmód-tanácsadó közössége.',
   url: 'https://akardosbalint.hu',
   circleUrl: 'https://okoskonyha.akardosbalint.hu',
   // Az Okoskonyha alaptagság közvetlen előfizetési (checkout) linkje a Circle.so-n —

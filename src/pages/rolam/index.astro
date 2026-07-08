@@ -15,7 +15,7 @@ import g4 from '../../assets/photos/picnic-overhead.jpeg';
 import g5 from '../../assets/photos/balint-hosting-guests.jpeg';
 import g6 from '../../assets/photos/community-polaroids.jpeg';
 import { SITE } from '../../lib/site';
-import { BIO_STATS, BIO_FACTS } from '../../lib/program';
+import { BIO_STATS, BIO_FACTS, KITCHENS_WORKED_WITH, CHEFS_LEARNED_FROM } from '../../lib/program';
 
 const galleryImages = [
   { src: g1, alt: 'Vendégek egy hosszú vacsoraasztal körül' },
@@ -76,6 +76,32 @@ const personJsonLd = {
           </div>
         ))
       }
+    </div>
+
+    <div class="mt-10 border-t border-sage-200 pt-8 text-center">
+      <p class="mb-5 text-sm font-semibold uppercase tracking-wide text-forest-500">Ezeken a konyhákon dolgoztam</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+        {
+          KITCHENS_WORKED_WITH.map((kitchen) => (
+            <span class="font-heading text-base font-semibold text-forest-700/70 md:text-lg">
+              {kitchen.name} <span class="text-forest-400" aria-hidden="true">—</span>{' '}
+              <span class="font-normal text-forest-500">{kitchen.location}</span>
+            </span>
+          ))
+        }
+      </div>
+      <p class="mt-5 text-sm text-forest-500">+ fesztiválok, elvonulások, esküvők és privát események szerte az országban</p>
+    </div>
+
+    <div class="mt-8 border-t border-sage-200 pt-8 text-center">
+      <p class="mb-5 text-sm font-semibold uppercase tracking-wide text-forest-500">Séfeim, akiktől a legtöbbet tanultam</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+        {
+          CHEFS_LEARNED_FROM.map((chef) => (
+            <span class="font-heading text-base font-semibold text-forest-700/70 md:text-lg">{chef}</span>
+          ))
+        }
+      </div>
     </div>
   </section>
 
