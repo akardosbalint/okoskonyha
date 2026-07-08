@@ -5,7 +5,7 @@ export const USP = 'Főzz finomabbat és egészségesebbet — olcsóbban és gy
 
 export const BIO_STATS = [
   { value: '2020', label: 'óta szervezek vacsorapartikat és gasztroeseményeket' },
-  { value: '65', label: 'saját szervezésű esemény, 6 országban' },
+  { value: '65+', label: 'saját szervezésű esemény, 6 országban' },
   { value: '1200+', label: 'vendég a saját vacsoraestéken' },
   { value: '10 000+', label: 'kiadott tányér a teljes éttermi és privát karrierem alatt' },
   { value: '5+ év', label: 'éttermi konyhai tapasztalat + életmód-tanácsadói végzettség' },
