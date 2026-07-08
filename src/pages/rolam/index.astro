@@ -6,7 +6,7 @@ import SectionHeading from '../../components/SectionHeading.astro';
 import Gallery from '../../components/Gallery.astro';
 import InstagramFeed from '../../components/InstagramFeed.astro';
 import YouTubeEmbed from '../../components/YouTubeEmbed.astro';
-import balintProfile from '../../assets/photos/balint-profile.webp';
+import heroImage from '../../assets/photos/balint-cooking-action.jpeg';
 import lifestyleMedicineCertificate from '../../assets/photos/lifestyle-medicine-certificate.jpeg';
 import g1 from '../../assets/photos/dinner-group-table.jpeg';
 import g2 from '../../assets/photos/balint-candid-portrait.jpeg';
@@ -33,7 +33,7 @@ const personJsonLd = {
   '@type': 'Person',
   name: SITE.name,
   url: new URL('/rolam/', SITE.url).toString(),
-  image: new URL(balintProfile.src, SITE.url).toString(),
+  image: new URL(heroImage.src, SITE.url).toString(),
   jobTitle: 'Séf és életmód-tanácsadó',
   description: SITE.description,
   sameAs: [SITE.instagram, SITE.facebook],
@@ -62,7 +62,7 @@ const personJsonLd = {
           beszélgetéseim mindig az asztal körül történtek.
         </p>
       </div>
-      <Image src={balintProfile} alt="Kardos Bálint a konyhájában" width={600} height={600} loading="eager" fetchpriority="high" class="w-full rounded-3xl object-cover aspect-square" />
+      <Image src={heroImage} alt="Kardos Bálint főzés közben, séf-egyenruhában" width={600} height={600} loading="eager" fetchpriority="high" class="w-full rounded-3xl object-cover aspect-square" />
     </div>
   </section>
 
