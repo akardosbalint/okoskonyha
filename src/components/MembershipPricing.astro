@@ -22,7 +22,7 @@ import { SITE } from '../lib/site';
     <p class="mb-6 text-sm font-semibold text-clay-600">
       {PRICING.lockedInNote}
     </p>
-    <CTAButton href={SITE.checkoutUrl} label="Csatlakozom" variant="secondary" outbound />
+    <CTAButton href={SITE.checkoutUrl} label="Csatlakozom" variant="secondary" outbound trackingId="join_cta_monthly" />
     <p class="mt-3 text-xs text-forest-500">3 napos ingyenes próba, bankkártyával — próbaidő alatt bármikor lemondható.</p>
   </div>
   <div class="rounded-3xl bg-forest-700 p-8 shadow-xl text-cream scale-[1.02]">
@@ -39,7 +39,7 @@ import { SITE } from '../lib/site';
     <p class="mb-6 text-sm font-semibold text-clay-300">
       {PRICING.lockedInNote}
     </p>
-    <CTAButton href={SITE.checkoutUrl} label="Csatlakozom" variant="primary" outbound />
+    <CTAButton href={SITE.checkoutUrl} label="Csatlakozom" variant="primary" outbound trackingId="join_cta_annual" />
     <p class="mt-3 text-xs text-sage-100/80">3 napos ingyenes próba, bankkártyával — próbaidő alatt bármikor lemondható.</p>
   </div>
 </div>

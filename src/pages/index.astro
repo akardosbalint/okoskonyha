@@ -17,7 +17,7 @@ const allPosts = await getCollection('blog');
 const latestPosts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 3);
 
 const testimonialEntries = await getCollection('testimonials');
-const methodIcons = ['shield', 'book', 'coin', 'salt', 'fat', 'acid', 'heat', 'leaf', 'plate', 'calendar', 'basket', 'clock'] as const;
+const methodIcons = ['book', 'shield', 'coin', 'salt', 'fat', 'acid', 'heat', 'leaf', 'plate', 'calendar', 'basket', 'clock'] as const;
 ---
 
 <Layout
@@ -37,7 +37,7 @@ const methodIcons = ['shield', 'book', 'coin', 'salt', 'fat', 'acid', 'heat', 'l
           főétkezéseidet — káoszmentesen, kajapánik nélkül.
         </p>
         <div class="flex flex-wrap gap-4">
-          <CTAButton href={SITE.checkoutUrl} label="Csatlakozom most" size="lg" outbound />
+          <CTAButton href={SITE.checkoutUrl} label="Csatlakozom most" size="lg" outbound trackingId="join_cta" />
           <CTAButton href="/okoskonyha/" label="Ismerd meg a közösséget" variant="ghost" size="lg" />
         </div>
         <p class="mt-4 text-sm text-forest-700">Bármikor lemondható. Nincs hosszú távú elköteleződés.</p>
@@ -134,7 +134,7 @@ const methodIcons = ['shield', 'book', 'coin', 'salt', 'fat', 'acid', 'heat', 'l
     <div class="rounded-3xl bg-clay-600 px-6 py-14 md:px-16">
       <h2 class="text-3xl md:text-4xl font-semibold text-cream mb-4">Készen állsz a csatlakozásra?</h2>
       <p class="text-cream/90 mb-8">Lépj be az Okoskonyhába, és kezdj el ma egyszerűbben, olcsóbban és egészségesebben főzni.</p>
-      <CTAButton href={SITE.checkoutUrl} label="Csatlakozom az Okoskonyhához" variant="ghost" size="lg" outbound />
+      <CTAButton href={SITE.checkoutUrl} label="Csatlakozom az Okoskonyhához" variant="ghost" size="lg" outbound trackingId="join_cta" />
     </div>
   </section>
 </Layout>

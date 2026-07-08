@@ -6,6 +6,10 @@ interface Props {
   size?: 'md' | 'lg';
   outbound?: boolean;
   class?: string;
+  // Stabil analitikai azonosító a látható gombszövegtől függetlenül — enélkül ugyanaz a
+  // funnel-lépés ("csatlakozás") a "Csatlakozom" / "Csatlakozom most" / "Csatlakozom az
+  // Okoskonyhához" változatok miatt külön eseménycímke alatt futna GTM/GA4-ben.
+  trackingId?: string;
 }
 
 const {
@@ -15,6 +19,7 @@ const {
   size = 'md',
   outbound = false,
   class: className = '',
+  trackingId,
 } = Astro.props;
 
 const base =
@@ -40,7 +45,7 @@ const isExternal = href.startsWith('http');
   target={isExternal ? '_blank' : undefined}
   rel={isExternal ? 'noopener noreferrer' : undefined}
   data-outbound={outbound ? 'okoskonyha' : undefined}
-  data-cta-label={label}
+  data-cta-label={trackingId ?? label}
 >
   {label}
   <span aria-hidden="true">→</span>
