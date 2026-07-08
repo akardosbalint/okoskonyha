@@ -113,14 +113,18 @@ const heroImagePreload = await getImage({ src: balintProfile, width: 600, height
   <section class="bg-sage-300 py-16 md:py-24">
     <div class="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2 md:items-center md:px-6">
       <div>
-        <p class="font-script text-3xl text-forest-700 mb-2">Kardos Bálint Okoskonyhája</p>
+        <p class="font-script text-3xl text-forest-700 mb-3">Kardos Bálint Okoskonyhája</p>
+        <div class="mb-4 flex flex-wrap gap-2">
+          <span class="rounded-full bg-forest-700 px-4 py-1.5 text-sm font-semibold text-cream">Zárt online közösség</span>
+          <span class="rounded-full bg-clay-600 px-4 py-1.5 text-sm font-semibold text-cream">Növényi alapú főzés</span>
+        </div>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-forest-800 leading-tight mb-6">
           Főzz <span class="font-script text-clay-600">finomabbat</span> és egészségesebbet — olcsóbban és gyorsabban
         </h1>
         <p class="text-lg text-forest-800/90 mb-8 max-w-xl">
-          Az Okoskonyha egy zárt közösség azoknak, akik szeretnének olcsóbban, gyorsabban és
-          egészségesebben főzni, de nem tudják, hol kezdjék. Heti receptek, élő alkalmak és egy csapat,
-          aki melletted áll.
+          Az Okoskonyha egy zárt online közösség azoknak, akik szeretnének olcsóbban, gyorsabban és
+          egészségesebben főzni — teljes értékű, növényi alapon (whole-food plant-based diet). Heti
+          receptek, élő alkalmak és egy csapat, aki melletted áll.
         </p>
         <div class="flex flex-wrap gap-4">
           <CTAButton href={SITE.checkoutUrl} label="Csatlakozom most" size="lg" outbound trackingId="join_cta" />
