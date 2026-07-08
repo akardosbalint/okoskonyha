@@ -27,6 +27,7 @@ const sorted = [...posts].sort((a, b) => b.data.date.valueOf() - a.data.date.val
 
   <section class="mx-auto max-w-6xl px-4 py-14 md:px-6">
     <a href="/blog/" class="mb-8 inline-block text-forest-600 hover:text-clay-600">&larr; Vissza az összes bejegyzéshez</a>
+    <h2 class="sr-only">Bejegyzések</h2>
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {sorted.map((post, i) => <BlogCard post={post} featured={i === 0} />)}
     </div>

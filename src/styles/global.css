@@ -50,7 +50,7 @@ h1, h2, h3, h4 {
   @apply list-decimal pl-6 mb-5 space-y-1;
 }
 .prose-okos a {
-  @apply text-clay-500 underline decoration-2 underline-offset-2 hover:text-clay-600;
+  @apply text-clay-600 underline decoration-2 underline-offset-2 hover:text-clay-700;
 }
 .prose-okos blockquote {
   @apply border-l-4 border-sage-300 pl-4 italic text-forest-600 my-6;
