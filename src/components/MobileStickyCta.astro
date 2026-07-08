@@ -19,13 +19,19 @@
 
 <script>
   const bar = document.querySelector<HTMLElement>('[data-mobile-sticky-cta]');
+  const ccRoot = document.getElementById('cookie-consent');
+  let cookieBannerOpen = ccRoot ? !ccRoot.classList.contains('hidden') : false;
 
   function updateVisibility() {
     if (!bar) return;
-    const shouldShow = window.scrollY > window.innerHeight * 0.6;
+    const shouldShow = !cookieBannerOpen && window.scrollY > window.innerHeight * 0.6;
     bar.classList.toggle('translate-y-full', !shouldShow);
   }
 
   window.addEventListener('scroll', updateVisibility, { passive: true });
+  document.addEventListener('cc:visibility', ((e: CustomEvent<{ visible: boolean }>) => {
+    cookieBannerOpen = e.detail.visible;
+    updateVisibility();
+  }) as EventListener);
   updateVisibility();
 </script>

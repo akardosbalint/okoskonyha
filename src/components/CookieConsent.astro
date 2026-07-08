@@ -93,10 +93,12 @@
       root!.classList.remove('hidden');
       bannerView?.classList.toggle('hidden', view !== 'banner');
       settingsView?.classList.toggle('hidden', view !== 'settings');
+      document.dispatchEvent(new CustomEvent('cc:visibility', { detail: { visible: true } }));
     }
 
     function hide() {
       root!.classList.add('hidden');
+      document.dispatchEvent(new CustomEvent('cc:visibility', { detail: { visible: false } }));
     }
 
     function prefillToggles() {

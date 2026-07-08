@@ -27,8 +27,6 @@ const {
 const pageTitle = title === SITE.name ? title : `${title} | ${SITE.name}`;
 const canonicalURL = new URL(Astro.url.pathname, SITE.url);
 const ogImageURL = new URL(image, SITE.url);
-
-const GTM_ID = 'GTM-W738PN86';
 ---
 
 <!doctype html>
@@ -57,16 +55,13 @@ const GTM_ID = 'GTM-W738PN86';
     <meta name="twitter:image" content={ogImageURL} />
 
     <!--
-      Analitika: Google Tag Manager + Google Analytics 4 (gtag.js) — csak akkor töltjük be, ha a
-      látogató elfogadta az analitikai sütiket (lásd src/lib/cookieConsent.ts, hasConsent('analytics'),
-      CONSENT_CHANGE_EVENT).
-      FONTOS: ha a GTM konténerben (GTM-W738PN86) is be lesz állítva egy GA4-konfigurációs tag
-      ugyanerre a G-GGLX09K1VG mérési azonosítóra, a két úton duplán érkeznek majd az események —
-      vagy csak a GTM-en belüli GA4-tagot használd, vagy csak ezt a közvetlen gtag.js-t, ne mindkettőt.
-      A kiemelt CTA-gombok automatikusan `data-outbound="okoskonyha"` attribútummal
-      és `trackOutboundClick` hívással jelzik az okoskonyha.akardosbalint.hu felé történő kattintást,
-      lásd src/components/CTAButton.astro és src/lib/analytics.ts — ez mindkét eszközbe eljut,
-      ha már be vannak töltve.
+      Analitika: Google Tag Manager — csak akkor töltjük be, ha a látogató elfogadta az analitikai
+      sütiket (lásd src/lib/cookieConsent.ts, hasConsent('analytics'), CONSENT_CHANGE_EVENT).
+      A GTM konténer (GTM-W738PN86) tartalmazza a GA4-konfigurációs taget a G-GGLX09K1VG mérési
+      azonosítóra, ezért nem töltünk be külön gtag.js-t — az duplázná az eseményeket.
+      A kiemelt CTA-gombok automatikusan `data-outbound="okoskonyha"` attribútummal és
+      `trackOutboundClick` hívással jelzik az okoskonyha.akardosbalint.hu felé történő kattintást
+      a dataLayerbe, lásd src/components/CTAButton.astro és src/lib/analytics.ts.
     -->
     <script>
       import { hasConsent, CONSENT_CHANGE_EVENT } from '../lib/cookieConsent';
@@ -83,26 +78,9 @@ const GTM_ID = 'GTM-W738PN86';
         document.head.appendChild(script);
       }
 
-      function loadGA4() {
-        if (document.querySelector('script[data-ga4-loaded]')) return;
-        const loader = document.createElement('script');
-        loader.async = true;
-        loader.dataset.ga4Loaded = 'true';
-        loader.src = 'https://www.googletagmanager.com/gtag/js?id=G-GGLX09K1VG';
-        document.head.appendChild(loader);
-
-        const dataLayer = (window.dataLayer = window.dataLayer || []);
-        window.gtag = function gtag() {
-          dataLayer.push(arguments);
-        };
-        window.gtag('js', new Date());
-        window.gtag('config', 'G-GGLX09K1VG');
-      }
-
       function updateAnalyticsConsent() {
         if (hasConsent('analytics')) {
           loadGTM();
-          loadGA4();
         }
       }
 
@@ -112,14 +90,6 @@ const GTM_ID = 'GTM-W738PN86';
     <slot name="head" />
   </head>
   <body class="flex min-h-screen flex-col">
-    <noscript>
-      <iframe
-        src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe>
-    </noscript>
     <a
       href="#main-content"
       class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] focus:rounded-full focus:bg-forest-800 focus:px-5 focus:py-3 focus:text-sm focus:font-semibold focus:text-cream"
