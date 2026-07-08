@@ -2,9 +2,10 @@
 ---
 
 <form class="space-y-5" data-contact-form method="post">
+  <p class="text-xs text-forest-500">A csillaggal (*) jelölt mezők kitöltése kötelező.</p>
   <div class="grid gap-5 sm:grid-cols-2">
     <div>
-      <label for="contact-name" class="mb-1.5 block text-sm font-semibold text-forest-700">Név</label>
+      <label for="contact-name" class="mb-1.5 block text-sm font-semibold text-forest-700">Név <span class="text-clay-600" aria-hidden="true">*</span></label>
       <input
         id="contact-name"
         name="name"
@@ -14,7 +15,7 @@
       />
     </div>
     <div>
-      <label for="contact-email" class="mb-1.5 block text-sm font-semibold text-forest-700">E-mail cím</label>
+      <label for="contact-email" class="mb-1.5 block text-sm font-semibold text-forest-700">E-mail cím <span class="text-clay-600" aria-hidden="true">*</span></label>
       <input
         id="contact-email"
         name="email"
@@ -26,12 +27,14 @@
   </div>
 
   <div>
-    <label for="contact-topic" class="mb-1.5 block text-sm font-semibold text-forest-700">Miben segíthetek?</label>
+    <label for="contact-topic" class="mb-1.5 block text-sm font-semibold text-forest-700">Miben segíthetek? <span class="text-clay-600" aria-hidden="true">*</span></label>
     <select
       id="contact-topic"
       name="topic"
+      required
       class="w-full rounded-xl border-2 border-sage-200 px-4 py-2.5 focus:border-clay-500 focus:outline-none"
     >
+      <option value="" selected disabled>Válassz egy témát</option>
       <option>Privát séfkedés</option>
       <option>Jótékonysági vacsora szervezése</option>
       <option>Okoskonyha tagság</option>
@@ -41,7 +44,7 @@
   </div>
 
   <div>
-    <label for="contact-message" class="mb-1.5 block text-sm font-semibold text-forest-700">Üzeneted</label>
+    <label for="contact-message" class="mb-1.5 block text-sm font-semibold text-forest-700">Üzeneted <span class="text-clay-600" aria-hidden="true">*</span></label>
     <textarea
       id="contact-message"
       name="message"
@@ -63,6 +66,7 @@
     <span>
       Elfogadom, hogy a fenti adataimat Kardos Bálint a megkeresésem megválaszolása céljából kezelje. Bővebben az
       <a href="/adatvedelem/" class="text-clay-600 underline hover:text-clay-700">Adatvédelmi tájékoztatóban</a>.
+      <span class="text-clay-600" aria-hidden="true">*</span>
     </span>
   </label>
 
@@ -94,6 +98,10 @@
       const subject = `Kapcsolatfelvétel a weboldalról — ${topic}`;
       const body = `Név: ${name}\nE-mail cím: ${email}\nTéma: ${topic}\n\nÜzenet:\n${userMessage}`;
       const mailtoUrl = `mailto:${SITE.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      if (Array.isArray(window.dataLayer)) {
+        window.dataLayer.push({ event: 'contact_form_submit', topic });
+      }
 
       window.location.href = mailtoUrl;
       message.textContent =

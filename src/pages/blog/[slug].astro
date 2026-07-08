@@ -60,7 +60,7 @@ const jsonLd = {
 };
 ---
 
-<Layout title={post.data.title} description={post.data.excerpt} image={post.data.cover.src} type="article">
+<Layout title={post.data.title} description={post.data.excerpt} image={post.data.cover.src} type="article" hideFooterNewsletter>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} slot="head" is:inline />
   <article class="mx-auto max-w-3xl px-4 py-14 md:px-6 md:py-20">
     <div class="mb-6 text-center">
