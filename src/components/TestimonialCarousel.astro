@@ -73,6 +73,8 @@ const {
         }
       </div>
 
+      <p data-carousel-status class="sr-only" aria-live="polite"></p>
+
       <button
         type="button"
         data-carousel-next
@@ -103,6 +105,7 @@ const {
     const track = root.querySelector<HTMLElement>('[data-carousel-track]');
     const prevBtn = root.querySelector<HTMLButtonElement>('[data-carousel-prev]');
     const nextBtn = root.querySelector<HTMLButtonElement>('[data-carousel-next]');
+    const status = root.querySelector<HTMLElement>('[data-carousel-status]');
     if (!track || !prevBtn || !nextBtn) return;
 
     const trackEl = track;
@@ -114,6 +117,7 @@ const {
     }
 
     let current = 0;
+    let autoAdvanceStopped = false;
 
     function goTo(index: number) {
       current = ((index % cards.length) + cards.length) % cards.length;
@@ -122,23 +126,35 @@ const {
       // the page's vertical scroll position when the carousel is partially off-screen,
       // which yanks mobile readers away from where they were reading.
       trackEl.scrollTo({ left: card.offsetLeft - trackEl.offsetLeft, behavior: 'smooth' });
+      if (status) status.textContent = `${current + 1}. vélemény, összesen ${cards.length}`;
     }
 
     let timer = window.setInterval(() => goTo(current + 1), AUTO_ADVANCE_MS);
 
+    function stopAuto() {
+      autoAdvanceStopped = true;
+      window.clearInterval(timer);
+    }
+
     function restartTimer() {
+      if (autoAdvanceStopped) return;
       window.clearInterval(timer);
       timer = window.setInterval(() => goTo(current + 1), AUTO_ADVANCE_MS);
     }
 
     nextBtn.addEventListener('click', () => {
       goTo(current + 1);
-      restartTimer();
+      stopAuto();
     });
     prevBtn.addEventListener('click', () => {
       goTo(current - 1);
-      restartTimer();
+      stopAuto();
     });
+
+    // A touchstart is a reliable "the visitor is manually engaging on mobile" signal —
+    // swipes never fire mouseenter/focusin, so without this the timer kept advancing
+    // slides out from under a reader mid-swipe.
+    trackEl.addEventListener('touchstart', stopAuto, { passive: true });
 
     root.addEventListener('mouseenter', () => window.clearInterval(timer));
     root.addEventListener('mouseleave', restartTimer);

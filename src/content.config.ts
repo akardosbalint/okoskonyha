@@ -5,6 +5,7 @@ const blog = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
+      seoTitle: z.string().optional(),
       excerpt: z.string(),
       date: z.coerce.date(),
       category: z.enum(['sztorik', 'fozesi-tippek', 'jotekonysag']),

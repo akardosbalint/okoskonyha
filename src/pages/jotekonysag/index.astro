@@ -41,8 +41,9 @@ const galleryImages = [
           tál étel, egy őszinte beszélgetés, és minden alkalommal egy konkrét ügy, amit együtt támogatunk.
         </p>
       </div>
-      <div class="overflow-hidden rounded-3xl shadow-lg shadow-forest-900/10">
+      <div class="relative overflow-hidden rounded-3xl shadow-lg shadow-forest-900/10">
         <video
+          id="gala-video"
           class="aspect-square w-full object-cover"
           autoplay
           muted
@@ -53,9 +54,49 @@ const galleryImages = [
         >
           <source src="/videos/jotekonysagi-est-highlight.mp4" type="video/mp4" />
         </video>
+        <button
+          type="button"
+          data-video-toggle="gala-video"
+          aria-label="Videó szüneteltetése"
+          aria-pressed="false"
+          class="absolute bottom-4 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-forest-900/70 text-cream hover:bg-forest-900/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
+        >
+          <svg data-icon="pause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <rect x="6" y="5" width="4" height="14" />
+            <rect x="14" y="5" width="4" height="14" />
+          </svg>
+          <svg data-icon="play" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="hidden ml-0.5">
+            <path d="M8 5v14l11-7L8 5Z" />
+          </svg>
+        </button>
       </div>
     </div>
   </section>
+
+  <script>
+    document.querySelectorAll<HTMLButtonElement>('[data-video-toggle]').forEach((btn) => {
+      const videoId = btn.dataset.videoToggle;
+      const video = videoId ? document.getElementById(videoId) : null;
+      if (!(video instanceof HTMLVideoElement)) return;
+      const pauseIcon = btn.querySelector<SVGElement>('[data-icon="pause"]');
+      const playIcon = btn.querySelector<SVGElement>('[data-icon="play"]');
+      btn.addEventListener('click', () => {
+        if (video.paused) {
+          video.play();
+          btn.setAttribute('aria-label', 'Videó szüneteltetése');
+          btn.setAttribute('aria-pressed', 'false');
+          pauseIcon?.classList.remove('hidden');
+          playIcon?.classList.add('hidden');
+        } else {
+          video.pause();
+          btn.setAttribute('aria-label', 'Videó lejátszása');
+          btn.setAttribute('aria-pressed', 'true');
+          pauseIcon?.classList.add('hidden');
+          playIcon?.classList.remove('hidden');
+        }
+      });
+    });
+  </script>
 
   <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
     <StatsRow stats={CHARITY_STATS} />

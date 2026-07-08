@@ -1,5 +1,6 @@
 ---
 title: "Növényi fehérjeforrások: a teljes lista, amit a konyhádban is használsz"
+seoTitle: "Növényi fehérjeforrások: a teljes lista"
 excerpt: "Tofu, tempeh, lencse, csicseriborsó, quinoa, szeitán — melyik mennyi fehérjét ad hozzávetőlegesen, és hogyan főzd meg őket, hogy tényleg jóllakj tőlük."
 date: 2025-10-05
 category: fozesi-tippek

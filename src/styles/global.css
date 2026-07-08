@@ -62,7 +62,8 @@ h1, h2, h3, h4 {
   @apply text-forest-700;
 }
 .prose-okos table {
-  @apply w-full mb-6 border-collapse overflow-hidden rounded-2xl border border-sage-200 text-sm md:text-base;
+  @apply mb-6 block w-full overflow-x-auto rounded-2xl border border-sage-200 text-sm md:text-base;
+  border-collapse: collapse;
 }
 .prose-okos thead {
   @apply bg-forest-700 text-cream;

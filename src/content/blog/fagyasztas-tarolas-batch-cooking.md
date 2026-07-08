@@ -1,5 +1,6 @@
 ---
 title: "Fagyasztás és tárolás: a batch cooking titkos fegyvere"
+seoTitle: "Fagyasztás és tárolás batch cookinghoz"
 excerpt: "Mi fagyasztható jól, mi nem, meddig áll el a hűtőben egy főtt gabona, és hogyan ismerd fel, ha egy alapanyag már nem jó? A gyakorlati tárolási kisokos."
 date: 2026-07-01
 category: fozesi-tippek

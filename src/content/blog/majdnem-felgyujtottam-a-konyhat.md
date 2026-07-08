@@ -1,5 +1,6 @@
 ---
 title: "Az első vacsorapartim, ahol majdnem felgyújtottam a konyhát"
+seoTitle: "Majdnem felgyújtottam a konyhát"
 excerpt: "Nyolc vendég, egy flambírozott desszert és egy füstérzékelő, ami pontosan akkor szólalt meg, amikor a legjobban akartam villogni."
 date: 2025-11-03
 category: sztorik

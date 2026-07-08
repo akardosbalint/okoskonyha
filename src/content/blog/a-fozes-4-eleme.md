@@ -1,5 +1,6 @@
 ---
 title: "A főzés 4 eleme: só, zsír, sav, hő — és miért nem kell több recept"
+seoTitle: "A főzés 4 eleme: só, zsír, sav, hő"
 excerpt: "Ha ezt a négy dolgot megérted, bármelyik receptet a magadévá tudod tenni. Nem kell több recept, csak ez a négy elv."
 date: 2026-06-18
 category: fozesi-tippek

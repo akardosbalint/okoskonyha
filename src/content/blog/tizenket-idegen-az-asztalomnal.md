@@ -1,5 +1,6 @@
 ---
 title: "Amikor tizenkét idegen ült az asztalomnál — és senki nem akart hazamenni"
+seoTitle: "Tizenkét idegen az asztalomnál"
 excerpt: "Egy vacsorapartiról, ahol a leves még ki sem hűlt, de már mindenki más székbe ült át, mert jobban akart beszélgetni a szomszédjával."
 date: 2026-02-14
 category: sztorik

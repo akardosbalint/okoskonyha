@@ -1,5 +1,6 @@
 ---
 title: "A tányér-elv: így állítasz össze kiegyensúlyozott tányért recept nélkül"
+seoTitle: "A tányér-elv kiegyensúlyozott étkezéshez"
 excerpt: "Egy egyszerű arányrendszer — 45% zöldség, 25% gabona, 25% hüvelyes, 5% olajos mag —, amivel minden tányérod tápláló lesz, kalóriaszámolás nélkül."
 date: 2026-05-04
 category: fozesi-tippek

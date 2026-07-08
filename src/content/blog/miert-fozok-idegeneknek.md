@@ -1,5 +1,6 @@
 ---
 title: "Miért főzök idegeneknek ahelyett, hogy normális életet élnék"
+seoTitle: "Miért főzök idegeneknek?"
 excerpt: "Egy őszinte (és kicsit önironikus) vallomás arról, hogy egy fűszerezett zöldségtál miatt hogyan lett a lakásomból félig nyitott közösségi tér."
 date: 2026-04-02
 category: sztorik

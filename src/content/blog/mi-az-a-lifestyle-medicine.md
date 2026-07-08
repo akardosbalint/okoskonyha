@@ -1,5 +1,6 @@
 ---
 title: "Mi az a Lifestyle Medicine, és miért épül erre az Okoskonyha módszere?"
+seoTitle: "Mi az a Lifestyle Medicine?"
 excerpt: "Nem diéta, és nem egy újabb edzésterv. A Lifestyle Medicine az a tudományos keret, ami miatt a főzés nálam sosem csak a főzésről szól."
 date: 2026-03-08
 category: fozesi-tippek

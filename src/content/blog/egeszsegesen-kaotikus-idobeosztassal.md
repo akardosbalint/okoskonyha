@@ -1,5 +1,6 @@
 ---
 title: "Hogyan főzz egészségesen, ha káoszban él az időbeosztásod"
+seoTitle: "Egészséges főzés káoszos időbeosztással"
 excerpt: "Nem kell reggel 6-kor kelned zöld turmixhoz. Néhány reális stratégia azoknak, akiknek a naptára inkább Tetris, mint rutin."
 date: 2026-05-19
 category: fozesi-tippek

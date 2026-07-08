@@ -9,6 +9,16 @@
       "source": "/blog/nyolcszazezer-forint-egy-vacsorabol",
       "destination": "/blog/masfel-millio-forint-egy-vacsorasorozatbol/",
       "permanent": true
+    },
+    {
+      "source": "/blog/heti-menutervezes-45-perc/",
+      "destination": "/blog/heti-menutervezes-vasarnap-delutan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/heti-menutervezes-45-perc",
+      "destination": "/blog/heti-menutervezes-vasarnap-delutan/",
+      "permanent": true
     }
   ],
   "headers": [

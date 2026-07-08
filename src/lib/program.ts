@@ -18,7 +18,7 @@ export const BIO_FACTS = [
   'Tartottam főzőtanfolyamokat, és írtam már étlapot is',
 ];
 
-// A Batch Cooking Alapkurzus (az Alapképzés) 6 moduljára épülő bontás — ezt mindenki
+// A Batch Cooking Alapkurzus (az Alapképzés) moduljaira épülő bontás — ezt mindenki
 // végigviszi, aki csatlakozik, mielőtt a haladó tananyag megnyílna előtte.
 export const METHOD_PILLARS = [
   {
@@ -140,7 +140,7 @@ export const PRICING = {
     futurePrice: '88 900 Ft',
     increasePercent: '48%',
   },
-  priceNote: 'Az Éves tagsággal közel 20%-kal olcsóbban jutsz hozzá ugyanahhoz a közösséghez — 2 teljes hónapot ingyen kapsz.',
+  priceNote: 'Az Éves tagsággal közel 17%-kal olcsóbban jutsz hozzá ugyanahhoz a közösséghez — 2 teljes hónapot ingyen kapsz.',
   billingNote: 'Mindkét csomaghoz 3 napos ingyenes próbaidőszak jár (bankkártya megadásával) — a próbaidő alatt bármikor, indoklás nélkül lemondhatod. Utána a tagság havonta / évente automatikusan megújul, és ugyancsak bármikor lemondható.',
 };
 

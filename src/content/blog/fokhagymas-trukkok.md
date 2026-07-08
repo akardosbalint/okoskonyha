@@ -1,5 +1,6 @@
 ---
 title: "5 fokhagymás trükk, amitől minden növényi fogás ütősebb lesz"
+seoTitle: "5 fokhagymás trükk növényi fogásokhoz"
 excerpt: "Nem kell hús az ízbombához. Öt egyszerű trükk, amivel bármelyik zöldséges fogásod egy szinttel feljebb léphet."
 date: 2026-01-20
 category: fozesi-tippek

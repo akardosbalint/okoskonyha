@@ -1,5 +1,6 @@
 ---
 title: "Heti menütervezés egy vasárnap délután alatt: az én meal prep rendszerem"
+seoTitle: "Heti menütervezés egy vasárnap délután"
 excerpt: "Nincs időm minden nap három órát a konyhában állni. Így tervezek egy egész heti étkezést egyetlen vasárnap délután alatt."
 date: 2025-12-08
 category: fozesi-tippek

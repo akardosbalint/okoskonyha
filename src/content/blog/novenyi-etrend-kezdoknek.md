@@ -1,5 +1,6 @@
 ---
 title: "Növényi étrend kezdőknek: a teljes, tudományos alapokon nyugvó útmutató"
+seoTitle: "Növényi étrend kezdőknek: a teljes útmutató"
 excerpt: "Fehérje, B12, vas, omega-3 és a leggyakoribb tévhitek — minden, amit tudnod kell, mielőtt belevágsz a növényi alapú étkezésbe."
 date: 2025-09-14
 category: fozesi-tippek
