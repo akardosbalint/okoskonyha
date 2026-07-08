@@ -17,7 +17,7 @@ const { posts } = Astro.props as { posts: Awaited<ReturnType<typeof getCollectio
 const sorted = [...posts].sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
-<Layout title={`#${tag} – Blog`} description={`Bejegyzések a(z) "${tag}" címkével.`} noindex>
+<Layout title={`#${tag} — Blog`} description={`Bejegyzések a(z) „${tag}” címkével.`} noindex>
   <section class="bg-sage-100 py-14 md:py-20">
     <div class="mx-auto max-w-4xl px-4 text-center md:px-6">
       <p class="font-script text-3xl text-clay-500 mb-1">Címke</p>

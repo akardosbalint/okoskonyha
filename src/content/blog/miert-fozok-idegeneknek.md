@@ -13,7 +13,7 @@ Anyukám még mindig azt kérdezi: „de miért nem inkább étteremben dolgozol
 
 ## A pillanat, amikor rájöttem, hogy ez nem hobbi
 
-Volt egy este – talán a hetedik vagy nyolcadik vacsorapartim –, amikor két vendégem, akik korábban sosem találkoztak, a végén együtt indítottak egy vállalkozást. Nem viccelek. Egy tál padlizsánkrémen keresztül. Onnantól tudtam, hogy ez nem csak arról szól, hogy jól főzök-e (amúgy igen, elég jól), hanem arról, hogy mi történik az emberek *között*, amikor van idejük és tere egymásra figyelni.
+Volt egy este — talán a hetedik vagy nyolcadik vacsorapartim —, amikor két vendégem, akik korábban sosem találkoztak, a végén együtt indítottak egy vállalkozást. Nem viccelek. Egy tál padlizsánkrémen keresztül. Onnantól tudtam, hogy ez nem csak arról szól, hogy jól főzök-e (amúgy igen, elég jól), hanem arról, hogy mi történik az emberek *között*, amikor van idejük és tere egymásra figyelni.
 
 ## Az önirónia része
 
@@ -21,9 +21,9 @@ Mert nézzük szembe a tényekkel: elég furcsa foglalkozás ez. Idegeneket hív
 
 De működik. És nem azért, mert varázsló vagyok, hanem mert:
 
-- Az étel leveszi a nyomást a beszélgetésről – van mivel foglalkozni kézzel is, nem csak a szavakkal.
+- Az étel leveszi a nyomást a beszélgetésről — van mivel foglalkozni kézzel is, nem csak a szavakkal.
 - A közös asztal fizikailag közelebb hozza az embereket, mint egy állófogadás.
-- Én magam is kiteszem magam – ha rosszul sül el egy fogás, azt is megosztom, nem titkolom.
+- Én magam is kiteszem magam — ha rosszul sül el egy fogás, azt is megosztom, nem titkolom.
 
 ## Mi lesz ebből?
 
