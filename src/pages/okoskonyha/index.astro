@@ -11,7 +11,7 @@ import AdvancedTopicsTeaser from '../../components/AdvancedTopicsTeaser.astro';
 import FlexibleDietCallout from '../../components/FlexibleDietCallout.astro';
 import balintProfile from '../../assets/photos/balint-cooking-portrait.jpeg';
 import { SITE } from '../../lib/site';
-import { BIO_STATS, METHOD_PILLARS, MEMBERSHIP_BENEFITS, PRICING, KITCHENS_WORKED_WITH } from '../../lib/program';
+import { BIO_STATS, METHOD_PILLARS, MEMBERSHIP_BENEFITS, PRICING, KITCHENS_WORKED_WITH, CHEFS_LEARNED_FROM } from '../../lib/program';
 
 const testimonialEntries = await getCollection('testimonials');
 const methodIcons = ['book', 'shield', 'coin', 'salt', 'fat', 'acid', 'heat', 'leaf', 'plate', 'calendar', 'basket', 'clock'] as const;
@@ -145,7 +145,7 @@ const heroImagePreload = await getImage({ src: balintProfile, width: 600, height
     </div>
 
     <div class="mt-10 border-t border-sage-200 pt-8 text-center">
-      <p class="mb-5 text-sm font-semibold uppercase tracking-wide text-forest-500">Séfként dolgoztam ezekben a konyhákban</p>
+      <p class="mb-5 text-sm font-semibold uppercase tracking-wide text-forest-500">Ezeken a konyhákon dolgoztam</p>
       <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
         {
           KITCHENS_WORKED_WITH.map((kitchen) => (
@@ -157,6 +157,17 @@ const heroImagePreload = await getImage({ src: balintProfile, width: 600, height
         }
       </div>
       <p class="mt-5 text-sm text-forest-500">+ fesztiválok, elvonulások, esküvők és privát események szerte az országban</p>
+    </div>
+
+    <div class="mt-8 border-t border-sage-200 pt-8 text-center">
+      <p class="mb-5 text-sm font-semibold uppercase tracking-wide text-forest-500">Séfeim, akiktől a legtöbbet tanultam</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+        {
+          CHEFS_LEARNED_FROM.map((chef) => (
+            <span class="font-heading text-base font-semibold text-forest-700/70 md:text-lg">{chef}</span>
+          ))
+        }
+      </div>
     </div>
   </section>
 
