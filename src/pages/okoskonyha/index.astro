@@ -12,7 +12,7 @@ import FlexibleDietCallout from '../../components/FlexibleDietCallout.astro';
 import HowItWorks from '../../components/HowItWorks.astro';
 import balintProfile from '../../assets/photos/balint-cooking-portrait.jpeg';
 import { SITE } from '../../lib/site';
-import { BIO_STATS, METHOD_PILLARS, MEMBERSHIP_BENEFITS, PRICING } from '../../lib/program';
+import { METHOD_PILLARS, MEMBERSHIP_BENEFITS, PRICING } from '../../lib/program';
 
 const testimonialEntries = await getCollection('testimonials');
 const methodIcons = ['book', 'shield', 'coin', 'salt', 'fat', 'acid', 'heat', 'leaf', 'plate', 'calendar', 'basket', 'clock'] as const;
@@ -133,20 +133,6 @@ const heroImagePreload = await getImage({ src: balintProfile, width: 600, height
         <p class="mt-4 text-sm text-forest-700">Bármikor lemondható. Nincs hosszú távú elköteleződés.</p>
       </div>
       <Image src={balintProfile} alt="Kardos Bálint főzés közben, kötényben" width={600} height={600} loading="eager" fetchpriority="high" class="w-full rounded-3xl object-cover aspect-square" />
-    </div>
-  </section>
-
-  <!-- Credibility strip -->
-  <section class="mx-auto max-w-6xl px-4 py-14 md:px-6">
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
-      {
-        BIO_STATS.map((stat) => (
-          <div class="rounded-2xl bg-sage-50 p-6 text-center">
-            <p class="font-heading text-3xl font-semibold text-clay-500">{stat.value}</p>
-            <p class="mt-1 text-sm text-forest-600">{stat.label}</p>
-          </div>
-        ))
-      }
     </div>
   </section>
 
