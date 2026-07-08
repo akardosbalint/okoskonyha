@@ -10,7 +10,7 @@ coverAlt: "Tányér spagetti fokhagymás olívaolajjal"
 featured: true
 ---
 
-Amikor azt mondom valakinek, hogy vegán séf vagyok, az első reakció szinte mindig ugyanaz: „de akkor biztos íztelen minden, amit főzöl”. Nem. Az íz nem a hústól jön — az ízprofilok kezelésétől. És a fokhagyma az egyik legjobb eszközöm erre.
+Amikor azt mondom valakinek, hogy növényi alapon főzök, az első reakció szinte mindig ugyanaz: „de akkor biztos íztelen minden, amit főzöl”. Nem. Az íz nem a hústól jön — az ízprofilok kezelésétől. És a fokhagyma az egyik legjobb eszközöm erre.
 
 ## 1. Pirítsd aranybarnára, ne csak dinszteld
 

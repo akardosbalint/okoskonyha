@@ -107,6 +107,15 @@ const headerCtaIsExternal = isDirectCheckoutContext;
     toggle.setAttribute('aria-expanded', String(isOpen));
   });
 
+  // Külső (checkout) linkek target="_blank"-kel új fülön nyílnak — az eredeti fülön a
+  // hamburger-menü enélkül nyitva maradna, üresjáratnak tűnő érintést hagyva maga után.
+  menu?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      toggle?.setAttribute('aria-expanded', 'false');
+    });
+  });
+
   document.querySelectorAll<HTMLAnchorElement>('[data-outbound="okoskonyha"]:not([data-tracked])').forEach((el) => {
     el.dataset.tracked = 'true';
     el.addEventListener('click', () => trackOutboundClick(el.href, el.dataset.ctaLabel ?? 'header'));
