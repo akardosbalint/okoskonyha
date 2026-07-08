@@ -1,7 +1,8 @@
 import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 const blog = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/blog' }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
@@ -18,7 +19,7 @@ const blog = defineCollection({
 });
 
 const testimonials = defineCollection({
-  type: 'data',
+  loader: glob({ pattern: '**/[^_]*.{json,yaml,yml}', base: './src/content/testimonials' }),
   schema: ({ image }) =>
     z.object({
       name: z.string(),

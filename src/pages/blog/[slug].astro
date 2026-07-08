@@ -9,7 +9,7 @@ import { BLOG_CATEGORIES, SITE } from '../../lib/site';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-  return posts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
 }
 
 const { post } = Astro.props;
@@ -17,7 +17,7 @@ const { Content } = await render(post);
 
 const allPosts = await getCollection('blog');
 const related = allPosts
-  .filter((p) => p.slug !== post.slug && p.data.category === post.data.category)
+  .filter((p) => p.id !== post.id && p.data.category === post.data.category)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 3);
 
@@ -25,13 +25,13 @@ const fallbackRelated =
   related.length > 0
     ? related
     : allPosts
-        .filter((p) => p.slug !== post.slug)
+        .filter((p) => p.id !== post.id)
         .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
         .slice(0, 3);
 
 const category = BLOG_CATEGORIES[post.data.category];
 const formattedDate = post.data.date.toLocaleDateString('hu-HU', { year: 'numeric', month: 'long', day: 'numeric' });
-const postUrl = new URL(`/blog/${post.slug}/`, SITE.url).toString();
+const postUrl = new URL(`/blog/${post.id}/`, SITE.url).toString();
 const imageUrl = new URL(post.data.cover.src, SITE.url).toString();
 
 const jsonLd = {
