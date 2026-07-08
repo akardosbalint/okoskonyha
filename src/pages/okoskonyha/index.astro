@@ -11,7 +11,7 @@ import AdvancedTopicsTeaser from '../../components/AdvancedTopicsTeaser.astro';
 import FlexibleDietCallout from '../../components/FlexibleDietCallout.astro';
 import balintProfile from '../../assets/photos/balint-cooking-portrait.jpeg';
 import { SITE } from '../../lib/site';
-import { BIO_STATS, METHOD_PILLARS, MEMBERSHIP_BENEFITS, PRICING } from '../../lib/program';
+import { BIO_STATS, METHOD_PILLARS, MEMBERSHIP_BENEFITS, PRICING, KITCHENS_WORKED_WITH } from '../../lib/program';
 
 const testimonialEntries = await getCollection('testimonials');
 const methodIcons = ['book', 'shield', 'coin', 'salt', 'fat', 'acid', 'heat', 'leaf', 'plate', 'calendar', 'basket', 'clock'] as const;
@@ -143,6 +143,18 @@ const heroImagePreload = await getImage({ src: balintProfile, width: 600, height
         ))
       }
     </div>
+
+    <div class="mt-10 border-t border-sage-200 pt-8 text-center">
+      <p class="mb-5 text-sm font-semibold uppercase tracking-wide text-forest-500">Séfként dolgoztam ezekben a konyhákban</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+        {
+          KITCHENS_WORKED_WITH.map((name) => (
+            <span class="font-heading text-base font-semibold text-forest-700/70 md:text-lg">{name}</span>
+          ))
+        }
+      </div>
+      <p class="mt-5 text-sm text-forest-500">+ fesztiválok, elvonulások, esküvők és privát események szerte az országban</p>
+    </div>
   </section>
 
   <!-- Pain / agitation -->
@@ -183,6 +195,11 @@ const heroImagePreload = await getImage({ src: balintProfile, width: 600, height
   <!-- Method -->
   <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
     <SectionHeading eyebrow="A módszer" title="Amit a közösségben" accent="megtanulsz" />
+    <p class="mx-auto -mt-6 mb-10 max-w-2xl text-center text-forest-600">
+      Ez nem csak időt spórol — pénzt is. Amint a heti bevásárlás és a batch cooking rutinná válik,
+      kevesebb megy el kapkodva vásárolt alapanyagra és kiszállításra, mint most — ugyanannyiért
+      jobban is eszel.
+    </p>
     <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
       {
         METHOD_PILLARS.map((pillar, i) => (

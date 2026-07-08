@@ -7,7 +7,7 @@ export const BIO_STATS = [
   { value: '2020', label: 'óta szervezek vacsorapartikat és gasztroeseményeket' },
   { value: '65+', label: 'esemény, 6 országban' },
   { value: '1000+', label: 'vendég az asztaloknál' },
-  { value: '5+ év', label: 'szakácstapasztalat + életmód-tanácsadói végzettség' },
+  { value: '5+ év', label: 'éttermi konyhai tapasztalat + életmód-tanácsadói végzettség' },
 ];
 
 export const BIO_FACTS = [
@@ -16,6 +16,20 @@ export const BIO_FACTS = [
   '9 hónapig dolgoztam egy budai család privát séfjeként',
   'Vezettem konyhát az ország egyik legnagyobb fesztiválján',
   'Tartottam főzőtanfolyamokat, és írtam már étlapot is',
+];
+
+// Éttermek, ahol séfként/konyhai csapattagként dolgoztam — hitelességi trust-strip
+// az Okoskonyha oldalon. Csak névsor (nincs logó-képfájl a repóban); ha valódi
+// logó-képek elérhetők, ez a blokk könnyen lecserélhető képekre a lista alapján.
+export const KITCHENS_WORKED_WITH = [
+  'Flow Coffee and Bistro Budapest',
+  'Mazel Tov Budapest',
+  "Vivina's Cafe and Brunch Budapest",
+  '101 Bistro Budapest',
+  'Todo Mexican Kitchen Budapest',
+  'Balagan Budapest',
+  'Hanami Asian Bistro Budapest',
+  'Pastadelic Vegan Pasta — OZORA Festival',
 ];
 
 // A Batch Cooking Alapkurzus (az Alapképzés) moduljaira épülő bontás — ezt mindenki
