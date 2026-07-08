@@ -66,9 +66,10 @@ function isActive(href: string) {
       NAV.map((item) => (
         <a
           href={item.href}
+          aria-current={isActive(item.href) ? 'page' : undefined}
           class:list={[
             'block rounded-lg px-3 py-3 text-base font-semibold',
-            item.highlight ? 'text-clay-600' : 'text-forest-700',
+            item.highlight ? 'text-clay-600' : isActive(item.href) ? 'text-clay-600' : 'text-forest-700',
           ]}
         >
           {item.label}
