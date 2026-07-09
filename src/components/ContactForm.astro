@@ -83,7 +83,7 @@
   import { SITE } from '../lib/site';
 
   document.querySelectorAll<HTMLFormElement>('[data-contact-form]').forEach((form) => {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const honeypot = form.querySelector<HTMLInputElement>('input[name="company"]');
       const message = form.querySelector<HTMLElement>('[data-contact-message]');
@@ -94,19 +94,32 @@
       const email = form.querySelector<HTMLInputElement>('#contact-email')?.value ?? '';
       const topic = form.querySelector<HTMLSelectElement>('#contact-topic')?.value ?? '';
       const userMessage = form.querySelector<HTMLTextAreaElement>('#contact-message')?.value ?? '';
+      const submitButton = form.querySelector<HTMLButtonElement>('button[type="submit"]');
 
-      const subject = `Kapcsolatfelvétel a weboldalról — ${topic}`;
-      const body = `Név: ${name}\nE-mail cím: ${email}\nTéma: ${topic}\n\nÜzenet:\n${userMessage}`;
-      const mailtoUrl = `mailto:${SITE.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      submitButton && (submitButton.disabled = true);
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, topic, message: userMessage, company: honeypot?.value ?? '' }),
+        });
 
-      if (Array.isArray(window.dataLayer)) {
-        window.dataLayer.push({ event: 'contact_form_submit', topic });
+        if (res.ok) {
+          if (Array.isArray(window.dataLayer)) {
+            window.dataLayer.push({ event: 'contact_form_submit', topic });
+          }
+          message.textContent = 'Köszönjük az üzenetet! Hamarosan válaszolok.';
+          form.reset();
+        } else {
+          message.textContent =
+            `Hoppá, valami elakadt. Próbáld újra, vagy írj közvetlenül a ${SITE.email} címre.`;
+        }
+      } catch {
+        message.textContent =
+          `Hoppá, valami elakadt. Próbáld újra, vagy írj közvetlenül a ${SITE.email} címre.`;
+      } finally {
+        submitButton && (submitButton.disabled = false);
       }
-
-      window.location.href = mailtoUrl;
-      message.textContent =
-        `Megnyitottuk az e-mail-kliensedet az üzeneteddel — kérlek, küldd el onnan! Ha nem történt semmi, írj közvetlenül a ${SITE.email} címre.`;
-      form.reset();
     });
   });
 </script>
