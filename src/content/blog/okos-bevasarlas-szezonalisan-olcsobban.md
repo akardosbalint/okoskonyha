@@ -5,8 +5,8 @@ excerpt: "A minőségi, egészséges alapanyag nem egyenlő a drágával — csa
 date: 2025-12-29
 category: fozesi-tippek
 tags: ["okos bevásárlás", "szezonalitás", "spórolás"]
-cover: ../../assets/photos/food-tacos-catering.jpeg
-coverAlt: "Színes, változatos növényi fogások tálalva"
+cover: ../../assets/photos/olcso-bevasarlas-cover.png
+coverAlt: "Tányérra tálalt polenta sült zöldségekkel, gyertyafényes asztalnál"
 ---
 
 Mielőtt bármit is tanítanék az olcsóbb vásárlásról, tegyél fel magadnak egy kellemetlen kérdést: tudod-e pontosan, mennyit költesz havonta ételre? A legtöbb ember nem tudja — és ez nem szégyen, csak azért van, mert az étkezési kiadás szét van szórva: bolt, piac, étterem, ételrendelés, munkahelyi automata, gyors nassolás. Mielőtt bármin változtatnál, érdemes egy hónapig egyszerűen csak *megfigyelni*, hova megy a pénz — enélkül nem fogod érezni a spórolást sem, mert nincs viszonyítási alapod.

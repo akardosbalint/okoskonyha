@@ -5,8 +5,8 @@ excerpt: "Heti 2 főzéssel egész heti jó kaja — káoszmentesen. A teljes ú
 date: 2026-06-25
 category: fozesi-tippek
 tags: ["batch cooking", "meal prep", "heti menütervezés", "növényi étrend"]
-cover: ../../assets/photos/food-stew-bowl.jpeg
-coverAlt: "Batch cooking stílusú tál édesburgonyás-csicseriborsós raguval"
+cover: ../../assets/photos/batch-cooking-cover.png
+coverAlt: "Üvegdobozokban adagolt batch cooking ételek gabonával, zöldséggel és fehérjével"
 featured: true
 ---
 

@@ -5,8 +5,8 @@ excerpt: "Egy jó séfkés évekig veled marad, de nem luxusmárkán múlik. Mir
 date: 2026-07-07
 category: fozesi-tippek
 tags: ["konyhai eszközök", "főzési tippek", "alapok"]
-cover: ../../assets/photos/balint-cooking-action.jpeg
-coverAlt: "Kardos Bálint séfkabátban, munka közben a konyhában"
+cover: ../../assets/photos/sefkes-cover.png
+coverAlt: "Séfkés vágódeszkán, friss zöldségek és fűszernövények között"
 ---
 
 Sokáig egy Wüsthof Urban Garden séfkés volt a fő munkaeszközöm — jó súlyú, jó éltartású, kellemes fogású darab, amit évekig szinte naponta használtam. De amikor tanítványaim megkérdezik, milyen kést vegyenek otthonra, szinte sosem ezt mondom nekik. Otthoni használatra egy IKEA-s vagy más „kommerszebb” séfkés is teljesen jó — a márka legtöbbször nem azt dönti el, milyen finomra vágod a hagymát, hanem azt, mennyire élvezed a késed nézegetését a konyhai fiókban.
