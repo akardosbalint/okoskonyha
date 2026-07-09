@@ -1,0 +1,57 @@
+---
+import SectionHeading from './SectionHeading.astro';
+import Icon from './Icon.astro';
+
+const DAYS = [
+  {
+    day: 'Vasárnap',
+    duration: '~2 óra',
+    icon: 'basket' as const,
+    title: 'Batch cooking főzés',
+    text: 'Egyszerre elkészülsz 3 gabonával/körettel, 3 fehérjeforrással, 3 szósszal és 1 friss salátával — ez adja a hét alapját.',
+  },
+  {
+    day: 'Hétfő – Kedd',
+    duration: '~10 perc',
+    icon: 'clock' as const,
+    title: 'Csak összerakod',
+    text: 'A hétvégén elkészített elemekből válogatsz — melegítés, tálalás, kész is az ebéd vagy vacsora.',
+  },
+  {
+    day: 'Szerda',
+    duration: '~30-45 perc',
+    icon: 'calendar' as const,
+    title: 'Kombinálós alkalom',
+    text: 'A hét közepén egy rövidebb, frissítő főzés — új ízkombináció a megmaradt alapanyagokból, hogy ne unatkozzon az étrended.',
+  },
+  {
+    day: 'Csütörtök – Vasárnap',
+    duration: '~10 perc',
+    icon: 'plate' as const,
+    title: 'Tovább összerakod',
+    text: 'A jól címkézett, adagolt dobozok tartják magukat a hét végéig — semmi nem vész el, semmi nem megy kárba.',
+  },
+];
+---
+
+<section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
+  <SectionHeading eyebrow="A gyakorlatban" title="Hogyan zajlik" accent="egy hét" />
+  <p class="mx-auto -mt-6 mb-10 max-w-2xl text-center text-forest-600">
+    Nem receptek között kapkodsz minden nap — egy ismételhető, <strong class="font-semibold text-forest-800">heti
+    2×2 órás rendszer</strong> viszi a hetedet.
+  </p>
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    {
+      DAYS.map((step) => (
+        <div class="rounded-3xl bg-white p-6 shadow-sm shadow-forest-900/5">
+          <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-sage-100 text-forest-700">
+            <Icon name={step.icon} class="h-6 w-6" />
+          </div>
+          <p class="text-sm font-semibold text-clay-600">{step.day} · {step.duration}</p>
+          <h3 class="font-heading text-lg font-semibold text-forest-800 mt-1 mb-1">{step.title}</h3>
+          <p class="text-sm text-forest-600">{step.text}</p>
+        </div>
+      ))
+    }
+  </div>
+</section>
