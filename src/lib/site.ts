@@ -33,7 +33,7 @@ export const COMPANY = {
 
 export const NAV = [
   { href: '/', label: 'Főoldal' },
-  { href: '/okoskonyha/', label: 'Okoskonyha', highlight: true },
+  { href: '/okoskonyha/', label: 'Okoskonyha' },
   { href: '/blog/', label: 'Blog' },
   { href: '/szolgaltatasok/', label: 'Szolgáltatások' },
   { href: '/rolam/', label: 'Rólam' },
