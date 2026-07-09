@@ -7,38 +7,38 @@ const DAYS = [
     day: 'Vasárnap',
     duration: '~2 óra',
     icon: 'basket' as const,
-    title: 'Batch cooking főzés',
-    text: 'Egyszerre elkészülsz 3 gabonával/körettel, 3 fehérjeforrással, 3 szósszal és 1 friss salátával — ez adja a hét alapját.',
+    title: 'A heti nagy főzés',
+    text: 'Egyszerre elkészíted a hét alapjait: 3 gabonát/köretet, 3 fehérjeforrást, 3 szószt és 1 friss salátát — ebből épül fel majd szinte minden étkezésed.',
   },
   {
     day: 'Hétfő – Kedd',
     duration: '~10 perc',
     icon: 'clock' as const,
-    title: 'Csak összerakod',
-    text: 'A hétvégén elkészített elemekből válogatsz — melegítés, tálalás, kész is az ebéd vagy vacsora.',
+    title: 'Villámgyors összeállítás',
+    text: 'Nincs főzés, csak válogatás és tálalás — a hétvégén elkészített elemekből percek alatt összeáll az ebéd vagy vacsora.',
   },
   {
     day: 'Szerda',
     duration: '~30-45 perc',
     icon: 'calendar' as const,
-    title: 'Kombinálós alkalom',
-    text: 'A hét közepén egy rövidebb, frissítő főzés — új ízkombináció a megmaradt alapanyagokból, hogy ne unatkozzon az étrended.',
+    title: 'Egy frissítő közjáték',
+    text: 'A hét közepén egy rövid, könnyed főzés hoz új ízeket az asztalra — hogy a hét végéig se legyen egyhangú, amit eszel.',
   },
   {
     day: 'Csütörtök – Vasárnap',
     duration: '~10 perc',
     icon: 'plate' as const,
-    title: 'Tovább összerakod',
-    text: 'A jól címkézett, adagolt dobozok tartják magukat a hét végéig — semmi nem vész el, semmi nem megy kárba.',
+    title: 'Ugyanaz a könnyedség',
+    text: 'A jól címkézett, adagolt dobozok kitartanak a hét végéig — semmi nem vész el, semmi nem megy kárba.',
   },
 ];
 ---
 
 <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
-  <SectionHeading eyebrow="A gyakorlatban" title="Hogyan zajlik" accent="egy hét" />
+  <SectionHeading eyebrow="Nem csak ígéret" title="Hogy néz ki egy heted" accent="miután csatlakozol" />
   <p class="mx-auto -mt-6 mb-10 max-w-2xl text-center text-forest-600">
-    Nem receptek között kapkodsz minden nap — egy ismételhető, <strong class="font-semibold text-forest-800">heti
-    2×2 órás rendszer</strong> viszi a hetedet.
+    Se esti kapkodás, se receptek közötti tanakodás — csak egy <strong class="font-semibold text-forest-800">ismételhető
+    ritmus</strong>, amit egyszer megtanulsz, aztán soha többé nem kell újragondolnod.
   </p>
   <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
     {
