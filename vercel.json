@@ -19,6 +19,16 @@
       "source": "/blog/heti-menutervezes-45-perc",
       "destination": "/blog/heti-menutervezes-vasarnap-delutan/",
       "permanent": true
+    },
+    {
+      "source": "/blog/majdnem-felgyujtottam-a-konyhat/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/majdnem-felgyujtottam-a-konyhat",
+      "destination": "/blog/",
+      "permanent": true
     }
   ],
   "headers": [
