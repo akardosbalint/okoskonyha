@@ -5,8 +5,8 @@ excerpt: "Fehérje, B12, vas, omega-3 és a leggyakoribb tévhitek — minden, a
 date: 2025-09-14
 category: fozesi-tippek
 tags: ["növényi étrend", "vegán alapok", "táplálkozás", "kezdőknek"]
-cover: ../../assets/photos/food-baked-gratin.jpeg
-coverAlt: "Sült zöldséges gratin tepsiben"
+cover: ../../assets/photos/novenyi-etrend-kezdoknek-cover.webp
+coverAlt: "Növényi étrend kezdőknek — a teljes, tudományos alapokon nyugvó útmutató, Kardos Bálint"
 featured: true
 ---
 
