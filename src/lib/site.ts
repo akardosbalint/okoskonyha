@@ -11,7 +11,7 @@ export const SITE = {
   checkoutUrl: 'https://okoskonyha.akardosbalint.hu/checkout/okoskonyha-alaptagsag',
   email: 'hello@akardosbalint.hu',
   instagram: 'https://instagram.com/akardosbalint',
-  facebook: 'https://facebook.com/akardosbalint',
+  facebook: 'https://facebook.com/okoskonyha.akardosbalint',
   // A tranzakciós levelek (kapcsolatfelvételi űrlap) küldő domainje a Resendben — szándékosan
   // egy aldomain (mail.), nem az akardosbalint.hu gyökér, hogy védje a fő domain email-reputációját.
   // Ennek pontosan egyeznie kell a Resend "Domains" alatt verifikált doménnel.
