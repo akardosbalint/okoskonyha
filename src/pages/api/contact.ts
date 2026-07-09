@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { SITE } from '../../lib/site';
+import { checkRateLimit } from '../../lib/rateLimit';
 
 // Vercel szerverless függvényként fut (nem prerenderelt) — itt biztonságban marad
 // a RESEND_API_KEY, mert csak szerveroldalon fut le, sosem kerül a böngészőbe.
@@ -7,6 +8,8 @@ export const prerender = false;
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const TOPICS = ['Privát séfkedés', 'Jótékonysági vacsora szervezése', 'Okoskonyha tagság', 'Életmód-tanácsadás', 'Egyéb'];
+const RATE_LIMIT = 5;
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000; // 10 perc
 
 interface ContactBody {
   name?: string;
@@ -25,7 +28,16 @@ function escapeHtml(value: string) {
     .replace(/'/g, '&#39;');
 }
 
-export const POST: APIRoute = async ({ request }) => {
+export const POST: APIRoute = async ({ request, clientAddress }) => {
+  const ip = clientAddress || 'unknown';
+  const { limited, retryAfterSeconds } = checkRateLimit(`contact:${ip}`, RATE_LIMIT, RATE_LIMIT_WINDOW_MS);
+  if (limited) {
+    return new Response(JSON.stringify({ error: 'Túl sok próbálkozás, kérlek próbáld újra később.' }), {
+      status: 429,
+      headers: { 'Retry-After': String(retryAfterSeconds) },
+    });
+  }
+
   let body: ContactBody;
   try {
     body = await request.json();
@@ -67,7 +79,7 @@ export const POST: APIRoute = async ({ request }) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: `Okoskonyha weboldal <kapcsolat@${new URL(SITE.url).hostname}>`,
+        from: `Okoskonyha weboldal <kapcsolat@${SITE.mailDomain}>`,
         to: [SITE.email],
         reply_to: email,
         subject: `Kapcsolatfelvétel a weboldalról — ${topic}`,

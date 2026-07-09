@@ -12,7 +12,13 @@ export const SITE = {
   email: 'hello@akardosbalint.hu',
   instagram: 'https://instagram.com/akardosbalint',
   facebook: 'https://facebook.com/akardosbalint',
-  // A kapcsolatfelvételi űrlap mailto: linket nyit meg (lásd ContactForm.astro), nincs szüksége endpointra.
+  // A tranzakciós levelek (kapcsolatfelvételi űrlap) küldő domainje a Resendben — szándékosan
+  // egy aldomain (mail.), nem az akardosbalint.hu gyökér, hogy védje a fő domain email-reputációját.
+  // Ennek pontosan egyeznie kell a Resend "Domains" alatt verifikált doménnel.
+  mailDomain: 'mail.akardosbalint.hu',
+  // A kapcsolatfelvételi űrlap a src/pages/api/contact.ts Vercel szerverless API route-on keresztül
+  // köti be a Resendet — az API-kulcs csak szerveroldali környezeti változóként (RESEND_API_KEY)
+  // él, sosem kerül a böngészőbe.
   // A hírlevél-feliratkozás egy Vercel szerverless API route-on (src/pages/api/newsletter.ts) keresztül
   // köti be a MailerLite-ot — a API-kulcs csak szerveroldali környezeti változóként (MAILERLITE_API_KEY)
   // él, sosem kerül a böngészőbe.
