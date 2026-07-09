@@ -11,7 +11,7 @@ import AdvancedTopicsTeaser from '../../components/AdvancedTopicsTeaser.astro';
 import FlexibleDietCallout from '../../components/FlexibleDietCallout.astro';
 import HowItWorks from '../../components/HowItWorks.astro';
 import WeeklyRhythm from '../../components/WeeklyRhythm.astro';
-import balintProfile from '../../assets/photos/balint-cooking-portrait.jpeg';
+import balintProfile from '../../assets/photos/balint-meal-prep-candid.jpeg';
 import { SITE } from '../../lib/site';
 import { METHOD_PILLARS, MEMBERSHIP_BENEFITS, PRICING } from '../../lib/program';
 
@@ -133,7 +133,7 @@ const heroImagePreload = await getImage({ src: balintProfile, width: 600, height
         </div>
         <p class="mt-4 text-sm text-forest-700">Bármikor lemondható. Nincs hosszú távú elköteleződés.</p>
       </div>
-      <Image src={balintProfile} alt="Kardos Bálint főzés közben, kötényben" width={600} height={600} loading="eager" fetchpriority="high" class="w-full rounded-3xl object-cover aspect-square" />
+      <Image src={balintProfile} alt="Kardos Bálint batch cooking előkészületek közben, kötényben" width={600} height={600} loading="eager" fetchpriority="high" class="w-full rounded-3xl object-cover aspect-square" />
     </div>
   </section>
 

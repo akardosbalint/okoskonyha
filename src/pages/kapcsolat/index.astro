@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import ContactForm from '../../components/ContactForm.astro';
-import contactHero from '../../assets/photos/balint-candid-portrait.jpeg';
+import contactHero from '../../assets/photos/balint-chef-smiling.png';
 import { SITE } from '../../lib/site';
 ---
 
@@ -21,7 +21,7 @@ import { SITE } from '../../lib/site';
           kérdésed van az Okoskonyhával kapcsolatban, azt is.
         </p>
       </div>
-      <Image src={contactHero} alt="Kardos Bálint" width={600} height={600} loading="eager" fetchpriority="high" class="w-full rounded-3xl object-cover aspect-square" />
+      <Image src={contactHero} alt="Kardos Bálint mosolyogva, séf-kötényben egy konyhában" width={600} height={600} loading="eager" fetchpriority="high" class="w-full rounded-3xl object-cover aspect-square" />
     </div>
   </section>
 
