@@ -7,9 +7,10 @@ import StatsRow from '../../components/StatsRow.astro';
 import TestimonialCarousel from '../../components/TestimonialCarousel.astro';
 import Gallery from '../../components/Gallery.astro';
 import BlogCard from '../../components/BlogCard.astro';
-import g1 from '../../assets/photos/food-plated-dessert-course.jpeg';
-import g2 from '../../assets/photos/event-cozy-dessert.jpeg';
-import g3 from '../../assets/photos/food-soup-course.jpeg';
+import g1 from '../../assets/photos/event-jotekonysag-gala.jpg';
+import g2 from '../../assets/photos/event-jotekonysag-round-table.jpeg';
+import g3 from '../../assets/photos/event-jotekonysag-hosting.jpeg';
+import g4 from '../../assets/photos/event-jotekonysag-phone-photo.jpeg';
 import galaVideoPoster from '../../assets/photos/gala-video-poster.jpeg';
 import { CHARITY_PARTNERS, CHARITY_STATS } from '../../lib/program';
 
@@ -19,9 +20,10 @@ const jotekonysagPosts = (await getCollection('blog', (p) => p.data.category ===
 );
 
 const galleryImages = [
-  { src: g1, alt: 'Tálalt desszert fogás egy jótékonysági vacsorán' },
-  { src: g2, alt: 'Hangulatos, meghitt pillanat egy jótékonysági vacsorán' },
-  { src: g3, alt: 'Tálalt leves fogás egy jótékonysági vacsorán' },
+  { src: g1, alt: 'Vendégek egy hosszú asztal körül egy jótékonysági gálán' },
+  { src: g2, alt: 'Vendégek egy kerek vacsoraasztal körül beszélgetnek' },
+  { src: g3, alt: 'Kardos Bálint köszönti a vendégeket egy jótékonysági vacsorán' },
+  { src: g4, alt: 'Vendégek telefonnal fotóznak egy közös vacsorán' },
 ];
 ---
 
