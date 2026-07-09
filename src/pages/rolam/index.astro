@@ -6,7 +6,7 @@ import SectionHeading from '../../components/SectionHeading.astro';
 import Gallery from '../../components/Gallery.astro';
 import InstagramFeed from '../../components/InstagramFeed.astro';
 import YouTubeEmbed from '../../components/YouTubeEmbed.astro';
-import balintProfile from '../../assets/photos/balint-profile.webp';
+import heroImage from '../../assets/photos/balint-cooking-action.jpeg';
 import lifestyleMedicineCertificate from '../../assets/photos/lifestyle-medicine-certificate.jpeg';
 import g1 from '../../assets/photos/dinner-group-table.jpeg';
 import g2 from '../../assets/photos/balint-candid-portrait.jpeg';
@@ -15,7 +15,7 @@ import g4 from '../../assets/photos/picnic-overhead.jpeg';
 import g5 from '../../assets/photos/balint-hosting-guests.jpeg';
 import g6 from '../../assets/photos/community-polaroids.jpeg';
 import { SITE } from '../../lib/site';
-import { BIO_STATS, BIO_FACTS } from '../../lib/program';
+import { BIO_STATS, BIO_FACTS, KITCHENS_WORKED_WITH, CHEFS_LEARNED_FROM } from '../../lib/program';
 
 const galleryImages = [
   { src: g1, alt: 'Vendégek egy hosszú vacsoraasztal körül' },
@@ -33,7 +33,7 @@ const personJsonLd = {
   '@type': 'Person',
   name: SITE.name,
   url: new URL('/rolam/', SITE.url).toString(),
-  image: new URL(balintProfile.src, SITE.url).toString(),
+  image: new URL(heroImage.src, SITE.url).toString(),
   jobTitle: 'Séf és életmód-tanácsadó',
   description: SITE.description,
   sameAs: [SITE.instagram, SITE.facebook],
@@ -47,6 +47,7 @@ const personJsonLd = {
 <Layout
   title="Rólam — a növényi séf, akinek emberek kellettek"
   description="Kardos Bálint karrierváltásától a séfkedésig: hogyan lett vacsorapartikból közösségépítő misszió."
+  image={heroImage.src}
 >
   <script type="application/ld+json" set:html={JSON.stringify(personJsonLd)} slot="head" is:inline />
   <section class="bg-sage-100 py-14 md:py-20">
@@ -62,12 +63,12 @@ const personJsonLd = {
           beszélgetéseim mindig az asztal körül történtek.
         </p>
       </div>
-      <Image src={balintProfile} alt="Kardos Bálint a konyhájában" width={600} height={600} loading="eager" fetchpriority="high" class="w-full rounded-3xl object-cover aspect-square" />
+      <Image src={heroImage} alt="Kardos Bálint főzés közben, séf-egyenruhában" width={600} height={600} loading="eager" fetchpriority="high" class="w-full rounded-3xl object-cover aspect-square" />
     </div>
   </section>
 
   <section class="mx-auto max-w-6xl px-4 py-14 md:px-6">
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
       {
         BIO_STATS.map((stat) => (
           <div class="rounded-2xl bg-sage-50 p-6 text-center">
@@ -77,27 +78,63 @@ const personJsonLd = {
         ))
       }
     </div>
+
+    <div class="mt-10 border-t border-sage-200 pt-8 text-center">
+      <p class="mb-5 text-sm font-semibold uppercase tracking-wide text-forest-500">Ezeken a konyhákon dolgoztam</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+        {
+          KITCHENS_WORKED_WITH.map((kitchen) => (
+            <span class="font-heading text-base font-semibold text-forest-700/70 md:text-lg">
+              {kitchen.name} <span class="text-forest-400" aria-hidden="true">—</span>{' '}
+              <span class="font-normal text-forest-500">{kitchen.location}</span>
+            </span>
+          ))
+        }
+      </div>
+      <p class="mt-5 text-sm text-forest-500">+ fesztiválok, elvonulások, esküvők és privát események szerte az országban</p>
+    </div>
+
+    <div class="mt-8 border-t border-sage-200 pt-8 text-center">
+      <p class="mb-5 text-sm font-semibold uppercase tracking-wide text-forest-500">Séfeim, akiktől a legtöbbet tanultam</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+        {
+          CHEFS_LEARNED_FROM.map((chef) => (
+            <span class="font-heading text-base font-semibold text-forest-700/70 md:text-lg">{chef}</span>
+          ))
+        }
+      </div>
+    </div>
   </section>
 
   <section class="mx-auto max-w-3xl px-4 py-16 md:px-6">
     <div class="prose-okos">
       <h2>Az elejétől</h2>
       <p>
-        Sosem terveztem, hogy séf leszek — de 2020 óta ez lett belőle. Azóta 6 országban, 65+ eseményen,
-        1000+ vendégnek főztem. Volt, hogy 80–100 fős esküvőn vagy elvonuláson álltam a tűzhely mögött,
-        volt, hogy 9 hónapig egy budai család privát séfjeként dolgoztam, és vezettem már konyhát az
-        ország egyik legnagyobb fesztiválján is.
+        Az egész Steiner Kristóf szakácskönyveivel indult — az ő receptjeiből tanultam meg igazán
+        főzni, és sokáig jártam a vacsoráira és a workshopjaira is, hogy lássam, hogyan gondolkodik
+        valaki, aki nem csak tud főzni, hanem tanítani is szeret. Onnantól nem volt visszaút — de
+        egy jó darabig csak hobbi maradt: magamnak és a barátaimnak főztem, munkaként eszembe sem
+        jutott.
+      </p>
+      <p>
+        Sosem terveztem, hogy séf leszek — de 2020 óta ez lett belőle. Azóta 6 országban, 65 saját
+        szervezésű eseményen, 1200+ vendégnek főztem, és összesen több mint 20 000 tányér ételt adtam ki.
+        Volt, hogy 80–100 fős esküvőn vagy elvonuláson álltam a tűzhely mögött, volt, hogy 9 hónapig
+        egy budai család privát séfjeként dolgoztam, és vezettem már konyhát az ország egyik
+        legnagyobb fesztiválján is.
       </p>
       <ul>
         {BIO_FACTS.map((fact) => <li>{fact}</li>)}
       </ul>
+      <h2>A séf-évek</h2>
       <p>
         A jótékonysági vacsoráim onnan indultak, hogy egy régi ismerősöm, Forgács-Fábián Sára hívott:
         az Amigos a Gyerekekért Alapítvány egy Nagykövet kampányához keresett inspiráló embereket.
-        Nyolc vacsorát tartottam alatta egy hónap alatt, és 524 000 forintot gyűjtöttünk össze — ezek
-        voltak az első öt fogásos vacsoráim is. De a legfontosabb tanulság nem a szám volt: előtte,
-        majdnem egy éven át, minden vacsorát a lakótársammal saját zsebből finanszíroztunk, ingyen. Ha
-        nincs ez a kampány, valószínűleg a mai napig nem mernék pénzt kérni a vacsoráimért.
+        Nyolc vacsorát tartottam egy hónap alatt, és 524 000 forintot gyűjtöttünk össze — ezek voltak
+        az első öt fogásos vacsoráim is. De a legfontosabb tanulság nem a szám volt: előtte, majdnem
+        egy éven át, minden vacsorát a lakótársammal saját zsebből finanszíroztunk, a vendégek számára
+        díjmentesen. Ha nincs ez a kampány, valószínűleg a mai napig nem mernék pénzt kérni a
+        vacsoráimért.
       </p>
       <p>
         Emellett az elmúlt években chef de partie-ként dolgoztam éttermekben: megfordultam ázsiai,

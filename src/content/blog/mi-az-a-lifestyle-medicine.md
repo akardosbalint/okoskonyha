@@ -17,7 +17,7 @@ Amikor elmondom valakinek, hogy a séfi munkám mellett Lifestyle Medicine Consu
 
 A Lifestyle Medicine egy olyan, egyre elismertebb egészségügyi megközelítés, amely a krónikus, életmóddal összefüggő betegségek (szív- és érrendszeri problémák, 2-es típusú cukorbetegség, elhízás) megelőzésében és kezelésében a mindennapi szokásokra helyezi a hangsúlyt — nem helyettesítve az orvosi ellátást, hanem kiegészítve azt. A szakterület jellemzően hat, egymással összefüggő pillért különböztet meg:
 
-1. **Táplálkozás** — elsősorban növényi alapú, teljes értékű, minimálisan feldolgozott élelmiszerek.
+1. **Táplálkozás** — elsősorban növényi alapú, teljes értékű (whole-food plant-based diet), minimálisan feldolgozott élelmiszerek.
 2. **Fizikai aktivitás** — rendszeres, fenntartható mozgás, nem feltétlenül intenzív edzés.
 3. **Alvás** — a regeneráció alapja, amit a legtöbb életmódtanács figyelmen kívül hagy.
 4. **Stresszkezelés** — tudatos technikák a krónikus stressz hatásainak csökkentésére.

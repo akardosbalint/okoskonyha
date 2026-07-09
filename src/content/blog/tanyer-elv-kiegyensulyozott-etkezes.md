@@ -36,7 +36,7 @@ A tányér-elv nem tiltásokról szól, hanem tudatosításról. A magasan feldo
 
 ## Hogyan illeszkedik ez a batch cookingba?
 
-A tányér-elv és a [batch cooking](/blog/mi-az-a-batch-cooking/) tökéletesen kiegészítik egymást: ha a heti alap-képleted (2 gabona, 3 fehérjeforrás, 1 friss saláta, 3 szósz) már eleve ezt az arányt követi, minden nap automatikusan kiegyensúlyozott tányért kapsz — anélkül, hogy naponta újra végig kellene gondolnod, mi kerüljön az ételedbe. A hüvelyes fehérjeforrásokról (mennyi van bennük, hogyan főzd meg őket) [egy külön cikkben](/blog/novenyi-feherjeforrasok/) írtam részletesen.
+A tányér-elv és a [batch cooking](/blog/mi-az-a-batch-cooking/) tökéletesen kiegészítik egymást: ha a heti alap-képleted (3 gabona/köret, 3 fehérjeforrás, 3 szósz, 1 friss saláta) már eleve ezt az arányt követi, minden nap automatikusan kiegyensúlyozott tányért kapsz — anélkül, hogy naponta újra végig kellene gondolnod, mi kerüljön az ételedbe. A hüvelyes fehérjeforrásokról (mennyi van bennük, hogyan főzd meg őket) [egy külön cikkben](/blog/novenyi-feherjeforrasok/) írtam részletesen.
 
 ## Egy gyakorlati feladat, amit érdemes kipróbálnod
 

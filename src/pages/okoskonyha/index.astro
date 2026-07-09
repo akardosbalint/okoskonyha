@@ -9,9 +9,11 @@ import Icon from '../../components/Icon.astro';
 import MembershipPricing from '../../components/MembershipPricing.astro';
 import AdvancedTopicsTeaser from '../../components/AdvancedTopicsTeaser.astro';
 import FlexibleDietCallout from '../../components/FlexibleDietCallout.astro';
+import HowItWorks from '../../components/HowItWorks.astro';
+import WeeklyRhythm from '../../components/WeeklyRhythm.astro';
 import balintProfile from '../../assets/photos/balint-cooking-portrait.jpeg';
 import { SITE } from '../../lib/site';
-import { BIO_STATS, METHOD_PILLARS, MEMBERSHIP_BENEFITS, PRICING } from '../../lib/program';
+import { METHOD_PILLARS, MEMBERSHIP_BENEFITS, PRICING } from '../../lib/program';
 
 const testimonialEntries = await getCollection('testimonials');
 const methodIcons = ['book', 'shield', 'coin', 'salt', 'fat', 'acid', 'heat', 'leaf', 'plate', 'calendar', 'basket', 'clock'] as const;
@@ -38,7 +40,7 @@ const faqs = [
   { q: 'Kezdőként is érdemes csatlakoznom?', a: 'Igen — a legtöbb tagunk kezdőként érkezik. A recepteket és az élő alkalmakat is úgy építjük fel, hogy bármilyen szinten el lehessen indulni.' },
   { q: 'Kell hozzá speciális konyhai felszerelés?', a: 'Nem. A recepteket úgy tervezem, hogy egy alap felszereléssel (fazék, serpenyő, éles kés) is elkészíthetők legyenek.' },
   { q: 'Mi az a Circle.so, és miért oda visztek át?', a: 'A Circle.so egy dedikált közösségi platform, ahol a tagság kezelése, a fizetés és a zárt tartalmak biztonságosan és kényelmesen működnek.' },
-  { q: 'Csak növényi (vegán) receptek vannak?', a: 'Alapvetően igen, de van egy fontos árnyalat: nem is „vegán”, hanem teljes értékű, növényi alapú táplálkozásról van szó — a Lifestyle Medicine (életmód-orvoslás) keretrendszerére építek, mert ezt tartom a legegészségesebbnek, és emiatt ez az alapja mindennek, amit az Okoskonyhában tanítok. Ugyanakkor a közösségben nem elsősorban recepteket tanulsz — bár azok is vannak, hogy legyen miből elindulnod —, hanem koncepciókat és technikákat, amiket ugyanúgy tudsz alkalmazni akkor is, ha vegyesen étkezel.' },
+  { q: 'Csak növényi (vegán) receptek vannak?', a: 'Alapvetően igen, de van egy fontos árnyalat: nem is „vegán”, hanem teljes értékű, növényi alapú táplálkozásról (whole-food plant-based diet) van szó — a Lifestyle Medicine (életmód-orvoslás) keretrendszerére építek, mert ezt tartom a legegészségesebbnek, és emiatt ez az alapja mindennek, amit az Okoskonyhában tanítok. Ugyanakkor a közösségben nem elsősorban recepteket tanulsz — bár azok is vannak, hogy legyen miből elindulnod —, hanem koncepciókat és technikákat, amiket ugyanúgy tudsz alkalmazni akkor is, ha vegyesen étkezel.' },
   { q: 'Mennyi időt kell rá szánnom hetente?', a: 'A rendszer alapja a heti 2×2 óra: egy nagyobb batch cooking főzés hétvégén, plusz egy rövidebb kombinálós alkalom a hét közepén — a többi nap csak összerakod, amit előre elkészítettél.' },
   { q: 'Mi van, ha nincs időm minden héten főzni?', a: 'Semmi gond — a tananyag és a receptek bármikor elérhetők, saját tempódban haladhatsz, és egy kihagyott hét után egyszerűen folytatod, ahol abbahagytad.' },
   { q: 'Mi történik, ha elakadok egy recepttel vagy technikával?', a: 'A zárt közösségben bármikor kérdezhetsz — tőlem és a tagtársaidtól is —, és a havi élő főzős alkalmon is hozhatod a konkrét problémáidat.' },
@@ -112,15 +114,19 @@ const heroImagePreload = await getImage({ src: balintProfile, width: 600, height
   <section class="bg-sage-300 py-16 md:py-24">
     <div class="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2 md:items-center md:px-6">
       <div>
-        <p class="font-script text-3xl text-forest-700 mb-2">Kardos Bálint Okoskonyhája</p>
+        <p class="font-script text-3xl text-forest-700 mb-3">Kardos Bálint Okoskonyhája</p>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-forest-800 leading-tight mb-6">
           Főzz <span class="font-script text-clay-600">finomabbat</span> és egészségesebbet — olcsóbban és gyorsabban
         </h1>
-        <p class="text-lg text-forest-800/90 mb-8 max-w-xl">
-          Az Okoskonyha egy fizetős közösség azoknak, akik szeretnének olcsóbban, gyorsabban és
-          egészségesebben főzni, de nem tudják, hol kezdjék. Heti receptek, élő alkalmak és egy csapat,
-          aki melletted áll.
+        <p class="text-lg text-forest-800/90 mb-5 max-w-xl">
+          Az Okoskonyha egy zárt online közösség azoknak, akik szeretnének olcsóbban, gyorsabban és
+          egészségesebben főzni — teljes értékű, növényi alapon (whole-food plant-based diet). Heti
+          receptek, élő alkalmak és egy csapat, aki melletted áll.
         </p>
+        <div class="mb-8 flex flex-wrap gap-2">
+          <span class="rounded-full bg-forest-700 px-4 py-1.5 text-sm font-semibold text-cream">Zárt online közösség</span>
+          <span class="rounded-full bg-clay-600 px-4 py-1.5 text-sm font-semibold text-cream">Növényi alapú főzés</span>
+        </div>
         <div class="flex flex-wrap gap-4">
           <CTAButton href={SITE.checkoutUrl} label="Csatlakozom most" size="lg" outbound trackingId="join_cta" />
           <CTAButton href="/kapcsolat/" label="Van egy kérdésem előtte" variant="ghost" size="lg" />
@@ -131,18 +137,9 @@ const heroImagePreload = await getImage({ src: balintProfile, width: 600, height
     </div>
   </section>
 
-  <!-- Credibility strip -->
-  <section class="mx-auto max-w-6xl px-4 py-14 md:px-6">
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-      {
-        BIO_STATS.map((stat) => (
-          <div class="rounded-2xl bg-sage-50 p-6 text-center">
-            <p class="font-heading text-3xl font-semibold text-clay-500">{stat.value}</p>
-            <p class="mt-1 text-sm text-forest-600">{stat.label}</p>
-          </div>
-        ))
-      }
-    </div>
+  <!-- Flexible diet callout -->
+  <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
+    <FlexibleDietCallout />
   </section>
 
   <!-- Pain / agitation -->
@@ -183,6 +180,11 @@ const heroImagePreload = await getImage({ src: balintProfile, width: 600, height
   <!-- Method -->
   <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
     <SectionHeading eyebrow="A módszer" title="Amit a közösségben" accent="megtanulsz" />
+    <p class="mx-auto -mt-6 mb-10 max-w-2xl text-center text-forest-600">
+      Ez nem csak időt spórol — <strong class="font-semibold text-forest-800">pénzügyileg is jobban
+      jársz, mint most</strong>. Amint a heti bevásárlás és a batch cooking rutinná válik, kevesebb
+      megy el kapkodva vásárolt alapanyagra és kiszállításra — ugyanannyiért jobban is eszel.
+    </p>
     <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
       {
         METHOD_PILLARS.map((pillar, i) => (
@@ -198,8 +200,10 @@ const heroImagePreload = await getImage({ src: balintProfile, width: 600, height
       }
     </div>
     <AdvancedTopicsTeaser />
-    <FlexibleDietCallout />
   </section>
+
+  <!-- Weekly rhythm -->
+  <WeeklyRhythm />
 
   <!-- Mit kapsz -->
   <section class="bg-sage-100 py-16 md:py-20">
@@ -220,6 +224,8 @@ const heroImagePreload = await getImage({ src: balintProfile, width: 600, height
       </div>
     </div>
   </section>
+
+  <HowItWorks />
 
   <TestimonialCarousel
     items={testimonialEntries.map((t) => ({ name: t.data.name, role: t.data.role, quote: t.data.quote, avatar: t.data.avatar }))}

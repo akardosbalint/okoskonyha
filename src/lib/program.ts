@@ -1,13 +1,14 @@
 // Az Okoskonyha tagság és Kardos Bálint hitelességi adatai.
-// A tagság egyetlen termék: havidíjas fizetős közösség a Circle.so-n.
+// A tagság egyetlen termék: havidíjas, zárt közösség a Circle.so-n.
 
 export const USP = 'Főzz finomabbat és egészségesebbet — olcsóbban és gyorsabban';
 
 export const BIO_STATS = [
   { value: '2020', label: 'óta szervezek vacsorapartikat és gasztroeseményeket' },
-  { value: '65+', label: 'esemény, 6 országban' },
-  { value: '1000+', label: 'vendég az asztaloknál' },
-  { value: '5+ év', label: 'szakácstapasztalat + életmód-tanácsadói végzettség' },
+  { value: '65+', label: 'saját szervezésű esemény, 6 országban' },
+  { value: '1200+', label: 'vendég a saját vacsoraestéken' },
+  { value: '20 000+', label: 'kiadott tányér étel a teljes éttermi és privát karrierem alatt' },
+  { value: '5+ év', label: 'éttermi konyhai tapasztalat + életmód-tanácsadói végzettség' },
 ];
 
 export const BIO_FACTS = [
@@ -16,6 +17,35 @@ export const BIO_FACTS = [
   '9 hónapig dolgoztam egy budai család privát séfjeként',
   'Vezettem konyhát az ország egyik legnagyobb fesztiválján',
   'Tartottam főzőtanfolyamokat, és írtam már étlapot is',
+];
+
+// Éttermek, ahol séfként/konyhai csapattagként dolgoztam — hitelességi trust-strip
+// az Okoskonyha oldalon. Csak névsor (nincs logó-képfájl a repóban); ha valódi
+// logó-képek elérhetők, ez a blokk könnyen lecserélhető képekre a lista alapján.
+// A name/location külön mező, hogy az elválasztás (— ) egységesen, egy helyen
+// legyen vezérelve a megjelenítésnél, ne kézzel beírt kötőjelekkel soronként.
+export const KITCHENS_WORKED_WITH = [
+  { name: 'Flow Coffee and Bistro', location: 'Budapest' },
+  { name: 'Mazel Tov', location: 'Budapest' },
+  { name: "Vivina's Cafe and Brunch", location: 'Budapest' },
+  { name: '101 Bistro', location: 'Budapest' },
+  { name: 'Todo Mexican Kitchen', location: 'Budapest' },
+  { name: 'Balagan', location: 'Budapest' },
+  { name: 'Hanami Asian Bistro', location: 'Budapest' },
+  { name: 'Food Revolution', location: 'Budapest' },
+  { name: 'Pastadelic Vegan Pasta', location: 'OZORA Festival' },
+];
+
+// Séfek, akiktől a legtöbbet tanultam — ugyanaz a hitelességi logika, mint a
+// KITCHENS_WORKED_WITH listánál: a szakmai vonalat erősíti, kit ismert el mesterének.
+export const CHEFS_LEARNED_FROM = [
+  'Steiner Kristóf',
+  'Zsolnay Gergely',
+  'Keve Márton',
+  'Valentin Ádám',
+  'Singlár Dániel',
+  'Kelemen Áron',
+  'Sziszik István',
 ];
 
 // A Batch Cooking Alapkurzus (az Alapképzés) moduljaira épülő bontás — ezt mindenki
@@ -68,8 +98,8 @@ export const METHOD_PILLARS = [
   },
   {
     title: 'Batch cooking rendszer',
-    subtitle: '2 gabona, 3 fehérjeforrás, 1 friss saláta, 3 szósz',
-    text: 'Egyetlen vasárnapi főzésből 18+ kombináció áll össze — egy egész hétre elég, változatos étel, új főzés nélkül.',
+    subtitle: '3 gabona/köret, 3 fehérjeforrás, 3 szósz, 1 friss saláta',
+    text: 'Egyetlen vasárnapi főzésből 27+ kombináció áll össze — egy egész hétre elég, változatos étel, új főzés nélkül.',
   },
   {
     title: 'Tárolás és fagyasztás',
