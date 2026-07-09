@@ -1,12 +1,24 @@
 import type { APIRoute } from 'astro';
+import { checkRateLimit } from '../../lib/rateLimit';
 
 // Vercel szerverless függvényként fut (nem prerenderelt) — itt biztonságban marad
 // a MAILERLITE_API_KEY, mert csak szerveroldalon fut le, sosem kerül a böngészőbe.
 export const prerender = false;
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const RATE_LIMIT = 5;
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000; // 10 perc
 
-export const POST: APIRoute = async ({ request }) => {
+export const POST: APIRoute = async ({ request, clientAddress }) => {
+  const ip = clientAddress || 'unknown';
+  const { limited, retryAfterSeconds } = checkRateLimit(`newsletter:${ip}`, RATE_LIMIT, RATE_LIMIT_WINDOW_MS);
+  if (limited) {
+    return new Response(JSON.stringify({ error: 'Túl sok próbálkozás, kérlek próbáld újra később.' }), {
+      status: 429,
+      headers: { 'Retry-After': String(retryAfterSeconds) },
+    });
+  }
+
   let body: { email?: string; company?: string };
   try {
     body = await request.json();
