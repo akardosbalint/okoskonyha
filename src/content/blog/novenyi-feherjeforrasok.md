@@ -5,8 +5,8 @@ excerpt: "Tofu, tempeh, lencse, csicseriborsó, quinoa, szeitán — melyik menn
 date: 2025-10-05
 category: fozesi-tippek
 tags: ["növényi fehérje", "növényi étrend", "batch cooking"]
-cover: ../../assets/photos/balint-kitchen-prep.jpeg
-coverAlt: "Kardos Bálint séfkabátban a konyhában készíti az ételt"
+cover: ../../assets/photos/novenyi-feherjeforrasok-cover.png
+coverAlt: "Tofu, tempeh, hüvelyesek és más növényi fehérjeforrások kiterítve a konyhapulton"
 ---
 
 A leggyakoribb kérdés, amit növényi étkezés kapcsán kapok: „de honnan lesz elég fehérjéd?” Ez a cikk a konkrét válasz — végigveszem a legfontosabb növényi fehérjeforrásokat, hozzávetőleges fehérjetartalmukkal (a nyilvánosan elérhető, általánosan elfogadott táplálkozástudományi referenciaértékek alapján, tájékoztató jelleggel), és azzal, hogyan használom őket a saját, batch cooking alapú rendszeremben.

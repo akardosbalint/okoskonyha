@@ -5,8 +5,8 @@ excerpt: "Ha ezt a négy dolgot megérted, bármelyik receptet a magadévá tudo
 date: 2026-06-18
 category: fozesi-tippek
 tags: ["főzési tippek", "alapok", "batch cooking"]
-cover: ../../assets/blog-covers/tipp-fozes4eleme.svg
-coverAlt: "Illusztráció egy sószóróról"
+cover: ../../assets/photos/fozes-4-eleme-cover.png
+coverAlt: "Jegyzetfüzet „só, zsír, sav, hő” felirattal, mellette sótartó és friss fűszernövény"
 featured: true
 ---
 

@@ -5,8 +5,8 @@ excerpt: "Egy vacsorapartiról, ahol a leves még ki sem hűlt, de már mindenki
 date: 2026-02-14
 category: sztorik
 tags: ["vacsorapartik", "közösség", "sztori"]
-cover: ../../assets/photos/dinner-long-table.jpeg
-coverAlt: "Tizenkét vendég egy hosszú vacsoraasztal körül egy lakásvacsorán"
+cover: ../../assets/photos/tizenket-idegen-cover.png
+coverAlt: "Hosszú vacsoraasztal gyertyafényben, tálakkal és poharakkal megterítve"
 featured: true
 ---
 

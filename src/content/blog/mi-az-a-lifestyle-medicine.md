@@ -5,8 +5,8 @@ excerpt: "Nem diéta, és nem egy újabb edzésterv. A Lifestyle Medicine az a t
 date: 2026-03-08
 category: fozesi-tippek
 tags: ["lifestyle medicine", "életmódváltás", "alapok"]
-cover: ../../assets/photos/lifestyle-medicine-certificate.jpeg
-coverAlt: "Lifestyle Medicine Consultant (Életmód-tanácsadó) tanúsítvány, Kardos Bálint nevére kiállítva"
+cover: ../../assets/photos/lifestyle-medicine-cover.png
+coverAlt: "Lifestyle Medicine Consultant oklevél Kardos Bálint nevére, mellette jegyzetfüzet és egy tál étel"
 ---
 
 Amikor elmondom valakinek, hogy a séfi munkám mellett Lifestyle Medicine Consultant (életmód-tanácsadó) végzettségem is van, a leggyakoribb reakció egy értetlen fejbiccentés: „az olyan, mint egy személyi edző?” Nem egészen. Ez a cikk arról szól, mi az a Lifestyle Medicine valójában, és miért ez az a keret, ami miatt az Okoskonyhában nem receptekkel kezdünk, hanem egy rendszerrel.

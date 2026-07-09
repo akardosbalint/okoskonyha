@@ -5,8 +5,8 @@ excerpt: "Nem kell reggel 6-kor kelned zöld turmixhoz. Néhány reális straté
 date: 2026-05-19
 category: fozesi-tippek
 tags: ["életmódváltás", "időbeosztás", "reális tanácsok"]
-cover: ../../assets/blog-covers/tipp-idobeosztas.svg
-coverAlt: "Illusztráció egy naptárról"
+cover: ../../assets/photos/kaotikus-idobeosztas-cover.png
+coverAlt: "Paradicsomleves tálban, frissen tálalva petrezselyemmel"
 ---
 
 A [Lifestyle Medicine](/blog/mi-az-a-lifestyle-medicine/) tanácsadói munkám során a leggyakoribb mondat, amit hallok: „tudom, mit kéne csinálnom, csak nincs rá időm.” És igazuk van — a legtöbb életmódtanács úgy készül, mintha mindenkinek nyolc szabad órája lenne naponta. Nincs.

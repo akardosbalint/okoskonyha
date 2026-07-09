@@ -5,8 +5,8 @@ excerpt: "Mi fagyasztható jól, mi nem, meddig áll el a hűtőben egy főtt ga
 date: 2026-07-01
 category: fozesi-tippek
 tags: ["tárolás", "batch cooking", "élelmiszerbiztonság"]
-cover: ../../assets/photos/balint-cooking-portrait.jpeg
-coverAlt: "Kardos Bálint főzés közben, kötényben"
+cover: ../../assets/photos/fagyasztas-tarolas-cover.png
+coverAlt: "Hűtőben rendezett, felcímkézett üvegdobozok zöldséggel, gabonával és szósszal"
 ---
 
 A [batch cooking](/blog/mi-az-a-batch-cooking/) lényege, hogy egyszer főzöl, és napokig — vagy hetekig — abból élsz. Ez azt is jelenti, hogy a tárolás nem mellékes technikai részlet, hanem a rendszer gerince: ha ezt elrontod, a heti főzésedből néhány nap alatt kidobott étel és csalódottság lesz, nem pedig felszabadult idő.

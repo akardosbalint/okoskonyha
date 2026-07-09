@@ -5,8 +5,8 @@ excerpt: "Egy őszinte (és kicsit önironikus) vallomás arról, hogy egy fűsz
 date: 2026-04-02
 category: sztorik
 tags: ["önirónia", "életmódváltás", "közösség"]
-cover: ../../assets/photos/outdoor-dinner-candid.jpeg
-coverAlt: "Kültéri közös vacsora hangulatos fényekkel"
+cover: ../../assets/photos/fozok-idegeneknek-cover.png
+coverAlt: "Vendégek egy megterített vacsoraasztal körül beszélgetnek"
 featured: true
 ---
 

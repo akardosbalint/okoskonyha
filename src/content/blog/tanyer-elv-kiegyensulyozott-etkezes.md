@@ -5,8 +5,8 @@ excerpt: "Egy egyszerű arányrendszer — 45% zöldség, 25% gabona, 25% hüvel
 date: 2026-05-04
 category: fozesi-tippek
 tags: ["tányér-elv", "kiegyensúlyozott étkezés", "növényi étrend"]
-cover: ../../assets/photos/food-balanced-plate.jpeg
-coverAlt: "Kiegyensúlyozott, előre elkészített tál sült zöldségekkel, fehérjével és öntettel"
+cover: ../../assets/photos/tanyer-elv-cover.png
+coverAlt: "Kiegyensúlyozott tányérok sült zöldséggel, gabonával és feltéttel"
 ---
 
 Az egyik leggyakoribb kérdés, amit tanítványaimtól kapok: „honnan tudjam, hogy amit összeraktam, az tényleg kiegyensúlyozott-e?” A válaszom soha nem egy alkalmazás, egy kalóriaszámoló táblázat vagy egy makró-app. Egy vizuális, könnyen megjegyezhető arányrendszer — a tányér-elv.
