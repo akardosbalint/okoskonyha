@@ -53,10 +53,7 @@ const isLightText = variant === 'card' || variant === 'dark-inline';
     <label class:list={['mt-3 flex items-start gap-2 text-sm', isLightText ? 'text-cream/80' : 'text-forest-600']}>
       <input type="checkbox" name="privacyConsent" required class="mt-0.5 h-4 w-4 shrink-0 accent-clay-500" />
       <span>
-        Elfogadom, hogy az e-mail címemet hírlevél küldése céljából kezeljék. Bővebben az
-        <a href="/adatvedelem/" class:list={['underline', isLightText ? 'text-cream hover:text-clay-300' : 'text-clay-600 hover:text-clay-700']}>
-          Adatvédelmi tájékoztatóban
-        </a>.
+        Elfogadom, hogy az e-mail címemet hírlevél küldése céljából kezeljék. Bővebben az <a href="/adatvedelem/" class:list={['underline', isLightText ? 'text-cream hover:text-clay-300' : 'text-clay-600 hover:text-clay-700']}>Adatvédelmi tájékoztatóban</a>.
       </span>
     </label>
     <p class:list={['mt-2 text-xs', isLightText ? 'text-cream/60' : 'text-forest-400']}>
