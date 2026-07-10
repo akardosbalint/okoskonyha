@@ -14,7 +14,9 @@ type IconName =
   | 'basket'
   | 'shield'
   | 'clock'
-  | 'coin';
+  | 'coin'
+  | 'close'
+  | 'check';
 
 interface Props {
   name: IconName;
@@ -38,6 +40,8 @@ const paths: Record<IconName, string> = {
   shield: 'M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3Z',
   clock: 'M12 3a9 9 0 1 0 0.01 0M12 7v5l4 2',
   coin: 'M12 3a9 9 0 1 0 0.01 0M8 9c0-1.5 2-2 4-2s4 .5 4 2-2 2-4 2-4 .5-4 2 2 2 4 2 4-.5 4-2M12 5v2m0 10v2',
+  close: 'M6 6l12 12M18 6 6 18',
+  check: 'M5 13l4 4L19 7',
 };
 ---
 
