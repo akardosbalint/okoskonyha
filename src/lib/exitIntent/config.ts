@@ -17,7 +17,7 @@ export interface ExitIntentCopy {
 }
 
 export type ExitIntentVariant =
-  | 'guide'
+  | 'five-day-system'
   | 'gratitude'
   | 'weekly-recipe'
   | 'reciprocity'
@@ -29,10 +29,11 @@ export type ExitIntentVariant =
   | 'respect-time';
 
 export const EXIT_INTENT_COPY: Record<ExitIntentVariant, ExitIntentCopy> = {
-  guide: {
-    title: 'Mielőtt elmész…',
-    description: 'Ajándékba adok egy útmutatót, ami minden héten órákat spórolhat neked a konyhában.',
-    cta: 'Kérem az útmutatót',
+  'five-day-system': {
+    title: 'Mielőtt elmész — egy gyors dolog, ami ma este segít',
+    description:
+      'Nem hírlevélre iratkozol fel. 5 emailben megmutatjuk, miért nem a recept a megoldás a napi vacsora-döntésre — hanem egy rendszer, amivel heti max. 2×2 óra alatt megoldva az egész heti étkezésed. Az első tippet (amit ma este már használhatsz) azonnal küldjük.',
+    cta: 'Kérem az első tippet',
   },
   gratitude: {
     title: 'Már ennyi időt rászántál',
@@ -82,7 +83,7 @@ export const EXIT_INTENT_COPY: Record<ExitIntentVariant, ExitIntentCopy> = {
   },
 };
 
-export const DEFAULT_EXIT_INTENT_VARIANT: ExitIntentVariant = 'guide';
+export const DEFAULT_EXIT_INTENT_VARIANT: ExitIntentVariant = 'five-day-system';
 
 // Belső, sitewide gate-kulcs — szándékosan nem variánsonként elkülönített, hogy egy copy-teszt
 // (a `variant` prop cseréje) ne nullázza le a már elutasított látogatók cooldown-ját. Ha valakinek
