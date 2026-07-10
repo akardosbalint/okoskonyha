@@ -28,6 +28,12 @@ strukturált adat (JSON-LD `Offer`) automatikusan követi.
 függvényen (`src/pages/api/newsletter.ts`) keresztül köti be a MailerLite API-t. Az API-kulcs
 (`MAILERLITE_API_KEY`) kizárólag szerveroldali környezeti változó, sosem kerül a böngészőbe.
 
+Minden feliratkozás (hírlevél CTA-k, exit popup) a `MAILERLITE_LEAD_GROUP_ID` környezeti
+változóban megadott "Okoskonyha Lead" MailerLite csoporthoz adja hozzá a feliratkozót — ez a
+csoportba kerülés indítja el a MailerLite-ban erre a triggerre beállított automatizált 5 napos
+levélsorozatot. Ha ez a környezeti változó nincs beállítva, a feliratkozó group nélkül kerül be
+(az automatizáció nem indul el érte).
+
 **Ha leáll vagy elérhetetlen:** a hírlevél-feliratkozás nem működik, de ez nem blokkolja a
 fő bevételi útvonalat (Okoskonyha tagság) — csak a lead-gyűjtés egyik csatornája esik ki
 ideiglenesen. Az űrlap grafikusan látszik, a beküldés hibaüzenetet ad.

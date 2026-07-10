@@ -42,6 +42,10 @@ export const POST: APIRoute = async ({ request, clientAddress }) => {
     return new Response(JSON.stringify({ error: 'A hírlevél-feliratkozás jelenleg nincs beállítva.' }), { status: 503 });
   }
 
+  // A group ID hozzárendeli a feliratkozót az "Okoskonyha Lead" MailerLite csoporthoz, ami
+  // elindítja az arra a csoportbelépésre beállított automatizált levélsorozatot.
+  const leadGroupId = import.meta.env.MAILERLITE_LEAD_GROUP_ID;
+
   try {
     const mlRes = await fetch('https://connect.mailerlite.com/api/subscribers', {
       method: 'POST',
@@ -50,7 +54,7 @@ export const POST: APIRoute = async ({ request, clientAddress }) => {
         'Content-Type': 'application/json',
         Accept: 'application/json',
       },
-      body: JSON.stringify({ email }),
+      body: JSON.stringify(leadGroupId ? { email, groups: [leadGroupId] } : { email }),
     });
 
     if (!mlRes.ok) {
