@@ -7,7 +7,7 @@ import { checkRateLimit } from '../../lib/rateLimit';
 export const prerender = false;
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const TOPICS = ['Privát séfkedés', 'Jótékonysági vacsora szervezése', 'Okoskonyha tagság', 'Életmód-tanácsadás', 'Egyéb'];
+const TOPICS = ['Prémium privát chef szolgáltatás', 'Jótékonysági vacsora szervezése', 'Okoskonyha tagság', 'Életmód-tanácsadás', 'Egyéb'];
 const RATE_LIMIT = 5;
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000; // 10 perc
 
