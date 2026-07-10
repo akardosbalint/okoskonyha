@@ -12,7 +12,9 @@
 //   rounded-3xl, ugyanaz a form-mező stílus mint a Newsletter/ContactForm komponensekben), hogy a
 //   popup ne érződjön idegen testnek az oldalon.
 import Icon from './Icon.astro';
+import EmailSequenceChips from './EmailSequenceChips.astro';
 import { SITE } from '../lib/site';
+import { BIO_STATS } from '../lib/program';
 import {
   DEFAULT_EXIT_INTENT_STORAGE_KEY,
   DEFAULT_EXIT_INTENT_VARIANT,
@@ -21,6 +23,8 @@ import {
   type ExitIntentGoal,
   type ExitIntentVariant,
 } from '../lib/exitIntent/config';
+
+const guestProof = BIO_STATS.find((stat) => stat.label.includes('vendég'));
 
 export interface Props {
   /** Kikapcsolja a teljes komponenst — se markup, se script nem kerül az oldalra. */
@@ -107,7 +111,7 @@ const runtimeConfig = {
         aria-labelledby="exit-intent-title"
         aria-describedby="exit-intent-description"
         data-exit-intent-dialog
-        class="relative mx-auto w-full max-w-md scale-95 rounded-3xl bg-cream p-7 opacity-0 shadow-2xl shadow-forest-900/30 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none md:p-9"
+        class="relative mx-auto max-h-[90vh] w-full max-w-md scale-95 overflow-y-auto rounded-3xl bg-cream p-7 opacity-0 shadow-2xl shadow-forest-900/30 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none md:p-9"
       >
         <button
           type="button"
@@ -132,9 +136,22 @@ const runtimeConfig = {
         <h2 id="exit-intent-title" class="mb-2 pr-8 text-2xl font-semibold text-forest-700 md:text-[1.75rem]">
           {resolvedTitle}
         </h2>
-        <p id="exit-intent-description" class="mb-6 text-forest-600">
+        <p id="exit-intent-description" class="mb-4 text-forest-600">
           {resolvedDescription}
         </p>
+
+        <div class="mb-4 rounded-2xl bg-sage-50 p-3">
+          <EmailSequenceChips compact />
+        </div>
+
+        {
+          guestProof && (
+            <p class="mb-5 flex items-center gap-2 text-sm font-semibold text-forest-700">
+              <Icon name="chat" class="h-4 w-4 shrink-0" />
+              {guestProof.value} vendég ismerte már meg élőben ezt a rendszert
+            </p>
+          )
+        }
 
         <form data-exit-intent-form novalidate>
           <label for="exit-intent-email" class="sr-only">
@@ -154,7 +171,7 @@ const runtimeConfig = {
           <label class="mt-3 flex items-start gap-2 text-xs text-forest-500">
             <input type="checkbox" name="privacyConsent" required class="mt-0.5 h-4 w-4 shrink-0 accent-clay-500" />
             <span>
-              Elfogadom, hogy az e-mail címemet hírlevél küldése céljából kezeljék. Bővebben az <a href="/adatvedelem/" class="underline hover:text-clay-600">Adatvédelmi tájékoztatóban</a>.
+              Elfogadom, hogy az e-mail címemet az 5 részes levélsorozat (és az azt követő alkalmi hírlevél) küldése céljából kezeljék. Bővebben az <a href="/adatvedelem/" class="underline hover:text-clay-600">Adatvédelmi tájékoztatóban</a>.
             </span>
           </label>
 
@@ -168,7 +185,7 @@ const runtimeConfig = {
 
         <div data-exit-intent-message role="status" aria-live="polite" />
 
-        <p class="mt-4 text-center text-xs text-forest-400">Ingyenes, bármikor leiratkozható.</p>
+        <p class="mt-4 text-center text-xs text-forest-400">Ingyenes, nem a fizetős tagság — bármikor leiratkozható.</p>
       </div>
     </div>
   )

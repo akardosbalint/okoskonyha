@@ -1,0 +1,45 @@
+---
+// Vizuális horgony minden feliratkozási blokkhoz (Newsletter.astro / ExitIntentPopup.astro):
+// megmutatja a valódi 5 részes email-sorozat szerkezetét (3 email a módszerről, 2 a csatlakozásról)
+// szöveg helyett/mellett — ez konkrétabb, mint egy elvont "hírlevél" ígéret, és minden helyen
+// egységes, mert egy helyen van karbantartva.
+interface Props {
+  /** Sötét háttéren (pl. Newsletter 'card'/'dark-inline') világos árnyalatokat használ. */
+  onDark?: boolean;
+  /** Kisebb méret szűk helyekre (pl. az exit intent popup). */
+  compact?: boolean;
+}
+const { onDark = false, compact = false } = Astro.props;
+
+const circleSize = compact ? 'h-6 w-6 text-[11px]' : 'h-8 w-8 text-sm';
+const methodCircle = onDark
+  ? 'border border-sage-300/50 bg-sage-400/20 text-sage-100'
+  : 'border border-sage-300 bg-sage-100 text-forest-700';
+const joinCircle = onDark
+  ? 'border border-clay-300/50 bg-clay-400/25 text-clay-100'
+  : 'border border-clay-300 bg-clay-100 text-clay-700';
+const captionClass = onDark ? 'text-cream/70' : 'text-forest-500';
+---
+
+<div>
+  <div class="flex items-center gap-1.5">
+    {
+      [1, 2, 3].map((n) => (
+        <span class:list={['flex shrink-0 items-center justify-center rounded-full font-heading font-semibold', circleSize, methodCircle]}>
+          {n}
+        </span>
+      ))
+    }
+    <span class:list={['mx-0.5 font-heading font-semibold', onDark ? 'text-cream/40' : 'text-forest-300', compact ? 'text-xs' : 'text-sm']}>+</span>
+    {
+      [4, 5].map((n) => (
+        <span class:list={['flex shrink-0 items-center justify-center rounded-full font-heading font-semibold', circleSize, joinCircle]}>
+          {n}
+        </span>
+      ))
+    }
+  </div>
+  <p class:list={['mt-2', compact ? 'text-xs' : 'text-sm', captionClass]}>
+    3 email a módszer alapjaival <span class="whitespace-nowrap">(só-zsír-sav-hő, tányér-elv)</span> + 2 email arról, hogyan csatlakozhatsz
+  </p>
+</div>

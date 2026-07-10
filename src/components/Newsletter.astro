@@ -1,32 +1,56 @@
 ---
 import { SITE } from '../lib/site';
+import { BIO_STATS } from '../lib/program';
+import EmailSequenceChips from './EmailSequenceChips.astro';
+import Icon from './Icon.astro';
 
 interface Props {
   variant?: 'inline' | 'card' | 'dark-inline';
+  eyebrow?: string;
   title?: string;
   description?: string;
 }
 const {
   variant = 'card',
-  title = 'Elege van az esti „mi legyen vacsira” döntésfáradtságból?',
-  description = '5 e-mailben megmutatjuk a rendszert, amivel heti max. 2×2 óra alatt megoldva az egész heti étkezésed — nem recept, hanem a só-zsír-sav-hő elvre épülő módszer. Az első használható tippet még ma elküldjük.',
+  eyebrow = 'Mielőtt csatlakoznál',
+  title = 'Eleged van az esti „mi legyen vacsira” döntésfáradtságból?',
+  description = '5 emailben pontosan megmutatom, hogyan főzöl majd finomabbat és egészségesebbet — olcsóbban és gyorsabban.',
 } = Astro.props;
 
 // A 'card' és a 'dark-inline' egyaránt sötét háttérre szánt, világos szöveggel — a különbség csak
 // annyi, hogy a 'card' saját forest-700 dobozt kap, a 'dark-inline' egy már sötét szekcióba simul bele.
 const isLightText = variant === 'card' || variant === 'dark-inline';
+
+// Az 1200+ vendég ugyanaz a szám, ami a Rólam oldalon is szerepel (src/lib/program.ts) — nem új
+// állítás, csak egy helyen tartva, hogy a bizonyíték mindenhol frissen és egyezően jelenjen meg.
+const guestProof = BIO_STATS.find((stat) => stat.label.includes('vendég'));
 ---
 
 <div class:list={[
   'rounded-3xl',
   variant === 'card' ? 'bg-forest-700 text-cream p-6 md:p-8' : 'bg-transparent',
 ]}>
+  <p class:list={['font-script text-2xl mb-1', isLightText ? 'text-clay-300' : 'text-clay-500']}>{eyebrow}</p>
   <h3 class:list={['text-xl md:text-2xl font-semibold mb-2', isLightText ? 'text-cream' : 'text-forest-700']}>
     {title}
   </h3>
-  <p class:list={['mb-5 text-sm md:text-base', isLightText ? 'text-sage-100/90' : 'text-forest-600']}>
+  <p class:list={['mb-4 text-sm md:text-base', isLightText ? 'text-sage-100/90' : 'text-forest-600']}>
     {description}
   </p>
+
+  <div class:list={['mb-5 rounded-2xl p-4', isLightText ? 'bg-cream/10' : 'bg-sage-50']}>
+    <EmailSequenceChips onDark={isLightText} />
+  </div>
+
+  {
+    guestProof && (
+      <p class:list={['mb-5 flex items-center gap-2 text-sm font-semibold', isLightText ? 'text-cream/90' : 'text-forest-700']}>
+        <Icon name="chat" class="h-4 w-4 shrink-0" />
+        {guestProof.value} vendég ismerte már meg élőben ezt a rendszert
+      </p>
+    )
+  }
+
   <form
     data-newsletter-form
     data-endpoint={SITE.newsletterEndpoint}
@@ -53,11 +77,11 @@ const isLightText = variant === 'card' || variant === 'dark-inline';
     <label class:list={['mt-3 flex items-start gap-2 text-sm', isLightText ? 'text-cream/80' : 'text-forest-600']}>
       <input type="checkbox" name="privacyConsent" required class="mt-0.5 h-4 w-4 shrink-0 accent-clay-500" />
       <span>
-        Elfogadom, hogy az e-mail címemet hírlevél küldése céljából kezeljék. Bővebben az <a href="/adatvedelem/" class:list={['underline', isLightText ? 'text-cream hover:text-clay-300' : 'text-clay-600 hover:text-clay-700']}>Adatvédelmi tájékoztatóban</a>.
+        Elfogadom, hogy az e-mail címemet az 5 részes levélsorozat (és az azt követő alkalmi hírlevél) küldése céljából kezeljék. Bővebben az <a href="/adatvedelem/" class:list={['underline', isLightText ? 'text-cream hover:text-clay-300' : 'text-clay-600 hover:text-clay-700']}>Adatvédelmi tájékoztatóban</a>.
       </span>
     </label>
     <p class:list={['mt-2 text-xs', isLightText ? 'text-cream/60' : 'text-forest-400']}>
-      Nincs spam, bármikor egy kattintással leiratkozhatsz.
+      Ingyenes és azonnali — nem a fizetős Okoskonyha tagság. Nincs spam, egy kattintással leiratkozhatsz.
     </p>
   </form>
   <p data-newsletter-message class:list={['mt-3 text-sm', isLightText ? 'text-cream' : 'text-forest-700']} role="status"></p>

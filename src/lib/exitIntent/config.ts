@@ -1,10 +1,13 @@
 // Exit intent popup — copy variánsok és típusok.
 //
-// A cél sosem a "ne menj el!" pánik, hanem egy valódi ajánlat az utolsó pillanatban:
-// egy útmutató, egy recept, egy belépő a közösségbe. Minden variáció reciprocity / curiosity /
-// value-first elvre épül, FOMO és fake urgency nélkül — lásd a brief "konverziós pszichológia"
-// szakaszát. Az itt szereplő 10 variáció közül a <ExitIntentPopup variant="..."> prop választ,
-// vagy a title/description/cta propokkal felül lehet írni egyedi szöveget bármelyik oldalon.
+// A cél sosem a "ne menj el!" pánik, hanem egy valódi ajánlat az utolsó pillanatban. A tényleges
+// lead magnet EGYETLEN dolog: az 5 részes email-sorozat (3 email a módszer alapjairól — só-zsír-
+// sav-hő, tányér-elv, batch cooking —, 2 email arról, hogyan lehet csatlakozni az Okoskonyhához).
+// A 10 variáció ugyanezt az egy ajánlatot kínálja, csak eltérő pszichológiai szemszögből
+// (reciprocity / curiosity / value-first / community / stb., FOMO és fake urgency nélkül) — egyik
+// sem ígér ettől eltérő tartalmat, hogy a feliratkozó ténylegesen azt kapja, amit az adott
+// variáció alapján várt. Az <ExitIntentPopup variant="..."> prop választ közülük, vagy a
+// title/description/cta propokkal bármelyik oldalon felül lehet írni egyedi szöveget.
 
 export type ExitIntentGoal = 'newsletter' | 'leadmagnet' | 'minicourse';
 
@@ -18,8 +21,8 @@ export interface ExitIntentCopy {
 
 export type ExitIntentVariant =
   | 'five-day-system'
-  | 'gratitude'
-  | 'weekly-recipe'
+  | 'credibility'
+  | 'tonight'
   | 'reciprocity'
   | 'curiosity'
   | 'value-first'
@@ -32,53 +35,53 @@ export const EXIT_INTENT_COPY: Record<ExitIntentVariant, ExitIntentCopy> = {
   'five-day-system': {
     title: 'Mielőtt elmész — egy gyors dolog, ami ma este segít',
     description:
-      'Nem hírlevélre iratkozol fel. 5 emailben megmutatjuk, miért nem a recept a megoldás a napi vacsora-döntésre — hanem egy rendszer, amivel heti max. 2×2 óra alatt megoldva az egész heti étkezésed. Az első tippet (amit ma este már használhatsz) azonnal küldjük.',
+      'Nem hírlevélre iratkozol fel. 5 emailben pontosan megmutatom, hogyan főzöl majd finomabbat és egészségesebbet — olcsóbban és gyorsabban. Az első tippet, amit ma este már használhatsz, azonnal küldöm.',
     cta: 'Kérem az első tippet',
   },
-  gratitude: {
-    title: 'Már ennyi időt rászántál',
-    description: 'Hadd adjak érte cserébe valamit — egy rövid, tényleg hasznos anyagot, nem egy újabb kötelező olvasmányt.',
-    cta: 'Elfogadom az ajándékot',
+  credibility: {
+    title: '1200+ vendég ismerte már meg ezt élőben',
+    description: '5 emailben ugyanazt mutatom meg neked, amit nekik főzés közben szoktam — a végére pontosan tudni fogod, hogyan főzhetsz finomabbat és egészségesebbet, olcsóbban és gyorsabban.',
+    cta: 'Kérem én is',
   },
-  'weekly-recipe': {
-    title: 'Ne maradj le a következő receptről',
-    description: 'Heti egy valóban hasznos e-mail — új recept, praktikus tipp. Semmi spam, ígérem.',
-    cta: 'Feliratkozom',
+  tonight: {
+    title: 'Ami ma este segít a vacsora-döntésben',
+    description: 'Az első email ma megérkezik, a többi 4 napon át követi — mire vége, pontosan tudni fogod, hogyan főzhetsz finomabbat, egészségesebbet, olcsóbban és gyorsabban.',
+    cta: 'Küldjétek az elsőt',
   },
   reciprocity: {
-    title: 'Egy apró ajándék, mielőtt továbblépnél',
-    description: 'Egy 5 perces olvasmány, ami hetekre megkönnyíti a heti menütervezést.',
-    cta: 'Kérem az anyagot',
+    title: 'Adok, mielőtt bármit kérnék',
+    description: '5 emailben odaadom a rendszer 3 legfontosabb alapelvét — ingyen, mielőtt cserébe bármit kérnék. A végén pontosan tudni fogod, hogyan főzhetsz olcsóbban és gyorsabban.',
+    cta: 'Kérem az első emailt',
   },
   curiosity: {
-    title: 'Van egy módszerem, amit ritkán osztok meg',
-    description: 'Leírtam, hogyan főzök heti két alkalommal az egész hétre. Megmutatom, hogyan csinálom.',
-    cta: 'Megnézem',
+    title: 'Van egy módszerem a heti vacsora-döntésekre',
+    description: '5 rövid emailben megmutatom, hogyan oldom meg heti max. 2×2 óra alatt az egész heti étkezésem — séf-fejjel, nem receptekkel. A végére te is pontosan tudni fogod, hogyan.',
+    cta: 'Megmutatod?',
   },
   'value-first': {
-    title: 'Mielőtt továbblépnél',
-    description: 'Küldök egy rövid összefoglalót azokról a konyhai trükkökről, amik nálam a legjobban beváltak.',
-    cta: 'Kérem az összefoglalót',
+    title: 'Mielőtt továbblépnél, kapsz valamit',
+    description: '3 email a módszer alapjairól, 2 arról, hogyan csatlakozhatsz — a végére pontosan tudni fogod, hogyan főzhetsz finomabbat és egészségesebbet, olcsóbban és gyorsabban.',
+    cta: 'Kérem az anyagot',
   },
   clarity: {
     title: 'Csak egy dolgot kérnék',
-    description: 'Add meg az e-mail címed, és elküldöm az útmutatót. Ennyi — se trükk, se apró betűs rész.',
+    description: 'Add meg az e-mail címed, és elindítom az 5 részes sorozatot — a végén pontosan tudni fogod, hogyan főzz olcsóbban és gyorsabban. Ennyi — se trükk, se apró betűs rész.',
     cta: 'Küldjétek el',
   },
   trust: {
     title: 'Ígérem, nem spamelek',
-    description: 'Egyetlen hasznos e-mail hetente, amit tényleg érdemes elolvasni. Bármikor leiratkozhatsz egy kattintással.',
-    cta: 'Rendben, feliratkozom',
+    description: '5 email arról, hogyan főzhetsz finomabbat és egészségesebbet, olcsóbban és gyorsabban — utána csak alkalmi hírlevél. Bármikor leiratkozhatsz egy kattintással.',
+    cta: 'Rendben, kérem',
   },
   community: {
     title: 'Csatlakozz azokhoz, akik már egyszerűbben főznek',
-    description: 'Iratkozz fel, és elküldöm az első lépéseket egy nyugodtabb heti menütervezéshez.',
+    description: 'Az 5 részes sorozat pont ott kezdődik, ahol te most tartasz — a végére pontosan tudni fogod, hogyan főzhetsz olcsóbban és gyorsabban.',
     cta: 'Csatlakozom',
   },
   'respect-time': {
     eyebrow: 'Mielőtt elmész',
     title: 'Tudom, hogy értékes az időd',
-    description: 'Ezért csak egyszer kérdezem meg: kéred a heti tervezős útmutatót, ami neked is bevált időt spórol?',
+    description: 'Ezért csak 5 rövid emailt kérek a figyelmedből — utána pontosan tudni fogod, hogyan főzhetsz finomabbat és egészségesebbet, olcsóbban és gyorsabban.',
     cta: 'Igen, kérem',
   },
 };
