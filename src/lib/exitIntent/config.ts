@@ -2,7 +2,7 @@
 //
 // A cél sosem a "ne menj el!" pánik, hanem egy valódi ajánlat az utolsó pillanatban. A tényleges
 // lead magnet EGYETLEN dolog: az 5 részes email-sorozat (3 email a módszer alapjairól — só-zsír-
-// sav-hő, tányér-elv, batch cooking —, 2 email arról, hogyan lehet csatlakozni az Okoskonyhához).
+// sav-hő, tányér-elv, batch cooking —, 2 email arról, hogyan építhető be a mindennapokba).
 // A 10 variáció ugyanezt az egy ajánlatot kínálja, csak eltérő pszichológiai szemszögből
 // (reciprocity / curiosity / value-first / community / stb., FOMO és fake urgency nélkül) — egyik
 // sem ígér ettől eltérő tartalmat, hogy a feliratkozó ténylegesen azt kapja, amit az adott
@@ -60,7 +60,7 @@ export const EXIT_INTENT_COPY: Record<ExitIntentVariant, ExitIntentCopy> = {
   },
   'value-first': {
     title: 'Mielőtt továbblépnél, kapsz valamit',
-    description: '3 email a módszer alapjairól, 2 arról, hogyan csatlakozhatsz — a végére pontosan tudni fogod, hogyan főzhetsz finomabbat és egészségesebbet, olcsóbban és gyorsabban.',
+    description: '3 email a módszer alapjairól, 2 arról, hogyan építheted be a mindennapjaidba — a végére pontosan tudni fogod, hogyan főzhetsz finomabbat és egészségesebbet, olcsóbban és gyorsabban.',
     cta: 'Kérem az anyagot',
   },
   clarity: {
