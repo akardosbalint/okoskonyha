@@ -8,8 +8,8 @@ interface Props {
 }
 const {
   variant = 'card',
-  title = 'Iratkozz fel a hírlevélre',
-  description = 'Heti egy e-mail: új blogposztok, meghívók a jótékonysági vacsorákra és korai hozzáférés az Okoskonyha eseményekhez. Se spam, se felesleges köntörfalazás.',
+  title = 'Elege van az esti „mi legyen vacsira” döntésfáradtságból?',
+  description = '5 e-mailben megmutatjuk a rendszert, amivel heti max. 2×2 óra alatt megoldva az egész heti étkezésed — nem recept, hanem a só-zsír-sav-hő elvre épülő módszer. Az első használható tippet még ma elküldjük.',
 } = Astro.props;
 
 // A 'card' és a 'dark-inline' egyaránt sötét háttérre szánt, világos szöveggel — a különbség csak
@@ -47,7 +47,7 @@ const isLightText = variant === 'card' || variant === 'dark-inline';
         type="submit"
         class="rounded-full bg-clay-600 px-6 py-3 font-heading font-semibold text-cream transition-colors hover:bg-clay-700 whitespace-nowrap"
       >
-        Feliratkozom
+        Kérem az első tippet
       </button>
     </div>
     <label class:list={['mt-3 flex items-start gap-2 text-sm', isLightText ? 'text-cream/80' : 'text-forest-600']}>
@@ -59,6 +59,9 @@ const isLightText = variant === 'card' || variant === 'dark-inline';
         </a>.
       </span>
     </label>
+    <p class:list={['mt-2 text-xs', isLightText ? 'text-cream/60' : 'text-forest-400']}>
+      Nincs spam, bármikor egy kattintással leiratkozhatsz.
+    </p>
   </form>
   <p data-newsletter-message class:list={['mt-3 text-sm', isLightText ? 'text-cream' : 'text-forest-700']} role="status"></p>
 </div>
