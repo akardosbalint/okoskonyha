@@ -1,0 +1,209 @@
+---
+// Exit intent popup — prémium, nem tolakodó "utolsó pillanatos ajánlat" komponens.
+//
+// Miért így:
+// - A trigger-logika (mouseleave desktopon, scroll/back/inaktivitás mobilon), a focus trap, az
+//   inert-kezelés és a submit teljes egészében a dinamikusan importált src/lib/exitIntent/controller.ts
+//   fájlban él — ez a nehéz rész csak akkor töltődik be, amikor a böngésző ráér (requestIdleCallback),
+//   így a komponens gyakorlatilag nulla költséggel ül az oldalon amíg nincs rá szükség.
+// - A markup mindig a szerveren renderelődik (Astro props → statikus HTML), a kliens JS csak
+//   állapotot vált (osztályokat kapcsolgat) — nincs hydration, nincs framework runtime.
+// - A design a meglévő design rendszert követi (forest/sage/clay/cream paletta, Fredoka/Quicksand,
+//   rounded-3xl, ugyanaz a form-mező stílus mint a Newsletter/ContactForm komponensekben), hogy a
+//   popup ne érződjön idegen testnek az oldalon.
+import Icon from './Icon.astro';
+import { SITE } from '../lib/site';
+import {
+  DEFAULT_EXIT_INTENT_STORAGE_KEY,
+  DEFAULT_EXIT_INTENT_VARIANT,
+  EXIT_INTENT_COPY,
+  EXIT_INTENT_DEFAULTS,
+  type ExitIntentGoal,
+  type ExitIntentVariant,
+} from '../lib/exitIntent/config';
+
+export interface Props {
+  /** Kikapcsolja a teljes komponenst — se markup, se script nem kerül az oldalra. */
+  enabled?: boolean;
+  /** Ennyi ms tétlenség/jelenlét után fegyverzi fel a trigger-figyelést (desktop és mobil egyaránt). */
+  delay?: number;
+  /** Ennyi napig nem jelenik meg újra ugyanannak a látogatónak, miután megjelent (localStorage). */
+  cooldownDays?: number;
+  /** Előre megírt copy-variáns kulcsa — lásd src/lib/exitIntent/config.ts. */
+  variant?: ExitIntentVariant;
+  /** Egyedi szöveg — felülírja a variáns adott mezőjét, a többi variánsból jön. */
+  title?: string;
+  description?: string;
+  cta?: string;
+  /** Opcionális kép a popup tetején. */
+  image?: string;
+  image_alt?: string;
+  /** Mit csinál sikeres feliratkozás után: hírlevél / azonnali letöltés / mini kurzus link. */
+  goal?: ExitIntentGoal;
+  downloadUrl?: string;
+  redirectUrl?: string;
+  /** Mobilon is fusson-e (más heurisztikával) — kikapcsolható, ha csak desktopon kéred. */
+  mobileEnabled?: boolean;
+  mobileInactivityMs?: number;
+  /** Csak akkor kell módosítani, ha szándékosan külön kohorszot akarsz (pl. A/B teszt). */
+  storageKey?: string;
+}
+
+const {
+  enabled = true,
+  delay = EXIT_INTENT_DEFAULTS.delay,
+  cooldownDays = EXIT_INTENT_DEFAULTS.cooldownDays,
+  variant = DEFAULT_EXIT_INTENT_VARIANT,
+  title,
+  description,
+  cta,
+  image,
+  image_alt = '',
+  goal = EXIT_INTENT_DEFAULTS.goal,
+  downloadUrl,
+  redirectUrl,
+  mobileEnabled = EXIT_INTENT_DEFAULTS.mobileEnabled,
+  mobileInactivityMs = EXIT_INTENT_DEFAULTS.mobileInactivityMs,
+  storageKey = DEFAULT_EXIT_INTENT_STORAGE_KEY,
+} = Astro.props;
+
+const copy = EXIT_INTENT_COPY[variant] ?? EXIT_INTENT_COPY[DEFAULT_EXIT_INTENT_VARIANT];
+const resolvedTitle = title ?? copy.title;
+const resolvedDescription = description ?? copy.description;
+const resolvedCta = cta ?? copy.cta;
+const resolvedEyebrow = copy.eyebrow;
+
+const runtimeConfig = {
+  storageKey,
+  cooldownDays,
+  delay,
+  mobileEnabled,
+  mobileInactivityMs,
+  goal,
+  variant,
+  endpoint: SITE.newsletterEndpoint,
+  downloadUrl,
+  redirectUrl,
+};
+---
+
+{
+  enabled && (
+    <div
+      data-exit-intent-root
+      id="exit-intent-popup"
+      data-config={JSON.stringify(runtimeConfig)}
+      class="fixed inset-0 z-[200] hidden p-4"
+      aria-hidden="true"
+    >
+      <div
+        data-exit-intent-backdrop
+        class="absolute inset-0 bg-forest-900/50 opacity-0 backdrop-blur-sm transition-opacity duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none"
+      />
+
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="exit-intent-title"
+        aria-describedby="exit-intent-description"
+        data-exit-intent-dialog
+        class="relative mx-auto w-full max-w-md scale-95 rounded-3xl bg-cream p-7 opacity-0 shadow-2xl shadow-forest-900/30 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none md:p-9"
+      >
+        <button
+          type="button"
+          data-exit-intent-close
+          aria-label="Bezárás"
+          class="absolute right-4 top-4 rounded-full p-2 text-forest-400 transition-colors hover:bg-sage-100 hover:text-forest-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-clay-500"
+        >
+          <Icon name="close" class="h-5 w-5" />
+        </button>
+
+        {image && (
+          <img
+            src={image}
+            alt={image_alt}
+            class="mb-5 h-32 w-full rounded-2xl object-cover"
+            loading="lazy"
+            decoding="async"
+          />
+        )}
+
+        {resolvedEyebrow && <p class="mb-2 font-script text-2xl text-clay-500">{resolvedEyebrow}</p>}
+        <h2 id="exit-intent-title" class="mb-2 pr-8 text-2xl font-semibold text-forest-700 md:text-[1.75rem]">
+          {resolvedTitle}
+        </h2>
+        <p id="exit-intent-description" class="mb-6 text-forest-600">
+          {resolvedDescription}
+        </p>
+
+        <form data-exit-intent-form novalidate>
+          <label for="exit-intent-email" class="sr-only">
+            E-mail cím
+          </label>
+          <input
+            id="exit-intent-email"
+            type="email"
+            name="email"
+            required
+            autocomplete="email"
+            placeholder="te@email.hu"
+            class="w-full rounded-full border-2 border-sage-200 px-5 py-3 text-forest-800 placeholder:text-forest-400 focus:border-clay-500 focus:outline-none"
+          />
+          <input type="text" name="company" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <label class="mt-3 flex items-start gap-2 text-xs text-forest-500">
+            <input type="checkbox" name="privacyConsent" required class="mt-0.5 h-4 w-4 shrink-0 accent-clay-500" />
+            <span>
+              Elfogadom, hogy az e-mail címemet hírlevél küldése céljából kezeljék. Bővebben az
+              <a href="/adatvedelem/" class="underline hover:text-clay-600">Adatvédelmi tájékoztatóban</a>.
+            </span>
+          </label>
+
+          <button
+            type="submit"
+            class="mt-4 w-full rounded-full bg-clay-600 px-6 py-3.5 font-heading font-semibold text-cream transition-colors hover:bg-clay-700"
+          >
+            {resolvedCta}
+          </button>
+        </form>
+
+        <div data-exit-intent-message role="status" aria-live="polite" />
+
+        <p class="mt-4 text-center text-xs text-forest-400">Nincs apró betűs rész — bármikor leiratkozhatsz.</p>
+      </div>
+    </div>
+  )
+}
+
+<script>
+  function schedule(cb: () => void) {
+    const w = window as unknown as { requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => void };
+    if (typeof w.requestIdleCallback === 'function') {
+      w.requestIdleCallback(cb, { timeout: 2000 });
+    } else {
+      setTimeout(cb, 200);
+    }
+  }
+
+  const root = document.getElementById('exit-intent-popup');
+  if (root) {
+    schedule(() => {
+      // A könnyű storage-ellenőrzés előbb fut le, mint a teljes controller betöltése — így
+      // egy visszatérő vagy már feliratkozott látogató böngészője meg sem kéri a nehezebb
+      // (trigger-detekció + focus trap + submit logika) chunkot.
+      import('../lib/exitIntent/storage').then(({ hasBeenShownRecently, hasConverted }) => {
+        try {
+          const config = JSON.parse(root.dataset.config ?? '{}');
+          if (hasBeenShownRecently(config.storageKey, config.cooldownDays) || hasConverted(config.storageKey)) {
+            return;
+          }
+          import('../lib/exitIntent/controller').then(({ initExitIntent }) => {
+            initExitIntent(root as HTMLElement, config);
+          });
+        } catch {
+          // Hibás/hiányzó konfiguráció — inkább nincs popup, mint egy törött egy.
+        }
+      });
+    });
+  }
+</script>

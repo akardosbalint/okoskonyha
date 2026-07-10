@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CookieConsent from '../components/CookieConsent.astro';
 import MobileStickyCta from '../components/MobileStickyCta.astro';
+import ExitIntentPopup, { type Props as ExitIntentPopupProps } from '../components/ExitIntentPopup.astro';
 import { SITE } from '../lib/site';
 
 interface Props {
@@ -14,6 +15,10 @@ interface Props {
   type?: 'website' | 'article';
   hideMobileCta?: boolean;
   hideFooterNewsletter?: boolean;
+  /** Elrejti a sitewide exit intent popupot ezen az oldalon (pl. Kapcsolat, jogi oldalak). */
+  hideExitIntent?: boolean;
+  /** Felülírja a sitewide popup alapértelmezett copy-ját/céljait egy adott oldalon. */
+  exitIntent?: Partial<ExitIntentPopupProps>;
 }
 
 const {
@@ -24,6 +29,8 @@ const {
   type = 'website',
   hideMobileCta = false,
   hideFooterNewsletter = false,
+  hideExitIntent = false,
+  exitIntent,
 } = Astro.props;
 
 const pageTitle = title === SITE.name ? title : `${title} | ${SITE.name}`;
@@ -105,5 +112,6 @@ const ogImageURL = new URL(image, SITE.url);
     <Footer hideNewsletter={hideFooterNewsletter} />
     <CookieConsent />
     {!hideMobileCta && <MobileStickyCta />}
+    <ExitIntentPopup enabled={!hideExitIntent} {...exitIntent} />
   </body>
 </html>
