@@ -73,6 +73,10 @@ const ogImageURL = new URL(image, SITE.url);
       a dataLayerbe, lásd src/components/CTAButton.astro és src/lib/analytics.ts.
     -->
     <script>
+      import { hideExpiredJoinCtas } from '../lib/joinDeadline';
+      hideExpiredJoinCtas();
+    </script>
+    <script>
       import { hasConsent, CONSENT_CHANGE_EVENT } from '../lib/cookieConsent';
 
       function loadGTM() {

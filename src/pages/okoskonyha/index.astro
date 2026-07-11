@@ -11,6 +11,7 @@ import AdvancedTopicsTeaser from '../../components/AdvancedTopicsTeaser.astro';
 import FlexibleDietCallout from '../../components/FlexibleDietCallout.astro';
 import HowItWorks from '../../components/HowItWorks.astro';
 import WeeklyRhythm from '../../components/WeeklyRhythm.astro';
+import PricingCountdown from '../../components/PricingCountdown.astro';
 import balintProfile from '../../assets/photos/balint-meal-prep-candid.jpeg';
 import { SITE } from '../../lib/site';
 import { METHOD_PILLARS, MEMBERSHIP_BENEFITS, PRICING } from '../../lib/program';
@@ -78,7 +79,7 @@ const serviceJsonLd = {
       name: PRICING.monthly.label,
       price: toAmount(PRICING.monthly.price),
       priceCurrency: 'HUF',
-      priceValidUntil: '2026-07-31',
+      priceValidUntil: PRICING.deadlineISO,
       url: SITE.checkoutUrl,
       availability: 'https://schema.org/InStock',
     },
@@ -87,7 +88,7 @@ const serviceJsonLd = {
       name: PRICING.annual.label,
       price: toAmount(PRICING.annual.price),
       priceCurrency: 'HUF',
-      priceValidUntil: '2026-07-31',
+      priceValidUntil: PRICING.deadlineISO,
       url: SITE.checkoutUrl,
       availability: 'https://schema.org/InStock',
     },
@@ -128,7 +129,7 @@ const heroImagePreload = await getImage({ src: balintProfile, width: 600, height
           <span class="rounded-full bg-clay-600 px-4 py-1.5 text-sm font-semibold text-cream">Növényi alapú főzés</span>
         </div>
         <div class="flex flex-wrap gap-4">
-          <CTAButton href={SITE.checkoutUrl} label="Csatlakozom most" size="lg" outbound trackingId="join_cta" />
+          <CTAButton href={SITE.checkoutUrl} label="Csatlakozom most" size="lg" outbound trackingId="join_cta" hideAfterDeadline />
           <CTAButton href="/kapcsolat/" label="Van egy kérdésem előtte" variant="ghost" size="lg" />
         </div>
         <p class="mt-4 text-sm text-forest-700">Bármikor lemondható. Nincs hosszú távú elköteleződés.</p>
@@ -136,6 +137,8 @@ const heroImagePreload = await getImage({ src: balintProfile, width: 600, height
       <Image src={balintProfile} alt="Kardos Bálint batch cooking előkészületek közben, kötényben" width={600} height={600} loading="eager" fetchpriority="high" class="w-full rounded-3xl object-cover aspect-square" />
     </div>
   </section>
+
+  <PricingCountdown />
 
   <!-- Flexible diet callout -->
   <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
@@ -263,7 +266,7 @@ const heroImagePreload = await getImage({ src: balintProfile, width: 600, height
     <div class="rounded-3xl bg-clay-600 px-6 py-14 md:px-16">
       <h2 class="text-3xl md:text-4xl font-semibold text-cream mb-4">Készen állsz a csatlakozásra?</h2>
       <p class="text-cream/90 mb-8">Lépj be az Okoskonyhába, és kezdj el ma egyszerűbben, olcsóbban és egészségesebben főzni.</p>
-      <CTAButton href={SITE.checkoutUrl} label="Csatlakozom az Okoskonyhához" variant="ghost" size="lg" outbound trackingId="join_cta" />
+      <CTAButton href={SITE.checkoutUrl} label="Csatlakozom az Okoskonyhához" variant="ghost" size="lg" outbound trackingId="join_cta" hideAfterDeadline />
     </div>
   </section>
 </Layout>
