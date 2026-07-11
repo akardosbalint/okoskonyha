@@ -155,6 +155,10 @@ export const MEMBERSHIP_BENEFITS = [
 // (és a tényleges ár a Circle.so-n) kézi frissítést és új deployt igényel, különben a sürgetés hiteltelenné válik.
 export const PRICING = {
   programName: 'Okoskonyha tagság',
+  // Egyetlen forrás a határidőre — a countdown (src/lib/joinDeadline.ts) és a JSON-LD
+  // priceValidUntil mezői is ebből számolnak, hogy ne kelljen több helyen kézzel szinkronban
+  // tartani a dátumot.
+  deadlineISO: '2026-07-17T23:59:00+02:00',
   introOffer: 'Indulási ár — csak 2026. július 17. 23:59-ig, utána +48%',
   lockedInNote: 'Ha most csatlakozol, a kedvezményes áron maradsz, amíg tag vagy — nálad nem lesz áremelés.',
   futureNoteIntro: 'Csak az ezután csatlakozó új tagoknak, 2026. július 18-tól:',

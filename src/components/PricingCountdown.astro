@@ -1,0 +1,71 @@
+---
+import { PRICING } from '../lib/program';
+---
+
+<section class="bg-forest-800 py-8">
+  <div id="pricing-countdown" class="mx-auto max-w-3xl px-4 text-center md:px-6">
+    <p class="mb-4 text-sm font-semibold uppercase tracking-wide text-clay-300">
+      Az indulási ár lejár — utána +{PRICING.monthly.increasePercent} az ár
+    </p>
+    <div data-countdown-timer role="timer" aria-live="polite" aria-atomic="true" class="flex items-center justify-center gap-3 md:gap-6">
+      <div class="flex flex-col items-center">
+        <span data-countdown-days class="font-heading text-3xl font-bold tabular-nums text-cream md:text-4xl">00</span>
+        <span class="mt-1 text-xs text-cream/70">nap</span>
+      </div>
+      <span class="text-2xl font-bold text-clay-400" aria-hidden="true">:</span>
+      <div class="flex flex-col items-center">
+        <span data-countdown-hours class="font-heading text-3xl font-bold tabular-nums text-cream md:text-4xl">00</span>
+        <span class="mt-1 text-xs text-cream/70">óra</span>
+      </div>
+      <span class="text-2xl font-bold text-clay-400" aria-hidden="true">:</span>
+      <div class="flex flex-col items-center">
+        <span data-countdown-minutes class="font-heading text-3xl font-bold tabular-nums text-cream md:text-4xl">00</span>
+        <span class="mt-1 text-xs text-cream/70">perc</span>
+      </div>
+      <span class="text-2xl font-bold text-clay-400" aria-hidden="true">:</span>
+      <div class="flex flex-col items-center">
+        <span data-countdown-seconds class="font-heading text-3xl font-bold tabular-nums text-cream md:text-4xl">00</span>
+        <span class="mt-1 text-xs text-cream/70">mp</span>
+      </div>
+    </div>
+    <p data-countdown-expired class="hidden font-heading text-2xl font-semibold text-clay-300">
+      Az indulási ár akciója lezárult.
+    </p>
+    <p class="mt-4 text-sm text-cream/70">
+      Aki a határidőig csatlakozik, annak a jelenlegi ár marad, amíg tag marad.
+    </p>
+  </div>
+</section>
+
+<script>
+  import { JOIN_DEADLINE_MS, hideExpiredJoinCtas } from '../lib/joinDeadline';
+
+  const root = document.getElementById('pricing-countdown');
+  const timer = root?.querySelector<HTMLElement>('[data-countdown-timer]');
+  const expiredNote = root?.querySelector<HTMLElement>('[data-countdown-expired]');
+  const daysEl = root?.querySelector<HTMLElement>('[data-countdown-days]');
+  const hoursEl = root?.querySelector<HTMLElement>('[data-countdown-hours]');
+  const minutesEl = root?.querySelector<HTMLElement>('[data-countdown-minutes]');
+  const secondsEl = root?.querySelector<HTMLElement>('[data-countdown-seconds]');
+
+  const pad = (n: number) => String(n).padStart(2, '0');
+
+  function tick() {
+    const msLeft = JOIN_DEADLINE_MS - Date.now();
+    if (msLeft <= 0) {
+      timer?.classList.add('hidden');
+      expiredNote?.classList.remove('hidden');
+      hideExpiredJoinCtas();
+      clearInterval(intervalId);
+      return;
+    }
+    const totalSeconds = Math.floor(msLeft / 1000);
+    if (daysEl) daysEl.textContent = pad(Math.floor(totalSeconds / 86400));
+    if (hoursEl) hoursEl.textContent = pad(Math.floor((totalSeconds % 86400) / 3600));
+    if (minutesEl) minutesEl.textContent = pad(Math.floor((totalSeconds % 3600) / 60));
+    if (secondsEl) secondsEl.textContent = pad(totalSeconds % 60);
+  }
+
+  tick();
+  const intervalId = setInterval(tick, 1000);
+</script>
