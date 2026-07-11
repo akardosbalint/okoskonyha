@@ -141,23 +141,23 @@ export const MEMBERSHIP_BENEFITS = [
   { icon: 'basket', title: 'Egészségtudatos közösség', text: 'Hasonlóan gondolkodó emberek társasága, akikkel megoszthatod a saját fejlődésedet — motiváció és elfogadás, ítélkezés nélkül.' },
 ] as const;
 
-// Indulási (launch) árazás — 2026. július 31-ig érvényes.
+// Indulási (launch) árazás — 2026. július 17. 23:59-ig érvényes.
 // A tagság a Circle.so-n valódi naptári hónaponta / évente újul meg (nem 4 hetes ciklusban),
 // és mindkét csomaghoz 3 napos ingyenes próbaidőszak jár (bankkártya megadásával).
-// FONTOS: 2026. augusztus 1-től az árak 8 890 Ft/hóra, illetve 88 900 Ft/évre emelkednek — ez kb. 48%-os
+// FONTOS: 2026. július 18-tól az árak 8 890 Ft/hóra, illetve 88 900 Ft/évre emelkednek — ez kb. 48%-os
 // emelés mindkét csomagnál, de KIZÁRÓLAG az ezután csatlakozó új tagokra vonatkozik. Aki a határidőig
 // csatlakozik, az a jelenlegi áron marad, amíg tag marad — ezt a lockedInNote emeli ki hangsúlyosan az
 // árazásnál, a futureNoteIntro + futurePrice/increasePercent mezők pedig csak halkabban, kiegészítésként
 // jelzik az új tagok jövőbeli árát, hogy ne tűnjön úgy, mintha a meglévő tagokra is vonatkozna.
 //
 // Az oldal statikusan (build-időben) generálódik: az introOffer/futureNoteIntro dátuma nem frissül
-// magától a naptárral. A 2026.07.31-i határidő üzemeltetői felelősség — amikor lejár, ez a blokk
+// magától a naptárral. A 2026.07.17. 23:59-i határidő üzemeltetői felelősség — amikor lejár, ez a blokk
 // (és a tényleges ár a Circle.so-n) kézi frissítést és új deployt igényel, különben a sürgetés hiteltelenné válik.
 export const PRICING = {
   programName: 'Okoskonyha tagság',
-  introOffer: 'Indulási ár — csak 2026. július 31-ig, utána +48%',
+  introOffer: 'Indulási ár — csak 2026. július 17. 23:59-ig, utána +48%',
   lockedInNote: 'Ha most csatlakozol, a kedvezményes áron maradsz, amíg tag vagy — nálad nem lesz áremelés.',
-  futureNoteIntro: 'Csak az ezután csatlakozó új tagoknak, 2026. augusztus 1-től:',
+  futureNoteIntro: 'Csak az ezután csatlakozó új tagoknak, 2026. július 18-tól:',
   monthly: {
     label: 'Havi tagság',
     price: '5 990 Ft',
