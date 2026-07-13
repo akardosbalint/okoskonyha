@@ -1,7 +1,7 @@
 ---
-title: "Az este, ahol 645 000 forintot gyűjtöttünk össze egy hétfogásos vegán gálavacsorán"
+title: "Az este, ahol 645 000 forintot gyűjtöttünk össze — és amikor rájöttem, hogy sosem leszünk készen semmire, mielőtt belevágunk"
 seoTitle: "645 000 forint egy gálavacsorából"
-excerpt: "Reggel 6-kor érkeztem, hajnali 2-kor mentem el — közben 35 vendéget etettem meg egy hétfogásos, gluténmentes vegán menüvel az Amigos a Gyerekekért Alapítvány javára. Ez volt az első alkalom, hogy nem a saját konyhámban, hanem egy profi étterem konyhájában kellett helytállnom — és ez volt az az este, ahonnan a séfkarrierem elindult."
+excerpt: "Teljesen képzetlen voltam, amikor igent mondtam egy hétfogásos gálavacsora levezénylésére egy profi konyhában. Nem volt logikus döntés. De 35 vendéget etettem meg, 645 000 forintot gyűjtöttünk a gyerekeknek, és megtanultam, hogy a fejlődés így néz ki: nem attól leszünk rá készen, hogy elkezdjük — hanem közben válunk azzá, akinek lennünk kell."
 date: 2026-07-13
 category: jotekonysag
 tags: ["jótékonyság", "adománygyűjtés", "gálavacsora", "vegán séf"]
@@ -9,25 +9,31 @@ cover: ../../assets/photos/event-jotekonysag-gala.jpg
 coverAlt: "Gálavacsora hosszú, díszesen megterített asztala vendégekkel"
 ---
 
-Reggel 6-kor álltam be a konyhába, hajnali 2-kor jöttem ki belőle. Húsz óra volt ez összesen, és a nagy részében a gyomrom valahol a torkomban lakott — nem azért, mert nem tudtam volna főzni, hanem azért, mert életemben először nem az én konyhámban kellett bizonyítanom.
+Amikor igent mondtam arra, hogy levezényeljek egy hétfogásos gálavacsorát 35 embernek egy profi étterem konyhájában, semmi értelme nem volt annak, amit tettem. Soha életemben nem dolgoztam éttermi konyhában. Nem végeztem szakácsiskolát. Amit tudtam, azt magamtól tanultam meg, a saját, három négyzetméteres konyhámban, barátoknak főzve, hobbiszinten. És most itt voltam, egy „igen” szóval elköteleztem magam valamire, amihez semmilyen képesítésem, semmilyen tapasztalatom, semmilyen bizonyítékom nem volt arra, hogy meg tudom csinálni.
 
-Az Amigos a Gyerekekért Alapítványnak gyűjtöttünk, és a végén **645 000 forint** gyűlt össze egy hétfogásos, gluténmentes vegán gálamenüből, 35 vendégnek. De ha valaki megkérdezné, mi volt ennek az estének a valódi tétje, nem a szám lenne a válaszom. Ez volt az első saját, nagykonyhai eseményem — és az volt a kérdés, hogy a komfortzónámon kívül, egy idegen, profi környezetben is meg tudom-e csinálni ugyanazt, amit otthon már megszoktam.
+Ha valaki akkor leül velem, és végigveszi velem a tényeket — nulla éttermi tapasztalat, nulla szakmai háttér, nulla nagykonyhai rutin —, minden logikus érv arra mutatott volna, hogy ezt nem szabad elvállalnom. És mégis elvállaltam. Nem azért, mert tudtam, hogy menni fog. Azért, mert valami azt súgta, hogy ha most nemet mondok, sosem fogom megtudni, hogy ment volna-e.
 
-## A saját konyhámból egy idegen, profi konyhába
+Ez a cikk erről az estéről szól — de valójában nem is a vacsoráról. Arról szól, hogy mit jelent belevágni valamibe, amire objektíven nem vagy felkészülve, és arról, hogy szerintem pontosan ez az, amilyen a fejlődés valójában kinéz.
 
-Addig a pontig a főzésem a saját lakásom saját konyhájában zajlott. Ismertem minden edényt, minden fiókot, minden égőt — tudtam, melyik serpenyő forrósodik gyorsabban, melyik kés hol van, mennyi idő alatt fő fel a víz azon a tűzhelyen. Ez a fajta ismerősség egy láthatatlan biztonsági háló volt minden vacsora alatt: bármi történt, tudtam, hogyan kell reagálni, mert már ezerszer végigcsináltam ugyanabban a térben.
+## Az Amigos a Gyerekekért Alapítványnak gyűjtöttünk
 
-Ez az este más volt. Egy komoly étterem komoly, nagykonyhai felszerelése várt rám — ipari tűzhelyek, idegen edények, egy tér, amit korábban sosem használtam, és amiben minden centiméter azt üzente, hogy itt most nem hobbiszinten kell teljesíteni. Nem volt idő megismerkedni vele: be kellett állni, és attól a pillanattól kezdve profi módon kellett helytállni, mintha évek óta ott dolgoznék.
+Az este végén **645 000 forint** gyűlt össze az Amigos a Gyerekekért Alapítvány javára, egy hétfogásos, teljesen gluténmentes, 100%-ban növényi alapú gálamenüből. Ez a szám önmagában is örömteli — de nekem személyesen az este nem a végösszegről szólt, hanem arról a húsz óráról, ami odáig vezetett, és arról, ahogyan egy teljesen képzetlen emberből az este végére valaki más lett.
 
-Ott állt bennem a kérdés egész nap: elég vagyok-e ehhez? Vagy ez az a pont, ahol kiderül, hogy amit otthon csináltam, az csak addig működött, amíg kényelmes és ismerős volt minden körülöttem?
+## „Ki vagyok én, hogy ezt csináljam?”
+
+A hetekben, amíg az esemény közeledett, ez a kérdés folyamatosan ott motoszkált bennem. Nem volt bennem semmi olyan bizonyosság, amit egy hozzáértő ember érezne egy ilyen felkérés előtt. Nem tudtam, hogyan kell egy ipari tűzhelyen időzíteni hét fogást harmincöt főre. Nem tudtam, milyen az, amikor nem a saját, ismerős konyhádban dolgozol, hanem egy idegen térben, ahol minden edény, minden fiók, minden égő ismeretlen. Nem tudtam, hogy fogok-e bírni fizikailag egy ilyen menetet.
+
+Amit tudtam, az annyi volt: szeretek főzni, hiszek az ügyben, amiért csináljuk, és van bennem elég makacsság ahhoz, hogy ne hagyjam cserben azokat, akik bíznak bennem. Ez nem tűnik soknak papíron. De ez volt az egyetlen, amim volt — és utólag azt gondolom, néha pontosan ennyi elég ahhoz, hogy valaki elinduljon.
+
+Ha te is ismered ezt az érzést — hogy szeretnél belevágni valamibe, de közben ott motoszkál benned, hogy „de hát nekem ehhez semmi jogom, semmi hátterem nincs” —, ez a cikk neked szól. Mert azt hiszem, ez az érzés sokkal gyakoribb, mint gondolnánk, és szinte soha nem jelenti azt, hogy ne vágj bele.
 
 ## A helyszín és akik lehetővé tették
 
-A vacsorának a [Table Budapest](https://tablebudapest.com/) adott otthont — teljesen pro bono. Egy komoly étterem komoly konyhája egy este erejéig a miénk lett, ingyen, mert hittek abban, amit csinálunk. Pontosan ez a konyha volt az, ami miatt a fenti kérdés nem elméleti maradt, hanem nagyon is valós tétje lett az estének.
+A vacsorának a [Table Budapest](https://tablebudapest.com/) adott otthont — teljesen pro bono. Egy komoly étterem komoly konyhája egy este erejéig a miénk lett, ingyen, mert hittek abban, amit csinálunk. Ez a konyha volt az, ahol a fenti bizonytalanságom nem elméleti maradt, hanem nagyon is valós tétje lett az estének: ipari tűzhelyek, idegen edények, egy tér, amit korábban sosem használtam.
 
-Az alapanyagköltséget Hullai Oktávián, a [Positive Rate International Kft.](https://positiverate.hu/) ügyvezető-tulajdonosa állta. Nélküle ez egyszerűen nem történt volna meg — ő volt az, aki azt mondta: „csináljuk meg rendesen”, és mögé is állt anyagilag.
+Az alapanyagköltséget Hullai Oktávián, a [Positive Rate International Kft.](https://positiverate.hu/) ügyvezető-tulajdonosa állta. Nélküle ez egyszerűen nem történt volna meg — ő volt az, aki azt mondta: „csináljuk meg rendesen”, és mögé is állt anyagilag, annak ellenére, hogy engem, a teljesen tapasztalatlan „séfet” bízta meg vele.
 
-Ez a kombináció — pro bono helyszín, valaki, aki fedezi az alapanyagot, és egy alapítvány, ami mögé oda lehet állni — pont az a fajta összefogás, amiért ezeket az estéket szeretem szervezni. Senki nem keresett rajta semmit, mindenki azért volt ott, hogy több jusson a gyerekeknek.
+Ez a bizalom — hogy valaki úgy áll mögéd anyagilag és emberileg is, hogy tudja, mennyire képzetlen vagy még —, az egyik legnagyobb ajándék, amit valaha kaptam. Nem azért, mert megkönnyítette a dolgomat. Hanem mert megmutatta, hogy néha másoknak könnyebb meglátni bennünk a lehetőséget, mint nekünk magunknak.
 
 ## A menü
 
@@ -39,26 +45,32 @@ Hét fogás, végig gluténmentesen és 100%-ban növényi alapon:
 
 **Desszert és desszert-ital:** A nagyi konyakmeggyes bonbonjai, házi Bambi a '60-as évekből
 
-Néhány fogás neve nem véletlen: Gaz, Kristóf és a nagyi receptjei mögött igazi emberek és igazi történetek állnak — ezt a menüt nem lehetett volna összerakni azok nélkül, akik korábban megtanítottak főzni. Volt valami megnyugtató abban, hogy egy teljesen ismeretlen konyhában legalább az ízek ismerősek voltak: mintha egy darabot magammal vittem volna abból a biztonságból, amit otthon hagytam.
+Néhány fogás neve nem véletlen: Gaz, Kristóf és a nagyi receptjei mögött igazi emberek és igazi történetek állnak — olyan emberek, akik korábban megtanítottak főzni, akár tudtukon kívül is. Ebben a menüben minden fogás egy-egy darab volt abból a tudásból, amit útközben szedtem össze, nem egy iskolapadban, hanem emberektől, konyhákban, séfektől és nagymamáktól.
 
-## A konyha reggel 6-tól hajnal 2-ig
+## Reggel 6-tól hajnal 2-ig — és a pillanat, amikor kiderült, hogy nem tudok mindent
 
-Volt segítségem a konyhában, de a 35 adagos, hétfogásos szervizt végig kellett vezényelni — időzítve, tálalva, kontrollálva, hogy semmi ne csússzon meg, méghozzá egy térben, amit néhány órával korábban láttam először közelről. Reggel 6-kor kezdtünk, és hajnali 2-kor léptem ki utoljára az ajtón. Húsz óra állás, döntés döntés hátán, és egy percnyi lazítás nélkül — mert tudtam, hogy ha most elrontok valamit, azt nem lehet ráfogni a megszokott konyhám hiányára. Itt nekem magamnak kellett elég profinak lennem, függetlenül a körülményektől.
+Reggel 6-kor álltam be a konyhába, hajnali 2-kor jöttem ki belőle. Húsz óra volt ez összesen, és a nagy részében a gyomrom valahol a torkomban lakott. Nem volt segítségem abban az értelemben, hogy valaki levegye rólam a felelősséget — a 35 adagos, hétfogásos szervizt nekem kellett végig vezényelnem, időzítve, tálalva, kontrollálva, hogy semmi ne csússzon meg, méghozzá egy térben, amit néhány órával korábban láttam először közelről.
 
-A szerviz maga gördülékenyen ment, minden simán, időben, jókedvvel érkezett az asztalokhoz.
+A szerviz maga gördülékenyen ment, minden simán, időben, jókedvvel érkezett az asztalokhoz. De volt egy pillanat, ami mindent összefoglal abból, milyen érzés volt ez az este: a bableves már majdnem kész volt, még hígítani kellett egy kicsit — és a nagy sietségben véletlenül szénsavas ásványvizet öntöttem bele sima víz helyett.
 
-**Funfact a nap végéről:** a bableves már majdnem kész volt, még hígítani kellett egy kicsit — és a nagy sietségben véletlenül szénsavas ásványvizet öntöttem bele sima víz helyett. Egy pillanatra megállt bennem az ütő, összenéztünk a sous chefemmel, Katával, aztán akkorát nevettünk, hogy alig bírtuk abbahagyni. A levesen a végén semmit nem lehetett érezni — de az az öt másodperc, amíg ezt nem tudtuk biztosan, örökre megmarad. Furcsa módon pont ez a kis hiba oldotta fel bennem a feszültséget: rájöttem, hogy még egy idegen konyhában, egy ekkora tét mellett is történhet emberi baki, és a világ nem dől össze tőle — csak nevetünk rajta, és visszük tovább a szervizt.
+Egy pillanatra megállt bennem az ütő. Összenéztünk a sous chefemmel, Katával — és abban a pillantásban benne volt minden, amit egyikünk sem mert kimondani: „mi van, ha ez most tényleg elrontja az egészet?” Aztán megkóstoltuk, és semmi nem érződött belőle. Akkorát nevettünk, hogy alig bírtuk abbahagyni.
+
+Ez a kis hiba volt az, ami valójában feloldott bennem valamit. Rájöttem, hogy még egy idegen konyhában, egy ekkora tét mellett is történhet emberi baki — és a világ nem dől össze tőle. Nem attól vagyok jó a munkámban, hogy soha nem hibázom. Attól, hogy hibázom, és mégis tovább tudom vinni a szervizt.
 
 ## Zene is volt
 
-Az est zenei aláfestését Nádas Barbi ([@barbaranadas](https://www.instagram.com/barbaranadas/?hl=hu)) adta élő énekével — pont az a fajta hangulat kerekedett ki belőle, ami egy gálavacsorához kell: meleg, emberi, mégis ünnepi.
+Az est zenei aláfestését Nádas Barbi ([@barbaranadas](https://www.instagram.com/barbaranadas/?hl=hu)) adta élő énekével — pont az a fajta hangulat kerekedett ki belőle, ami egy gálavacsorához kell: meleg, emberi, mégis ünnepi. Emlékszem, ahogy a hangja átszűrődött a konyhaajtón, miközben épp a következő fogást szedtük ki — és arra gondoltam, hogy odakint valami gyönyörű történik, és nekem is részem van benne, annak ellenére, hogy fogalmam sem volt reggel, hogy idáig el fogok jutni.
 
-## Miért volt ez fordulópont
+## Amit ez az este megtanított a fejlődésről
 
-Ez volt az első alkalom, hogy nem a saját, kényelmes lakásom kényelmes konyhájában kellett bizonyítanom, hanem egy profi étterem konyhájában, ismeretlen körülmények között, valós tétekkel. Addig mindig ott volt a hátam mögött egy biztonsági háló: ismerős tér, ismerős eszközök, ismerős rutin. Azon az estén ez a háló eltűnt, és nekem kellett eldöntenem, hogy ez elég ok-e arra, hogy visszakozzak, vagy sem.
+Amikor visszagondolok arra a húsz órára, a legfontosabb felismerésem nem a séfszakmáról szól, hanem magáról a fejlődésről. Sokáig azt hittem, hogy előbb kell „készen lenni” valamire, és csak utána szabad belevágni — hogy legyen meg előbb a tudás, a tapasztalat, a magabiztosság, és csak azután jöhet a lehetőség. Ez az este bebizonyította, hogy ez pontosan fordítva működik.
 
-Nem tettem. Reggel 6-kor beálltam, és hajnali 2-kor kisétáltam onnan úgy, hogy 35 embert megetettem hét fogáson keresztül, gluténmentesen, teljesen növényi alapon, egy olyan konyhában, amit korábban sosem használtam. Ez volt az első alkalom, hogy nem éreztem magam furcsán, amikor valaki azt mondta rám: „vegán séf.” Addig mindig volt bennem egy kis bizonytalanság — mintha nem lett volna jogom ehhez a szóhoz, mert csak otthon, saját terepen bizonyítottam eddig. Azon az estén, miután egy idegen, profi konyhában is helytálltam, ez az érzés egyszerűen eltűnt.
+Nem azért lettem képes levezényelni azt a szervizt, mert előre felkészültem rá — nem lehetett felkészülni rá, mert semmi hasonlót nem csináltam még. Azért lettem képes rá, mert benne voltam, és a helyzet, a felelősség, a 35 vendég és a Kata melletti pillantás minden egyes perce alakított azzá, akinek abban a pillanatban lennem kellett. Reggel 6-kor még nem voltam az az ember, aki hajnali 2-kor kilépett azon az ajtón. A kettő között nem a tudásom nőtt meg egyik napról a másikra — én magam változtam meg, miközben csináltam.
 
-Rengeteg önbizalmat adott ez az este, és utólag visszanézve ez volt a pont, ahonnan a séfkarrierem valójában elindult. Ha lett volna bennem annyi félelem, hogy nemet mondjak erre a felkérésre — mert hát ki vagyok én, hogy egy éttermi konyhában vezényeljek egy gálát, amikor eddig csak a saját lakásomban főztem —, sosem jutok el idáig. Pontosan ez az este bizonyította be, amit azóta is vallok: **action beats anxiety.** Nem a magabiztosság hozza el a lehetőséget — a lehetőség vállalása hozza el a magabiztosságot. Ki kellett lépnem a kényelmemből ahhoz, hogy megtudjam, mire vagyok képes rajta kívül — és onnantól kezdve már tudtam, hogy bármelyik konyhában megállom a helyem, nem csak a sajátomban.
+Azt hiszem, ez az, amit a legtöbben félreértünk a fejlődéssel kapcsolatban. Várunk arra a pillanatra, amikor majd „elég jók” leszünk ahhoz, hogy elkezdjünk valamit — egy új munkát, egy saját vállalkozást, egy nehéz beszélgetést, egy álmot, amit eddig csak dédelgettünk. De ez a pillanat sosem jön el magától. Nem azért, mert lusták vagyunk, vagy mert nem elég elszántak — hanem mert a kompetencia nem előfeltétele a belevágásnak, hanem következménye. Nem attól leszünk készen valamire, hogy elkezdjük — hanem közben válunk azzá, akinek lennünk kell hozzá.
+
+Ha lett volna bennem annyi félelem, hogy nemet mondjak erre a felkérésre — mert hát ki vagyok én, teljesen képzetlenül, hogy egy éttermi konyhában vezényeljek egy gálát —, sosem jutok el idáig. Nem azért mondtam igent, mert tudtam, hogy sikerülni fog. Azért mondtam igent, mert megengedtem magamnak, hogy közben tanuljak bele. Ez volt az az este, amitől kezdve tényleg elhittem: **action beats anxiety.** Nem a magabiztosság hozza el a lehetőséget — a lehetőség vállalása hozza el a magabiztosságot.
+
+Ha most éppen te is egy olyan döntés előtt állsz, amire „objektíven” nem vagy felkészülve — remélem, ez a történet ad egy kis bátorítást ahhoz, hogy mégis belevágj. Lehet, hogy te sem leszel készen rá. De lehet, hogy pont ettől fogsz azzá válni.
 
 Ha szeretnél te is egy ilyen esten részt venni — akár vendégként, akár partnerszervezetként, akár helyszínt vagy támogatást ajánlva —, [nézd meg, kikkel dolgoztam eddig együtt](/jotekonysag/), vagy [vedd fel velem a kapcsolatot](/kapcsolat/).
