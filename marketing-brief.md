@@ -71,14 +71,14 @@ növényi fehérjék házilag (tofu, tempeh, szeitán), alaplevek, ázsiai konyh
 konyha, cukormentes desszertek, grillezés/füstölés növényi alapanyagokkal, szószok és
 öntetek enciklopédiája.
 
-### Árazás (indulási ár, 2026. július 31-ig érvényes)
+### Árazás (indulási ár, 2026. július 26. 23:59-ig érvényes)
 
-| Csomag | Ár | Napi egyenérték | Ár új tagoknak 2026. aug. 1-től |
+| Csomag | Ár | Napi egyenérték | Ár új tagoknak 2026. július 27-től |
 |---|---|---|---|
 | Havi tagság | 5 990 Ft / hó | kb. 200 Ft / nap | 8 890 Ft / hó (+48%) |
 | Éves tagság | 59 990 Ft / év | kb. 164 Ft / nap | 88 900 Ft / év (+48%) |
 
-Aki 2026. július 31-ig csatlakozik, annak az indulási ár megmarad, amíg tag marad — a fenti
+Aki 2026. július 26. 23:59-ig csatlakozik, annak az indulási ár megmarad, amíg tag marad — a fenti
 emelés csak az ezután csatlakozó új tagokra vonatkozik.
 
 **Próbaidőszak:** mindkét csomaghoz 3 napos ingyenes próbaidőszak jár (bankkártya

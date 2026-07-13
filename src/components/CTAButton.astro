@@ -10,6 +10,10 @@ interface Props {
   // funnel-lépés ("csatlakozás") a "Csatlakozom" / "Csatlakozom most" / "Csatlakozom az
   // Okoskonyhához" változatok miatt külön eseménycímke alatt futna GTM/GA4-ben.
   trackingId?: string;
+  // Az indulási árakció határideje után a src/lib/joinDeadline.ts elrejti ezt a gombot
+  // (lásd data-hide-after-deadline lent) — csak a checkoutra mutató "csatlakozom" CTA-kon
+  // állítsd true-ra, ne az összes gombon.
+  hideAfterDeadline?: boolean;
 }
 
 const {
@@ -20,6 +24,7 @@ const {
   outbound = false,
   class: className = '',
   trackingId,
+  hideAfterDeadline = false,
 } = Astro.props;
 
 const base =
@@ -46,6 +51,7 @@ const isExternal = href.startsWith('http');
   rel={isExternal ? 'noopener noreferrer' : undefined}
   data-outbound={outbound ? 'okoskonyha' : undefined}
   data-cta-label={trackingId ?? label}
+  data-hide-after-deadline={hideAfterDeadline ? 'true' : undefined}
 >
   {label}
   <span aria-hidden="true">→</span>
