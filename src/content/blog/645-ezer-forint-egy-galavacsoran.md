@@ -17,7 +17,7 @@ Ez a cikk erről az estéről szól — de valójában nem is a vacsoráról. Ar
 
 ## Az Amigos a Gyerekekért Alapítványnak gyűjtöttünk
 
-Az este végén **645 000 forint** gyűlt össze az Amigos a Gyerekekért Alapítvány javára, egy hétfogásos, teljesen gluténmentes, 100%-ban növényi alapú gálamenüből. Ez a szám önmagában is örömteli — de nekem személyesen az este nem a végösszegről szólt, hanem arról a húsz óráról, ami odáig vezetett, és arról, ahogyan egy teljesen képzetlen emberből az este végére valaki más lett.
+Az este végén **645 000 forint** gyűlt össze az [Amigos a Gyerekekért Alapítvány](https://amigos.hu/) javára, egy hétfogásos, teljesen gluténmentes, 100%-ban növényi alapú gálamenüből. Ez a szám önmagában is örömteli — de nekem személyesen az este nem a végösszegről szólt, hanem arról a húsz óráról, ami odáig vezetett, és arról, ahogyan egy teljesen képzetlen emberből az este végére valaki más lett.
 
 ## „Ki vagyok én, hogy ezt csináljam?”
 
@@ -69,7 +69,7 @@ Nem azért lettem képes levezényelni azt a szervizt, mert előre felkészülte
 
 Azt hiszem, ez az, amit a legtöbben félreértünk a fejlődéssel kapcsolatban. Várunk arra a pillanatra, amikor majd „elég jók” leszünk ahhoz, hogy elkezdjünk valamit — egy új munkát, egy saját vállalkozást, egy nehéz beszélgetést, egy álmot, amit eddig csak dédelgettünk. De ez a pillanat sosem jön el magától. Nem azért, mert lusták vagyunk, vagy mert nem elég elszántak — hanem mert a kompetencia nem előfeltétele a belevágásnak, hanem következménye. Nem attól leszünk készen valamire, hogy elkezdjük — hanem közben válunk azzá, akinek lennünk kell hozzá.
 
-Ha lett volna bennem annyi félelem, hogy nemet mondjak erre a felkérésre — mert hát ki vagyok én, teljesen képzetlenül, hogy egy éttermi konyhában vezényeljek egy gálát —, sosem jutok el idáig. Nem azért mondtam igent, mert tudtam, hogy sikerülni fog. Azért mondtam igent, mert megengedtem magamnak, hogy közben tanuljak bele. Ez volt az az este, amitől kezdve tényleg elhittem: **action beats anxiety.** Nem a magabiztosság hozza el a lehetőséget — a lehetőség vállalása hozza el a magabiztosságot.
+Ha lett volna bennem annyi félelem, hogy nemet mondjak erre a felkérésre — mert hát ki vagyok én, teljesen képzetlenül, hogy egy éttermi konyhában vezényeljek egy gálát —, sosem jutok el idáig. Nem azért mondtam igent, mert tudtam, hogy sikerülni fog. Azért mondtam igent, mert megengedtem magamnak, hogy közben tanuljak bele. Ez volt az az este, amitől kezdve tényleg elhittem: **a cselekvés legyőzi a szorongást.** Nem a magabiztosság hozza el a lehetőséget — a lehetőség vállalása hozza el a magabiztosságot.
 
 Ha most éppen te is egy olyan döntés előtt állsz, amire „objektíven” nem vagy felkészülve — remélem, ez a történet ad egy kis bátorítást ahhoz, hogy mégis belevágj. Lehet, hogy te sem leszel készen rá. De lehet, hogy pont ettől fogsz azzá válni.
 
