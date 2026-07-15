@@ -7,12 +7,6 @@ import { SITE } from '../../lib/site';
 
 const services = [
   {
-    href: '/szolgaltatasok/privat-sefkedes/',
-    title: 'Prémium privát chef szolgáltatás',
-    description: 'Személyre szabott vacsorák otthonodban vagy céges rendezvényen — a menütervezéstől a felszolgálásig.',
-    icon: 'M4 3h16M4 3v10a4 4 0 0 0 4 4M20 3v10a4 4 0 0 1-4 4m-4 0v7m-4 0h8',
-  },
-  {
     href: '/okoskonyha/',
     title: 'Okoskonyha',
     description: 'Zárt online közösség recepteknek, élő beszélgetéseknek és havi kihívásoknak, a Circle.so-n.',
@@ -29,8 +23,8 @@ const services = [
 ---
 
 <Layout
-  title="Szolgáltatások — prémium privát chef, közösség, jótékonyság"
-  description="Prémium privát chef szolgáltatás, az Okoskonyha közösség és jótékonysági vacsorák Kardos Bálinttal."
+  title="Szolgáltatások — közösség, jótékonyság"
+  description="Az Okoskonyha közösség és jótékonysági vacsorák Kardos Bálinttal."
   image={servicesHero.src}
 >
   <section class="bg-sage-100 py-14 md:py-20">
@@ -38,11 +32,11 @@ const services = [
       <div>
         <p class="font-script text-3xl text-clay-500 mb-2">Amit kínálok</p>
         <h1 class="text-4xl md:text-5xl font-semibold text-forest-700 mb-6">
-          Három út, <span class="font-script text-clay-500">egy cél</span>
+          Két út, <span class="font-script text-clay-500">egy cél</span>
         </h1>
         <p class="text-lg text-forest-600">
-          Legyen szó egy privát vacsoráról, egy online közösségről vagy egy jótékonysági estéről — mindegyik
-          arról szól, hogy az étel ürügy legyen valódi emberi kapcsolódásra.
+          Legyen szó egy online közösségről vagy egy jótékonysági estéről — mindegyik arról szól, hogy az
+          étel ürügy legyen valódi emberi kapcsolódásra.
         </p>
       </div>
       <Image src={servicesHero} alt="Tálalt tacók egy rendezvényen" width={600} height={600} loading="eager" fetchpriority="high" class="w-full rounded-3xl object-cover aspect-square" />
@@ -50,7 +44,7 @@ const services = [
   </section>
 
   <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
-    <div class="grid gap-6 md:grid-cols-3">
+    <div class="grid gap-6 md:grid-cols-2">
       {
         services.map((service) => (
           <a
