@@ -7,11 +7,9 @@ import SectionHeading from '../components/SectionHeading.astro';
 import BlogCard from '../components/BlogCard.astro';
 import TestimonialCarousel from '../components/TestimonialCarousel.astro';
 import Icon from '../components/Icon.astro';
-import MembershipPricing from '../components/MembershipPricing.astro';
-import AdvancedTopicsTeaser from '../components/AdvancedTopicsTeaser.astro';
 import heroImage from '../assets/photos/balint-profile.webp';
 import { SITE } from '../lib/site';
-import { BIO_STATS, METHOD_PILLARS } from '../lib/program';
+import { METHOD_PILLARS } from '../lib/program';
 
 const allPosts = await getCollection('blog');
 const latestPosts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 3);
@@ -83,9 +81,8 @@ const organizationJsonLd = {
     <div class="mx-auto max-w-6xl px-4 md:px-6">
       <SectionHeading eyebrow="A módszer" title="Amit a közösségben" accent="megtanulsz" />
       <p class="mx-auto -mt-6 mb-10 max-w-2xl text-center text-forest-600">
-        Ez nem csak időt spórol — <strong class="font-semibold text-forest-800">pénzügyileg is jobban
-        jársz, mint most</strong>. Amint a heti bevásárlás és a batch cooking rutinná válik, kevesebb
-        megy el kapkodva vásárolt alapanyagra és kiszállításra — ugyanannyiért jobban is eszel.
+        Nem csak időt spórolsz — <strong class="font-semibold text-forest-800">pénzügyileg is jobban
+        jársz, mint most</strong>.
       </p>
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {
@@ -100,7 +97,6 @@ const organizationJsonLd = {
           ))
         }
       </div>
-      <AdvancedTopicsTeaser />
       <div class="mt-10 text-center">
         <CTAButton href="/okoskonyha/" label="Ismerd meg a teljes rendszert" variant="ghost" />
       </div>
@@ -114,30 +110,6 @@ const organizationJsonLd = {
     accent="mondanak"
     note="Jótékonysági vacsoráim és privát főzéseim visszajelzései — ízelítő a stílusomból, amire az Okoskonyha módszertana is épül."
   />
-
-  <!-- Pricing teaser -->
-  <section class="mx-auto max-w-4xl px-4 py-16 md:px-6">
-    <SectionHeading eyebrow="Árazás" title="Válaszd ki, mi illik" accent="hozzád" />
-    <MembershipPricing />
-  </section>
-
-  <!-- Bio / credibility -->
-  <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
-    <SectionHeading eyebrow="Ki vagyok én" title="Miért hallgass" accent="rám?" />
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
-      {
-        BIO_STATS.map((stat) => (
-          <div class="rounded-2xl bg-sage-50 p-6 text-center">
-            <p class="font-heading text-3xl font-semibold text-clay-500">{stat.value}</p>
-            <p class="mt-1 text-sm text-forest-600">{stat.label}</p>
-          </div>
-        ))
-      }
-    </div>
-    <div class="mt-8 text-center">
-      <CTAButton href="/rolam/" label="Ismerd meg a teljes történetet" variant="ghost" />
-    </div>
-  </section>
 
   <!-- Legfrissebb blogposztok -->
   {
@@ -159,9 +131,9 @@ const organizationJsonLd = {
   <!-- Final CTA -->
   <section class="mx-auto max-w-4xl px-4 py-16 md:py-20 text-center md:px-6">
     <div class="rounded-3xl bg-clay-600 px-6 py-14 md:px-16">
-      <h2 class="text-3xl md:text-4xl font-semibold text-cream mb-4">Készen állsz a csatlakozásra?</h2>
-      <p class="text-cream/90 mb-8">Lépj be az Okoskonyhába, és kezdj el ma egyszerűbben, olcsóbban és egészségesebben főzni.</p>
-      <CTAButton href={SITE.checkoutUrl} label="Csatlakozom az Okoskonyhához" variant="ghost" size="lg" outbound trackingId="join_cta" hideAfterDeadline />
+      <h2 class="text-3xl md:text-4xl font-semibold text-cream mb-4">Érdekel az Okoskonyha?</h2>
+      <p class="text-cream/90 mb-8">Nézd meg részletesen, mit kapsz a közösségben, és hogyan segít egyszerűbben, olcsóbban és egészségesebben főzni.</p>
+      <CTAButton href="/okoskonyha/" label="Ismerd meg az Okoskonyhát" variant="ghost" size="lg" />
     </div>
   </section>
 </Layout>
