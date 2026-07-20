@@ -1,7 +1,7 @@
 ---
 title: "Hogyan lesz egy vacsorasorozatból közel 1,5 millió forint jótékony célra"
 seoTitle: "Közel 1,5 millió forint egy vacsorasorozatból"
-excerpt: "A jótékonysági vacsoráim jellemzően nem gálaestek — nincs frakk, nincs árverési kalapács. Egy őszi-téli-tavaszi szezon alatt mégis közel 1,5 millió forintot gyűjtöttünk össze. Íme, hogyan alakult ki hónapról hónapra."
+excerpt: "A jótékonysági vacsoráim nem gálaestek — nincs frakk, nincs árverési kalapács. Mégis közel 1,5 millió forintot gyűjtöttünk össze egy szezon alatt."
 date: 2026-06-01
 category: jotekonysag
 tags: ["jótékonyság", "adománygyűjtés", "közösségépítés"]
