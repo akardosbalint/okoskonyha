@@ -5,8 +5,8 @@ excerpt: "Az első batch cooking heted tervezed? Lépésről lépésre megmutato
 date: 2026-07-20
 category: fozesi-tippek
 tags: ["batch cooking", "kezdőknek", "meal prep", "heti tervezés"]
-cover: ../../assets/photos/balint-meal-prep-candid.jpeg
-coverAlt: "Kardos Bálint botmixerrel szószt készít a vasárnapi batch cooking főzés közben"
+cover: ../../assets/photos/batch-cooking-lepesrol-lepesre.png
+coverAlt: "Okoskonyha borítókép a batch cooking első hetes útmutatóhoz: üvegdobozokban csicseriborsós és lencseragu, friss saláta, tahinis és zöld szósz"
 ---
 
 Amikor azt mondom valakinek, hogy vasárnap két órát főzök, és utána egy egész hétig nem gondolkodom azon, mi legyen vacsira, a válasz szinte mindig ugyanaz: „ez nekem sosem fog összejönni, én már a heti bevásárlásnál elakadok.” Megértem — [a batch cookingról szóló bevezető cikkemben](/blog/mi-az-a-batch-cooking/) elmondtam, mi ez és miért működik, de az elmélet és az első valódi vasárnap között van egy szakadék, amit tényleg nehéz egyedül átugrani. Ez a cikk azért van, hogy ne kelljen: végigviszlek az első heteden, óráról órára.
