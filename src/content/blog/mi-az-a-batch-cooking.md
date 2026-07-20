@@ -88,3 +88,5 @@ Mivel a batch cooking lényege, hogy napokig tárolt ételt eszel, itt nagyobb a
 ## Ahol elakadnak az emberek
 
 A batch cooking nem arról szól, hogy egy egész hétre ugyanazt az egy ételt eszed. A trükk az alapkomponensek okos kombinálásában van — ezt tanítom meg lépésről lépésre az [Okoskonyhában](/okoskonyha/), a Batch Cooking Alapkurzus keretében, ahol heti max. 2 főzéssel oldjuk meg a heti főétkezéseidet, együtt a közösséggel.
+
+Ha szeretnéd pontosan látni, hogyan néz ki mindez órára lebontva egy valódi első héten, [ebben a cikkben](/blog/batch-cooking-elso-heted/) végigviszlek rajta lépésről lépésre.
