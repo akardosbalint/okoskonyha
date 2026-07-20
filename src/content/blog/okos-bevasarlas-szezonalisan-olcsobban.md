@@ -1,7 +1,7 @@
 ---
 title: "Okos bevásárlás: hogyan vásárolj szezonálisan és olcsóbban minőségi alapanyagot"
 seoTitle: "Okos bevásárlás: szezonálisan, olcsóbban"
-excerpt: "A minőségi, egészséges alapanyag nem egyenlő a drágával — csak máshogy kell vásárolni. Négy konkrét forrás, amit érdemes kipróbálnod, és egy egyszerű beszerzési terv."
+excerpt: "A minőségi, egészséges alapanyag nem egyenlő a drágával — csak máshogy kell vásárolni. Négy konkrét forrás és egy egyszerű beszerzési terv."
 date: 2025-12-29
 category: fozesi-tippek
 tags: ["okos bevásárlás", "szezonalitás", "spórolás"]

@@ -40,10 +40,9 @@ export const COMPANY = {
 export const NAV = [
   { href: '/', label: 'Főoldal' },
   { href: '/okoskonyha/', label: 'Okoskonyha' },
-  { href: '/blog/', label: 'Blog' },
-  { href: '/szolgaltatasok/', label: 'Szolgáltatások' },
-  { href: '/rolam/', label: 'Rólam' },
   { href: '/jotekonysag/', label: 'Jótékonyság' },
+  { href: '/rolam/', label: 'Rólam' },
+  { href: '/blog/', label: 'Blog' },
   { href: '/kapcsolat/', label: 'Kapcsolat' },
 ];
 

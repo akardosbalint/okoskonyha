@@ -1,7 +1,7 @@
 ---
 title: "Az este, ahol 645 000 forintot gyűjtöttünk össze — és amikor rájöttem, hogy sosem leszünk készen semmire, mielőtt belevágunk"
 seoTitle: "645 000 forint egy gálavacsorából"
-excerpt: "Teljesen képzetlen voltam, amikor igent mondtam egy hétfogásos gálavacsora levezénylésére egy profi konyhában. Nem volt logikus döntés. De 35 vendéget etettem meg, 645 000 forintot gyűjtöttünk a gyerekeknek, és megtanultam, hogy a fejlődés így néz ki: nem attól leszünk rá készen, hogy elkezdjük — hanem közben válunk azzá, akinek lennünk kell."
+excerpt: "Teljesen képzetlen voltam, amikor igent mondtam egy hétfogásos gálavacsora levezénylésére — mégis 645 000 forintot gyűjtöttünk össze a gyerekeknek."
 date: 2026-07-13
 category: jotekonysag
 tags: ["jótékonyság", "adománygyűjtés", "gálavacsora", "vegán séf"]

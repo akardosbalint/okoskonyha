@@ -28,4 +28,4 @@ Azon az estén, amiről a cím szól, egy könyvelő és egy performansz-táncos
 
 Mert az étel ürügy. Ha azt mondanám valakinek: „gyere el, ülj le tizenegy idegennel, és beszélgessünk az életről” — lelépne. De ha azt mondom: „gyere vacsorára, vegán, három fogás, jó bor” — bejön az ajtón. Onnantól kezdve az én dolgom, hogy a tányér mögött megtörténjen a többi.
 
-Ha te is szeretnél ott ülni egy ilyen asztalnál — akár mert kíváncsi vagy, akár mert elegen vagy már abból, hogy csak a kollégáiddal beszélgetsz —, [nézd meg, mikor van a következő jótékonysági vacsora](/szolgaltatasok/jotekonysagi-vacsorak/), vagy csatlakozz az [Okoskonyhához](/okoskonyha/), ahol online is összejövünk hasonló beszélgetésekre.
+Ha te is szeretnél ott ülni egy ilyen asztalnál — akár mert kíváncsi vagy, akár mert elegen vagy már abból, hogy csak a kollégáiddal beszélgetsz —, [nézd meg, mikor van a következő jótékonysági vacsora](/jotekonysag/), vagy csatlakozz az [Okoskonyhához](/okoskonyha/), ahol online is összejövünk hasonló beszélgetésekre.
