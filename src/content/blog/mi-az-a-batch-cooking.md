@@ -1,7 +1,7 @@
 ---
 title: "Mi az a batch cooking, és miért fogja megmenteni a hétköznapjaidat?"
 seoTitle: "Mi az a batch cooking?"
-excerpt: "Heti 2 főzéssel egész heti jó kaja — káoszmentesen. A teljes útmutató: mi az a batch cooking, az Okoskonyha alap-képlete, és egy konkrét, végigkövethető példahét."
+excerpt: "Heti 2 főzéssel egész heti jó kaja — káoszmentesen. A teljes útmutató: mi az a batch cooking, és hogyan néz ki egy konkrét, végigkövethető példahét."
 date: 2026-06-25
 category: fozesi-tippek
 tags: ["batch cooking", "meal prep", "heti menütervezés", "növényi étrend"]

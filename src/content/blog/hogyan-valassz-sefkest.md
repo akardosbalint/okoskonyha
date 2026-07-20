@@ -1,7 +1,7 @@
 ---
 title: "Hogyan válassz séfkést — és miért nem kell rá vagyont költened"
 seoTitle: "Hogyan válassz séfkést?"
-excerpt: "Egy jó séfkés évekig veled marad, de nem luxusmárkán múlik. Mire figyelj vásárláskor, mi a különbség élezés és fenés között, és hogyan vigyázz a késedre, hogy tényleg kitartson."
+excerpt: "Egy jó séfkés évekig kitart, de nem luxusmárkán múlik. Mire figyelj vásárláskor, és mi a különbség élezés és fenés között?"
 date: 2026-07-07
 category: fozesi-tippek
 tags: ["konyhai eszközök", "főzési tippek", "alapok"]
