@@ -9,9 +9,9 @@ cover: ../../assets/photos/batch-cooking-lepesrol-lepesre.png
 coverAlt: "Okoskonyha borítókép a batch cooking első hetes útmutatóhoz: üvegdobozokban csicseriborsós és lencseragu, friss saláta, tahinis és zöld szósz"
 ---
 
-Amikor azt mondom valakinek, hogy vasárnap két órát főzök, és utána egy egész hétig nem gondolkodom azon, mi legyen vacsira, a válasz szinte mindig ugyanaz: „ez nekem sosem fog összejönni, én már a heti bevásárlásnál elakadok.” Megértem — [a batch cookingról szóló bevezető cikkemben](/blog/mi-az-a-batch-cooking/) elmondtam, mi ez és miért működik, de az elmélet és az első valódi vasárnap között van egy szakadék, amit tényleg nehéz egyedül átugrani. Ez a cikk azért van, hogy ne kelljen: végigviszlek az első heteden, óráról órára.
+Amikor azt mondom valakinek, hogy vasárnap két órát főzök, és utána egy egész hétig nem gondolkodom azon, mi legyen ebédre, a válasz szinte mindig ugyanaz: „ez nekem sosem fog összejönni, én már a heti bevásárlásnál elakadok.” Megértem — [a batch cookingról szóló bevezető cikkemben](/blog/mi-az-a-batch-cooking/) elmondtam, mi ez és miért működik, de az elmélet és az első valódi vasárnap között van egy szakadék, amit tényleg nehéz egyedül átugrani. Ez a cikk azért van, hogy ne kelljen: végigviszlek az első heteden, óráról órára.
 
-## Miért fél mindenki az első batch cooking hétől (és miért felesleges)
+## Miért fél mindenki az első batch cooking héttől (és miért felesleges)
 
 A legtöbben, akikkel dolgozom, nem a módszertől félnek, hanem attól, hogy elrontják. Mi van, ha rosszul mérik be a mennyiséget? Mi van, ha csütörtökre már senki nem akarja megenni, amit főztek? Mi van, ha az egész vasárnapjuk ráment, és a hűtő mégis üres marad szerdára?
 
@@ -21,7 +21,7 @@ Ezek jogos aggodalmak — de szinte mindegyik abból fakad, hogy az első hetet 
 
 Amikor valaki azt mondja, „nekem nincs időm erre”, szinte mindig egy egész napos, több fogásos nagyfőzésre gondol. Pedig a batch cooking pont az ellenkezője ennek: egyetlen, jól megszervezett, kb. 2 órás vasárnap délután — nem több. Nem azért kevesebb az idő, mert siettetjük a folyamatot, hanem mert nem hét különböző, bonyolult ételt főzöl egyszerre, hanem néhány alapkomponenst, amiket aztán a hét folyamán kombinálsz.
 
-## Mit végy be a hét elé (bevásárlólista-logika 3+3+3 alapon)
+## Mit szerezz be a hét elejére (bevásárlólista-logika 3+3+3 alapon)
 
 Az első hetednél a legnagyobb hiba nem a főzésnél történik, hanem a bevásárlásnál — pontosabban annak hiányában. Ha ötletszerűen állsz neki vasárnap reggel „nézzük, mi van otthon” alapon, garantáltan elakadsz félúton.
 
